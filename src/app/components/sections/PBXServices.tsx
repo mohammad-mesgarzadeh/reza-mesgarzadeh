@@ -3,6 +3,7 @@ import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
 import { iconMap } from "../icons";
 import type { PBXSectionContent } from "../../types";
+import telephone from "../../assets/telephone.avif";
 
 interface PBXServicesProps {
   content: PBXSectionContent;
@@ -47,7 +48,7 @@ export default function PBXServices({ content, lang }: PBXServicesProps) {
         <div className="mt-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative rounded-xl overflow-hidden bg-secondary aspect-[4/3] shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?w=800&h=500&fit=crop&auto=format"
+              src={telephone}
               alt="IP desk phone system"
               className="w-full h-full object-cover opacity-90"
             />

@@ -2,7 +2,7 @@ import { Phone, ArrowRight } from "lucide-react";
 import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
 import type { HeroContent } from "../../types";
-
+import hero from "../../assets/hero.webp";
 interface HeroProps {
   content: HeroContent;
   lang: string;
@@ -22,7 +22,7 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1533664488202-6af66d26c44a?w=1600&h=900&fit=crop&auto=format"
+          src={hero}
           alt="Telecommunication towers at sunset"
           className="w-full h-full object-cover"
         />

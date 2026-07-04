@@ -1,3 +1,4 @@
+// import
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { CONTENT } from "./content";

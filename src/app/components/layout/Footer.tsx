@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import { TowerControl, Instagram, Linkedin, Youtube } from "lucide-react";
 import type { Lang, NavContent, FooterContent, PBXSectionContent } from "../../types";
 
@@ -8,7 +9,6 @@ interface FooterProps {
   pbxServices: PBXSectionContent;
   lang: Lang;
   setLang: (l: Lang) => void;
-  scrollTo: (id: string) => void;
   phoneNumber: string;
 }
 
@@ -25,17 +25,18 @@ export default function Footer({
   pbxServices,
   lang,
   setLang,
-  scrollTo,
   phoneNumber,
 }: FooterProps) {
+  const navigate = useNavigate();
   const years = new Date().getFullYear();
   const langs: Lang[] = ["fa", "en"];
 
   const quickLinks = [
-    { label: nav.pbx, id: "pbx" },
-    { label: nav.towers, id: "towers" },
-    { label: nav.projects, id: "projects" },
-    { label: nav.contact, id: "contact" },
+    { label: nav.home, path: "/" },
+    { label: nav.products, path: "/products" },
+    { label: nav.installation, path: "/installation-maintenance" },
+    { label: nav.training, path: "/training" },
+    { label: nav.scaleModels, path: "/scale-models" },
   ];
 
   return (
@@ -89,9 +90,9 @@ export default function Footer({
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
-                <li key={link.id}>
+                <li key={link.path}>
                   <button
-                    onClick={() => scrollTo(link.id)}
+                    onClick={() => { navigate(link.path); window.scrollTo({ top: 0 }); }}
                     className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
@@ -110,7 +111,7 @@ export default function Footer({
               {pbxServices.services.map((s, i) => (
                 <li key={i}>
                   <button
-                    onClick={() => scrollTo("pbx")}
+                    onClick={() => navigate("/")}
                     className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors text-start"
                   >
                     {s.title}

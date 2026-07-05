@@ -1,4 +1,3 @@
-// import
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { CONTENT } from "./content";
@@ -6,7 +5,7 @@ import { useSite } from "./lib/site-context";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
 import PBXServices from "./components/sections/PBXServices";
-import TowerModels from "./components/sections/TowerModels";
+import ProductCarousel from "./components/sections/ProductCarousel";
 import Advantages from "./components/sections/Advantages";
 import Brands from "./components/sections/Brands";
 import Workflow from "./components/sections/Workflow";
@@ -40,9 +39,8 @@ export default function App() {
         setLang={setLang}
         dark={dark}
         setDark={setDark}
-        scrollTo={scrollTo}
-        nav={c.nav}
         brand={c.brand}
+        nav={c.nav}
         callNow={c.callNow}
         phoneNumber={phoneNumber}
         dir={c.dir}
@@ -50,7 +48,7 @@ export default function App() {
 
       <Hero content={c.hero} lang={lang} scrollTo={scrollTo} phoneNumber={phoneNumber} />
       <PBXServices content={c.pbxSection} lang={lang} />
-      <TowerModels content={c.towerModels} lang={lang} scrollTo={scrollTo} phoneNumber={phoneNumber} />
+      <ProductCarousel products={c.telecomProducts.products} lang={lang} phoneNumber={phoneNumber} />
       <Advantages content={c.advantages} hero={c.hero} lang={lang} scrollTo={scrollTo} />
       <Brands content={c.brands} lang={lang} />
       <Workflow content={c.workflow} lang={lang} />
@@ -66,7 +64,6 @@ export default function App() {
         pbxServices={c.pbxSection}
         lang={lang}
         setLang={setLang}
-        scrollTo={scrollTo}
         phoneNumber={phoneNumber}
       />
     </div>

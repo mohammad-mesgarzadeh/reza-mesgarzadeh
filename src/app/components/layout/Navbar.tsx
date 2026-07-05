@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router";
 import { Phone, Sun, Moon, Menu, X, TowerControl } from "lucide-react";
 import { cn } from "../ui/utils";
-import type { Lang } from "../../types";
+import type { Lang, NavContent } from "../../types";
 import logo from "../../assets/logo.png"
 
 interface NavbarProps {
@@ -9,19 +10,19 @@ interface NavbarProps {
   setLang: (l: Lang) => void;
   dark: boolean;
   setDark: (d: boolean) => void;
-  scrollTo: (id: string) => void;
-  nav: Record<string, string>;
   brand: string;
   callNow: string;
   phoneNumber: string;
   dir: string;
+  nav: NavContent;
 }
 
-const navItems = [
-  { key: "pbx", id: "pbx" },
-  { key: "towers", id: "towers" },
-  { key: "projects", id: "projects" },
-  { key: "contact", id: "contact" },
+const navItems: { key: keyof NavContent; path: string }[] = [
+  { key: "home", path: "/" },
+  { key: "products", path: "/products" },
+  { key: "installation", path: "/installation-maintenance" },
+  { key: "training", path: "/training" },
+  { key: "scaleModels", path: "/scale-models" },
 ];
 
 export default function Navbar({
@@ -29,23 +30,29 @@ export default function Navbar({
   setLang,
   dark,
   setDark,
-  scrollTo,
-  nav,
   brand,
   callNow,
   phoneNumber,
   dir,
+  nav,
 }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const langs: Lang[] = ["fa", "en"];
+
+  const isActive = (path: string) => {
+    if (path === "/") return location.pathname === "/";
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between gap-4">
         {/* Brand */}
         <button
-          onClick={() => { scrollTo("hero"); setMenuOpen(false); }}
+          onClick={() => { navigate("/"); setMenuOpen(false); }}
           className="flex items-center gap-3 group shrink-0"
         >
           <div className="w-9 h-9 rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow text-foreground">
@@ -65,11 +72,16 @@ export default function Navbar({
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map(({ key, id }) => (
+          {navItems.map(({ key, path }) => (
             <button
               key={key}
-              onClick={() => scrollTo(id)}
-              className="px-4 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-all rounded-lg"
+              onClick={() => { navigate(path); setMenuOpen(false); }}
+              className={cn(
+                "px-4 py-2.5 text-sm font-medium transition-all rounded-lg",
+                isActive(path)
+                  ? "text-accent bg-accent/10"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+              )}
             >
               {nav[key]}
             </button>
@@ -127,11 +139,16 @@ export default function Navbar({
       {/* Mobile menu drawer */}
       {menuOpen && (
         <div className="lg:hidden border-t border-border/60 bg-card/95 backdrop-blur-xl px-4 py-5 space-y-1">
-          {navItems.map(({ key, id }) => (
+          {navItems.map(({ key, path }) => (
             <button
               key={key}
-              onClick={() => { scrollTo(id); setMenuOpen(false); }}
-              className="w-full text-start px-4 py-3.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-all rounded-lg"
+              onClick={() => { navigate(path); setMenuOpen(false); }}
+              className={cn(
+                "w-full text-start px-4 py-3.5 text-sm font-medium transition-all rounded-lg",
+                isActive(path)
+                  ? "text-accent bg-accent/10"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+              )}
             >
               {nav[key]}
             </button>

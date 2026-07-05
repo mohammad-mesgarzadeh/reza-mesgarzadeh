@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useParams, useNavigate } from "react-router";
+import { useParams, useNavigate, useLocation } from "react-router";
 import {
   ArrowLeft,
   Ruler,
@@ -15,10 +15,17 @@ import {
   HardHat,
   X,
   ChevronRight,
+  Building2,
+  List,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSite } from "../../lib/site-context";
-import { getProductById, getRelatedProducts } from "../../lib/products";
+import {
+  getTelecomProductById,
+  getRelatedTelecomProducts,
+  getScaleModelById,
+  getRelatedScaleModels,
+} from "../../lib/products";
 import { CONTENT } from "../../content";
 import { cn } from "../ui/utils";
 import { Badge } from "../ui/badge";
@@ -29,8 +36,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import type { TowerModelProduct } from "../../types";
+import type { TowerModelProduct, TelecomProduct } from "../../types";
 import NotFound from "./NotFound";
+
+type AnyProduct = (TowerModelProduct & { brand?: string; features?: string[] }) | (TelecomProduct & { scale?: string; material?: string; useCase?: string });
 
 function Lightbox({
   images,
@@ -132,7 +141,7 @@ function ProductHero({
   selectedThumb,
   onImageClick,
 }: {
-  product: TowerModelProduct;
+  product: AnyProduct;
   onThumbnailClick: (index: number) => void;
   selectedThumb: number;
   onImageClick: () => void;
@@ -240,12 +249,13 @@ function StickySidebar({
   lang,
   isRtl,
 }: {
-  product: TowerModelProduct;
+  product: AnyProduct;
   phoneNumber: string;
   lang: string;
   isRtl: boolean;
 }) {
   const navigate = useNavigate();
+  const isScaleModel = "scale" in product && product.scale;
   const isContactPrice = product.price.includes("Contact") || product.price.includes("تماس");
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/^0/, "98")}?text=${encodeURIComponent(isRtl ? `سلام، درباره ${product.name} اطلاعات بیشتری می‌خواهم` : `Hi, I'd like more information about ${product.name}`)}`;
 
@@ -293,28 +303,69 @@ function StickySidebar({
         </div>
 
         <div className="pt-4 border-t border-border/40 space-y-2.5 text-sm">
-          <div className="flex items-center gap-2.5 text-muted-foreground">
-            <Scale className="w-4 h-4 text-accent shrink-0" />
-            <span>
-              <span className="text-foreground/70">{isRtl ? "مقیاس" : "Scale"}:</span>{" "}
-              <span className="font-semibold font-mono">{product.scale}</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-2.5 text-muted-foreground">
-            <Package className="w-4 h-4 text-accent shrink-0" />
-            <span>
-              <span className="text-foreground/70">{isRtl ? "جنس" : "Material"}:</span>{" "}
-              <span className="font-semibold">{product.material}</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-2.5 text-muted-foreground">
-            <HardHat className="w-4 h-4 text-accent shrink-0" />
-            <span>
-              <span className="text-foreground/70">{isRtl ? "کاربرد" : "Use Case"}:</span>{" "}
-              <span className="font-semibold">{product.useCase}</span>
-            </span>
-          </div>
+          {isScaleModel ? (
+            <>
+              <div className="flex items-center gap-2.5 text-muted-foreground">
+                <Scale className="w-4 h-4 text-accent shrink-0" />
+                <span>
+                  <span className="text-foreground/70">{isRtl ? "مقیاس" : "Scale"}:</span>{" "}
+                  <span className="font-semibold font-mono">{product.scale}</span>
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5 text-muted-foreground">
+                <Package className="w-4 h-4 text-accent shrink-0" />
+                <span>
+                  <span className="text-foreground/70">{isRtl ? "جنس" : "Material"}:</span>{" "}
+                  <span className="font-semibold">{product.material}</span>
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5 text-muted-foreground">
+                <HardHat className="w-4 h-4 text-accent shrink-0" />
+                <span>
+                  <span className="text-foreground/70">{isRtl ? "کاربرد" : "Use Case"}:</span>{" "}
+                  <span className="font-semibold">{product.useCase}</span>
+                </span>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex items-center gap-2.5 text-muted-foreground">
+                <Building2 className="w-4 h-4 text-accent shrink-0" />
+                <span>
+                  <span className="text-foreground/70">{isRtl ? "برند" : "Brand"}:</span>{" "}
+                  <span className="font-semibold">{product.brand}</span>
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5 text-muted-foreground">
+                <Layers className="w-4 h-4 text-accent shrink-0" />
+                <span>
+                  <span className="text-foreground/70">{isRtl ? "دسته" : "Category"}:</span>{" "}
+                  <span className="font-semibold">{product.category}</span>
+                </span>
+              </div>
+            </>
+          )}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function FeaturesList({ features }: { features: string[] }) {
+  if (!features || features.length === 0) return null;
+  return (
+    <div className="space-y-3">
+      <h2 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
+        <List className="w-5 h-5 text-accent" />
+        {features[0].includes("خودکار") || features[0].includes("پشتیبانی") || features[0].includes("تا") ? "ویژگی‌ها" : "Features"}
+      </h2>
+      <div className="grid sm:grid-cols-2 gap-2">
+        {features.map((f, i) => (
+          <div key={i} className="flex items-center gap-2.5 px-4 py-3 bg-card border border-border/60 rounded-lg">
+            <CheckCircle className="w-4 h-4 text-telecom-green shrink-0" />
+            <span className="text-sm text-foreground/80">{f}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -324,10 +375,12 @@ function RelatedProducts({
   products,
   lang,
   isRtl,
+  isScaleModel,
 }: {
-  products: TowerModelProduct[];
+  products: AnyProduct[];
   lang: string;
   isRtl: boolean;
+  isScaleModel: boolean;
 }) {
   const navigate = useNavigate();
 
@@ -349,7 +402,7 @@ function RelatedProducts({
                 <button
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
-                    navigate(`/tower-models/${p.id}`);
+                    navigate(isScaleModel ? `/scale-models/${p.id}` : `/products/${p.id}`);
                   }}
                   className="group text-left w-full"
                 >
@@ -372,8 +425,14 @@ function RelatedProducts({
                         {p.name}
                       </h3>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
-                        <span className="font-mono">{p.scale}</span>
+                        {isScaleModel && "scale" in p ? (
+                          <>
+                            <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
+                            <span className="font-mono">{p.scale}</span>
+                          </>
+                        ) : "brand" in p ? (
+                          <span className="font-semibold">{p.brand}</span>
+                        ) : null}
                       </div>
                     </div>
                   </div>
@@ -392,9 +451,11 @@ function RelatedProducts({
 function Breadcrumb({
   productName,
   isRtl,
+  isScaleModel,
 }: {
   productName: string;
   isRtl: boolean;
+  isScaleModel: boolean;
 }) {
   const navigate = useNavigate();
 
@@ -409,10 +470,12 @@ function Breadcrumb({
       </button>
       <ChevronLeft className={`w-3.5 h-3.5 ${isRtl ? "rotate-180" : ""}`} />
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate(isScaleModel ? "/scale-models" : "/products")}
         className="hover:text-accent transition-colors"
       >
-        {isRtl ? "مدل‌های دکل" : "Tower Models"}
+        {isScaleModel
+          ? (isRtl ? "مدل‌های مقیاس" : "Scale Models")
+          : (isRtl ? "محصولات" : "Products")}
       </button>
       <ChevronLeft className={`w-3.5 h-3.5 ${isRtl ? "rotate-180" : ""}`} />
       <span className="text-foreground/60 font-medium truncate max-w-[200px]">
@@ -425,14 +488,24 @@ function Breadcrumb({
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const { lang } = useSite();
   const [selectedThumb, setSelectedThumb] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const isRtl = lang === "fa";
   const c = CONTENT[lang];
 
-  const product = id ? getProductById(id, lang) : undefined;
-  const related = product ? getRelatedProducts(product, lang) : [];
+  const isScaleModel = location.pathname.includes("/scale-models/");
+  const product = id
+    ? isScaleModel
+      ? getScaleModelById(id, lang)
+      : getTelecomProductById(id)
+    : undefined;
+  const related = product
+    ? isScaleModel
+      ? getRelatedScaleModels(product as any, lang)
+      : getRelatedTelecomProducts(product as any, lang)
+    : [];
 
   const handleBack = useCallback(() => {
     if (window.history.length > 1) {
@@ -464,6 +537,8 @@ export default function ProductDetail() {
     return <NotFound />;
   }
 
+  const isModel = "scale" in product;
+
   return (
     <div
       dir={c.dir}
@@ -482,7 +557,7 @@ export default function ProductDetail() {
       )}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <Breadcrumb productName={product.name} isRtl={isRtl} />
+        <Breadcrumb productName={product.name} isRtl={isRtl} isScaleModel={isScaleModel} />
 
         <button
           onClick={handleBack}
@@ -519,6 +594,10 @@ export default function ProductDetail() {
               </p>
             </div>
 
+            {"features" in product && product.features && (
+              <FeaturesList features={product.features} />
+            )}
+
             <div className="space-y-4">
               <h2 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
                 <Layers className="w-5 h-5 text-accent" />
@@ -528,44 +607,89 @@ export default function ProductDetail() {
             </div>
 
             <div className="grid sm:grid-cols-3 gap-4">
-              <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
-                  <Scale className="w-5 h-5" />
-                </div>
-                <h3 className="text-sm font-bold text-foreground mb-1">
-                  {isRtl ? "مقیاس" : "Scale"}
-                </h3>
-                <p className="text-lg font-mono font-bold text-accent">{product.scale}</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  {isRtl ? "مقیاس دقیق مهندسی" : "Precision engineering scale"}
-                </p>
-              </div>
+              {isModel ? (
+                <>
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
+                      <Scale className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "مقیاس" : "Scale"}
+                    </h3>
+                    <p className="text-lg font-mono font-bold text-accent">{product.scale}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "مقیاس دقیق مهندسی" : "Precision engineering scale"}
+                    </p>
+                  </div>
 
-              <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
-                  <Package className="w-5 h-5" />
-                </div>
-                <h3 className="text-sm font-bold text-foreground mb-1">
-                  {isRtl ? "جنس" : "Material"}
-                </h3>
-                <p className="text-lg font-bold text-telecom-green">{product.material}</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  {isRtl ? "مواد با کیفیت بالا" : "High-quality materials"}
-                </p>
-              </div>
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
+                      <Package className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "جنس" : "Material"}
+                    </h3>
+                    <p className="text-lg font-bold text-telecom-green">{product.material}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "مواد با کیفیت بالا" : "High-quality materials"}
+                    </p>
+                  </div>
 
-              <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
-                  <Tag className="w-5 h-5" />
-                </div>
-                <h3 className="text-sm font-bold text-foreground mb-1">
-                  {isRtl ? "کاربرد" : "Use Case"}
-                </h3>
-                <p className="text-lg font-bold text-telecom-amber">{product.useCase}</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  {isRtl ? "کاربردهای متنوع" : "Versatile applications"}
-                </p>
-              </div>
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
+                      <Tag className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "کاربرد" : "Use Case"}
+                    </h3>
+                    <p className="text-lg font-bold text-telecom-amber">{product.useCase}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "کاربردهای متنوع" : "Versatile applications"}
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
+                      <Building2 className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "برند" : "Brand"}
+                    </h3>
+                    <p className="text-lg font-bold text-accent">{product.brand}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "برند معتبر جهانی" : "Trusted global brand"}
+                    </p>
+                  </div>
+
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
+                      <Layers className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "دسته" : "Category"}
+                    </h3>
+                    <p className="text-lg font-bold text-telecom-green">{product.category}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "تجهیزات حرفه‌ای" : "Professional equipment"}
+                    </p>
+                  </div>
+
+                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                    <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
+                      <Tag className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-sm font-bold text-foreground mb-1">
+                      {isRtl ? "قیمت" : "Pricing"}
+                    </h3>
+                    <p className="text-lg font-bold text-telecom-amber">{isRtl ? "رقابتی" : "Competitive"}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {isRtl ? "بهترین قیمت بازار" : "Best market price"}
+                    </p>
+                  </div>
+                </>
+              )}
             </div>
           </div>
 
@@ -579,7 +703,7 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        <RelatedProducts products={related} lang={lang} isRtl={isRtl} />
+        <RelatedProducts products={related} lang={lang} isRtl={isRtl} isScaleModel={isScaleModel} />
       </div>
     </div>
   );

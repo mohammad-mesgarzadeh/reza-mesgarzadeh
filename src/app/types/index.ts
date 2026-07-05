@@ -1,11 +1,11 @@
 export type Lang = "fa" | "en";
 
 export interface NavContent {
-  pbx: string;
-  towers: string;
-  towerModels: string;
-  projects: string;
-  contact: string;
+  home: string;
+  products: string;
+  installation: string;
+  training: string;
+  scaleModels: string;
 }
 
 export interface HeroContent {
@@ -38,6 +38,7 @@ export interface TowerModelSpec {
 export interface TowerModelProduct {
   id: string;
   name: string;
+  cover: string;
   scale: string;
   material: string;
   useCase: string;
@@ -142,6 +143,74 @@ export interface ProjectItem {
   category: string;
 }
 
+export interface TelecomProduct {
+  id: string;
+  name: string;
+  cover: string;
+  category: string;
+  brand: string;
+  description: string;
+  features: string[];
+  specifications: { label: string; value: string }[];
+  images: string[];
+  price: string;
+}
+
+export interface TelecomProductsContent {
+  title: string;
+  subtitle: string;
+  categories: string[];
+  products: TelecomProduct[];
+}
+
+export interface ImServiceItem {
+  title: string;
+  desc: string;
+  icon: string;
+}
+
+export interface ImProcessStep {
+  step: string;
+  title: string;
+  desc: string;
+}
+
+export interface ImContent {
+  title: string;
+  subtitle: string;
+  services: ImServiceItem[];
+  process: ImProcessStep[];
+  contactText: string;
+}
+
+export interface TrainingCourse {
+  title: string;
+  desc: string;
+  duration: string;
+  audience: string;
+}
+
+export interface TrainingCategory {
+  name: string;
+  desc: string;
+  icon: string;
+  courses: TrainingCourse[];
+}
+
+export interface TrainingBenefit {
+  title: string;
+  desc: string;
+  icon: string;
+}
+
+export interface TrainingContent {
+  title: string;
+  subtitle: string;
+  categories: TrainingCategory[];
+  benefits: TrainingBenefit[];
+  cta: string;
+}
+
 export interface LangContent {
   dir: string;
   font: string;
@@ -160,6 +229,9 @@ export interface LangContent {
   finalCta: FinalCTAContent;
   footer: FooterContent;
   projects: { title: string; subtitle: string };
+  installationMaintenance: ImContent;
+  training: TrainingContent;
+  telecomProducts: TelecomProductsContent;
 }
 
 export type Content = Record<Lang, LangContent>;

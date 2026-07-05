@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, memo, useRef, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router";
 import { Search, Ruler, Package, Tag, ChevronDown } from "lucide-react";
 import { useSite } from "../../lib/site-context";
@@ -6,12 +6,112 @@ import { CONTENT } from "../../content";
 import { getAllScaleModels } from "../../lib/products";
 import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
+import { ScrollReveal } from "../ui/ScrollReveal";
+import { Skeleton } from "../ui/skeleton";
 import { iconMap } from "../icons";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import type { TowerModelProduct } from "../../types";
 
 const ITEMS_PER_PAGE = 6;
+
+function LazyImage({ src, alt, className }: { src: string; alt: string; className: string }) {
+  const [loaded, setLoaded] = useState(false);
+  const [inView, setInView] = useState(false);
+  const imgRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = imgRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect(); } },
+      { rootMargin: "200px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={imgRef} className={className}>
+      {!loaded && (
+        <Skeleton className="absolute inset-0 w-full h-full" />
+      )}
+      {inView && (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          onLoad={() => setLoaded(true)}
+          className={cn(
+            "w-full h-full object-cover transition-opacity duration-300",
+            loaded ? "opacity-100" : "opacity-0",
+          )}
+        />
+      )}
+    </div>
+  );
+}
+
+const ModelCard = memo(function ModelCard({
+  product,
+  isRtl,
+  lang: langProp,
+  onNavigate,
+}: {
+  product: TowerModelProduct;
+  isRtl: boolean;
+  lang: string;
+  onNavigate: (id: string) => void;
+}) {
+  return (
+    <button
+      onClick={() => onNavigate(product.id)}
+      className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
+    >
+      <div className="relative h-56 bg-secondary overflow-hidden">
+        <LazyImage
+          src={product.cover}
+          alt={product.name}
+          className="w-full h-full"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+        <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}>
+          <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
+            {product.category}
+          </span>
+        </div>
+      </div>
+      <div className="p-5 space-y-3">
+        <h3 className={`font-bold text-foreground group-hover:text-accent transition-colors ${isRtl ? "text-right" : ""}`}>
+          {product.name}
+        </h3>
+        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+          {product.description}
+        </p>
+        <div className="space-y-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
+            <span className="font-mono">{product.scale}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Package className="w-3.5 h-3.5 text-accent shrink-0" />
+            <span>{product.material}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Tag className="w-3.5 h-3.5 text-accent shrink-0" />
+            <span>{product.useCase}</span>
+          </div>
+        </div>
+        <div className="pt-2 border-t border-border/40 flex items-center justify-between">
+          <span className="text-sm font-bold text-telecom-green">{product.price}</span>
+          <span className="text-xs text-accent font-semibold">
+            {langProp === "fa" ? "جزئیات بیشتر" : "View Details"}
+          </span>
+        </div>
+      </div>
+    </button>
+  );
+});
 
 export default function ScaleModels() {
   const { lang, setLang, dark, setDark, phoneNumber } = useSite();
@@ -54,16 +154,36 @@ export default function ScaleModels() {
   const displayed = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
 
-  const loadMore = () => {
-    setVisibleCount((prev) => Math.min(prev + ITEMS_PER_PAGE, filtered.length));
-  };
+  const handleNavigate = useCallback((id: string) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`/scale-models/${id}`);
+  }, [navigate]);
 
-  const resetFilters = () => {
+  const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(e.target.value);
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, []);
+
+  const handleCategoryChange = useCallback((cat: string) => {
+    setCategory(cat);
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, []);
+
+  const handleMaterialChange = useCallback((mat: string) => {
+    setMaterial(mat);
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, []);
+
+  const loadMore = useCallback(() => {
+    setVisibleCount((prev) => Math.min(prev + ITEMS_PER_PAGE, filtered.length));
+  }, [filtered.length]);
+
+  const resetFilters = useCallback(() => {
     setSearch("");
     setCategory("all");
     setMaterial("all");
     setVisibleCount(ITEMS_PER_PAGE);
-  };
+  }, []);
 
   return (
     <div dir={c.dir} style={{ fontFamily: c.font }} className="min-h-screen bg-background text-foreground">
@@ -79,8 +199,8 @@ export default function ScaleModels() {
         dir={c.dir}
       />
 
-      <section className="py-24 lg:py-32 bg-secondary/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal as="section">
+        <div className="py-24 lg:py-32 bg-secondary/30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionLabel
             icon={iconMap["TowerControl"]({ className: "w-4 h-4" })}
             label={lang === "fa" ? "مدل‌های مقیاس" : "SCALE MODELS"}
@@ -106,7 +226,7 @@ export default function ScaleModels() {
               <input
                 type="text"
                 value={search}
-                onChange={(e) => { setSearch(e.target.value); setVisibleCount(ITEMS_PER_PAGE); }}
+                onChange={handleSearchChange}
                 placeholder={lang === "fa" ? "جستجوی مدل‌ها..." : "Search models..."}
                 className={cn(
                   "w-full h-11 rounded-xl border border-border/60 bg-background px-10 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/10 transition-all",
@@ -122,7 +242,7 @@ export default function ScaleModels() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => { setCategory(cat); setVisibleCount(ITEMS_PER_PAGE); }}
+                onClick={() => handleCategoryChange(cat)}
                 className={cn(
                   "px-4 py-2 text-xs font-semibold rounded-lg border transition-all",
                   category === cat
@@ -142,7 +262,7 @@ export default function ScaleModels() {
             {materials.map((mat) => (
               <button
                 key={mat}
-                onClick={() => { setMaterial(mat); setVisibleCount(ITEMS_PER_PAGE); }}
+                onClick={() => handleMaterialChange(mat)}
                 className={cn(
                   "px-4 py-2 text-xs font-semibold rounded-lg border transition-all",
                   material === mat
@@ -175,55 +295,10 @@ export default function ScaleModels() {
                   : `Showing ${displayed.length} of ${filtered.length} models`}
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                {displayed.map((product) => (
-                  <button
-                    key={product.id}
-                    onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); navigate(`/scale-models/${product.id}`); }}
-                    className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
-                  >
-                    <div className="relative h-56 bg-secondary overflow-hidden">
-                      <img
-                        loading="lazy"
-                        src={product.cover}
-                        alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                      <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}>
-                        <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
-                          {product.category}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5 space-y-3">
-                      <h3 className={`font-bold text-foreground group-hover:text-accent transition-colors ${isRtl ? "text-right" : ""}`}>
-                        {product.name}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
-                        {product.description}
-                      </p>
-                      <div className="space-y-2 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
-                          <span className="font-mono">{product.scale}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Package className="w-3.5 h-3.5 text-accent shrink-0" />
-                          <span>{product.material}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Tag className="w-3.5 h-3.5 text-accent shrink-0" />
-                          <span>{product.useCase}</span>
-                        </div>
-                      </div>
-                      <div className="pt-2 border-t border-border/40 flex items-center justify-between">
-                        <span className="text-sm font-bold text-telecom-green">{product.price}</span>
-                        <span className="text-xs text-accent font-semibold">
-                          {lang === "fa" ? "جزئیات بیشتر" : "View Details"}
-                        </span>
-                      </div>
-                    </div>
-                  </button>
+                {displayed.map((product, i) => (
+                  <ScrollReveal key={product.id} delay={i * 0.03}>
+                    <ModelCard product={product} isRtl={isRtl} lang={lang} onNavigate={handleNavigate} />
+                  </ScrollReveal>
                 ))}
               </div>
 
@@ -241,7 +316,7 @@ export default function ScaleModels() {
             </>
           )}
         </div>
-      </section>
+      </ScrollReveal>
 
       <Footer
         brand={c.brand}

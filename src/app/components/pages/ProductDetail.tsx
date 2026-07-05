@@ -29,6 +29,7 @@ import {
 import { CONTENT } from "../../content";
 import { cn } from "../ui/utils";
 import { Badge } from "../ui/badge";
+import { ScrollReveal } from "../ui/ScrollReveal";
 import {
   Carousel,
   CarouselContent,
@@ -499,7 +500,7 @@ export default function ProductDetail() {
   const product = id
     ? isScaleModel
       ? getScaleModelById(id, lang)
-      : getTelecomProductById(id)
+      : getTelecomProductById(id, lang)
     : undefined;
   const related = product
     ? isScaleModel
@@ -567,143 +568,151 @@ export default function ProductDetail() {
           {isRtl ? "بازگشت" : "Back"}
         </button>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-          <div className="lg:col-span-2 space-y-10">
-            <ProductHero
-              product={product}
-              onThumbnailClick={setSelectedThumb}
-              selectedThumb={selectedThumb}
-              onImageClick={() => setLightboxOpen(true)}
-            />
+        <ScrollReveal>
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="lg:col-span-2 space-y-10">
+              <ProductHero
+                product={product}
+                onThumbnailClick={setSelectedThumb}
+                selectedThumb={selectedThumb}
+                onImageClick={() => setLightboxOpen(true)}
+              />
 
-            <div className="space-y-4">
-              <div className="flex flex-wrap items-center gap-3">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                  {product.name}
-                </h1>
-                <Badge
-                  variant="secondary"
-                  className="text-xs px-3 py-1 bg-accent/10 text-accent border-accent/20"
-                >
-                  {product.category}
-                </Badge>
+              <div className="space-y-4">
+                <div className="flex flex-wrap items-center gap-3">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                    {product.name}
+                  </h1>
+                  <Badge
+                    variant="secondary"
+                    className="text-xs px-3 py-1 bg-accent/10 text-accent border-accent/20"
+                  >
+                    {product.category}
+                  </Badge>
+                </div>
+
+                <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-3xl">
+                  {product.description}
+                </p>
               </div>
 
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-3xl">
-                {product.description}
-              </p>
-            </div>
-
-            {"features" in product && product.features && (
-              <FeaturesList features={product.features} />
-            )}
-
-            <div className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
-                <Layers className="w-5 h-5 text-accent" />
-                {isRtl ? "مشخصات فنی" : "Technical Specifications"}
-              </h2>
-              <SpecTable specifications={product.specifications} />
-            </div>
-
-            <div className="grid sm:grid-cols-3 gap-4">
-              {isModel ? (
-                <>
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
-                      <Scale className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "مقیاس" : "Scale"}
-                    </h3>
-                    <p className="text-lg font-mono font-bold text-accent">{product.scale}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "مقیاس دقیق مهندسی" : "Precision engineering scale"}
-                    </p>
-                  </div>
-
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
-                      <Package className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "جنس" : "Material"}
-                    </h3>
-                    <p className="text-lg font-bold text-telecom-green">{product.material}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "مواد با کیفیت بالا" : "High-quality materials"}
-                    </p>
-                  </div>
-
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
-                      <Tag className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "کاربرد" : "Use Case"}
-                    </h3>
-                    <p className="text-lg font-bold text-telecom-amber">{product.useCase}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "کاربردهای متنوع" : "Versatile applications"}
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
-                      <Building2 className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "برند" : "Brand"}
-                    </h3>
-                    <p className="text-lg font-bold text-accent">{product.brand}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "برند معتبر جهانی" : "Trusted global brand"}
-                    </p>
-                  </div>
-
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
-                      <Layers className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "دسته" : "Category"}
-                    </h3>
-                    <p className="text-lg font-bold text-telecom-green">{product.category}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "تجهیزات حرفه‌ای" : "Professional equipment"}
-                    </p>
-                  </div>
-
-                  <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
-                      <Tag className="w-5 h-5" />
-                    </div>
-                    <h3 className="text-sm font-bold text-foreground mb-1">
-                      {isRtl ? "قیمت" : "Pricing"}
-                    </h3>
-                    <p className="text-lg font-bold text-telecom-amber">{isRtl ? "رقابتی" : "Competitive"}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {isRtl ? "بهترین قیمت بازار" : "Best market price"}
-                    </p>
-                  </div>
-                </>
+              {"features" in product && product.features && (
+                <FeaturesList features={product.features} />
               )}
+
+              <ScrollReveal>
+                <div className="space-y-4">
+                  <h2 className="text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
+                    <Layers className="w-5 h-5 text-accent" />
+                    {isRtl ? "مشخصات فنی" : "Technical Specifications"}
+                  </h2>
+                  <SpecTable specifications={product.specifications} />
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <div className="grid sm:grid-cols-3 gap-4">
+                  {isModel ? (
+                    <>
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
+                          <Scale className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "مقیاس" : "Scale"}
+                        </h3>
+                        <p className="text-lg font-mono font-bold text-accent">{product.scale}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "مقیاس دقیق مهندسی" : "Precision engineering scale"}
+                        </p>
+                      </div>
+
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
+                          <Package className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "جنس" : "Material"}
+                        </h3>
+                        <p className="text-lg font-bold text-telecom-green">{product.material}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "مواد با کیفیت بالا" : "High-quality materials"}
+                        </p>
+                      </div>
+
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
+                          <Tag className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "کاربرد" : "Use Case"}
+                        </h3>
+                        <p className="text-lg font-bold text-telecom-amber">{product.useCase}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "کاربردهای متنوع" : "Versatile applications"}
+                        </p>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-3">
+                          <Building2 className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "برند" : "Brand"}
+                        </h3>
+                        <p className="text-lg font-bold text-accent">{product.brand}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "برند معتبر جهانی" : "Trusted global brand"}
+                        </p>
+                      </div>
+
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-3">
+                          <Layers className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "دسته" : "Category"}
+                        </h3>
+                        <p className="text-lg font-bold text-telecom-green">{product.category}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "تجهیزات حرفه‌ای" : "Professional equipment"}
+                        </p>
+                      </div>
+
+                      <div className="bg-card border border-border/60 rounded-xl p-5 hover:border-accent/20 transition-all duration-300 hover:shadow-sm">
+                        <div className="w-10 h-10 rounded-lg bg-telecom-amber/10 flex items-center justify-center text-telecom-amber mb-3">
+                          <Tag className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-sm font-bold text-foreground mb-1">
+                          {isRtl ? "قیمت" : "Pricing"}
+                        </h3>
+                        <p className="text-lg font-bold text-telecom-amber">{isRtl ? "رقابتی" : "Competitive"}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {isRtl ? "بهترین قیمت بازار" : "Best market price"}
+                        </p>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </ScrollReveal>
+            </div>
+
+            <div className="lg:col-span-1">
+              <StickySidebar
+                product={product}
+                phoneNumber={"09123254266"}
+                lang={lang}
+                isRtl={isRtl}
+              />
             </div>
           </div>
+        </ScrollReveal>
 
-          <div className="lg:col-span-1">
-            <StickySidebar
-              product={product}
-              phoneNumber={"09123254266"}
-              lang={lang}
-              isRtl={isRtl}
-            />
-          </div>
-        </div>
-
-        <RelatedProducts products={related} lang={lang} isRtl={isRtl} isScaleModel={isScaleModel} />
+        <ScrollReveal>
+          <RelatedProducts products={related} lang={lang} isRtl={isRtl} isScaleModel={isScaleModel} />
+        </ScrollReveal>
       </div>
     </div>
   );

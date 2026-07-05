@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import { MapPin, Ruler, Package, Tag, CheckCircle, Phone } from "lucide-react";
 import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
+import { ScrollReveal } from "../ui/ScrollReveal";
 import { iconMap } from "../icons";
 import type { TowerModelsContent, Lang } from "../../types";
 
@@ -38,9 +39,11 @@ export default function TowerModels({ content, lang, scrollTo, phoneNumber }: To
         <p className="text-muted-foreground text-base sm:text-lg mb-6 max-w-3xl">{content.subtitle}</p>
 
         {/* Intro */}
-        <div className="bg-card border border-border/60 rounded-xl p-6 lg:p-8 mb-12 shadow-sm">
-          <p className="text-foreground/80 leading-relaxed">{content.intro}</p>
-        </div>
+        <ScrollReveal>
+          <div className="bg-card border border-border/60 rounded-xl p-6 lg:p-8 mb-12 shadow-sm">
+            <p className="text-foreground/80 leading-relaxed">{content.intro}</p>
+          </div>
+        </ScrollReveal>
 
         {/* Category filter chips */}
         <div className="flex flex-wrap gap-3 mb-10">
@@ -74,126 +77,133 @@ export default function TowerModels({ content, lang, scrollTo, phoneNumber }: To
         {/* Product cards grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
           {filteredProducts.map((product, i) => (
-            <button
-              key={product.id}
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-                navigate(`/tower-models/${product.id}`);
-              }}
-              className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
-            >
-              <div className="relative h-48 bg-secondary overflow-hidden">
-                <img
-                  src={product.cover}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                <div className="absolute top-3 left-3">
-                  <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
-                    {product.category}
-                  </span>
-                </div>
-              </div>
-              <div className="p-5 space-y-3">
-                <h3 className="font-bold text-right text-foreground group-hover:text-accent transition-colors">
-                  {product.name}
-                </h3>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
-                    <span className="font-mono">{product.scale}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Package className="w-3.5 h-3.5 text-accent shrink-0" />
-                    <span>{product.material}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Tag className="w-3.5 h-3.5 text-accent shrink-0" />
-                    <span>{product.useCase}</span>
+            <ScrollReveal key={product.id} delay={i * 0.05}>
+              <button
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  navigate(`/scale-models/${product.id}`);
+                }}
+                className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
+              >
+                <div className="relative h-48 bg-secondary overflow-hidden">
+                  <img
+                    src={product.cover}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                  <div className="absolute top-3 left-3">
+                    <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
+                      {product.category}
+                    </span>
                   </div>
                 </div>
-                <div className="pt-2 border-t border-border/40">
-                  <span className="text-sm font-bold text-telecom-green">
-                    {product.price}
-                  </span>
+                <div className="p-5 space-y-3">
+                  <h3 className="font-bold text-right text-foreground group-hover:text-accent transition-colors">
+                    {product.name}
+                  </h3>
+                  <div className="space-y-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                      <Ruler className="w-3.5 h-3.5 text-accent shrink-0" />
+                      <span className="font-mono">{product.scale}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Package className="w-3.5 h-3.5 text-accent shrink-0" />
+                      <span>{product.material}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Tag className="w-3.5 h-3.5 text-accent shrink-0" />
+                      <span>{product.useCase}</span>
+                    </div>
+                  </div>
+                  <div className="pt-2 border-t border-border/40">
+                    <span className="text-sm font-bold text-telecom-green">
+                      {product.price}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Categories section */}
-        <div className="mb-16">
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-6">
-            {lang === "fa" ? "دسته‌بندی محصولات" : "Product Categories"}
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {content.categories.map((cat, i) => {
-              const CatIcon = iconMap[cat.icon] || iconMap["TowerControl"];
-              return (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 p-5 bg-card border border-border/60 rounded-xl hover:border-accent/30 hover:shadow-sm transition-all duration-300"
-                >
-                  <div className="w-10 h-10 shrink-0 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
-                    <CatIcon className="w-5 h-5" />
+        <ScrollReveal>
+          <div className="mb-16">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-6">
+              {lang === "fa" ? "دسته‌بندی محصولات" : "Product Categories"}
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {content.categories.map((cat, i) => {
+                const CatIcon = iconMap[cat.icon] || iconMap["TowerControl"];
+                return (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4 p-5 bg-card border border-border/60 rounded-xl hover:border-accent/30 hover:shadow-sm transition-all duration-300"
+                  >
+                    <div className="w-10 h-10 shrink-0 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+                      <CatIcon className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground text-sm mb-1">{cat.name}</h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{cat.desc}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-foreground text-sm mb-1">{cat.name}</h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{cat.desc}</p>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Use cases */}
-        <div className="mb-12">
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-6">
-            {lang === "fa" ? "موارد استفاده" : "Use Cases"}
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {content.useCases.map((uc, i) => {
-              const UcIcon = iconMap[uc.icon] || iconMap["Award"];
-              return (
-                <div key={i} className="p-5 bg-card border border-border/60 rounded-xl hover:border-accent/30 transition-all duration-300">
-                  <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-4">
-                    <UcIcon className="w-5 h-5" />
+        <ScrollReveal>
+          <div className="mb-12">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-6">
+              {lang === "fa" ? "موارد استفاده" : "Use Cases"}
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {content.useCases.map((uc, i) => {
+                const UcIcon = iconMap[uc.icon] || iconMap["Award"];
+                return (
+                  <div key={i} className="p-5 bg-card border border-border/60 rounded-xl hover:border-accent/30 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-telecom-green/10 flex items-center justify-center text-telecom-green mb-4">
+                      <UcIcon className="w-5 h-5" />
+                    </div>
+                    <h4 className="font-bold text-foreground text-sm mb-2">{uc.title}</h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{uc.desc}</p>
                   </div>
-                  <h4 className="font-bold text-foreground text-sm mb-2">{uc.title}</h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{uc.desc}</p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* CTA */}
-        <div className="text-center">
-          <p className="text-muted-foreground mb-6">
-            {lang === "fa"
-              ? "برای سفارش ماکت اختصاصی یا دریافت اطلاعات بیشتر با ما تماس بگیرید"
-              : "Contact us for custom model orders or more information"}
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button
-              onClick={() => scrollTo("contact")}
-              className="inline-flex items-center gap-2.5 px-8 py-4 bg-telecom-green hover:bg-green-700 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg active:scale-[0.97]"
-            >
-              <CheckCircle className="w-4 h-4" />
-              {lang === "fa" ? "ثبت سفارش" : "Place Order"}
-            </button>
-            <a
-              href={`tel:${phoneNumber}`}
-              className="inline-flex items-center gap-2.5 px-8 py-4 border-2 border-accent/30 hover:border-accent text-accent font-bold rounded-xl transition-all hover:bg-accent/5"
-            >
-              <Phone className="w-4 h-4" />
-              {lang === "fa" ? "تماس بگیرید" : "Call Us"}
-            </a>
+        <ScrollReveal>
+          <div className="text-center">
+            <p className="text-muted-foreground mb-6">
+              {lang === "fa"
+                ? "برای سفارش ماکت اختصاصی یا دریافت اطلاعات بیشتر با ما تماس بگیرید"
+                : "Contact us for custom model orders or more information"}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <button
+                onClick={() => scrollTo("contact")}
+                className="inline-flex items-center gap-2.5 px-8 py-4 bg-telecom-green hover:bg-green-700 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg active:scale-[0.97]"
+              >
+                <CheckCircle className="w-4 h-4" />
+                {lang === "fa" ? "ثبت سفارش" : "Place Order"}
+              </button>
+              <a
+                href={`tel:${phoneNumber}`}
+                className="inline-flex items-center gap-2.5 px-8 py-4 border-2 border-accent/30 hover:border-accent text-accent font-bold rounded-xl transition-all hover:bg-accent/5"
+              >
+                <Phone className="w-4 h-4" />
+                {lang === "fa" ? "تماس بگیرید" : "Call Us"}
+              </a>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

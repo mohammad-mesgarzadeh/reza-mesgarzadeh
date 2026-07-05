@@ -1,6 +1,6 @@
 import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { SiteProvider } from "./app/lib/site-context";
 import App from "./app/App.tsx";
 import NotFound from "./app/components/pages/NotFound.tsx";
@@ -21,7 +21,7 @@ const fallback = (
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/reza-mesgarzadeh">
       <SiteProvider>
         <Routes>
           <Route path="/" element={<App />} />
@@ -34,6 +34,6 @@ createRoot(document.getElementById("root")!).render(
           <Route path="*" element={<NotFound />} />
         </Routes>
       </SiteProvider>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 );

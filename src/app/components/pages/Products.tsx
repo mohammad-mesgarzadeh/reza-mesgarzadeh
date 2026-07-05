@@ -1,15 +1,80 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, memo } from "react";
 import { useNavigate } from "react-router";
-import { Search, Building2, Layers, Tag } from "lucide-react";
+import { Search, Building2, Layers } from "lucide-react";
 import { useSite } from "../../lib/site-context";
 import { CONTENT } from "../../content";
 import { getAllTelecomProducts } from "../../lib/products";
 import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
+import { ScrollReveal } from "../ui/ScrollReveal";
 import { iconMap } from "../icons";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import type { TelecomProduct } from "../../types";
+
+const ProductCard = memo(function ProductCard({
+  product,
+  isRtl,
+  onNavigate,
+}: {
+  product: TelecomProduct;
+  isRtl: boolean;
+  onNavigate: (id: string) => void;
+}) {
+  return (
+    <button
+      onClick={() => onNavigate(product.id)}
+      className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
+    >
+      <div className="relative h-48 bg-secondary overflow-hidden">
+        <img
+          loading="lazy"
+          src={product.cover}
+          alt={product.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+        <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}>
+          <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
+            {product.category}
+          </span>
+        </div>
+      </div>
+      <div className="p-5 space-y-3">
+        <h3 className={`font-bold text-foreground group-hover:text-accent transition-colors ${isRtl ? "text-right" : ""}`}>
+          {product.name}
+        </h3>
+        <div className="space-y-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <Building2 className="w-3.5 h-3.5 text-accent shrink-0" />
+            <span className="font-semibold">{product.brand}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Layers className="w-3.5 h-3.5 text-accent shrink-0" />
+            <span>{product.category}</span>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-1.5 pt-2 border-t border-border/40">
+          {product.features.slice(0, 2).map((f, i) => (
+            <span key={i} className="text-[10px] px-2 py-0.5 bg-accent/5 text-accent/80 border border-accent/10 rounded-full">
+              {f}
+            </span>
+          ))}
+          {product.features.length > 2 && (
+            <span className="text-[10px] px-2 py-0.5 text-muted-foreground">
+              +{product.features.length - 2}
+            </span>
+          )}
+        </div>
+        <div className="pt-1">
+          <span className="text-sm font-bold text-telecom-green">
+            {product.price}
+          </span>
+        </div>
+      </div>
+    </button>
+  );
+});
 
 export default function Products() {
   const { lang, setLang, dark, setDark, phoneNumber } = useSite();
@@ -44,6 +109,11 @@ export default function Products() {
     return result;
   }, [products, category, search]);
 
+  const handleNavigate = useMemo(() => (id: string) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`/products/${id}`);
+  }, [navigate]);
+
   return (
     <div dir={c.dir} style={{ fontFamily: c.font }} className="min-h-screen bg-background text-foreground">
       <Navbar
@@ -58,8 +128,8 @@ export default function Products() {
         dir={c.dir}
       />
 
-      <section className="py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal as="section">
+        <div className="py-24 lg:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionLabel
             icon={iconMap["Radio"]({ className: "w-4 h-4" })}
             label={lang === "fa" ? "محصولات" : "PRODUCTS"}
@@ -117,64 +187,15 @@ export default function Products() {
             </div>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-              {filtered.map((product) => (
-                <button
-                  key={product.id}
-                  onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); navigate(`/products/${product.id}`); }}
-                  className="group bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 text-left w-full"
-                >
-                  <div className="relative h-48 bg-secondary overflow-hidden">
-                    <img
-                      loading="lazy"
-                      src={product.cover}
-                      alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                    <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}>
-                      <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
-                        {product.category}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-5 space-y-3">
-                    <h3 className={`font-bold text-foreground group-hover:text-accent transition-colors ${isRtl ? "text-right" : ""}`}>
-                      {product.name}
-                    </h3>
-                    <div className="space-y-2 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <Building2 className="w-3.5 h-3.5 text-accent shrink-0" />
-                        <span className="font-semibold">{product.brand}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Layers className="w-3.5 h-3.5 text-accent shrink-0" />
-                        <span>{product.category}</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5 pt-2 border-t border-border/40">
-                      {product.features.slice(0, 2).map((f, i) => (
-                        <span key={i} className="text-[10px] px-2 py-0.5 bg-accent/5 text-accent/80 border border-accent/10 rounded-full">
-                          {f}
-                        </span>
-                      ))}
-                      {product.features.length > 2 && (
-                        <span className="text-[10px] px-2 py-0.5 text-muted-foreground">
-                          +{product.features.length - 2}
-                        </span>
-                      )}
-                    </div>
-                    <div className="pt-1">
-                      <span className="text-sm font-bold text-telecom-green">
-                        {product.price}
-                      </span>
-                    </div>
-                  </div>
-                </button>
+              {filtered.map((product, i) => (
+                <ScrollReveal key={product.id} delay={i * 0.03}>
+                  <ProductCard product={product} isRtl={isRtl} onNavigate={handleNavigate} />
+                </ScrollReveal>
               ))}
             </div>
           )}
         </div>
-      </section>
+      </ScrollReveal>
 
       <Footer
         brand={c.brand}

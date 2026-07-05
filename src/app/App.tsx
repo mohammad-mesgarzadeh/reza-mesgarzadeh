@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { CONTENT } from "./content";
 import { useSite } from "./lib/site-context";
+import { ScrollReveal } from "./components/ui/ScrollReveal";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
 import PBXServices from "./components/sections/PBXServices";
@@ -47,15 +48,15 @@ export default function App() {
       />
 
       <Hero content={c.hero} lang={lang} scrollTo={scrollTo} phoneNumber={phoneNumber} />
-      <PBXServices content={c.pbxSection} lang={lang} />
-      <ProductCarousel products={c.telecomProducts.products} lang={lang} phoneNumber={phoneNumber} />
-      <Advantages content={c.advantages} hero={c.hero} lang={lang} scrollTo={scrollTo} />
-      <Brands content={c.brands} lang={lang} />
-      <Workflow content={c.workflow} lang={lang} />
-      <Testimonials content={c.testimonials} lang={lang} />
-      <FAQ content={c.faq} lang={lang} />
-      <Contact content={c.contact} lang={lang} phoneNumber={phoneNumber} />
-      <FinalCTA content={c.finalCta} lang={lang} scrollTo={scrollTo} phoneNumber={phoneNumber} />
+      <ScrollReveal><PBXServices content={c.pbxSection} lang={lang} /></ScrollReveal>
+      <ScrollReveal><ProductCarousel products={c.telecomProducts.products} lang={lang} phoneNumber={phoneNumber} /></ScrollReveal>
+      <ScrollReveal><Advantages content={c.advantages} hero={c.hero} lang={lang} scrollTo={scrollTo} /></ScrollReveal>
+      <ScrollReveal><Brands content={c.brands} lang={lang} /></ScrollReveal>
+      <ScrollReveal><Workflow content={c.workflow} lang={lang} /></ScrollReveal>
+      <ScrollReveal><Testimonials content={c.testimonials} lang={lang} /></ScrollReveal>
+      <ScrollReveal><FAQ content={c.faq} lang={lang} /></ScrollReveal>
+      <ScrollReveal><Contact content={c.contact} lang={lang} phoneNumber={phoneNumber} /></ScrollReveal>
+      <ScrollReveal><FinalCTA content={c.finalCta} lang={lang} scrollTo={scrollTo} phoneNumber={phoneNumber} /></ScrollReveal>
 
       <Footer
         brand={c.brand}

@@ -19,7 +19,7 @@ Personal portfolio website of Reza Mesgarzadeh, showcasing telecommunications se
 * Vite
 * Tailwind CSS
 * React Router
-* Lucide Icons
+* Lucide Icons  
 
 ## Live Demo
 

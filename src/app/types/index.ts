@@ -146,14 +146,18 @@ export interface ProjectItem {
 export interface TelecomProduct {
   id: string;
   name: string;
+  brand: string;
+  model?: string;
   cover: string;
   category: string;
-  brand: string;
   description: string;
+  shortDescription?: string;
   features: string[];
   specifications: { label: string; value: string }[];
   images: string[];
   price: string;
+  availability?: string;
+  applications?: string[];
 }
 
 export interface TelecomProductsContent {
@@ -161,6 +165,7 @@ export interface TelecomProductsContent {
   subtitle: string;
   categories: string[];
   products: TelecomProduct[];
+  applications?: { icon: string; title: string; desc: string }[];
 }
 
 export interface ImServiceItem {

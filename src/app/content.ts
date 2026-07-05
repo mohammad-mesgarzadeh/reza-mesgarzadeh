@@ -392,13 +392,22 @@ export const CONTENT: Content = {
       title: "تجهیزات مخابراتی",
       subtitle: "سیستم‌های PBX، تلفن‌های IP و تجهیزات ارتباطی حرفه‌ای",
       categories: ["سیستم‌های PBX", "تلفن‌های IP", "گیت‌وی و تجهیزات شبکه"],
+      applications: [
+        { icon: "Building2", title: "دفتر کار", desc: "ارتباطات داخلی و خارجی حرفه‌ای برای ادارات و سازمان‌ها" },
+        { icon: "Headphones", title: "مراکز تماس", desc: "مدیریت تماس‌های ورودی و خروجی با قابلیت گزارش‌دهی پیشرفته" },
+        { icon: "Hotel", title: "هتل‌ها", desc: "سیستم تلفنی یکپارچه برای هتل‌ها با امکانات مهمان‌داری" },
+        { icon: "Factory", title: "کارخانجات", desc: "ارتباطات صنعتی مقاوم و قابل اطمینان برای محیط‌های تولیدی" },
+        { icon: "Store", title: "ساختمان‌های تجاری", desc: "شبکه تلفنی متمرکز برای مجتمع‌ها و برج‌های تجاری" },
+      ],
       products: [
         {
           id: "tel-001",
           name: "سیستم PBX پاناسونیک KX-NS500",
+          model: "KX-NS500",
           cover: telephoneImg,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
+          shortDescription: "سیستم PBX پیشرفته مناسب کسب‌وکارهای کوچک تا متوسط با پشتیبانی از ۶۴ داخلی",
           description: "سیستم PBX پیشرفته پاناسونیک KX-NS500 مناسب برای کسب‌وکارهای کوچک تا متوسط. پشتیبانی از حداکثر ۶۴ داخلی با قابلیت ترکیب خطوط آنالوگ، دیجیتال و IP. دارای قابلیت SIP trunking، کنفرانس صوتی و تصویری، و یکپارچه‌سازی با نرم‌افزارهای مدیریت تماس.",
           features: ["پشتیبانی از ۶۴ داخلی", "SIP trunking داخلی", "کنفرانس صوتی و تصویری", "یکپارچه‌سازی با CRM", "مدیریت از راه دور", "ضبط مکالمات"],
           specifications: [
@@ -415,9 +424,11 @@ export const CONTENT: Content = {
         {
           id: "tel-002",
           name: "VoIP PBX یاستار S20",
+          model: "S20",
           cover: telephoneImg,
           category: "سیستم‌های PBX",
           brand: "Yeastar",
+          shortDescription: "سانترال مبتنی بر IP با قابلیت استقرار در محل یا ابر و پشتیبانی از ۵۰ کاربر هم‌زمان",
           description: "سیستم VoIP PBX یاستار S20 یک سانترال مبتنی بر IP با قابلیت استقرار در محل یا ابر. پشتیبانی از حداکثر ۵۰ کاربر هم‌زمان با امکانات پیشرفته مانند صندوق صوتی، IVR، ضبط مکالمات و کنفرانس. مدیریت آسان از طریق رابط کاربری تحت وب.",
           features: ["۵۰ کاربر هم‌زمان", "استقرار در محل یا ابر", "صندوق صوتی و IVR", "ضبط مکالمات", "اتصال به SIP trunk", "مدیریت تحت وب"],
           specifications: [
@@ -434,9 +445,11 @@ export const CONTENT: Content = {
         {
           id: "tel-003",
           name: "IP PBX گرنداستریم UCM6302",
+          model: "UCM6302",
           cover: telephoneImg,
           category: "سیستم‌های PBX",
           brand: "Grandstream",
+          shortDescription: "IP PBX قدرتمند با پشتیبانی از ۵۰۰ کاربر و ۶۰ تماس هم‌زمان با قابلیت UC پیشرفته",
           description: "IP PBX گرنداستریم UCM6302 با قابلیت پشتیبانی از ۵۰۰ کاربر و ۶۰ تماس هم‌زمان. دارای قابلیت‌های پیشرفته مانند Unified Communications، video conferencing و integration با اپلیکیشن‌های Wave. مدیریت تماس‌ها با کیفیت صدای HD.",
           features: ["۵۰۰ کاربر", "۶۰ تماس هم‌زمان", "Unified Communications", "Video Conferencing", "Wave App integration", "کیفیت صدای HD"],
           specifications: [
@@ -453,9 +466,11 @@ export const CONTENT: Content = {
         {
           id: "tel-004",
           name: "تلفن IP پاناسونیک KX-TGP600",
+          model: "KX-TGP600",
           cover: telephoneImg,
           category: "تلفن‌های IP",
           brand: "Panasonic",
+          shortDescription: "تلفن IP بی‌سیم با قابلیت اتصال هم‌زمان ۶ گوشی و کیفیت صدای HD",
           description: "تلفن IP بی‌سیم پاناسونیک KX-TGP600 با قابلیت اتصال هم‌زمان ۶ گوشی. پشتیبانی از ۲ خط SIP هم‌زمان با کیفیت صدای HD. دارای پایه شارژر با برد بالا و قابلیت نصب روی دیوار. مدیریت تماس پیشرفته با دفترچه تلفن ۲۰۰۰ شماره.",
           features: ["۶ گوشی هم‌زمان", "۲ خط SIP", "کیفیت صدای HD", "دفترچه ۲۰۰۰ شماره", "برد بالا", "قابلیت نصب روی دیوار"],
           specifications: [
@@ -472,9 +487,11 @@ export const CONTENT: Content = {
         {
           id: "tel-005",
           name: "تلفن IP یاستار W53P",
+          model: "W53P",
           cover: telephoneImg,
           category: "تلفن‌های IP",
           brand: "Yeastar",
+          shortDescription: "تلفن IP رومیزی حرفه‌ای با صفحه‌نمایش ۲.۸ اینچ رنگی و ۴ خط SIP",
           description: "تلفن IP رومیزی یاستار W53P با طراحی حرفه‌ای و صفحه‌نمایش ۲.۸ اینچ رنگی. پشتیبانی از ۴ خط SIP هم‌زمان با کیفیت صدای HD. دارای ۲۴ کلید قابل برنامه‌ریزی، بلندگوی قوی و PoE. مناسب برای مدیران و کارشناسان فروش.",
           features: ["۴ خط SIP", "صفحه ۲.۸ اینچ رنگی", "۲۴ کلید قابل برنامه‌ریزی", "کیفیت صدای HD", "PoE", "بلوتوث"],
           specifications: [
@@ -491,9 +508,11 @@ export const CONTENT: Content = {
         {
           id: "tel-006",
           name: "تلفن IP گرنداستریم GXP2170",
+          model: "GXP2170",
           cover: telephoneImg,
           category: "تلفن‌های IP",
           brand: "Grandstream",
+          shortDescription: "تلفن IP حرفه‌ای با ۱۲ خط SIP، صفحه ۴.۳ اینچ رنگی و ۴۸ کلید BLF",
           description: "تلفن IP حرفه‌ای گرنداستریم GXP2170 با ۱۲ خط SIP و صفحه ۴.۳ اینچ رنگی. دارای ۴۸ کلید قابل برنامه‌ریزی با قابلیت blf. پشتیبانی از ۵ کنفرانس هم‌زمان و کیفیت صدای HD. مناسب برای مراکز تماس و دفاتر بزرگ.",
           features: ["۱۲ خط SIP", "صفحه ۴.۳ اینچ رنگی", "۴۸ کلید BLF", "۵ کنفرانس هم‌زمان", "کیفیت صدای HD", "PoE"],
           specifications: [
@@ -510,9 +529,11 @@ export const CONTENT: Content = {
         {
           id: "tel-007",
           name: "گیت‌وی VoIP یاستار TA1600",
+          model: "TA1600",
           cover: telephoneImg,
           category: "گیت‌وی و تجهیزات شبکه",
           brand: "Yeastar",
+          shortDescription: "گیت‌وی VoIP با ۱۶ پورت آنالوگ برای اتصال خطوط سنتی به شبکه IP",
           description: "گیت‌وی VoIP یاستار TA1600 با ۱۶ پورت آنالوگ برای اتصال خطوط سنتی به شبکه IP. پشتیبانی از پروتکل‌های SIP و IAX2 با قابلیت تبدیل ۱۶ خط آنالوگ به VoIP. مناسب برای سازمان‌هایی که نیاز به اتصال سیستم‌های تلفنی سنتی به شبکه IP دارند.",
           features: ["۱۶ پورت آنالوگ", "پشتیبانی SIP/IAX2", "کیفیت صدای HD", "مدیریت تحت وب", "سازگاری با همه PBXها", "قابلیت نصب روی رک"],
           specifications: [
@@ -529,9 +550,11 @@ export const CONTENT: Content = {
         {
           id: "tel-008",
           name: "کابل شبکه CAT6 و اکسسوری",
+          model: "CAT6",
           cover: heroBg,
           category: "گیت‌وی و تجهیزات شبکه",
           brand: "Generic",
+          shortDescription: "مجموعه کابل و اکسسوری شبکه CAT6 با کیفیت بالا برای شبکه‌های تلفنی IP",
           description: "مجموعه کابل و اکسسوری شبکه CAT6 با کیفیت بالا شامل کابل‌های پچ کورد، کانکتور RJ45، کیستون جک و پچ پنل. مناسب برای نصب و راه‌اندازی شبکه‌های تلفنی تحت IP با سرعت ۱ گیگابیت بر ثانیه.",
           features: ["استاندارد CAT6", "سرعت ۱ گیگابیت", "کابل‌های با کیفیت", "کانکتور طلایی", "کیستون جک", "پچ پنل ۱۹ اینچ"],
           specifications: [
@@ -929,13 +952,22 @@ export const CONTENT: Content = {
       title: "Telecom Equipment",
       subtitle: "PBX Systems, IP Phones, and Professional Communication Equipment",
       categories: ["PBX Systems", "IP Phones", "Gateway & Network Equipment"],
+      applications: [
+        { icon: "Building2", title: "Office", desc: "Professional internal and external communication for offices and organizations" },
+        { icon: "Headphones", title: "Call Centers", desc: "Inbound and outbound call management with advanced reporting" },
+        { icon: "Hotel", title: "Hotels", desc: "Integrated telephone systems for hotels with hospitality features" },
+        { icon: "Factory", title: "Factories", desc: "Durable and reliable industrial communication for production environments" },
+        { icon: "Store", title: "Commercial Buildings", desc: "Centralized telephone network for commercial complexes and towers" },
+      ],
       products: [
         {
           id: "tel-001",
           name: "Panasonic KX-NS500 PBX System",
+          model: "KX-NS500",
           cover: telephoneImg,
           category: "PBX Systems",
           brand: "Panasonic",
+          shortDescription: "Advanced PBX system for small to medium businesses supporting up to 64 extensions",
           description: "Advanced Panasonic KX-NS500 PBX system designed for small to medium businesses. Supports up to 64 extensions with hybrid analog, digital, and IP line capabilities. Features built-in SIP trunking, audio/video conferencing, and CRM integration.",
           features: ["Up to 64 extensions", "Built-in SIP trunking", "Audio & video conferencing", "CRM integration", "Remote management", "Call recording"],
           specifications: [
@@ -952,9 +984,11 @@ export const CONTENT: Content = {
         {
           id: "tel-002",
           name: "Yeastar S20 VoIP PBX",
+          model: "S20",
           cover: telephoneImg,
           category: "PBX Systems",
           brand: "Yeastar",
+          shortDescription: "IP-based telephone system with on-premise or cloud deployment supporting 50 concurrent users",
           description: "Yeastar S20 VoIP PBX is an IP-based telephone system with on-premise or cloud deployment. Supports up to 50 concurrent users with advanced features including voicemail, IVR, call recording, and conferencing. Easy management via web interface.",
           features: ["50 concurrent users", "On-premise or cloud", "Voicemail & IVR", "Call recording", "SIP trunk connectivity", "Web-based management"],
           specifications: [
@@ -971,9 +1005,11 @@ export const CONTENT: Content = {
         {
           id: "tel-003",
           name: "Grandstream UCM6302 IP PBX",
+          model: "UCM6302",
           cover: telephoneImg,
           category: "PBX Systems",
           brand: "Grandstream",
+          shortDescription: "Powerful IP PBX supporting 500 users and 60 concurrent calls with advanced UC features",
           description: "Grandstream UCM6302 IP PBX supporting up to 500 users and 60 concurrent calls. Advanced Unified Communications features including video conferencing, Wave app integration, and HD voice quality.",
           features: ["500 users", "60 concurrent calls", "Unified Communications", "Video Conferencing", "Wave App integration", "HD voice quality"],
           specifications: [
@@ -990,9 +1026,11 @@ export const CONTENT: Content = {
         {
           id: "tel-004",
           name: "Panasonic KX-TGP600 IP Phone",
+          model: "KX-TGP600",
           cover: telephoneImg,
           category: "IP Phones",
           brand: "Panasonic",
+          shortDescription: "Cordless IP phone supporting up to 6 handsets simultaneously with HD voice quality",
           description: "Panasonic KX-TGP600 cordless IP phone with support for up to 6 handsets simultaneously. 2 concurrent SIP lines with HD voice quality. Extended range charger base with wall-mountable design. Phone book capacity of 2000 entries.",
           features: ["6 simultaneous handsets", "2 SIP lines", "HD voice quality", "2000-entry phonebook", "Extended range", "Wall-mountable"],
           specifications: [
@@ -1009,9 +1047,11 @@ export const CONTENT: Content = {
         {
           id: "tel-005",
           name: "Yeastar W53P IP Phone",
+          model: "W53P",
           cover: telephoneImg,
           category: "IP Phones",
           brand: "Yeastar",
+          shortDescription: "Professional desktop IP phone with 2.8-inch color display and 4 SIP lines",
           description: "Yeastar W53P professional desktop IP phone with 2.8-inch color display. Supports 4 SIP lines simultaneously with HD voice quality. Features 24 programmable keys, powerful speakerphone, and PoE support.",
           features: ["4 SIP lines", "2.8\" color display", "24 programmable keys", "HD voice quality", "PoE support", "Bluetooth"],
           specifications: [
@@ -1028,9 +1068,11 @@ export const CONTENT: Content = {
         {
           id: "tel-006",
           name: "Grandstream GXP2170 IP Phone",
+          model: "GXP2170",
           cover: telephoneImg,
           category: "IP Phones",
           brand: "Grandstream",
+          shortDescription: "Professional IP phone with 12 SIP lines, 4.3-inch color display, and 48 BLF keys",
           description: "Grandstream GXP2170 professional IP phone with 12 SIP lines and 4.3-inch color display. Features 48 programmable BLF keys. Supports 5-way conferencing and HD voice quality. Ideal for call centers and large offices.",
           features: ["12 SIP lines", "4.3\" color display", "48 BLF keys", "5-way conferencing", "HD voice quality", "PoE support"],
           specifications: [
@@ -1047,9 +1089,11 @@ export const CONTENT: Content = {
         {
           id: "tel-007",
           name: "Yeastar TA1600 VoIP Gateway",
+          model: "TA1600",
           cover: telephoneImg,
           category: "Gateway & Network Equipment",
           brand: "Yeastar",
+          shortDescription: "VoIP gateway with 16 analog ports for connecting traditional phone lines to IP networks",
           description: "Yeastar TA1600 VoIP Gateway with 16 analog ports for connecting traditional phone lines to IP networks. Supports SIP and IAX2 protocols. Converts 16 analog lines to VoIP. Ideal for organizations migrating to IP telephony.",
           features: ["16 analog ports", "SIP/IAX2 support", "HD voice quality", "Web-based management", "PBX compatibility", "Rack-mountable"],
           specifications: [
@@ -1066,9 +1110,11 @@ export const CONTENT: Content = {
         {
           id: "tel-008",
           name: "CAT6 Network Cable & Accessory Kit",
+          model: "CAT6",
           cover: heroBg,
           category: "Gateway & Network Equipment",
           brand: "Generic",
+          shortDescription: "High-quality CAT6 network cable and accessory kit for IP-based telephone networks",
           description: "High-quality CAT6 network cable and accessory kit including patch cords, RJ45 connectors, keystone jacks, and patch panels. Perfect for setting up IP-based telephone networks with 1 Gbps speed capability.",
           features: ["CAT6 standard", "1 Gbps speed", "High-quality cables", "Gold-plated connectors", "Keystone jacks", "19-inch patch panel"],
           specifications: [

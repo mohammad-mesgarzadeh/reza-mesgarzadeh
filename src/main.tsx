@@ -6,6 +6,7 @@ import App from "./app/App.tsx";
 import NotFound from "./app/components/pages/NotFound.tsx";
 import "./styles/index.css";
 
+const TelecomProductDetail = lazy(() => import("./app/components/pages/TelecomProductDetail.tsx"));
 const ProductDetail = lazy(() => import("./app/components/pages/ProductDetail.tsx"));
 const Products = lazy(() => import("./app/components/pages/Products.tsx"));
 const InstallationMaintenance = lazy(() => import("./app/components/pages/InstallationMaintenance.tsx"));
@@ -25,7 +26,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/products" element={<Suspense fallback={fallback}><Products /></Suspense>} />
-          <Route path="/products/:id" element={<Suspense fallback={fallback}><ProductDetail /></Suspense>} />
+          <Route path="/products/:id" element={<Suspense fallback={fallback}><TelecomProductDetail /></Suspense>} />
           <Route path="/installation-maintenance" element={<Suspense fallback={fallback}><InstallationMaintenance /></Suspense>} />
           <Route path="/training" element={<Suspense fallback={fallback}><Training /></Suspense>} />
           <Route path="/scale-models" element={<Suspense fallback={fallback}><ScaleModels /></Suspense>} />

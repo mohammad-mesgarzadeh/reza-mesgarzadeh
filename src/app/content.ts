@@ -1,22 +1,28 @@
 import { Content } from "./types";
-import telephoneImg from "./assets/telephone.avif";
+import telephoneImg from "./assets/telephone_11zon.webp";
 import heroBg from "./assets/hero.webp";
-import GoldenEiffelTower1 from "./assets/GoldenEiffelTower/IMG_20250507_145011.jpg";
-import GoldenEiffelTower2 from "./assets/GoldenEiffelTower/IMG_20250507_145113.jpg";
-import GoldenEiffelTower3 from "./assets/GoldenEiffelTower/IMG_20250507_145313.jpg";
-import BronzeEiffelTower1 from "./assets/BronzeEiffelTower/IMG_20250508_173939.jpg";
-import BronzeEiffelTower2 from "./assets/BronzeEiffelTower/IMG_20250508_174152.jpg";
-import BronzeEiffelTower3 from "./assets/BronzeEiffelTower/IMG_20250508_174517.jpg";
-import Triangular1 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707.jpg";
-import Triangular2 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841.jpg";
-import FourLeg1 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911.jpg";
-import FourLeg2 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020.jpg";
-import AdvancedBracedTelecomTower1 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185546.jpg";
-import AdvancedBracedTelecomTower2 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185555.jpg";
-import DoubleTowerPowerTransmission1 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130446.jpg";
-import DoubleTowerPowerTransmission2 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130510.jpg";
-import HighVoltage1 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181109.jpg";
-import HighVoltage2 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181336.jpg";
+import GoldenEiffelTower1 from "./assets/GoldenEiffelTower/IMG_20250507_145011_11zon.webp";
+import GoldenEiffelTower2 from "./assets/GoldenEiffelTower/IMG_20250507_145113_11zon.webp";
+import GoldenEiffelTower3 from "./assets/GoldenEiffelTower/IMG_20250507_145313_11zon.webp";
+import BronzeEiffelTower1 from "./assets/BronzeEiffelTower/IMG_20250508_173939_11zon.webp";
+import BronzeEiffelTower2 from "./assets/BronzeEiffelTower/IMG_20250508_174152_11zon.webp";
+import BronzeEiffelTower3 from "./assets/BronzeEiffelTower/IMG_20250508_174517_11zon.webp";
+import Triangular1 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp";
+import Triangular2 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp";
+import FourLeg1 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp";
+import FourLeg2 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp";
+import AdvancedBracedTelecomTower1 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp";
+import AdvancedBracedTelecomTower2 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp";
+import DoubleTowerPowerTransmission1 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp";
+import DoubleTowerPowerTransmission2 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp";
+import HighVoltage1 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp";
+import HighVoltage2 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181336_11zon.webp";
+import ns5001 from "./assets/products/kx-ns500/panasonic-kx-ns500-systems_6_11zon.webp";
+import ns5002 from "./assets/products/kx-ns500/kx-ns500-033_5_11zon.webp";
+import ns5003 from "./assets/products/kx-ns500/kx-ns500-09_4_11zon.webp";
+import ns5004 from "./assets/products/kx-ns500/kx-ns500-08_3_11zon.webp";
+import ns5005 from "./assets/products/kx-ns500/kx-ns500-07_2_11zon.webp";
+import ns5006 from "./assets/products/kx-ns500/kx-ns500-05_1_11zon.webp";
 export const CONTENT: Content = {
   fa: {
     dir: "rtl",
@@ -400,27 +406,47 @@ export const CONTENT: Content = {
         { icon: "Store", title: "ساختمان‌های تجاری", desc: "شبکه تلفنی متمرکز برای مجتمع‌ها و برج‌های تجاری" },
       ],
       products: [
-        {
-          id: "tel-001",
-          name: "سیستم PBX پاناسونیک KX-NS500",
-          model: "KX-NS500",
-          cover: telephoneImg,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سیستم PBX پیشرفته مناسب کسب‌وکارهای کوچک تا متوسط با پشتیبانی از ۶۴ داخلی",
-          description: "سیستم PBX پیشرفته پاناسونیک KX-NS500 مناسب برای کسب‌وکارهای کوچک تا متوسط. پشتیبانی از حداکثر ۶۴ داخلی با قابلیت ترکیب خطوط آنالوگ، دیجیتال و IP. دارای قابلیت SIP trunking، کنفرانس صوتی و تصویری، و یکپارچه‌سازی با نرم‌افزارهای مدیریت تماس.",
-          features: ["پشتیبانی از ۶۴ داخلی", "SIP trunking داخلی", "کنفرانس صوتی و تصویری", "یکپارچه‌سازی با CRM", "مدیریت از راه دور", "ضبط مکالمات"],
-          specifications: [
-            { label: "ظرفیت", value: "۶۴ داخلی" },
-            { label: "خطوط SIP", value: "۳۲ خط" },
-            { label: "پورت آنالوگ", value: "۸ پورت" },
-            { label: "پورت دیجیتال", value: "۸ پورت" },
-            { label: "برق مصرفی", value: "۱۰۰-۲۴۰ ولت" },
-            { label: "نوع", value: "هیبریدی (IP/آنالوگ/دیجیتال)" },
-          ],
-          images: [telephoneImg, heroBg],
-          price: "تماس برای قیمت",
-        },
+       {
+  id: "tel-001",
+  name: "سیستم سانترال پاناسونیک KX-NS500",
+  model: "KX-NS500",
+  cover: telephoneImg,
+  category: "سیستم‌های سانترال",
+  brand: "Panasonic",
+
+  shortDescription:
+    "سانترال هیبریدی تحت شبکه مناسب کسب‌وکارهای کوچک و متوسط با قابلیت توسعه و پشتیبانی از خطوط آنالوگ، دیجیتال و IP.",
+
+  description:
+    "پاناسونیک KX-NS500 یک سیستم سانترال هیبریدی پیشرفته برای شرکت‌ها، سازمان‌ها و کسب‌وکارهای کوچک تا متوسط است. این دستگاه امکان استفاده هم‌زمان از خطوط آنالوگ، دیجیتال و VoIP را فراهم می‌کند و با قابلیت توسعه بالا، پاسخگوی نیازهای ارتباطی در حال رشد سازمان‌ها خواهد بود. پشتیبانی از SIP Trunk، مدیریت تماس، صندوق صوتی، اتصال تلفن‌های IP و مدیریت از راه دور از مهم‌ترین ویژگی‌های این مرکز تلفن است.",
+
+  features: [
+    "پشتیبانی از خطوط آنالوگ، دیجیتال و IP",
+    "قابلیت اتصال SIP Trunk",
+    "پشتیبانی از تلفن‌های تحت شبکه",
+    "مدیریت و برنامه‌ریزی از راه دور",
+    "قابلیت ضبط مکالمات",
+    "صندوق صوتی و مدیریت پیام‌ها",
+    "قابلیت توسعه متناسب با نیاز سازمان",
+    "مناسب برای دفاتر و شرکت‌های متوسط"
+  ],
+
+  specifications: [
+    { label: "نوع سیستم", value: "سانترال هیبریدی IP" },
+    { label: "حداکثر ظرفیت داخلی", value: "تا ۲۸۸ داخلی" },
+    { label: "حداکثر ظرفیت خطوط شهری", value: "تا ۲۵۶ خط" },
+    { label: "پشتیبانی از SIP Trunk", value: "دارد" },
+    { label: "پشتیبانی از تلفن IP", value: "دارد" },
+    { label: "مدیریت از راه دور", value: "دارد" },
+    { label: "صندوق صوتی", value: "قابل پشتیبانی" },
+    { label: "منبع تغذیه", value: "100-240V AC" },
+    { label: "کاربری", value: "اداری، شرکتی و سازمانی" }
+  ],
+
+  images: [ns5001, ns5002, ns5003, ns5004, ns5005, ns5006],
+
+  price: "تماس برای قیمت",
+},
         {
           id: "tel-002",
           name: "VoIP PBX یاستار S20",

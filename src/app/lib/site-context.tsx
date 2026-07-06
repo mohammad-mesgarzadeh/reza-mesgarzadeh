@@ -12,7 +12,7 @@ interface SiteContextValue {
 const SiteContext = createContext<SiteContextValue | null>(null);
 
 export function SiteProvider({ children }: { children: ReactNode }) {
-  const [dark, setDark] = useState(true);
+const [dark, setDark] = useState(false);
   const [lang, setLang] = useState<Lang>("fa");
   const phoneNumber = "09123254266";
 

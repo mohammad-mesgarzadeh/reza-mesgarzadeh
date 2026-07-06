@@ -75,7 +75,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
 
         <div className="relative max-w-5xl mx-auto">
           <div className="relative h-[400px] sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden bg-card border border-border/60 shadow-xl">
-            <AnimatePresence custom={direction} mode="wait">
+            <AnimatePresence custom={direction} mode="sync">
               <motion.div
                 key={current}
                 custom={direction}
@@ -90,7 +90,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                   <img
                     src={product.cover}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain lg:object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-card/60 lg:via-transparent lg:to-transparent" />
                 </div>
@@ -160,9 +160,8 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  i === current ? "bg-accent w-8" : "bg-border hover:bg-muted-foreground/40"
-                }`}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === current ? "bg-accent w-8" : "bg-border hover:bg-muted-foreground/40"
+                  }`}
                 aria-label={`Go to slide ${i + 1}`}
               />
             ))}

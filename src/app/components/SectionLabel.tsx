@@ -28,7 +28,9 @@ export function SectionLabel({
       <span
         className={cn(
           "text-xs font-semibold uppercase tracking-[0.15em]",
-          light ? "text-primary-foreground/60" : "text-muted-foreground"
+          light
+            ? "text-primary-foreground/60"
+            : "text-foreground/80"
         )}
       >
         {label}

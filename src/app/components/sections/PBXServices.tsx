@@ -3,7 +3,7 @@ import { cn } from "../ui/utils";
 import { SectionLabel } from "../SectionLabel";
 import { iconMap } from "../icons";
 import type { PBXSectionContent } from "../../types";
-import telephone from "../../assets/telephone.avif";
+import telephone from "../../assets/telephone_11zon.webp";
 
 interface PBXServicesProps {
   content: PBXSectionContent;

@@ -78,9 +78,9 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
             {content.subheadline}
           </h2>
 
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">
-            {content.desc}
-          </p>
+        <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mb-10 max-w-xl">
+  {content.desc}
+</p>
 
           <div
             className={cn(

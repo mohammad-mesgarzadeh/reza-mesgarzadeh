@@ -148,6 +148,27 @@ function ProductHero({
   onImageClick: () => void;
 }) {
   const images = product.images;
+  const currentImage = images.length > 0 && images[selectedThumb] ? images[selectedThumb] : product.cover;
+
+  if (images.length === 0) {
+    return (
+      <div className="space-y-4">
+        <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-secondary">
+          <img
+            src={product.cover}
+            alt={product.name}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-card/40 via-transparent to-transparent" />
+          <div className="absolute top-4 left-4">
+            <Badge className="bg-card/90 backdrop-blur-sm text-accent border border-accent/20 text-xs px-3 py-1.5">
+              {product.category}
+            </Badge>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">
@@ -158,7 +179,7 @@ function ProductHero({
         <AnimatePresence mode="wait">
           <motion.img
             key={selectedThumb}
-            src={images[selectedThumb]}
+            src={currentImage}
             alt={product.name}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -179,7 +200,7 @@ function ProductHero({
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
-            {images.length > 0 ? `1 / ${images.length}` : "0 / 0"}
+            {selectedThumb + 1} / {images.length}
           </span>
         </div>
 
@@ -207,6 +228,7 @@ function ProductHero({
             <img
               src={img}
               alt={`${product.name} view ${i + 1}`}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </button>
@@ -517,14 +539,14 @@ export default function ProductDetail() {
   }, [navigate]);
 
   const handlePrevImage = useCallback(() => {
-    if (!product) return;
+    if (!product || product.images.length === 0) return;
     setSelectedThumb((prev) =>
       prev === 0 ? product.images.length - 1 : prev - 1,
     );
   }, [product]);
 
   const handleNextImage = useCallback(() => {
-    if (!product) return;
+    if (!product || product.images.length === 0) return;
     setSelectedThumb((prev) =>
       prev === product.images.length - 1 ? 0 : prev + 1,
     );
@@ -533,6 +555,12 @@ export default function ProductDetail() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [id]);
+
+  useEffect(() => {
+    if (product && selectedThumb >= product.images.length) {
+      setSelectedThumb(0);
+    }
+  }, [product, selectedThumb]);
 
   if (!id || !product) {
     return <NotFound />;
@@ -575,7 +603,7 @@ export default function ProductDetail() {
                 product={product}
                 onThumbnailClick={setSelectedThumb}
                 selectedThumb={selectedThumb}
-                onImageClick={() => setLightboxOpen(true)}
+                onImageClick={() => product.images.length > 0 && setLightboxOpen(true)}
               />
 
               <div className="space-y-4">

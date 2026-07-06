@@ -1,28 +1,7 @@
 import { Content } from "./types";
 import telephoneImg from "./assets/telephone_11zon.webp";
 import heroBg from "./assets/hero.webp";
-import GoldenEiffelTower1 from "./assets/GoldenEiffelTower/IMG_20250507_145011_11zon.webp";
-import GoldenEiffelTower2 from "./assets/GoldenEiffelTower/IMG_20250507_145113_11zon.webp";
-import GoldenEiffelTower3 from "./assets/GoldenEiffelTower/IMG_20250507_145313_11zon.webp";
-import BronzeEiffelTower1 from "./assets/BronzeEiffelTower/IMG_20250508_173939_11zon.webp";
-import BronzeEiffelTower2 from "./assets/BronzeEiffelTower/IMG_20250508_174152_11zon.webp";
-import BronzeEiffelTower3 from "./assets/BronzeEiffelTower/IMG_20250508_174517_11zon.webp";
-import Triangular1 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp";
-import Triangular2 from "./assets/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp";
-import FourLeg1 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp";
-import FourLeg2 from "./assets/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp";
-import AdvancedBracedTelecomTower1 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp";
-import AdvancedBracedTelecomTower2 from "./assets/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp";
-import DoubleTowerPowerTransmission1 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp";
-import DoubleTowerPowerTransmission2 from "./assets/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp";
-import HighVoltage1 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp";
-import HighVoltage2 from "./assets/HighVoltageTransmissionTowerModel/IMG_20250508_181336_11zon.webp";
-import ns5001 from "./assets/products/kx-ns500/panasonic-kx-ns500-systems_6_11zon.webp";
-import ns5002 from "./assets/products/kx-ns500/kx-ns500-033_5_11zon.webp";
-import ns5003 from "./assets/products/kx-ns500/kx-ns500-09_4_11zon.webp";
-import ns5004 from "./assets/products/kx-ns500/kx-ns500-08_3_11zon.webp";
-import ns5005 from "./assets/products/kx-ns500/kx-ns500-07_2_11zon.webp";
-import ns5006 from "./assets/products/kx-ns500/kx-ns500-05_1_11zon.webp";
+
 export const CONTENT: Content = {
   fa: {
     dir: "rtl",
@@ -73,16 +52,16 @@ export const CONTENT: Content = {
         {
           id: "97ca0282-454f-4b28-b8f7-4feb9f66289e",
           name: "ماکت برج ایفل طلایی",
-          cover: GoldenEiffelTower1,
+          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
           scale: "1:390",
           material: "ورق سفید گالوانیزه",
           useCase: "پروژه‌های مهندسی، آموزشی و نمایشگاهی",
           category: "ماکت‌های معماری",
           price: "تماس برای قیمت",
           images: [
-            GoldenEiffelTower1,
-            GoldenEiffelTower2,
-            GoldenEiffelTower3,
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145113_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145313_11zon.webp`,
           ],
           description:
             "ماکت برج ایفل با دقت ساخت بالا و طراحی مهندسی دقیق بر اساس نمونه واقعی ساخته شده است. این ماکت برای استفاده در پروژه‌های دانشجویی، ارائه‌های مهندسی، نمایشگاه‌های تخصصی و کاربردهای دکوراتیو طراحی شده و تمامی جزئیات سازه اصلی برج ایفل را در مقیاس کوچک بازسازی می‌کند. کیفیت ساخت بالا، تعداد قطعات زیاد و اجرای دقیق جزئیات، این محصول را به گزینه‌ای مناسب برای کلکسیونرها، دانشجویان و شرکت‌های مهندسی تبدیل کرده است.",
@@ -102,16 +81,16 @@ export const CONTENT: Content = {
         {
           id: "292829cb-5e64-440b-8416-b9e593c4808a",
           name: "ماکت برج ایفل برنزی",
-          cover: BronzeEiffelTower1,
+          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
           scale: "1:340",
           material: "ورق سفید گالوانیزه",
           useCase: "دکوراسیون، نمایشگاهی و هدیه",
           category: "ماکت‌های معماری",
           price: "تماس برای قیمت",
           images: [
-            BronzeEiffelTower1,
-            BronzeEiffelTower2,
-            BronzeEiffelTower3,
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_174152_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_174517_11zon.webp`,
           ],
           description:
             "ماکت فلزی برج ایفل با الهام از نماد جاودانه شهر پاریس و با دقت بالا در جزئیات طراحی و ساخت شده است. این اثر حاصل بیش از ۷۰ ساعت کار دقیق و هنرمندانه بوده و تمامی اجزای سازه اصلی برج ایفل را با ظرافت بازسازی می‌کند. ترکیب رنگ‌های مسی، نقره‌ای و فیروزه‌ای جلوه‌ای خاص و لوکس به این ماکت بخشیده و آن را به گزینه‌ای ایده‌آل برای دکوراسیون منزل، گالری‌ها، فروشگاه‌ها و همچنین هدیه‌ای ارزشمند و ماندگار تبدیل کرده است. این محصول تنها یک ماکت نیست، بلکه بازآفرینی بخشی از هویت و شکوه پاریس در قالب یک اثر هنری فلزی است.",
@@ -130,15 +109,15 @@ export const CONTENT: Content = {
         {
           id: "82095c1d-1ba0-4f3f-8112-90f94a1ef2ff",
           name: "ماکت دکل مخابراتی خودایستا سه‌وجهی",
-          cover: Triangular1,
+          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
           scale: "1:50",
           material: "فلز",
           useCase: "آموزشی، نمایشگاهی و کلکسیونی",
           category: "ماکت دکل مخابراتی",
           price: "تماس برای قیمت",
           images: [
-            Triangular1,
-            Triangular2,
+            `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp`,
           ],
           description:
             "ماکت دکل مخابراتی خودایستا سه‌وجهی با طراحی دقیق مهندسی و جزئیات حرفه‌ای ساخته شده است. این محصول به‌صورت کاملاً دست‌ساز تولید شده و ساخت آن بیش از ۳۰ ساعت زمان برده است. سازه خرپایی سه‌وجهی، طبقات متعدد و اجرای دقیق اتصالات، این ماکت را به گزینه‌ای مناسب برای مهندسان، دانشجویان، دفاتر فنی، نمایشگاه‌های تخصصی و کلکسیونرهای سازه‌های صنعتی تبدیل کرده است. کیفیت ساخت بالا و ظاهر چشمگیر آن، جلوه‌ای حرفه‌ای به هر محیطی می‌بخشد.",
@@ -156,15 +135,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682998",
           name: "ماکت دکل خودایستا پایه چهارگوش",
-          cover: FourLeg1,
+          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
           category: "ماکت دکل مخابراتی",
           price: "تماس برای قیمت",
           images: [
-            FourLeg1,
-            FourLeg2,
+            `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp`,
           ],
           description:
             "ماکت دکل مخابراتی مشبک با طراحی مهندسی‌شده و ساخت دقیق، نمونه‌ای حرفه‌ای از دکل‌های واقعی مخابراتی است. این ماکت از ورق گالوانیزه ضد زنگ ساخته شده و با ۳۱۲ قطعه مجزا، تمامی جزئیات سازه‌ای یک دکل خودایستا را به‌صورت کامل شبیه‌سازی می‌کند. کیفیت ساخت بالا، استحکام مناسب و ظاهر صنعتی آن باعث شده تا گزینه‌ای ایده‌آل برای پروژه‌های دانشجویی، آموزش‌های فنی، نمایشگاه‌های تخصصی و کلکسیون سازه‌های مهندسی باشد.",
@@ -182,15 +161,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682992",
           name: "دکل مخابراتی مهاربندی ویژه",
-          cover: AdvancedBracedTelecomTower1,
+          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
           category: "ماکت دکل مخابراتی",
           price: "تماس برای قیمت",
           images: [
-            AdvancedBracedTelecomTower1,
-            AdvancedBracedTelecomTower2,
+            `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp`,
           ],
           description:
             "ماکت دکل مخابراتی مشبک با طراحی مهندسی‌شده و ساخت دقیق، نمونه‌ای حرفه‌ای از دکل‌های واقعی مخابراتی است. این ماکت از ورق گالوانیزه ضد زنگ ساخته شده و با ۳۱۲ قطعه مجزا، تمامی جزئیات سازه‌ای یک دکل خودایستا را به‌صورت کامل شبیه‌سازی می‌کند. کیفیت ساخت بالا، استحکام مناسب و ظاهر صنعتی آن باعث شده تا گزینه‌ای ایده‌آل برای پروژه‌های دانشجویی، آموزش‌های فنی، نمایشگاه‌های تخصصی و کلکسیون سازه‌های مهندسی باشد.",
@@ -207,15 +186,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682991",
           name: "ماکت خط انتقال دو دکله",
-          cover: DoubleTowerPowerTransmission1,
+          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه مقاوم",
           useCase: "آموزشی، صنعتی و دکوراتیو",
           category: "ماکت دکل برق",
           price: "تماس برای قیمت",
           images: [
-            DoubleTowerPowerTransmission1,
-            DoubleTowerPowerTransmission2,
+            `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp`,
           ],
           description:
             "ماکت خط انتقال برق دو دکله با دقت بالا و جزئیات کامل بر اساس سازه‌های واقعی انتقال نیرو طراحی و ساخته شده است. هر دکل به صورت کاملاً دست‌ساز از ورقه گالوانیزه مقاوم تولید شده و تمامی اجزای اصلی از جمله مقره‌ها، سازه خرپایی و خطوط انتقال را شبیه‌سازی می‌کند. این محصول گزینه‌ای مناسب برای پروژه‌های آموزشی، نمایشگاه‌های صنعتی، دکوراسیون تخصصی و ماکت‌سازی مهندسی بوده و با کیفیت ساخت بالا و جزئیات دقیق، نمایی واقعی از خطوط انتقال برق فشار قوی را ارائه می‌دهد.",
@@ -233,15 +212,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682941",
           name: "ماکت دکل انتقال برق فشار قوی",
-          cover: HighVoltage1,
+          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه",
           useCase: "دکور صنعتی، پروژه‌های آموزشی و کلکسیونی",
           category: "ماکت دکل برق",
           price: "تماس برای قیمت",
           images: [
-            HighVoltage1,
-            HighVoltage2,
+            `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181336_11zon.webp`,
           ],
           description:
             "ماکت دکل انتقال برق فشار قوی با دقت بالا و جزئیات مهندسی کامل طراحی و ساخته شده است. این محصول با الهام از دکل‌های واقعی انتقال نیرو ساخته شده و تمامی اجزای اصلی سازه از جمله مقره‌ها، خرپاها و اتصالات را به‌صورت دقیق شبیه‌سازی می‌کند. کیفیت ساخت بالا، ظاهر حرفه‌ای و استفاده از ورقه گالوانیزه مقاوم، این ماکت را به گزینه‌ای مناسب برای دکورهای صنعتی، پروژه‌های دانشگاهی، نمایشگاه‌های تخصصی و مجموعه‌های کلکسیونی تبدیل کرده است.",
@@ -394,610 +373,610 @@ export const CONTENT: Content = {
       ],
       cta: "ثبت‌نام در دوره‌ها",
     },
-   telecomProducts: {
-  title: "تجهیزات مخابراتی پاناسونیک",
-  subtitle: "سیستم‌های سانترال آنالوگ و دیجیتال، تلفن‌های مدیریتی و کارت‌های ارتقا Panasonic",
-  categories: [
-    "سیستم‌های PBX", 
-    "تلفن‌های سانترال", 
-    "تلفن‌های دیجیتال", 
-    "کارت‌ها و تجهیزات جانبی"
-  ],
-  applications: [
-    { icon: "Building2", title: "دفاتر کار کوچک", desc: "ارتباطات داخلی پایدار و اقتصادی برای شرکت‌های نوپا" },
-    { icon: "Building", title: "سازمان‌های متوسط", desc: "مدیریت خطوط شهری و داخلی با ظرفیت بالا و پایداری ۱۰۰ درصدی" },
-    { icon: "Hotel", title: "هتل‌ها و بیمارستان‌ها", desc: "اتصال خطوط اتاق‌ها به اپراتور مرکزی با امکانات هتل‌داری سنتی" },
-    { icon: "Factory", title: "محیط‌های صنعتی", desc: "ارتباطات مخابراتی مقاوم در برابر نویز و قطع ارتباط در کارخانجات" },
-  ],
-  products: [
-    {
-      id: "pan-001",
-      name: "سانترال آنالوگ پاناسونیک KX-TES824",
-      model: "KX-TES824",
-      cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
-      category: "سیستم‌های PBX",
-      brand: "Panasonic",
-      shortDescription: "محبوب‌ترین و پایدارترین مرکز تلفن آنالوگ مناسب کسب‌وکارهای کوچک و متوسط",
-      description: "دستگاه سانترال پاناسونیک مدل KX-TES824 یک سیستم آنالوگ ایده‌آل برای دفاتر کار کوچک است. این دستگاه به صورت پیش‌فرض ظرفیت ۳ خط شهری و ۸ خط داخلی را دارد و قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی آنالوگ را دارا می‌باشد. پایداری فوق‌العاده بالا، قیمت اقتصادی و راه‌اندازی آسان از ویژگی‌های بارز این مدل است.",
-      features: [
-        "ظرفیت اولیه ۳ خط شهری و ۸ داخلی",
-        "قابلیت ارتقا تا ۸ خط شهری و ۲۴ داخلی",
-        "پشتیبانی از پیغام‌گیر دیزا (DISA) به صورت پیش‌فرض",
-        "توزیع یکنواخت تماس (UCD)",
-        "برنامه‌ریزی آسان از طریق کامپیوتر یا تلفن ۷۷۳۰",
-        "پشتیبانی از کالر آی‌دی (با نصب کارت ارتقا)"
+    telecomProducts: {
+      title: "تجهیزات مخابراتی پاناسونیک",
+      subtitle: "سیستم‌های سانترال آنالوگ و دیجیتال، تلفن‌های مدیریتی و کارت‌های ارتقا Panasonic",
+      categories: [
+        "سیستم‌های PBX",
+        "تلفن‌های سانترال",
+        "تلفن‌های دیجیتال",
+        "کارت‌ها و تجهیزات جانبی"
       ],
-      specifications: [
-        { label: "نوع سیستم", value: "Analog PBX" },
-        { label: "ظرفیت اولیه", value: "۳ خط شهری / ۸ داخلی" },
-        { label: "حداکثر ظرفیت", value: "۸ خط شهری / ۲۴ داخلی" },
-        { label: "کارت پیغام‌گیر (DISA)", value: "دارد (۱ کانال پیش‌فرض)" },
-        { label: "نحوه برنامه‌ریزی", value: "نرم‌افزار PC / تلفن اپراتوری" },
-        { label: "منبع تغذیه", value: "۲۲۰ ولت AC" }
+      applications: [
+        { icon: "Building2", title: "دفاتر کار کوچک", desc: "ارتباطات داخلی پایدار و اقتصادی برای شرکت‌های نوپا" },
+        { icon: "Building", title: "سازمان‌های متوسط", desc: "مدیریت خطوط شهری و داخلی با ظرفیت بالا و پایداری ۱۰۰ درصدی" },
+        { icon: "Hotel", title: "هتل‌ها و بیمارستان‌ها", desc: "اتصال خطوط اتاق‌ها به اپراتور مرکزی با امکانات هتل‌داری سنتی" },
+        { icon: "Factory", title: "محیط‌های صنعتی", desc: "ارتباطات مخابراتی مقاوم در برابر نویز و قطع ارتباط در کارخانجات" },
       ],
-      images: [
-        "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای استعلام قیمت"
+      products: [
+        {
+          id: "pan-001",
+          name: "سانترال آنالوگ پاناسونیک KX-TES824",
+          model: "KX-TES824",
+          cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "محبوب‌ترین و پایدارترین مرکز تلفن آنالوگ مناسب کسب‌وکارهای کوچک و متوسط",
+          description: "دستگاه سانترال پاناسونیک مدل KX-TES824 یک سیستم آنالوگ ایده‌آل برای دفاتر کار کوچک است. این دستگاه به صورت پیش‌فرض ظرفیت ۳ خط شهری و ۸ خط داخلی را دارد و قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی آنالوگ را دارا می‌باشد. پایداری فوق‌العاده بالا، قیمت اقتصادی و راه‌اندازی آسان از ویژگی‌های بارز این مدل است.",
+          features: [
+            "ظرفیت اولیه ۳ خط شهری و ۸ داخلی",
+            "قابلیت ارتقا تا ۸ خط شهری و ۲۴ داخلی",
+            "پشتیبانی از پیغام‌گیر دیزا (DISA) به صورت پیش‌فرض",
+            "توزیع یکنواخت تماس (UCD)",
+            "برنامه‌ریزی آسان از طریق کامپیوتر یا تلفن ۷۷۳۰",
+            "پشتیبانی از کالر آی‌دی (با نصب کارت ارتقا)"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "ظرفیت اولیه", value: "۳ خط شهری / ۸ داخلی" },
+            { label: "حداکثر ظرفیت", value: "۸ خط شهری / ۲۴ داخلی" },
+            { label: "کارت پیغام‌گیر (DISA)", value: "دارد (۱ کانال پیش‌فرض)" },
+            { label: "نحوه برنامه‌ریزی", value: "نرم‌افزار PC / تلفن اپراتوری" },
+            { label: "منبع تغذیه", value: "۲۲۰ ولت AC" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای استعلام قیمت"
+        },
+        {
+          id: "pan-002",
+          name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA100DBP",
+          model: "KX-TDA100DBP",
+          cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن ماژولار و پرقدرت دیجیتال برای سازمان‌ها و کارخانجات بزرگ",
+          description: "پاناسونیک KX-TDA100DBP یک سانترال کاملاً ماژولار و هوشمند است که بر پایه فناوری دیجیتال طراحی شده است. این دستگاه دارای ۷ اسلات آزاد جهت نصب انواع کارت‌های خطوط شهری (آنالوگ و PRI) و خطوط داخلی (دیجیتال و آنالوگ) است. این مرکز تلفن به دلیل پایداری بی‌پایان، انتخاب اول محیط‌های صنعتی و اداره‌های دولتی است.",
+          features: [
+            "ساختار کاملاً ماژولار با ۷ اسلات آزاد",
+            "پشتیبانی از خطوط دیجیتال (PRI - E1)",
+            "قابلیت اتصال تلفن‌های بی‌سیم DECT سانترال",
+            "پشتیبانی از ویژگی Caller ID روی تمام خطوط",
+            "کیفیت صدای دیجیتال و بدون نویز",
+            "امکان یکپارچه‌سازی با سیستم‌های پردازش صدا"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Digital PBX" },
+            { label: "تعداد اسلات آزاد", value: "۷ اسلات" },
+            { label: "حداکثر خطوط شهری", value: "Up to 120" },
+            { label: "حداکثر خطوط داخلی", value: "Up to 176" },
+            { label: "پشتیبانی از PRI (E1)", value: "دارد" },
+            { label: "ابعاد", value: "334x390x270 میلی‌متر" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-003",
+          name: "تلفن سانترال آنالوگ پاناسونیک KX-T7730",
+          model: "KX-T7730",
+          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های سانترال",
+          brand: "Panasonic",
+          shortDescription: "تلفن هایبرید کلاسیک مدیریتی و اپراتوری مخصوص سانترال ۸۲۴",
+          description: "تلفن KX-T7730 شناخته‌شده‌ترین تلفن سانترال در ایران است. این تلفن هایبرید دارای ۱۲ کلید قابل برنامه‌ریزی جهت تعریف خطوط شهری یا داخلی‌ها (BLF) است. از این تلفن برای برنامه‌ریزی دستی دستگاه سانترال KX-TES824 و همچنین به عنوان گوشی منشی/مدیر استفاده می‌شود.",
+          features: [
+            "نمایشگر تک خطی با قابلیت نمایش ۱۶ کاراکتر",
+            "۱۲ کلید حافظه قابل برنامه‌ریزی با نشانگر LED",
+            "بلندگوی دوطرفه قوی (Speakerphone)",
+            "کلیدهای اختصاصی جهت انتقال، هدایت و هولد تماس",
+            "امکان تنظیم زاویه پایه‌ گوشی",
+            "جک هدفون ۲.۵ میلی‌متری"
+          ],
+          specifications: [
+            { label: "نوع تلفن", value: "Hybrid Proprietary Phone" },
+            { label: "تعداد کلیدهای حافظه", value: "۱۲ کلید" },
+            { label: "نمایشگر", value: "۱ خطی LCD" },
+            { label: "قابلیت اتصال به دیوار", value: "دارد" },
+            { label: "رنگ‌بندی", value: "سفید / مشکی" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-004",
+          name: "تلفن دیجیتال پاناسونیک KX-DT543",
+          model: "KX-DT543",
+          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های دیجیتال",
+          brand: "Panasonic",
+          shortDescription: "تلفن دیجیتال کارشناسی با نمایشگر ۳ خطی و ۲۴ کلید حافظه",
+          description: "تلفن مدیریتی/کارشناسی KX-DT543 برای اتصال به سانترال‌های دیجیتال پاناسونیک (مانند سری TDA و TDE) طراحی شده است. این تلفن با کیفیت صدای شفاف دیجیتال، نمایشگر خوانا با نور پس‌زمینه و ۲۴ کلید قابل برنامه‌ریزی، راندمان کاری کارمندان را به شدت افزایش می‌دهد.",
+          features: [
+            "نمایشگر ۳ خطی با نور پس‌زمینه سفید",
+            "۲۴ کلید قابل برنامه‌ریزی برای خطوط و داخلی‌ها",
+            "بلندگوی دیجیتال تمام دوبلکس (Full Duplex)",
+            "پشتیبانی از کنسول افزایشی کلیدها (بدون نیاز به کارت اضافی)",
+            "کیفیت ساخت فوق‌العاده بالا و کلیدهای ارگونومیک"
+          ],
+          specifications: [
+            { label: "نوع بستر", value: "Digital (DLC Port)" },
+            { label: "تعداد کلید حافظه", value: "۲۴ کلید" },
+            { label: "نمایشگر", value: "۳ خطی با نور پس‌زمینه" },
+            { label: "پورت هدفتون", value: "دارد" },
+            { label: "تکنولوژی صدا", value: "Panasonic HD Voice" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-005",
+          name: "تلفن دیجیتال مدیریتی پاناسونیک KX-DT546",
+          model: "KX-DT546",
+          cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های دیجیتال",
+          brand: "Panasonic",
+          shortDescription: "تلفن دیجیتال فوق حرفه‌ای مدیریتی با نمایشگر بزرگ ۶ خطی",
+          description: "مدل KX-DT546 لوکس‌ترین و پیشرفته‌ترین تلفن دیجیتال سیم‌دار پاناسونیک است. این دستگاه دارای صفحه نمایش ۶ خطی بسیار بزرگ با نور پس‌زمینه است که مدیریت دفترچه تلفن و کالر آی‌دی را بسیار آسان می‌کند. این تلفن انتخاب نهایی مدیران ارشد سازمان‌ها است.",
+          features: [
+            "صفحه نمایش ۶ خطی بسیار بزرگ گرافیکی",
+            "۲۴ کلید قابل برنامه‌ریزی هوشمند با LED دو رنگ",
+            "صدا بلندگوی شفاف دیجیتال (Full Duplex)",
+            "پشتیبانی از افزونه Electronic Hook Switch (EHS)",
+            "طراحی مدرن و ارگونومیک مسابقه‌ای"
+          ],
+          specifications: [
+            { label: "نوع بستر", value: "Digital" },
+            { label: "کلید حافظه", value: "۲۴ کلید" },
+            { label: "مشخصات نمایشگر", value: "۶ خط گرافیکی با نور پس‌زمینه" },
+            { label: "قابلیت DXDP", value: "دارد (اتصال دو تلفن به یک پورت)" },
+            { label: "کشور سازنده", value: "ویتنام (اصلی)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-006",
+          name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS500",
+          model: "KX-TS500",
+          cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های سانترال",
+          brand: "Panasonic",
+          shortDescription: "تلفن رومیزی آنالوگ ساده، ارزان و بسیار بادوام برای خطوط داخلی معمولی",
+          description: "تلفن پاناسونیک KX-TS500 گزینه‌ای ایده‌آل و مقرون‌به‌صرفه برای خطوط داخلی معمولی (آنالوگ) در شرکت‌ها، اتاق‌های هتل یا بیمارستان‌ها است. این تلفن فاقد صفحه نمایش بوده اما به دلیل بدنه بسیار مقاوم و طول عمر بالا، سال‌ها بدون کوچک‌ترین خرابی کار می‌کند.",
+          features: [
+            "طراحی ساده، کوچک و بسیار کم‌جا",
+            "امکان تنظیم میزان ولوم صدای گوشی در ۶ سطح",
+            "کلید اختصاصی Redial جهت شماره‌گیری مجدد",
+            "پشتیبانی از هر دو حالت شماره‌گیری Tone و Pulse",
+            "امکان نصب آسان بر روی دیوار"
+          ],
+          specifications: [
+            { label: "نوع تلفن", value: "Standard Analog (Single Line)" },
+            { label: "نمایشگر", value: "ندارد" },
+            { label: "نیاز به باتری/برق", value: "ندارد (تغذیه از خط تلفن)" },
+            { label: "رنگ‌بندی متنوع", value: "سفید، مشکی، خاکستری، سرمه‌ای، قرمز" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-007",
+          name: "کارت ارتقا سانترال پاناسونیک KX-TE82483",
+          model: "KX-TE82483",
+          cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت افزایشی ۳ خط شهری و ۸ داخلی آنالوگ برای سانترال ۸۲۴",
+          description: "کارت ارتقای مدل KX-TE82483 پرفروش‌ترین کارت جانبی برای سانترال کوچک مدل KX-TES824 tactics. با قرار دادن این کارت روی برد اصلی دستگاه، ظرفیت اولیه سانترال شما از ۳ به ۶ خط شهری و از ۸ به ۱۶ خط داخلی آنالوگ ارتقا می‌یابد.",
+          features: [
+            "افزایش هم‌زمان ۳ خط شهری آنالوگ جدید",
+            "افزایش ۸ پورت داخلی آنالوگ برای اتصال تلفن‌های معمولی یا بی‌سیم",
+            "نصب به صورت Plug & Play داخل باکس سانترال",
+            "دارای سوکت‌های استاندارد RJ11 برای خروجی‌ها"
+          ],
+          specifications: [
+            { label: "دستگاه سازگار", value: "KX-TES824 / KX-TEM824" },
+            { label: "تعداد پورت شهری", value: "۳ پورت" },
+            { label: "تعداد پورت داخلی", value: "۸ پورت آنالوگ" },
+            { label: "نوع نصب", value: "اسلات ارتقا اول (Slot 1)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-008",
+          name: "کارت کالر آی دی سانترال پاناسونیک KX-TE82494",
+          model: "KX-TE82494",
+          cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت نمایشگر شماره (Caller ID) سه پورتی برای سانترال سری TE",
+          description: "برای اینکه خطوط شهری متصل به سانترال ۸۲۴ بتوانند شماره افراد تماس‌گیرنده را روی تلفن‌های سانترال (مانند ۷۷۳۰) نمایش دهند، نیاز به نصب کارت کالر آی‌دی KX-TE82494 دارید. هر کارت توانایی فعال‌سازی Caller ID را روی ۳ خط شهری دارا می‌باشد.",
+          features: [
+            "پشتیبانی ازسیستم نمایش شماره تلفن تماس‌گیرنده",
+            "سازگاری کامل با سیگنال‌های FSK و DTMF مخابرات ایران",
+            "ظرفیت پشتیبانی از ۳ خط شهری به ازای هر کارت"
+          ],
+          specifications: [
+            { label: "نوع قطعه", value: "Caller ID Card" },
+            { label: "ظرفیت خطوط", value: "۳ خط شهری" },
+            { label: "باکس سازگار", value: "KX-TES824" },
+            { label: "تکنولوژی", value: "FSK / DTMF" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-009",
+          name: "کارت داخلی دیجیتال ۱۶ پورت پاناسونیک KX-TDA1172",
+          model: "KX-TDA1172",
+          cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت ۱۶ پورت خطوط داخلی دیجیتال (DLC16) برای سانترال‌های سری TDA",
+          description: "کارت ارتقای مخابراتی KX-TDA1172 به شما این امکان را می‌دهد تا ۱۶ داخلی دیجیتال کاملاً مجزا به سانترال‌های بزرگ پاناسونیک اضافه کنید. این کارت برای راه‌اندازی تلفن‌های مدیریتی و کارشناسی سری DT (مانند DT543 و DT333) مورد استفاده قرار می‌گیرد.",
+          features: [
+            "تامین ۱۶ پورت خط داخلی دیجیتال با پایداری فرکانسی بالا",
+            "پشتیبانی از قابلیت DXDP (ارتقا مجازی ظرفیت پورت‌ها به ۳۲ داخلی)",
+            "مجهز به چراغ‌های وضعیت LED جهت عیب‌یابی سریع پورت‌ها",
+            "انتقال هم‌زمان صدا و دیتای نمایشگر بر روی زوج سیم مسی"
+          ],
+          specifications: [
+            { label: "کد تجاری کارت", value: "DLC16" },
+            { label: "تعداد پورت", value: "۱۶ پورت دیجیتال" },
+            { label: "سانترال‌های سازگار", value: "KX-TDA100 / TDA100D / TDA200" },
+            { label: "نوع کابل‌کشی خروجی", value: "۱ زوج سیم مسی آمفنول" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-010",
+          name: "کارت خطوط شهری آنالوگ ۸ پورت پاناسونیک KX-TDA1180",
+          model: "KX-TDA1180",
+          cover: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت افزایشی ۸ خط شهری آنالوگ مجهز به سیستم Caller ID داخلی",
+          description: "کارت ارتقا KX-TDA1180 پورت‌های ورودی خطوط شهری آنالوگ مخابرات را در سانترال‌های سری TDA افزایش می‌دهد. مزیت بزرگ این کارت، مجهز بودن پیش‌فرض آن به پردازنده کالر آی‌دی (Caller ID) بر روی هر ۸ پورت است و دیگر نیازی به خرید کارت آیدی جداگانه نخواهید داشت.",
+          features: [
+            "اتصال ۸ خط شهری آنالوگ جدید به سانترال",
+            "دارای قابلیت Caller ID پیش‌فرض روی تمام پورت‌ها",
+            "پشتیبانی از مدار محافظت در برابر نوسانات ناگهانی ولتاژ خطوط مخابرات",
+            "دارای پورت خروجی اضطراری در هنگام قطع برق (PFT)"
+          ],
+          specifications: [
+            { label: "کد تجاری کارت", value: "LCOT8" },
+            { label: "تعداد پورت شهری", value: "۸ پورت آنالوگ" },
+            { label: "سیستم کالر آی دی", value: "دارد (تعبیه شده روی برد)" },
+            { label: "سازگاری با سیستم", value: "KX-TDA100D / TDA100DBP" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-011",
+          name: "سانترال هایبرید پاناسونیک KX-TEM824",
+          model: "KX-TEM824",
+          cover: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80",
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن هایبرید پیشرفته با ظرفیت پایه ۶ خط شهری و ۱۶ داخلی",
+          description: "دستگاه سانترال مدل KX-TEM824 برادر بزرگ‌تر مدل ۸۲۴ معمولی است که به صورت کارخانه‌ای با گنجایش اولیه بالاتر تولید شده است. این سیستم قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی را دارا بوده و برای دفاتر پرتردد عالی است.",
+          features: [
+            "ظرفیت اولیه فیزیکی ۶ خط شهری و ۱۶ داخلی",
+            "پشتیبانی کامل از تلفن‌های هایبرید سری ۷۷",
+            "دارای سیستم تلفن گویای هوشمند پیش‌فرض",
+            "امکان اتصال باطری پشتیبان برای زمان قطع برق"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Advanced Hybrid" },
+            { label: "ظرفیت پایه", value: "۶ شهری / ۱۶ داخلی" },
+            { label: "حداکثر توسعه", value: "۸ شهری / ۲۴ داخلی" },
+            { label: "پورت برنامه‌ریزی", value: "USB / RS-232C" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-012",
+          name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA200",
+          model: "KX-TDA200",
+          cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "باکس سانترال دیجیتال پرظرفیت مجهز به ۱۱ اسلات سخت‌افزاری",
+          description: "مرکز تلفن صنعتی و فوق‌العاده پایدار KX-TDA200 طراحی شده برای سازمان‌ها، نهادهای دولتی و کارخانجات بزرگ که دارای تعداد بالایی خطوط شهری و پرسنل داخلی هستند. ساختار کاملاً ماژولار آزادی عمل بی‌نظیری به بخش IT سازمان می‌دهد.",
+          features: [
+            "دارای ۱۱ اسلات ماژولار آزاد برای انواع کارت‌ها",
+            "پشتیبانی کامل از خطوط دیجیتال PRI و خطوط شهری آنالوگ",
+            "امکان لینک سازی و شبکه کردن چند باکس مجزا",
+            "سوییچینگ بدون وقفه خطوط و پایداری سخت‌افزاری"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Digital Modular" },
+            { label: "تعداد اسلات آزاد", value: "۱۱ اسلات" },
+            { label: "حداکثر خطوط داخلی", value: "Up to 256" },
+            { label: "پشتیبانی از DECT", value: "دارد (بی‌سیم سانترال)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-013",
+          name: "سانترال انترپرایز پاناسونیک KX-TDA600",
+          model: "KX-TDA600",
+          cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "بزرگ‌ترین و پرظرفیت‌ترین مرکز تلفن دیجیتال سنتی پاناسونیک",
+          description: "سیستم KX-TDA600 غول سخت‌افزاری پاناسونیک در بستر سیستم‌های مخابراتی سنتی و دیجیتال است. این باکس پایه به تنهایی ظرفیت بالایی دارد و با اضافه شدن باکس‌های شیلف ارتقایی (TDA620) توانایی پشتیبانی تا بیش از ۱۰۰۰ خط داخلی را فراهم می‌کند.",
+          features: [
+            "باکس پایه انترپرایز با ظرفیت فوق‌سنگین",
+            "قابلیت اتصال به ۳ باکس شیلف ارتقایی مجزا",
+            "پشتیبانی از حجم عظیمی از کارت‌های دیجیتال و آنالوگ",
+            "ایده‌آل برای هتل‌های بزرگ، بیمارستان‌ها و پتروشیمی‌ها"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Enterprise Digital PBX" },
+            { label: "حداکثر داخلی‌ها", value: "بیش از ۱۰۰۰ پورت" },
+            { label: "تعداد اسلات باکس پایه", value: "۱۰ اسلات بزرگ" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-014",
+          name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
+          model: "KX-DT521",
+          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های دیجیتال",
+          brand: "Panasonic",
+          shortDescription: "تلفن دیجیتال کارمندی مجهز به پورت DXDP و ۸ کلید حافظه",
+          description: "تلفن دیجیتال رده اکونومی سری ۵۰۰ پاناسونیک که صدای فوق‌العاده باکیفیت HD را در بستری کاملاً دیجیتال و بدون نویز ارائه می‌دهد. این تلفن گزینه‌ای بسیار مناسب و مقرون به صرفه برای پرسنل اداری سازمان‌ها است.",
+          features: [
+            "نمایشگر ۱ خطی مجهز به نور پس‌زمینه سفید",
+            "۸ کلید میانبر قابل برنامه‌ریزی با چراغ زنده",
+            "پشتیبانی از پورت افزایشی سخت‌افزاری DXDP",
+            "بلندگوی دیجیتال با کیفیت صدای شفاف و رسا"
+          ],
+          specifications: [
+            { label: "نوع تلفن", value: "Standard Digital" },
+            { label: "تعداد کلید حافظه", value: "۸ کلید" },
+            { label: "نوع پورت اتصال", value: "DLC پورت دیجیتال" },
+            { label: "نمایشگر", value: "۱ خطی LCD" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-015",
+          name: "تلفن دیجیتال اقتصادی پاناسونیک KX-T7665",
+          model: "KX-T7665",
+          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های دیجیتال",
+          brand: "Panasonic",
+          shortDescription: "تلفن کارشناسی دیجیتال پرفروش با ۸ کلید دکمه حافظه شهری",
+          description: "یکی از مدل‌های کلاسیک، نوستالژیک و به شدت جان‌سخت پاناسونیک در رده دیجیتال که به دلیل بدنه محکم و دکمه‌های شیب‌دار ارگونومیک، هنوز در صدها دفتر اداری به کار خود ادامه می‌دهد.",
+          features: [
+            "صفحه نمایش ۱ خطی شفاف با قابلیت نمایش ۱۶ کاراکتر",
+            "۸ دکمه قابل برنامه‌ریزی وضعیت خطوط و داخلی‌ها",
+            "چراغ نشانگر بزرگ تماس‌های جدید و پیام‌های صندوق صوتی",
+            "قابلیت تنظیم زاویه ایستادن تلفن روی میز"
+          ],
+          specifications: [
+            { label: "نوع بستر", value: "Digital Proprietary" },
+            { label: "کلیدهای حافظه", value: "۸ دکمه LED" },
+            { label: "کیفیت بلندگو", value: "یک‌طرفه (Half Duplex)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-016",
+          name: "تلفن دیجیتال کارشناسی پاناسونیک KX-DT333",
+          model: "KX-DT333",
+          cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های دیجیتال",
+          brand: "Panasonic",
+          shortDescription: "تلفن کارشناسی دیجیتال با مانیتور متحرک و ۲۴ کلید حافظه",
+          description: "تلفن مدل KX-DT333 از سری لوکس قدیمی پاناسونیک است که دارای بدنه ضد خش مات، مانیتور با قابلیت تغییر زاویه دستی و ۲۴ دکمه کامل برای تعریف خطوط شهری است که لود کاری منشی‌ها را تسهیل می‌کند.",
+          features: [
+            "صفحه نمایش ۳ خطی با نور پس‌زمینه و زاویه متغیر",
+            "۲۴ کلید حافظه سخت‌افزاری با چراغ‌های دو رنگ",
+            "کیفیت صدای دیجیتال و پورت اختصاصی هدست اپراتور",
+            "امکان اتصال کنسول دکمه‌های اضافه سری DT"
+          ],
+          specifications: [
+            { label: "نوع اتصال", value: "۲ سیم دیجیتال" },
+            { label: "تعداد کلید حافظه", value: "۲۴ کلید" },
+            { label: "قابلیت متحرک بودن ال سی دی", value: "دارد (دستی)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-017",
+          name: "تلفن آنالوگ پیشرفته پاناسونیک KX-TS880",
+          model: "KX-TS880",
+          cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های سانترال",
+          brand: "Panasonic",
+          shortDescription: "حرفه‌ای‌ترین تلفن رومیزی آنالوگ مجهز به نمایشگر و کلیدهای شماره‌گیری سریع",
+          description: "مجلل‌ترین و مجهزترین تلفن تک‌خطی آنالوگ پاناسونیک که دارای دکمه‌های فیزیکی اختصاصی جهت شماره‌گیری سریع (Speed Dial) بوده و انتخابی ایده‌آل برای اتاق مدیران یا پورت‌های داخلی آنالوگ VIP در سانترال است.",
+          features: [
+            "نمایشگر ۳ خطی بسیار بزرگ و باکیفیت LCD",
+            "۱۰ دکمه اختصاصی شماره‌گیری سریع یک‌ضرب (One-Touch)",
+            "دفترچه تلفن داخلی با گنجایش ذخیره ۵۰ مخاطب",
+            "پشتیبانی از سیستم کالرآیدی و جک ۲.۵ میلی‌متری هدست"
+          ],
+          specifications: [
+            { label: "نوع بستر خط", value: "Analog" },
+            { label: "نمایشگر", value: "۳ خطی گرافیکی" },
+            { label: "کالر آی دی داخلی", value: "دارد (بدون نیاز به کارت)" },
+            { label: "حافظه شماره‌گیری سریع", value: "۲۰ شماره" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-018",
+          name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS580",
+          model: "KX-TS580",
+          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های سانترال",
+          brand: "Panasonic",
+          shortDescription: "تلفن آنالوگ با نمایشگر Caller ID و چراغ LED زنگ چشمک‌زن",
+          description: "مدل TS580 مجهز به مانیتور خطی خوانا با فونت درشت و یک چراغ بزرگ قرمز رنگ در بالای بدنه است که در محیط‌های شلوغ و پر سر و صدا با چشمک زدن شدید، کاربر را از زنگ خوردن داخلی مطلع می‌سازد.",
+          features: [
+            "سیستم Caller ID با حافظه ذخیره‌سازی ۵۰ تماس آخر",
+            "چراغ چشمک‌زن نمایشگر وضعیت تماس و زنگ",
+            "پورت خروجی دیتا (Data Port) جهت اشتراک خط با فکس یا مودم",
+            "دفترچه تلفن با قابلیت ذخیره ۵۰ نام و شماره"
+          ],
+          specifications: [
+            { label: "نوع تلفن", value: "Analog with LCD" },
+            { label: "نمایشگر", value: "دارد (۵۰ شماره)" },
+            { label: "منبع تغذیه نمایشگر", value: "۳ عدد باطری قلمی" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-019",
+          name: "تلفن آنالوگ دیواری پاناسونیک KX-T7703",
+          model: "KX-T7703",
+          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          category: "تلفن‌های سانترال",
+          brand: "Panasonic",
+          shortDescription: "تلفن آنالوگ کم‌جا با نمایشگر بدون نیاز به هرگونه باطری",
+          description: "تلفن فوق‌العاده باریک، سبک و مقاوم مدل T7703 بدون نیاز به اندانداختن باطری یا متصل کردن آداپتور برق، شماره‌های تماس‌گیرندگان را مستقیماً از ولتاژ جریان سیم تلفن مخابرات بر روی ال سی دی رندر می‌کند.",
+          features: [
+            "پشتیبانی داخلی از Caller ID سیستم مخابرات ایران",
+            "حافظه ذخیره اطلاعات ۳۰ شماره ورودی آخر",
+            "طراحی بسیار باریک و مات ضد لک و کثیفی",
+            "بدنه مخصوص با گیره داخلی جهت نصب عمودی روی دیوار"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Slim Analog" },
+            { label: "نیاز به باطری", value: "خیر (تغذیه از پورت خط)" },
+            { label: "حافظه شماره‌گیری مجدد", value: "۵ شماره آخر" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-020",
+          name: "کارت سانترال ترکیبی پاناسونیک KX-TDA0170",
+          model: "KX-TDA0170",
+          cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت ارتقای ۸ پورت ترکیبی (هایبرید) سری DHLC8 برای باکس TDA",
+          description: "این بورد مخابراتی مهندسی شده منحصربه‌فرد، توانایی شگفت‌انگیز راه‌اندازی هم‌زمان تلفن‌های آنالوگ رومیزی، تلفن‌های دیجیتال مدرن و تلفن‌های هایبرید مدیریتی (مانند ۷۷۳۰) را بر روی یک پورت مشترک فیزیکی فراهم می‌سازد.",
+          features: [
+            "ارائه ۸ پورت خط داخلی کاملاً هایبرید و همه‌کاره",
+            "پشتیبانی از کنسول‌های منشی دکمه‌دار و سیستم‌های پیجینگ",
+            "دارای ۲ مدار پورت انتقال قدرت فیزیکی در هنگام قطع برق سیستم",
+            "اشغال یک اسلات استاندارد از باکس سانترال‌های دیجیتال"
+          ],
+          specifications: [
+            { label: "کد تجاری قطعه", value: "DHLC8" },
+            { label: "تعداد پورت داخلی", value: "۸ پورت ترکیبی" },
+            { label: "کابل ارتباطی خروجی", value: "کابل ۲۵ زوج آمفنول" },
+            { label: "سازگاری با باکس‌ها", value: "KX-TDA100 / TDA200" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-021",
+          name: "کارت شهری ۱۶ پورت سانترال پاناسونیک KX-TDA0181",
+          model: "KX-TDA0181",
+          cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کارت خطوط شهری ۱۶ کاناله آنالوگ (LCOT16) برای سانترال‌های بزرگ",
+          description: "کاربردی‌ترین کارت برای متصل کردن و ورود ۱۶ خط تلفن شهری هم‌زمان آنالوگ مخابرات به دستگاه سانترال ماژولار شما. این کارت به شدت در اشغال اسلات‌های گران‌بهای باکس سانترال صرفه‌جویی می‌کند.",
+          features: [
+            "پذیرش و ترمینال ۱۶ زوج سیم خطوط شهری ورودی",
+            "مجهز به لایه‌های محافظتی قوی در برابر نوسانات صاعقه و برق مخابرات",
+            "نیازمند نصب کارت افزونه مجزا جهت فعال‌سازی سیستم کالرآیدی"
+          ],
+          specifications: [
+            { label: "کد تجاری قطعه", value: "LCOT16" },
+            { label: "تعداد پورت شهری", value: "۱۶ پورت آنالوگ" },
+            { label: "کارت افزونه کالرآیدی", value: "KX-TDA0193 (اختیاری)" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-022",
+          name: "کنسول دکمه‌های اضافه پاناسونیک KX-DT590",
+          model: "KX-DT590",
+          cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
+          category: "کارت‌ها و تجهیزات جانبی",
+          brand: "Panasonic",
+          shortDescription: "کنسول افزایشی DSS دارای ۴۸ کلید چراغ‌دار برای اپراتورهای مرکزی",
+          description: "این قطعه جانبی لوکس به پهلوی تلفن‌های مدیریتی دیجیتال (مانند DT543 و DT546) متصل شده و ۴۸ دکمه جدید مجهز به چراغ‌های زنده سبز و قرمز را برای پایش و مانیتورینگ وضعیت کل خطوط سازمان در اختیار منشی قرار می‌دهد.",
+          features: [
+            "۴۸ کلید میانبر کاملاً قابل برنامه‌ریزی وضعیت (BLF)",
+            "نشانگرهای LED ال ای دی دو رنگ فوق‌العاده روشن زیر هر دکمه",
+            "اتصال و همگام‌سازی سریع بدون نیاز به کابل‌کشی مجزا به سانترال",
+            "طراحی هماهنگ با زاویه پایه‌های سری تلفن‌های DT500"
+          ],
+          specifications: [
+            { label: "نوع قطعه", value: "DSS Console" },
+            { label: "تعداد کلیدها", value: "۴۸ کلید" },
+            { label: "تلفن‌های سازگار", value: "KX-DT543 / KX-DT546" },
+            { label: "نحوه اتصال", value: "کابل فلت فابریک بدنه" }
+          ],
+          images: [
+            "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
+          ],
+          price: "تماس برای قیمت"
+        }
+      ]
     },
-    {
-      id: "pan-002",
-      name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA100DBP",
-      model: "KX-TDA100DBP",
-      cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
-      category: "سیستم‌های PBX",
-      brand: "Panasonic",
-      shortDescription: "مرکز تلفن ماژولار و پرقدرت دیجیتال برای سازمان‌ها و کارخانجات بزرگ",
-      description: "پاناسونیک KX-TDA100DBP یک سانترال کاملاً ماژولار و هوشمند است که بر پایه فناوری دیجیتال طراحی شده است. این دستگاه دارای ۷ اسلات آزاد جهت نصب انواع کارت‌های خطوط شهری (آنالوگ و PRI) و خطوط داخلی (دیجیتال و آنالوگ) است. این مرکز تلفن به دلیل پایداری بی‌پایان، انتخاب اول محیط‌های صنعتی و اداره‌های دولتی است.",
-      features: [
-        "ساختار کاملاً ماژولار با ۷ اسلات آزاد",
-        "پشتیبانی از خطوط دیجیتال (PRI - E1)",
-        "قابلیت اتصال تلفن‌های بی‌سیم DECT سانترال",
-        "پشتیبانی از ویژگی Caller ID روی تمام خطوط",
-        "کیفیت صدای دیجیتال و بدون نویز",
-        "امکان یکپارچه‌سازی با سیستم‌های پردازش صدا"
-      ],
-      specifications: [
-        { label: "نوع سیستم", value: "Digital PBX" },
-        { label: "تعداد اسلات آزاد", value: "۷ اسلات" },
-        { label: "حداکثر خطوط شهری", value: "Up to 120" },
-        { label: "حداکثر خطوط داخلی", value: "Up to 176" },
-        { label: "پشتیبانی از PRI (E1)", value: "دارد" },
-        { label: "ابعاد", value: "334x390x270 میلی‌متر" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-003",
-      name: "تلفن سانترال آنالوگ پاناسونیک KX-T7730",
-      model: "KX-T7730",
-      cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های سانترال",
-      brand: "Panasonic",
-      shortDescription: "تلفن هایبرید کلاسیک مدیریتی و اپراتوری مخصوص سانترال ۸۲۴",
-      description: "تلفن KX-T7730 شناخته‌شده‌ترین تلفن سانترال در ایران است. این تلفن هایبرید دارای ۱۲ کلید قابل برنامه‌ریزی جهت تعریف خطوط شهری یا داخلی‌ها (BLF) است. از این تلفن برای برنامه‌ریزی دستی دستگاه سانترال KX-TES824 و همچنین به عنوان گوشی منشی/مدیر استفاده می‌شود.",
-      features: [
-        "نمایشگر تک خطی با قابلیت نمایش ۱۶ کاراکتر",
-        "۱۲ کلید حافظه قابل برنامه‌ریزی با نشانگر LED",
-        "بلندگوی دوطرفه قوی (Speakerphone)",
-        "کلیدهای اختصاصی جهت انتقال، هدایت و هولد تماس",
-        "امکان تنظیم زاویه پایه‌ گوشی",
-        "جک هدفون ۲.۵ میلی‌متری"
-      ],
-      specifications: [
-        { label: "نوع تلفن", value: "Hybrid Proprietary Phone" },
-        { label: "تعداد کلیدهای حافظه", value: "۱۲ کلید" },
-        { label: "نمایشگر", value: "۱ خطی LCD" },
-        { label: "قابلیت اتصال به دیوار", value: "دارد" },
-        { label: "رنگ‌بندی", value: "سفید / مشکی" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-004",
-      name: "تلفن دیجیتال پاناسونیک KX-DT543",
-      model: "KX-DT543",
-      cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های دیجیتال",
-      brand: "Panasonic",
-      shortDescription: "تلفن دیجیتال کارشناسی با نمایشگر ۳ خطی و ۲۴ کلید حافظه",
-      description: "تلفن مدیریتی/کارشناسی KX-DT543 برای اتصال به سانترال‌های دیجیتال پاناسونیک (مانند سری TDA و TDE) طراحی شده است. این تلفن با کیفیت صدای شفاف دیجیتال، نمایشگر خوانا با نور پس‌زمینه و ۲۴ کلید قابل برنامه‌ریزی، راندمان کاری کارمندان را به شدت افزایش می‌دهد.",
-      features: [
-        "نمایشگر ۳ خطی با نور پس‌زمینه سفید",
-        "۲۴ کلید قابل برنامه‌ریزی برای خطوط و داخلی‌ها",
-        "بلندگوی دیجیتال تمام دوبلکس (Full Duplex)",
-        "پشتیبانی از کنسول افزایشی کلیدها (بدون نیاز به کارت اضافی)",
-        "کیفیت ساخت فوق‌العاده بالا و کلیدهای ارگونومیک"
-      ],
-      specifications: [
-        { label: "نوع بستر", value: "Digital (DLC Port)" },
-        { label: "تعداد کلید حافظه", value: "۲۴ کلید" },
-        { label: "نمایشگر", value: "۳ خطی با نور پس‌زمینه" },
-        { label: "پورت هدفتون", value: "دارد" },
-        { label: "تکنولوژی صدا", value: "Panasonic HD Voice" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-005",
-      name: "تلفن دیجیتال مدیریتی پاناسونیک KX-DT546",
-      model: "KX-DT546",
-      cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های دیجیتال",
-      brand: "Panasonic",
-      shortDescription: "تلفن دیجیتال فوق حرفه‌ای مدیریتی با نمایشگر بزرگ ۶ خطی",
-      description: "مدل KX-DT546 لوکس‌ترین و پیشرفته‌ترین تلفن دیجیتال سیم‌دار پاناسونیک است. این دستگاه دارای صفحه نمایش ۶ خطی بسیار بزرگ با نور پس‌زمینه است که مدیریت دفترچه تلفن و کالر آی‌دی را بسیار آسان می‌کند. این تلفن انتخاب نهایی مدیران ارشد سازمان‌ها است.",
-      features: [
-        "صفحه نمایش ۶ خطی بسیار بزرگ گرافیکی",
-        "۲۴ کلید قابل برنامه‌ریزی هوشمند با LED دو رنگ",
-        "صدا بلندگوی شفاف دیجیتال (Full Duplex)",
-        "پشتیبانی از افزونه Electronic Hook Switch (EHS)",
-        "طراحی مدرن و ارگونومیک مسابقه‌ای"
-      ],
-      specifications: [
-        { label: "نوع بستر", value: "Digital" },
-        { label: "کلید حافظه", value: "۲۴ کلید" },
-        { label: "مشخصات نمایشگر", value: "۶ خط گرافیکی با نور پس‌زمینه" },
-        { label: "قابلیت DXDP", value: "دارد (اتصال دو تلفن به یک پورت)" },
-        { label: "کشور سازنده", value: "ویتنام (اصلی)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-006",
-      name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS500",
-      model: "KX-TS500",
-      cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های سانترال",
-      brand: "Panasonic",
-      shortDescription: "تلفن رومیزی آنالوگ ساده، ارزان و بسیار بادوام برای خطوط داخلی معمولی",
-      description: "تلفن پاناسونیک KX-TS500 گزینه‌ای ایده‌آل و مقرون‌به‌صرفه برای خطوط داخلی معمولی (آنالوگ) در شرکت‌ها، اتاق‌های هتل یا بیمارستان‌ها است. این تلفن فاقد صفحه نمایش بوده اما به دلیل بدنه بسیار مقاوم و طول عمر بالا، سال‌ها بدون کوچک‌ترین خرابی کار می‌کند.",
-      features: [
-        "طراحی ساده، کوچک و بسیار کم‌جا",
-        "امکان تنظیم میزان ولوم صدای گوشی در ۶ سطح",
-        "کلید اختصاصی Redial جهت شماره‌گیری مجدد",
-        "پشتیبانی از هر دو حالت شماره‌گیری Tone و Pulse",
-        "امکان نصب آسان بر روی دیوار"
-      ],
-      specifications: [
-        { label: "نوع تلفن", value: "Standard Analog (Single Line)" },
-        { label: "نمایشگر", value: "ندارد" },
-        { label: "نیاز به باتری/برق", value: "ندارد (تغذیه از خط تلفن)" },
-        { label: "رنگ‌بندی متنوع", value: "سفید، مشکی، خاکستری، سرمه‌ای، قرمز" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-007",
-      name: "کارت ارتقا سانترال پاناسونیک KX-TE82483",
-      model: "KX-TE82483",
-      cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت افزایشی ۳ خط شهری و ۸ داخلی آنالوگ برای سانترال ۸۲۴",
-      description: "کارت ارتقای مدل KX-TE82483 پرفروش‌ترین کارت جانبی برای سانترال کوچک مدل KX-TES824 tactics. با قرار دادن این کارت روی برد اصلی دستگاه، ظرفیت اولیه سانترال شما از ۳ به ۶ خط شهری و از ۸ به ۱۶ خط داخلی آنالوگ ارتقا می‌یابد.",
-      features: [
-        "افزایش هم‌زمان ۳ خط شهری آنالوگ جدید",
-        "افزایش ۸ پورت داخلی آنالوگ برای اتصال تلفن‌های معمولی یا بی‌سیم",
-        "نصب به صورت Plug & Play داخل باکس سانترال",
-        "دارای سوکت‌های استاندارد RJ11 برای خروجی‌ها"
-      ],
-      specifications: [
-        { label: "دستگاه سازگار", value: "KX-TES824 / KX-TEM824" },
-        { label: "تعداد پورت شهری", value: "۳ پورت" },
-        { label: "تعداد پورت داخلی", value: "۸ پورت آنالوگ" },
-        { label: "نوع نصب", value: "اسلات ارتقا اول (Slot 1)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-008",
-      name: "کارت کالر آی دی سانترال پاناسونیک KX-TE82494",
-      model: "KX-TE82494",
-      cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت نمایشگر شماره (Caller ID) سه پورتی برای سانترال سری TE",
-      description: "برای اینکه خطوط شهری متصل به سانترال ۸۲۴ بتوانند شماره افراد تماس‌گیرنده را روی تلفن‌های سانترال (مانند ۷۷۳۰) نمایش دهند، نیاز به نصب کارت کالر آی‌دی KX-TE82494 دارید. هر کارت توانایی فعال‌سازی Caller ID را روی ۳ خط شهری دارا می‌باشد.",
-      features: [
-        "پشتیبانی ازسیستم نمایش شماره تلفن تماس‌گیرنده",
-        "سازگاری کامل با سیگنال‌های FSK و DTMF مخابرات ایران",
-        "ظرفیت پشتیبانی از ۳ خط شهری به ازای هر کارت"
-      ],
-      specifications: [
-        { label: "نوع قطعه", value: "Caller ID Card" },
-        { label: "ظرفیت خطوط", value: "۳ خط شهری" },
-        { label: "باکس سازگار", value: "KX-TES824" },
-        { label: "تکنولوژی", value: "FSK / DTMF" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-009",
-      name: "کارت داخلی دیجیتال ۱۶ پورت پاناسونیک KX-TDA1172",
-      model: "KX-TDA1172",
-      cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت ۱۶ پورت خطوط داخلی دیجیتال (DLC16) برای سانترال‌های سری TDA",
-      description: "کارت ارتقای مخابراتی KX-TDA1172 به شما این امکان را می‌دهد تا ۱۶ داخلی دیجیتال کاملاً مجزا به سانترال‌های بزرگ پاناسونیک اضافه کنید. این کارت برای راه‌اندازی تلفن‌های مدیریتی و کارشناسی سری DT (مانند DT543 و DT333) مورد استفاده قرار می‌گیرد.",
-      features: [
-        "تامین ۱۶ پورت خط داخلی دیجیتال با پایداری فرکانسی بالا",
-        "پشتیبانی از قابلیت DXDP (ارتقا مجازی ظرفیت پورت‌ها به ۳۲ داخلی)",
-        "مجهز به چراغ‌های وضعیت LED جهت عیب‌یابی سریع پورت‌ها",
-        "انتقال هم‌زمان صدا و دیتای نمایشگر بر روی زوج سیم مسی"
-      ],
-      specifications: [
-        { label: "کد تجاری کارت", value: "DLC16" },
-        { label: "تعداد پورت", value: "۱۶ پورت دیجیتال" },
-        { label: "سانترال‌های سازگار", value: "KX-TDA100 / TDA100D / TDA200" },
-        { label: "نوع کابل‌کشی خروجی", value: "۱ زوج سیم مسی آمفنول" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-010",
-      name: "کارت خطوط شهری آنالوگ ۸ پورت پاناسونیک KX-TDA1180",
-      model: "KX-TDA1180",
-      cover: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت افزایشی ۸ خط شهری آنالوگ مجهز به سیستم Caller ID داخلی",
-      description: "کارت ارتقا KX-TDA1180 پورت‌های ورودی خطوط شهری آنالوگ مخابرات را در سانترال‌های سری TDA افزایش می‌دهد. مزیت بزرگ این کارت، مجهز بودن پیش‌فرض آن به پردازنده کالر آی‌دی (Caller ID) بر روی هر ۸ پورت است و دیگر نیازی به خرید کارت آیدی جداگانه نخواهید داشت.",
-      features: [
-        "اتصال ۸ خط شهری آنالوگ جدید به سانترال",
-        "دارای قابلیت Caller ID پیش‌فرض روی تمام پورت‌ها",
-        "پشتیبانی از مدار محافظت در برابر نوسانات ناگهانی ولتاژ خطوط مخابرات",
-        "دارای پورت خروجی اضطراری در هنگام قطع برق (PFT)"
-      ],
-      specifications: [
-        { label: "کد تجاری کارت", value: "LCOT8" },
-        { label: "تعداد پورت شهری", value: "۸ پورت آنالوگ" },
-        { label: "سیستم کالر آی دی", value: "دارد (تعبیه شده روی برد)" },
-        { label: "سازگاری با سیستم", value: "KX-TDA100D / TDA100DBP" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-011",
-      name: "سانترال هایبرید پاناسونیک KX-TEM824",
-      model: "KX-TEM824",
-      cover: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80",
-      category: "سیستم‌های PBX",
-      brand: "Panasonic",
-      shortDescription: "مرکز تلفن هایبرید پیشرفته با ظرفیت پایه ۶ خط شهری و ۱۶ داخلی",
-      description: "دستگاه سانترال مدل KX-TEM824 برادر بزرگ‌تر مدل ۸۲۴ معمولی است که به صورت کارخانه‌ای با گنجایش اولیه بالاتر تولید شده است. این سیستم قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی را دارا بوده و برای دفاتر پرتردد عالی است.",
-      features: [
-        "ظرفیت اولیه فیزیکی ۶ خط شهری و ۱۶ داخلی",
-        "پشتیبانی کامل از تلفن‌های هایبرید سری ۷۷",
-        "دارای سیستم تلفن گویای هوشمند پیش‌فرض",
-        "امکان اتصال باطری پشتیبان برای زمان قطع برق"
-      ],
-      specifications: [
-        { label: "نوع سیستم", value: "Advanced Hybrid" },
-        { label: "ظرفیت پایه", value: "۶ شهری / ۱۶ داخلی" },
-        { label: "حداکثر توسعه", value: "۸ شهری / ۲۴ داخلی" },
-        { label: "پورت برنامه‌ریزی", value: "USB / RS-232C" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-012",
-      name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA200",
-      model: "KX-TDA200",
-      cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
-      category: "سیستم‌های PBX",
-      brand: "Panasonic",
-      shortDescription: "باکس سانترال دیجیتال پرظرفیت مجهز به ۱۱ اسلات سخت‌افزاری",
-      description: "مرکز تلفن صنعتی و فوق‌العاده پایدار KX-TDA200 طراحی شده برای سازمان‌ها، نهادهای دولتی و کارخانجات بزرگ که دارای تعداد بالایی خطوط شهری و پرسنل داخلی هستند. ساختار کاملاً ماژولار آزادی عمل بی‌نظیری به بخش IT سازمان می‌دهد.",
-      features: [
-        "دارای ۱۱ اسلات ماژولار آزاد برای انواع کارت‌ها",
-        "پشتیبانی کامل از خطوط دیجیتال PRI و خطوط شهری آنالوگ",
-        "امکان لینک سازی و شبکه کردن چند باکس مجزا",
-        "سوییچینگ بدون وقفه خطوط و پایداری سخت‌افزاری"
-      ],
-      specifications: [
-        { label: "نوع سیستم", value: "Digital Modular" },
-        { label: "تعداد اسلات آزاد", value: "۱۱ اسلات" },
-        { label: "حداکثر خطوط داخلی", value: "Up to 256" },
-        { label: "پشتیبانی از DECT", value: "دارد (بی‌سیم سانترال)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-013",
-      name: "سانترال انترپرایز پاناسونیک KX-TDA600",
-      model: "KX-TDA600",
-      cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
-      category: "سیستم‌های PBX",
-      brand: "Panasonic",
-      shortDescription: "بزرگ‌ترین و پرظرفیت‌ترین مرکز تلفن دیجیتال سنتی پاناسونیک",
-      description: "سیستم KX-TDA600 غول سخت‌افزاری پاناسونیک در بستر سیستم‌های مخابراتی سنتی و دیجیتال است. این باکس پایه به تنهایی ظرفیت بالایی دارد و با اضافه شدن باکس‌های شیلف ارتقایی (TDA620) توانایی پشتیبانی تا بیش از ۱۰۰۰ خط داخلی را فراهم می‌کند.",
-      features: [
-        "باکس پایه انترپرایز با ظرفیت فوق‌سنگین",
-        "قابلیت اتصال به ۳ باکس شیلف ارتقایی مجزا",
-        "پشتیبانی از حجم عظیمی از کارت‌های دیجیتال و آنالوگ",
-        "ایده‌آل برای هتل‌های بزرگ، بیمارستان‌ها و پتروشیمی‌ها"
-      ],
-      specifications: [
-        { label: "نوع سیستم", value: "Enterprise Digital PBX" },
-        { label: "حداکثر داخلی‌ها", value: "بیش از ۱۰۰۰ پورت" },
-        { label: "تعداد اسلات باکس پایه", value: "۱۰ اسلات بزرگ" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-014",
-      name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
-      model: "KX-DT521",
-      cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های دیجیتال",
-      brand: "Panasonic",
-      shortDescription: "تلفن دیجیتال کارمندی مجهز به پورت DXDP و ۸ کلید حافظه",
-      description: "تلفن دیجیتال رده اکونومی سری ۵۰۰ پاناسونیک که صدای فوق‌العاده باکیفیت HD را در بستری کاملاً دیجیتال و بدون نویز ارائه می‌دهد. این تلفن گزینه‌ای بسیار مناسب و مقرون به صرفه برای پرسنل اداری سازمان‌ها است.",
-      features: [
-        "نمایشگر ۱ خطی مجهز به نور پس‌زمینه سفید",
-        "۸ کلید میانبر قابل برنامه‌ریزی با چراغ زنده",
-        "پشتیبانی از پورت افزایشی سخت‌افزاری DXDP",
-        "بلندگوی دیجیتال با کیفیت صدای شفاف و رسا"
-      ],
-      specifications: [
-        { label: "نوع تلفن", value: "Standard Digital" },
-        { label: "تعداد کلید حافظه", value: "۸ کلید" },
-        { label: "نوع پورت اتصال", value: "DLC پورت دیجیتال" },
-        { label: "نمایشگر", value: "۱ خطی LCD" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-015",
-      name: "تلفن دیجیتال اقتصادی پاناسونیک KX-T7665",
-      model: "KX-T7665",
-      cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های دیجیتال",
-      brand: "Panasonic",
-      shortDescription: "تلفن کارشناسی دیجیتال پرفروش با ۸ کلید دکمه حافظه شهری",
-      description: "یکی از مدل‌های کلاسیک، نوستالژیک و به شدت جان‌سخت پاناسونیک در رده دیجیتال که به دلیل بدنه محکم و دکمه‌های شیب‌دار ارگونومیک، هنوز در صدها دفتر اداری به کار خود ادامه می‌دهد.",
-      features: [
-        "صفحه نمایش ۱ خطی شفاف با قابلیت نمایش ۱۶ کاراکتر",
-        "۸ دکمه قابل برنامه‌ریزی وضعیت خطوط و داخلی‌ها",
-        "چراغ نشانگر بزرگ تماس‌های جدید و پیام‌های صندوق صوتی",
-        "قابلیت تنظیم زاویه ایستادن تلفن روی میز"
-      ],
-      specifications: [
-        { label: "نوع بستر", value: "Digital Proprietary" },
-        { label: "کلیدهای حافظه", value: "۸ دکمه LED" },
-        { label: "کیفیت بلندگو", value: "یک‌طرفه (Half Duplex)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-016",
-      name: "تلفن دیجیتال کارشناسی پاناسونیک KX-DT333",
-      model: "KX-DT333",
-      cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های دیجیتال",
-      brand: "Panasonic",
-      shortDescription: "تلفن کارشناسی دیجیتال با مانیتور متحرک و ۲۴ کلید حافظه",
-      description: "تلفن مدل KX-DT333 از سری لوکس قدیمی پاناسونیک است که دارای بدنه ضد خش مات، مانیتور با قابلیت تغییر زاویه دستی و ۲۴ دکمه کامل برای تعریف خطوط شهری است که لود کاری منشی‌ها را تسهیل می‌کند.",
-      features: [
-        "صفحه نمایش ۳ خطی با نور پس‌زمینه و زاویه متغیر",
-        "۲۴ کلید حافظه سخت‌افزاری با چراغ‌های دو رنگ",
-        "کیفیت صدای دیجیتال و پورت اختصاصی هدست اپراتور",
-        "امکان اتصال کنسول دکمه‌های اضافه سری DT"
-      ],
-      specifications: [
-        { label: "نوع اتصال", value: "۲ سیم دیجیتال" },
-        { label: "تعداد کلید حافظه", value: "۲۴ کلید" },
-        { label: "قابلیت متحرک بودن ال سی دی", value: "دارد (دستی)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-017",
-      name: "تلفن آنالوگ پیشرفته پاناسونیک KX-TS880",
-      model: "KX-TS880",
-      cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های سانترال",
-      brand: "Panasonic",
-      shortDescription: "حرفه‌ای‌ترین تلفن رومیزی آنالوگ مجهز به نمایشگر و کلیدهای شماره‌گیری سریع",
-      description: "مجلل‌ترین و مجهزترین تلفن تک‌خطی آنالوگ پاناسونیک که دارای دکمه‌های فیزیکی اختصاصی جهت شماره‌گیری سریع (Speed Dial) بوده و انتخابی ایده‌آل برای اتاق مدیران یا پورت‌های داخلی آنالوگ VIP در سانترال است.",
-      features: [
-        "نمایشگر ۳ خطی بسیار بزرگ و باکیفیت LCD",
-        "۱۰ دکمه اختصاصی شماره‌گیری سریع یک‌ضرب (One-Touch)",
-        "دفترچه تلفن داخلی با گنجایش ذخیره ۵۰ مخاطب",
-        "پشتیبانی از سیستم کالرآیدی و جک ۲.۵ میلی‌متری هدست"
-      ],
-      specifications: [
-        { label: "نوع بستر خط", value: "Analog" },
-        { label: "نمایشگر", value: "۳ خطی گرافیکی" },
-        { label: "کالر آی دی داخلی", value: "دارد (بدون نیاز به کارت)" },
-        { label: "حافظه شماره‌گیری سریع", value: "۲۰ شماره" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-018",
-      name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS580",
-      model: "KX-TS580",
-      cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های سانترال",
-      brand: "Panasonic",
-      shortDescription: "تلفن آنالوگ با نمایشگر Caller ID و چراغ LED زنگ چشمک‌زن",
-      description: "مدل TS580 مجهز به مانیتور خطی خوانا با فونت درشت و یک چراغ بزرگ قرمز رنگ در بالای بدنه است که در محیط‌های شلوغ و پر سر و صدا با چشمک زدن شدید، کاربر را از زنگ خوردن داخلی مطلع می‌سازد.",
-      features: [
-        "سیستم Caller ID با حافظه ذخیره‌سازی ۵۰ تماس آخر",
-        "چراغ چشمک‌زن نمایشگر وضعیت تماس و زنگ",
-        "پورت خروجی دیتا (Data Port) جهت اشتراک خط با فکس یا مودم",
-        "دفترچه تلفن با قابلیت ذخیره ۵۰ نام و شماره"
-      ],
-      specifications: [
-        { label: "نوع تلفن", value: "Analog with LCD" },
-        { label: "نمایشگر", value: "دارد (۵۰ شماره)" },
-        { label: "منبع تغذیه نمایشگر", value: "۳ عدد باطری قلمی" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-019",
-      name: "تلفن آنالوگ دیواری پاناسونیک KX-T7703",
-      model: "KX-T7703",
-      cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
-      category: "تلفن‌های سانترال",
-      brand: "Panasonic",
-      shortDescription: "تلفن آنالوگ کم‌جا با نمایشگر بدون نیاز به هرگونه باطری",
-      description: "تلفن فوق‌العاده باریک، سبک و مقاوم مدل T7703 بدون نیاز به اندانداختن باطری یا متصل کردن آداپتور برق، شماره‌های تماس‌گیرندگان را مستقیماً از ولتاژ جریان سیم تلفن مخابرات بر روی ال سی دی رندر می‌کند.",
-      features: [
-        "پشتیبانی داخلی از Caller ID سیستم مخابرات ایران",
-        "حافظه ذخیره اطلاعات ۳۰ شماره ورودی آخر",
-        "طراحی بسیار باریک و مات ضد لک و کثیفی",
-        "بدنه مخصوص با گیره داخلی جهت نصب عمودی روی دیوار"
-      ],
-      specifications: [
-        { label: "نوع سیستم", value: "Slim Analog" },
-        { label: "نیاز به باطری", value: "خیر (تغذیه از پورت خط)" },
-        { label: "حافظه شماره‌گیری مجدد", value: "۵ شماره آخر" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-020",
-      name: "کارت سانترال ترکیبی پاناسونیک KX-TDA0170",
-      model: "KX-TDA0170",
-      cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت ارتقای ۸ پورت ترکیبی (هایبرید) سری DHLC8 برای باکس TDA",
-      description: "این بورد مخابراتی مهندسی شده منحصربه‌فرد، توانایی شگفت‌انگیز راه‌اندازی هم‌زمان تلفن‌های آنالوگ رومیزی، تلفن‌های دیجیتال مدرن و تلفن‌های هایبرید مدیریتی (مانند ۷۷۳۰) را بر روی یک پورت مشترک فیزیکی فراهم می‌سازد.",
-      features: [
-        "ارائه ۸ پورت خط داخلی کاملاً هایبرید و همه‌کاره",
-        "پشتیبانی از کنسول‌های منشی دکمه‌دار و سیستم‌های پیجینگ",
-        "دارای ۲ مدار پورت انتقال قدرت فیزیکی در هنگام قطع برق سیستم",
-        "اشغال یک اسلات استاندارد از باکس سانترال‌های دیجیتال"
-      ],
-      specifications: [
-        { label: "کد تجاری قطعه", value: "DHLC8" },
-        { label: "تعداد پورت داخلی", value: "۸ پورت ترکیبی" },
-        { label: "کابل ارتباطی خروجی", value: "کابل ۲۵ زوج آمفنول" },
-        { label: "سازگاری با باکس‌ها", value: "KX-TDA100 / TDA200" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-021",
-      name: "کارت شهری ۱۶ پورت سانترال پاناسونیک KX-TDA0181",
-      model: "KX-TDA0181",
-      cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کارت خطوط شهری ۱۶ کاناله آنالوگ (LCOT16) برای سانترال‌های بزرگ",
-      description: "کاربردی‌ترین کارت برای متصل کردن و ورود ۱۶ خط تلفن شهری هم‌زمان آنالوگ مخابرات به دستگاه سانترال ماژولار شما. این کارت به شدت در اشغال اسلات‌های گران‌بهای باکس سانترال صرفه‌جویی می‌کند.",
-      features: [
-        "پذیرش و ترمینال ۱۶ زوج سیم خطوط شهری ورودی",
-        "مجهز به لایه‌های محافظتی قوی در برابر نوسانات صاعقه و برق مخابرات",
-        "نیازمند نصب کارت افزونه مجزا جهت فعال‌سازی سیستم کالرآیدی"
-      ],
-      specifications: [
-        { label: "کد تجاری قطعه", value: "LCOT16" },
-        { label: "تعداد پورت شهری", value: "۱۶ پورت آنالوگ" },
-        { label: "کارت افزونه کالرآیدی", value: "KX-TDA0193 (اختیاری)" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    },
-    {
-      id: "pan-022",
-      name: "کنسول دکمه‌های اضافه پاناسونیک KX-DT590",
-      model: "KX-DT590",
-      cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
-      category: "کارت‌ها و تجهیزات جانبی",
-      brand: "Panasonic",
-      shortDescription: "کنسول افزایشی DSS دارای ۴۸ کلید چراغ‌دار برای اپراتورهای مرکزی",
-      description: "این قطعه جانبی لوکس به پهلوی تلفن‌های مدیریتی دیجیتال (مانند DT543 و DT546) متصل شده و ۴۸ دکمه جدید مجهز به چراغ‌های زنده سبز و قرمز را برای پایش و مانیتورینگ وضعیت کل خطوط سازمان در اختیار منشی قرار می‌دهد.",
-      features: [
-        "۴۸ کلید میانبر کاملاً قابل برنامه‌ریزی وضعیت (BLF)",
-        "نشانگرهای LED ال ای دی دو رنگ فوق‌العاده روشن زیر هر دکمه",
-        "اتصال و همگام‌سازی سریع بدون نیاز به کابل‌کشی مجزا به سانترال",
-        "طراحی هماهنگ با زاویه پایه‌های سری تلفن‌های DT500"
-      ],
-      specifications: [
-        { label: "نوع قطعه", value: "DSS Console" },
-        { label: "تعداد کلیدها", value: "۴۸ کلید" },
-        { label: "تلفن‌های سازگار", value: "KX-DT543 / KX-DT546" },
-        { label: "نحوه اتصال", value: "کابل فلت فابریک بدنه" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
-      ],
-      price: "تماس برای قیمت"
-    }
-  ]
-},
   },
   en: {
     dir: "ltr",
@@ -1064,16 +1043,16 @@ export const CONTENT: Content = {
         {
           id: "97ca0282-454f-4b28-b8f7-4feb9f66289e",
           name: "Golden Eiffel Tower Model",
-          cover: GoldenEiffelTower1,
+          cover: "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
           scale: "1:390",
           material: "White Galvanized Sheet",
           useCase: "Engineering, educational, and exhibition projects",
           category: "Architectural Models",
           price: "Call for price",
           images: [
-            GoldenEiffelTower1,
-            GoldenEiffelTower2,
-            GoldenEiffelTower3,
+            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
+            "/scale-models/GoldenEiffelTower/IMG_20250507_145113_11zon.webp",
+            "/scale-models/GoldenEiffelTower/IMG_20250507_145313_11zon.webp",
           ],
           description:
             "The Eiffel Tower model is built with high manufacturing accuracy and precise engineering design based on the real monument. Designed for use in student projects, engineering presentations, specialized exhibitions, and decorative applications, this model recreates all the details of the main structure of the Eiffel Tower on a small scale. High manufacturing quality, a large number of parts, and precise execution of details make this product a great choice for collectors, students, and engineering companies.",
@@ -1092,16 +1071,16 @@ export const CONTENT: Content = {
         {
           id: "292829cb-5e64-440b-8416-b9e593c4808a",
           name: "Bronze Eiffel Tower Model",
-          cover: BronzeEiffelTower1,
+          cover: "/scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp",
           scale: "1:340",
           material: "White Galvanized Sheet",
           useCase: "Decoration, exhibition, and gift",
           category: "Architectural Models",
           price: "Call for price",
           images: [
-            BronzeEiffelTower1,
-            BronzeEiffelTower2,
-            BronzeEiffelTower3,
+            "/scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp",
+            "/scale-models/BronzeEiffelTower/IMG_20250508_174152_11zon.webp",
+            "/scale-models/BronzeEiffelTower/IMG_20250508_174517_11zon.webp",
           ],
           description:
             "The metal model of the Eiffel Tower is designed and built with high accuracy in its details, inspired by the timeless symbol of Paris. This piece is the result of over 70 hours of precise and artistic work, delicately recreating all the components of the original Eiffel Tower structure. The combination of copper, silver, and turquoise colors gives a special and luxurious look to this model, making it an ideal choice for home decoration, galleries, shops, and also a valuable, lasting gift. This product is not just a model, but a recreation of a part of the identity and glory of Paris in the form of a metal artwork.",
@@ -1118,15 +1097,15 @@ export const CONTENT: Content = {
         {
           id: "82095c1d-1ba0-4f3f-8112-90f94a1ef2ff",
           name: "3-Legged Self-Supporting Telecommunication Tower Model",
-          cover: Triangular1,
+          cover: "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp",
           scale: "1:50",
           material: "Metal",
           useCase: "Educational, exhibition, and collectible",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            Triangular1,
-            Triangular2,
+            "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp",
+            "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp",
           ],
           description:
             "The 3-legged self-supporting telecommunication tower model is built with precise engineering design and professional details. This product is completely handmade, and its construction took over 30 hours. The 3-legged truss structure, multiple levels, and precise execution of joints make this model a suitable choice for engineers, students, technical offices, specialized exhibitions, and collectors of industrial structures. Its high manufacturing quality and eye-catching appearance bring a professional look to any environment.",
@@ -1143,15 +1122,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682998",
           name: "4-Legged Self-Supporting Tower Model",
-          cover: FourLeg1,
+          cover: "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp",
           scale: "1:50",
           material: "Rust-Proof Galvanized Sheet",
           useCase: "Educational, exhibition, and engineering",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            FourLeg1,
-            FourLeg2,
+            "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp",
+            "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp",
           ],
           description:
             "The lattice telecommunication tower model, featuring an engineered design and precise construction, is a professional replica of real telecommunication towers. Made of rust-proof galvanized sheet with 312 separate parts, it fully simulates all the structural details of a self-supporting tower. The high quality of construction, structural strength, and industrial appearance make it an ideal option for student projects, technical training, specialized exhibitions, and engineering structure collections.",
@@ -1167,15 +1146,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682992",
           name: "Special Guyed Telecommunication Tower",
-          cover: AdvancedBracedTelecomTower1,
+          cover: "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp",
           scale: "1:50",
           material: "Rust-Proof Galvanized Sheet",
           useCase: "Educational, exhibition, and engineering",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            AdvancedBracedTelecomTower1,
-            AdvancedBracedTelecomTower2,
+            "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp",
+            "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp",
           ],
           description:
             "The lattice telecommunication tower model, featuring an engineered design and precise construction, is a professional replica of real telecommunication towers. Made of rust-proof galvanized sheet with 312 separate parts, it fully simulates all the structural details of a self-supporting tower. The high quality of construction, structural strength, and industrial appearance make it an ideal option for student projects, technical training, specialized exhibitions, and engineering structure collections.",
@@ -1191,15 +1170,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682991",
           name: "Double Tower Power Transmission Line Model",
-          cover: DoubleTowerPowerTransmission1,
+          cover: "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp",
           scale: "1:330",
           material: "Resistant Galvanized Sheet",
           useCase: "Educational, industrial, and decorative",
           category: "Power Tower Models",
           price: "Call for price",
           images: [
-            DoubleTowerPowerTransmission1,
-            DoubleTowerPowerTransmission2,
+            "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp",
+            "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp",
           ],
           description:
             "The double-tower power transmission line model is designed and built with high accuracy and complete details based on real power transmission structures. Each tower is completely handmade from resistant galvanized sheet and simulates all main components including insulators, truss structures, and transmission lines. This product is a suitable option for educational projects, industrial exhibitions, specialized decoration, and engineering modeling, offering a realistic view of high-voltage power transmission lines through its high build quality and precise details.",
@@ -1216,15 +1195,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682941",
           name: "High Voltage Power Transmission Tower Model",
-          cover: HighVoltage1,
+          cover: "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
           scale: "1:330",
           material: "Galvanized Sheet",
           useCase: "Industrial decor, educational projects, and collectibles",
           category: "Power Tower Models",
           price: "Call for price",
           images: [
-            HighVoltage1,
-            HighVoltage2,
+            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
+            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
           ],
           description:
             "The high voltage power transmission tower model is designed and built with high accuracy and complete engineering details. Inspired by real power transmission towers, this product accurately simulates all main components of the structure including insulators, trusses, and joints. High manufacturing quality, a professional appearance, and the use of resistant galvanized sheet make this model a suitable option for industrial decor, university projects, specialized exhibitions, and collectible sets.",

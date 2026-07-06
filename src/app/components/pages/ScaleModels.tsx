@@ -1,4 +1,4 @@
-import { useState, useMemo, memo, useRef, useEffect, useCallback } from "react";
+import { useState, useMemo, memo, useCallback } from "react";
 import { useNavigate } from "react-router";
 import { Search, Ruler, Package, Tag, ChevronDown } from "lucide-react";
 import { useSite } from "../../lib/site-context";
@@ -17,37 +17,22 @@ const ITEMS_PER_PAGE = 6;
 
 function LazyImage({ src, alt, className }: { src: string; alt: string; className: string }) {
   const [loaded, setLoaded] = useState(false);
-  const [inView, setInView] = useState(false);
-  const imgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = imgRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect(); } },
-      { rootMargin: "200px" },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
 
   return (
-    <div ref={imgRef} className={className}>
+    <div className={className}>
       {!loaded && (
         <Skeleton className="absolute inset-0 w-full h-full" />
       )}
-      {inView && (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          onLoad={() => setLoaded(true)}
-          className={cn(
-            "w-full h-full object-cover transition-opacity duration-300",
-            loaded ? "opacity-100" : "opacity-0",
-          )}
-        />
-      )}
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        onLoad={() => setLoaded(true)}
+        className={cn(
+          "w-full h-full object-cover transition-opacity duration-300",
+          loaded ? "opacity-100" : "opacity-0",
+        )}
+      />
     </div>
   );
 }
@@ -117,8 +102,12 @@ export default function ScaleModels() {
   const { lang, setLang, dark, setDark, phoneNumber } = useSite();
   const navigate = useNavigate();
   const c = CONTENT[lang];
-  const isRtl = lang === "fa";
-  const products = getAllScaleModels(lang);
+  const isRtl = useMemo(() => lang === "fa", [lang]);
+  const products = useMemo(() => getAllScaleModels(lang), [lang]);
+  const headingStyle = useMemo<React.CSSProperties>(
+    () => ({ fontFamily: lang === "fa" ? "'Vazirmatn', sans-serif" : "'Rajdhani', sans-serif" }),
+    [lang],
+  );
 
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
@@ -151,8 +140,8 @@ export default function ScaleModels() {
     return result;
   }, [products, category, material, search]);
 
-  const displayed = filtered.slice(0, visibleCount);
-  const hasMore = visibleCount < filtered.length;
+  const displayed = useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
+  const hasMore = useMemo(() => visibleCount < filtered.length, [visibleCount, filtered.length]);
 
   const handleNavigate = useCallback((id: string) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -208,7 +197,7 @@ export default function ScaleModels() {
           />
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 mt-4 text-center"
-            style={{ fontFamily: lang === "fa" ? "'Vazirmatn', sans-serif" : "'Rajdhani', sans-serif" }}
+            style={headingStyle}
           >
             {c.towerModels.title}
           </h2>

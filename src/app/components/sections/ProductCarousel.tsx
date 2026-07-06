@@ -74,7 +74,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
         </p>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="relative h-[400px] sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden bg-card border border-border/60 shadow-xl">
+          <div className="relative min-h-[650px] sm:min-h-0 sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden bg-card border border-border/60 shadow-xl">
             <AnimatePresence custom={direction} mode="sync">
               <motion.div
                 key={current}
@@ -86,7 +86,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="absolute inset-0 flex flex-col lg:flex-row"
               >
-                <div className="relative w-full lg:w-3/5 h-1/2 lg:h-full bg-secondary overflow-hidden">
+                <div className="relative w-full h-52 sm:h-64 lg:w-3/5 lg:h-full bg-secondary overflow-hidden">
                   <img
                     src={product.cover}
                     alt={product.name}
@@ -94,7 +94,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-card/60 lg:via-transparent lg:to-transparent" />
                 </div>
-                <div className="w-full lg:w-2/5 p-8 lg:p-10 flex flex-col justify-center bg-card">
+                <div className="w-full lg:w-2/5 p-4 sm:p-6 lg:p-10 flex flex-col justify-center bg-card">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-semibold px-3 py-1.5 bg-accent/10 text-accent border border-accent/20 rounded-md">
                       {product.category}
@@ -104,12 +104,12 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                     </span>
                   </div>
                   <h3
-                    className="text-2xl sm:text-3xl font-bold text-foreground mb-3"
+                    className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-3"
                     style={{ fontFamily: lang === "fa" ? "'Vazirmatn', sans-serif" : "'Rajdhani', sans-serif" }}
                   >
                     {product.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4 line-clamp-3">
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2 sm:line-clamp-3">
                     {product.description}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mb-6">
@@ -119,17 +119,17 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                       </span>
                     ))}
                   </div>
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3">
                     <button
                       onClick={() => { navigate(`/products/${product.id}`); window.scrollTo({ top: 0 }); }}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg active:scale-[0.97] text-sm"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg active:scale-[0.97] text-sm"
                     >
                       <ArrowRight className="w-4 h-4" />
                       {lang === "fa" ? "جزئیات محصول" : "View Details"}
                     </button>
                     <a
                       href={`tel:${phoneNumber}`}
-                      className="inline-flex items-center gap-2 px-6 py-3 border-2 border-accent/30 hover:border-accent text-accent font-bold rounded-xl transition-all hover:bg-accent/5 text-sm"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-accent/30 hover:border-accent text-accent font-bold rounded-xl transition-all hover:bg-accent/5 text-sm"
                     >
                       <Phone className="w-4 h-4" />
                       {lang === "fa" ? "تماس بگیرید" : "Call Us"}

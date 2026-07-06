@@ -52,7 +52,7 @@ export const CONTENT: Content = {
         {
           id: "97ca0282-454f-4b28-b8f7-4feb9f66289e",
           name: "ماکت برج ایفل طلایی",
-          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/optimized_by_opt.imum.ir__2026-07-06_22-55-01.webp`,
           scale: "1:390",
           material: "ورق سفید گالوانیزه",
           useCase: "پروژه‌های مهندسی، آموزشی و نمایشگاهی",
@@ -81,7 +81,7 @@ export const CONTENT: Content = {
         {
           id: "292829cb-5e64-440b-8416-b9e593c4808a",
           name: "ماکت برج ایفل برنزی",
-          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/optimized_by_opt.imum.ir__2026-07-06_22-59-04.webp`,
           scale: "1:340",
           material: "ورق سفید گالوانیزه",
           useCase: "دکوراسیون، نمایشگاهی و هدیه",
@@ -109,7 +109,7 @@ export const CONTENT: Content = {
         {
           id: "82095c1d-1ba0-4f3f-8112-90f94a1ef2ff",
           name: "ماکت دکل مخابراتی خودایستا سه‌وجهی",
-          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/optimized_by_opt.imum.ir__2026-07-06_23-02-53.webp`,
           scale: "1:50",
           material: "فلز",
           useCase: "آموزشی، نمایشگاهی و کلکسیونی",
@@ -135,7 +135,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682998",
           name: "ماکت دکل خودایستا پایه چهارگوش",
-          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/optimized_by_opt.imum.ir__2026-07-06_23-04-50.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
@@ -161,7 +161,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682992",
           name: "دکل مخابراتی مهاربندی ویژه",
-          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/optimized_by_opt.imum.ir__2026-07-06_23-06-28.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
@@ -186,7 +186,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682991",
           name: "ماکت خط انتقال دو دکله",
-          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/optimized_by_opt.imum.ir__2026-07-06_23-09-22.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه مقاوم",
           useCase: "آموزشی، صنعتی و دکوراتیو",
@@ -212,7 +212,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682941",
           name: "ماکت دکل انتقال برق فشار قوی",
-          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/optimized_by_opt.imum.ir__2026-07-06_23-13-26.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه",
           useCase: "دکور صنعتی، پروژه‌های آموزشی و کلکسیونی",

@@ -771,7 +771,7 @@ export const CONTENT: Content = {
           id: "pan-013",
           name: "سانترال انترپرایز پاناسونیک KX-TDA600",
           model: "KX-TDA600",
-          cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "بزرگ‌ترین و پرظرفیت‌ترین مرکز تلفن دیجیتال سنتی پاناسونیک",
@@ -788,7 +788,12 @@ export const CONTENT: Content = {
             { label: "تعداد اسلات باکس پایه", value: "۱۰ اسلات بزرگ" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -796,7 +801,7 @@ export const CONTENT: Content = {
           id: "pan-014",
           name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
           model: "KX-DT521",
-          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-DT521/_VrW7nkSlT9S4rwS_1_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن دیجیتال کارمندی مجهز به پورت DXDP و ۸ کلید حافظه",
@@ -814,7 +819,11 @@ export const CONTENT: Content = {
             { label: "نمایشگر", value: "۱ خطی LCD" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`
+            `${import.meta.env.BASE_URL}products/KX-DT521/_VrW7nkSlT9S4rwS_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/5WN-7tTnW49lVMPr_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/FYrn9V7uhDb9_zEf_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/IQNPBtrbOOgP-OnR_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/PwOwPIKTRcfILZls_5_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -822,7 +831,7 @@ export const CONTENT: Content = {
           id: "pan-015",
           name: "تلفن دیجیتال اقتصادی پاناسونیک KX-T7665",
           model: "KX-T7665",
-          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-02_6_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن کارشناسی دیجیتال پرفروش با ۸ کلید دکمه حافظه شهری",
@@ -839,7 +848,14 @@ export const CONTENT: Content = {
             { label: "کیفیت بلندگو", value: "یک‌طرفه (Half Duplex)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-02_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-5_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-6_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-7_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-8_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-10_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/panasonic-kx-t7665-digital-phone_13_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -847,7 +863,7 @@ export const CONTENT: Content = {
           id: "pan-016",
           name: "تلفن دیجیتال کارشناسی پاناسونیک KX-DT333",
           model: "KX-DT333",
-          cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-01_1_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن کارشناسی دیجیتال با مانیتور متحرک و ۲۴ کلید حافظه",
@@ -864,7 +880,12 @@ export const CONTENT: Content = {
             { label: "قابلیت متحرک بودن ال سی دی", value: "دارد (دستی)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-10_6_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -872,7 +893,7 @@ export const CONTENT: Content = {
           id: "pan-017",
           name: "تلفن آنالوگ پیشرفته پاناسونیک KX-TS880",
           model: "KX-TS880",
-          cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-01_1_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "حرفه‌ای‌ترین تلفن رومیزی آنالوگ مجهز به نمایشگر و کلیدهای شماره‌گیری سریع",
@@ -890,7 +911,14 @@ export const CONTENT: Content = {
             { label: "حافظه شماره‌گیری سریع", value: "۲۰ شماره" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-10_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-11_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-12_8_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -898,7 +926,7 @@ export const CONTENT: Content = {
           id: "pan-018",
           name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS580",
           model: "KX-TS580",
-          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-TS580/Nrq_mHOcJ39lGw7W_1_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "تلفن آنالوگ با نمایشگر Caller ID و چراغ LED زنگ چشمک‌زن",
@@ -915,7 +943,9 @@ export const CONTENT: Content = {
             { label: "منبع تغذیه نمایشگر", value: "۳ عدد باطری قلمی" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`
+            `${import.meta.env.BASE_URL}products/KX-TS580/Nrq_mHOcJ39lGw7W_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS580/SbUW2pFv-GyYP6VR_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS580/U2XMMC4L4ADaPF4o_3_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -923,7 +953,7 @@ export const CONTENT: Content = {
           id: "pan-019",
           name: "تلفن آنالوگ دیواری پاناسونیک KX-T7703",
           model: "KX-T7703",
-          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-01_1_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "تلفن آنالوگ کم‌جا با نمایشگر بدون نیاز به هرگونه باطری",
@@ -940,7 +970,13 @@ export const CONTENT: Content = {
             { label: "حافظه شماره‌گیری مجدد", value: "۵ شماره آخر" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-06_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-07_7_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -948,7 +984,7 @@ export const CONTENT: Content = {
           id: "pan-020",
           name: "کارت سانترال ترکیبی پاناسونیک KX-TDA0170",
           model: "KX-TDA0170",
-          cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA0170/OsvjFiv0hhgFwgyO_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت ارتقای ۸ پورت ترکیبی (هایبرید) سری DHLC8 برای باکس TDA",
@@ -966,7 +1002,7 @@ export const CONTENT: Content = {
             { label: "سازگاری با باکس‌ها", value: "KX-TDA100 / TDA200" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA0170/OsvjFiv0hhgFwgyO_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -974,7 +1010,7 @@ export const CONTENT: Content = {
           id: "pan-021",
           name: "کارت شهری ۱۶ پورت سانترال پاناسونیک KX-TDA0181",
           model: "KX-TDA0181",
-          cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA0181/KX-TDA0181.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت خطوط شهری ۱۶ کاناله آنالوگ (LCOT16) برای سانترال‌های بزرگ",
@@ -990,7 +1026,7 @@ export const CONTENT: Content = {
             { label: "کارت افزونه کالرآیدی", value: "KX-TDA0193 (اختیاری)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA0181/KX-TDA0181.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -998,7 +1034,7 @@ export const CONTENT: Content = {
           id: "pan-022",
           name: "کنسول دکمه‌های اضافه پاناسونیک KX-DT590",
           model: "KX-DT590",
-          cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کنسول افزایشی DSS دارای ۴۸ کلید چراغ‌دار برای اپراتورهای مرکزی",
@@ -1016,7 +1052,9 @@ export const CONTENT: Content = {
             { label: "نحوه اتصال", value: "کابل فلت فابریک بدنه" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-02_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-03_4_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         }

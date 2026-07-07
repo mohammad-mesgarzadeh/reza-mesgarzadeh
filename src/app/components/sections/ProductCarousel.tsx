@@ -86,11 +86,11 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="absolute inset-0 flex flex-col lg:flex-row"
               >
-                <div className="relative w-full h-52 sm:h-64 lg:w-3/5 lg:h-full bg-secondary overflow-hidden">
+                <div className="relative w-full h-52 sm:h-64 lg:w-3/5 lg:h-full overflow-hidden">
                   <img
                     src={product.cover}
                     alt={product.name}
-                    className="w-full h-full object-contain lg:object-cover"
+                    className="w-full h-full object-contain lg:object-contain"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-card/60 lg:via-transparent lg:to-transparent" />
                 </div>

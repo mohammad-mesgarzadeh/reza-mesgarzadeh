@@ -174,7 +174,7 @@ function ProductHero({
     <div className="space-y-4">
       <div
         onClick={onImageClick}
-        className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-secondary group cursor-pointer"
+        className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden bg-white group cursor-pointer"
       >
         <AnimatePresence mode="wait">
           <motion.img
@@ -185,7 +185,7 @@ function ProductHero({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-t from-card/40 via-transparent to-transparent" />
@@ -434,9 +434,9 @@ function RelatedProducts({
                       <img
                         src={p.images[0]}
                         alt={p.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                      <div className="absolute inset-0 from-card via-card/20 to-transparent" />
                       <div className="absolute top-3 left-3">
                         <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
                           {p.category}

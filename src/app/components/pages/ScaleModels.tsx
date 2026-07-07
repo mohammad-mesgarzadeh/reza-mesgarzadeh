@@ -29,7 +29,7 @@ function LazyImage({ src, alt, className }: { src: string; alt: string; classNam
         loading="lazy"
         onLoad={() => setLoaded(true)}
         className={cn(
-          "w-full h-full object-cover transition-opacity duration-300",
+          "w-full h-full object-contain transition-opacity duration-300",
           loaded ? "opacity-100" : "opacity-0",
         )}
       />
@@ -59,7 +59,7 @@ const ModelCard = memo(function ModelCard({
           alt={product.name}
           className="w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+        <div className="absolute inset-0  from-card via-card/20 to-transparent" />
         <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}>
           <span className="text-xs font-semibold px-2.5 py-1 bg-card/90 backdrop-blur-sm text-accent border border-accent/20 rounded-md">
             {product.category}

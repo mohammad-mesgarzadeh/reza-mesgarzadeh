@@ -594,7 +594,7 @@ export const CONTENT: Content = {
           id: "pan-007",
           name: "کارت ارتقا سانترال پاناسونیک KX-TE82483",
           model: "KX-TE82483",
-          cover: `${import.meta.env.BASE_URL}products/KX-TE82483/_4XETRFPccs86AHZ_4_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-TE82483/4XETRFPccs86AHZ_4_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت افزایشی ۳ خط شهری و ۸ داخلی آنالوگ برای سانترال ۸۲۴",
@@ -612,7 +612,7 @@ export const CONTENT: Content = {
             { label: "نوع نصب", value: "اسلات ارتقا اول (Slot 1)" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-TE82483/_4XETRFPccs86AHZ_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/4XETRFPccs86AHZ_4_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TE82483/kx-te82483_5_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TE82483/ycfWY0P2u8qeAvpq_6_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TE82483/zRpK24uIZz43xmio_7_11zon.webp`,
@@ -801,7 +801,7 @@ export const CONTENT: Content = {
           id: "pan-014",
           name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
           model: "KX-DT521",
-          cover: `${import.meta.env.BASE_URL}products/KX-DT521/_VrW7nkSlT9S4rwS_1_11zon.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-DT521/VrW7nkSlT9S4rwS_1_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن دیجیتال کارمندی مجهز به پورت DXDP و ۸ کلید حافظه",
@@ -819,7 +819,7 @@ export const CONTENT: Content = {
             { label: "نمایشگر", value: "۱ خطی LCD" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-DT521/_VrW7nkSlT9S4rwS_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/VrW7nkSlT9S4rwS_1_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT521/5WN-7tTnW49lVMPr_2_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT521/FYrn9V7uhDb9_zEf_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT521/IQNPBtrbOOgP-OnR_4_11zon.webp`,

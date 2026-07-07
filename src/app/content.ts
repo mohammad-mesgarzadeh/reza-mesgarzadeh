@@ -393,7 +393,7 @@ export const CONTENT: Content = {
           id: "pan-001",
           name: "سانترال آنالوگ پاناسونیک KX-TES824",
           model: "KX-TES824",
-          cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "محبوب‌ترین و پایدارترین مرکز تلفن آنالوگ مناسب کسب‌وکارهای کوچک و متوسط",
@@ -415,8 +415,9 @@ export const CONTENT: Content = {
             { label: "منبع تغذیه", value: "۲۲۰ ولت AC" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-03_3_11zon.webp`
           ],
           price: "تماس برای استعلام قیمت"
         },
@@ -424,7 +425,7 @@ export const CONTENT: Content = {
           id: "pan-002",
           name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA100DBP",
           model: "KX-TDA100DBP",
-          cover: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "مرکز تلفن ماژولار و پرقدرت دیجیتال برای سازمان‌ها و کارخانجات بزرگ",
@@ -446,8 +447,12 @@ export const CONTENT: Content = {
             { label: "ابعاد", value: "334x390x270 میلی‌متر" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -455,7 +460,7 @@ export const CONTENT: Content = {
           id: "pan-003",
           name: "تلفن سانترال آنالوگ پاناسونیک KX-T7730",
           model: "KX-T7730",
-          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-02_10_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "تلفن هایبرید کلاسیک مدیریتی و اپراتوری مخصوص سانترال ۸۲۴",
@@ -476,8 +481,17 @@ export const CONTENT: Content = {
             { label: "رنگ‌بندی", value: "سفید / مشکی" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-02_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-03_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-04_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-KX-AT7730_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-accessories_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-black_15_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-from-back_16_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-from-side_17_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-keys_18_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-socket-location_19_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-white_20_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -485,7 +499,7 @@ export const CONTENT: Content = {
           id: "pan-004",
           name: "تلفن دیجیتال پاناسونیک KX-DT543",
           model: "KX-DT543",
-          cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT543/9Uu6Hc04-usibXs6_1_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن دیجیتال کارشناسی با نمایشگر ۳ خطی و ۲۴ کلید حافظه",
@@ -505,8 +519,12 @@ export const CONTENT: Content = {
             { label: "تکنولوژی صدا", value: "Panasonic HD Voice" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-DT543/9Uu6Hc04-usibXs6_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/fXDdz_I6pTkWbJc-_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/I4nX3S53vTs0QZoK_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/OKNTxSkFczGtkB_x_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/qqXu34SGsTjWSdEl_5_11zon.webp`,
+
           ],
           price: "تماس برای قیمت"
         },
@@ -514,7 +532,7 @@ export const CONTENT: Content = {
           id: "pan-005",
           name: "تلفن دیجیتال مدیریتی پاناسونیک KX-DT546",
           model: "KX-DT546",
-          cover: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-01_1_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن دیجیتال فوق حرفه‌ای مدیریتی با نمایشگر بزرگ ۶ خطی",
@@ -534,8 +552,10 @@ export const CONTENT: Content = {
             { label: "کشور سازنده", value: "ویتنام (اصلی)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-03_3_11zon.webp`,
+
           ],
           price: "تماس برای قیمت"
         },
@@ -543,7 +563,7 @@ export const CONTENT: Content = {
           id: "pan-006",
           name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS500",
           model: "KX-TS500",
-          cover: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TS500/6tsnXn-tFTgNPtoa_1_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "تلفن رومیزی آنالوگ ساده، ارزان و بسیار بادوام برای خطوط داخلی معمولی",
@@ -562,8 +582,11 @@ export const CONTENT: Content = {
             { label: "رنگ‌بندی متنوع", value: "سفید، مشکی، خاکستری، سرمه‌ای، قرمز" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TS500/6tsnXn-tFTgNPtoa_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/e5dmdukSlY9co9Bb_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/Nld9XbQSiiUXJEcf_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/YbG9xPONg71lVmiW_4_11zon.webp`,
+
           ],
           price: "تماس برای قیمت"
         },
@@ -571,7 +594,7 @@ export const CONTENT: Content = {
           id: "pan-007",
           name: "کارت ارتقا سانترال پاناسونیک KX-TE82483",
           model: "KX-TE82483",
-          cover: "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TE82483/_4XETRFPccs86AHZ_4_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت افزایشی ۳ خط شهری و ۸ داخلی آنالوگ برای سانترال ۸۲۴",
@@ -589,7 +612,11 @@ export const CONTENT: Content = {
             { label: "نوع نصب", value: "اسلات ارتقا اول (Slot 1)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1601524909162-be87252be298?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TE82483/_4XETRFPccs86AHZ_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/kx-te82483_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/ycfWY0P2u8qeAvpq_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/zRpK24uIZz43xmio_7_11zon.webp`,
+
           ],
           price: "تماس برای قیمت"
         },
@@ -597,7 +624,7 @@ export const CONTENT: Content = {
           id: "pan-008",
           name: "کارت کالر آی دی سانترال پاناسونیک KX-TE82494",
           model: "KX-TE82494",
-          cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-01_1_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت نمایشگر شماره (Caller ID) سه پورتی برای سانترال سری TE",
@@ -614,7 +641,10 @@ export const CONTENT: Content = {
             { label: "تکنولوژی", value: "FSK / DTMF" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-03_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-04_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-05_4_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -622,7 +652,7 @@ export const CONTENT: Content = {
           id: "pan-009",
           name: "کارت داخلی دیجیتال ۱۶ پورت پاناسونیک KX-TDA1172",
           model: "KX-TDA1172",
-          cover: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-01_1_11zon.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت ۱۶ پورت خطوط داخلی دیجیتال (DLC16) برای سانترال‌های سری TDA",
@@ -640,7 +670,11 @@ export const CONTENT: Content = {
             { label: "نوع کابل‌کشی خروجی", value: "۱ زوج سیم مسی آمفنول" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda172-06_5_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -648,7 +682,7 @@ export const CONTENT: Content = {
           id: "pan-010",
           name: "کارت خطوط شهری آنالوگ ۸ پورت پاناسونیک KX-TDA1180",
           model: "KX-TDA1180",
-          cover: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA1180/Vd64kdOk0bSAoQzj.webp`,
           category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "کارت افزایشی ۸ خط شهری آنالوگ مجهز به سیستم Caller ID داخلی",
@@ -666,7 +700,10 @@ export const CONTENT: Content = {
             { label: "سازگاری با سیستم", value: "KX-TDA100D / TDA100DBP" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/Vd64kdOk0bSAoQzj.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/WSA4xymV3cfqNdUN.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/x5o319bfRAdp9SF1.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/xj1qx2avD_1j0EFS.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -674,7 +711,7 @@ export const CONTENT: Content = {
           id: "pan-011",
           name: "سانترال هایبرید پاناسونیک KX-TEM824",
           model: "KX-TEM824",
-          cover: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "مرکز تلفن هایبرید پیشرفته با ظرفیت پایه ۶ خط شهری و ۱۶ داخلی",
@@ -692,7 +729,10 @@ export const CONTENT: Content = {
             { label: "پورت برنامه‌ریزی", value: "USB / RS-232C" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -700,7 +740,7 @@ export const CONTENT: Content = {
           id: "pan-012",
           name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA200",
           model: "KX-TDA200",
-          cover: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "باکس سانترال دیجیتال پرظرفیت مجهز به ۱۱ اسلات سخت‌افزاری",
@@ -718,7 +758,12 @@ export const CONTENT: Content = {
             { label: "پشتیبانی از DECT", value: "دارد (بی‌سیم سانترال)" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -751,7 +796,7 @@ export const CONTENT: Content = {
           id: "pan-014",
           name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
           model: "KX-DT521",
-          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`,
           category: "تلفن‌های دیجیتال",
           brand: "Panasonic",
           shortDescription: "تلفن دیجیتال کارمندی مجهز به پورت DXDP و ۸ کلید حافظه",
@@ -769,7 +814,7 @@ export const CONTENT: Content = {
             { label: "نمایشگر", value: "۱ خطی LCD" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`
           ],
           price: "تماس برای قیمت"
         },
@@ -853,7 +898,7 @@ export const CONTENT: Content = {
           id: "pan-018",
           name: "تلفن رومیزی آنالوگ پاناسونیک KX-TS580",
           model: "KX-TS580",
-          cover: "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`,
           category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "تلفن آنالوگ با نمایشگر Caller ID و چراغ LED زنگ چشمک‌زن",
@@ -870,7 +915,7 @@ export const CONTENT: Content = {
             { label: "منبع تغذیه نمایشگر", value: "۳ عدد باطری قلمی" }
           ],
           images: [
-            "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=600&auto=format&fit=crop&q=80"
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-tda100dbp-06_9_11zon.webp`
           ],
           price: "تماس برای قیمت"
         },

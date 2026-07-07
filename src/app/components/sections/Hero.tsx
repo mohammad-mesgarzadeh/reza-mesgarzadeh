@@ -119,7 +119,7 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
           >
             {[
               {
-                val: "50+",
+                val: "4500+",
                 label:
                   lang === "fa"
                     ? "پروژه موفق"

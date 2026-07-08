@@ -213,7 +213,7 @@ function ProductHero({
         </div>
       </div>
 
-      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin">
+      <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin flex-nowrap scroll-smooth">
         {images.map((img, i) => (
           <button
             key={i}

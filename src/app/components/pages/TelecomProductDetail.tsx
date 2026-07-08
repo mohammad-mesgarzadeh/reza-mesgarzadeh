@@ -411,15 +411,18 @@ function RelatedProducts({
     <Carousel opts={{ align: "start", loop: false }}>
       <CarouselContent>
         {products.map((p) => (
-          <CarouselItem key={p.id} className="basis-full sm:basis-1/2 lg:basis-1/4 pl-4">
+          <CarouselItem
+            key={p.id}
+            className="basis-full sm:basis-1/2 lg:basis-1/4 pl-4 flex"
+          >
             <button
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 navigate(`/products/${p.id}`);
               }}
-              className="group text-left w-full"
+              className="group text-left w-full flex"
             >
-              <div className="bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 h-full">
+              <div className="bg-card border border-border/60 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 h-full flex flex-col w-full">
                 <div className="relative h-44 bg-white overflow-hidden">
                   <img
                     loading="lazy"
@@ -434,8 +437,8 @@ function RelatedProducts({
                     </span>
                   </div>
                 </div>
-                <div className="p-4 space-y-2">
-                  <h3 className="font-bold text-sm text-foreground group-hover:text-accent transition-colors line-clamp-2">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="font-bold text-sm text-foreground group-hover:text-accent transition-colors line-clamp-2 min-h-[40px]">
                     {p.name}
                   </h3>
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -443,7 +446,7 @@ function RelatedProducts({
                     <span className="font-semibold">{p.brand}</span>
                   </div>
                   {p.shortDescription && (
-                    <p className="text-xs text-muted-foreground line-clamp-2">
+                    <p className="text-xs text-muted-foreground line-clamp-2 mt-auto">
                       {p.shortDescription}
                     </p>
                   )}
@@ -637,26 +640,29 @@ export default function TelecomProductDetail() {
               alt={product.name}
               onImageClick={() => setLightboxOpen(true)}
             />
-            <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin">
-              {product.images.map((img, i) => (
-                <button
-                  key={i}
-                  onClick={() => setSelectedThumb(i)}
-                  className={cn(
-                    "relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-lg overflow-hidden border-2 transition-all duration-200",
-                    selectedThumb === i
-                      ? "border-accent ring-2 ring-accent/20 ring-offset-2 ring-offset-background"
-                      : "border-border/60 hover:border-accent/40 opacity-70 hover:opacity-100",
-                  )}
-                >
-                  <img
-                    loading="lazy"
-                    src={img}
-                    alt={`${product.name} view ${i + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
-              ))}
+
+            <div className="w-full overflow-hidden">
+              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin flex-nowrap scroll-smooth">
+                {product.images.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setSelectedThumb(i)}
+                    className={cn(
+                      "relative flex-none w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all duration-200",
+                      selectedThumb === i
+                        ? "border-accent ring-2 ring-accent/20 ring-offset-2 ring-offset-background"
+                        : "border-border/60 hover:border-accent/40 opacity-70 hover:opacity-100",
+                    )}
+                  >
+                    <img
+                      loading="lazy"
+                      src={img}
+                      alt={`${product.name} view ${i + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 

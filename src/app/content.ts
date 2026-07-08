@@ -451,8 +451,7 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
+
           ],
           price: "تماس برای قیمت"
         },
@@ -1055,6 +1054,140 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-02_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-03_4_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+
+        {
+          id: "pan-023",
+          name: "سانترال هایبرید پاناسونیک KX-TA824",
+          model: "KX-TA824",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA824/kxta824_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن هایبرید اقتصادی مناسب دفاتر کوچک و متوسط",
+          description: "پاناسونیک KX-TA824 یک مرکز تلفن هایبرید پرکاربرد برای شرکت‌ها، فروشگاه‌ها و دفاتر اداری است. این دستگاه به صورت پیش‌فرض از 3 خط شهری و 8 داخلی پشتیبانی می‌کند و قابلیت توسعه تا 8 خط شهری و 24 داخلی را دارد. امکاناتی مانند DISA، کالر آیدی و اپراتور خودکار از ویژگی‌های مهم آن محسوب می‌شوند.",
+          features: [
+            "پشتیبانی از Caller ID",
+            "قابلیت توسعه تا 8 خط شهری",
+            "پشتیبانی از 24 داخلی",
+            "دارای سیستم DISA",
+            "امکان اتصال تلفن‌های آنالوگ و هایبرید",
+            "مناسب دفاتر و شرکت‌های کوچک"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Hybrid PBX" },
+            { label: "خطوط شهری اولیه", value: "3" },
+            { label: "حداکثر خطوط شهری", value: "8" },
+            { label: "داخلی اولیه", value: "8" },
+            { label: "حداکثر داخلی", value: "24" },
+            { label: "Caller ID", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA824/kxta824_1_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-024",
+          name: "سانترال IP پاناسونیک KX-NS500",
+          model: "KX-NS500",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن IP و هایبرید نسل جدید برای سازمان‌ها",
+          description: "پاناسونیک KX-NS500 یک سانترال تحت شبکه برای شرکت‌های کوچک و متوسط است که قابلیت ترکیب خطوط سنتی و VoIP را فراهم می‌کند. این دستگاه از 6 خط شهری و 18 داخلی به صورت پایه شروع شده و تا 190 خط شهری و 288 داخلی قابل توسعه است. قابلیت پشتیبانی از SIP، صندوق صوتی و ارتباط چند شعبه‌ای را ارائه می‌دهد.",
+          features: [
+            "پشتیبانی از SIP Trunk",
+            "پشتیبانی از VoIP",
+            "قابلیت توسعه تا 288 داخلی",
+            "صندوق صوتی داخلی",
+            "امکان شبکه‌سازی شعب",
+            "پشتیبانی از تلفن‌های IP"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "IP Hybrid PBX" },
+            { label: "ظرفیت اولیه", value: "6 شهری / 18 داخلی" },
+            { label: "حداکثر خطوط شهری", value: "190" },
+            { label: "حداکثر خطوط داخلی", value: "288" },
+            { label: "حداکثر تلفن SIP/IP", value: "128" },
+            { label: "پشتیبانی SIP", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-025",
+          name: "سانترال IP پاناسونیک KX-NS1000",
+          model: "KX-NS1000",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "پلتفرم ارتباطی حرفه‌ای برای سازمان‌های بزرگ",
+          description: "پاناسونیک KX-NS1000 یک سیستم ارتباطی Enterprise مبتنی بر IP است که برای سازمان‌ها، بانک‌ها، مراکز تماس و شرکت‌های چند شعبه‌ای طراحی شده است. این مرکز تلفن از حداکثر 1000 داخلی و 600 کانال شهری در حالت شبکه پشتیبانی می‌کند و امکانات پیشرفته VoIP و Unified Communication را در اختیار سازمان‌ها قرار می‌دهد.",
+          features: [
+            "پشتیبانی کامل از VoIP",
+            "مناسب مراکز تماس",
+            "قابلیت اتصال چندین شعبه",
+            "پشتیبانی از SIP و IP Phone",
+            "امکان Redundancy",
+            "مدیریت متمرکز ارتباطات"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Enterprise IP PBX" },
+            { label: "حداکثر خطوط شهری", value: "600" },
+            { label: "حداکثر داخلی", value: "1000" },
+            { label: "حداکثر SIP Extension", value: "1000" },
+            { label: "پشتیبانی VoIP", value: "دارد" },
+            { label: "پشتیبانی چند شعبه", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-026",
+          name: "سانترال IP پاناسونیک KX-HTS32",
+          model: "KX-HTS32",
+          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سیستم ارتباطی یکپارچه برای دفاتر کوچک",
+          description: "پاناسونیک KX-HTS32 یک مرکز تلفن IP کوچک و اقتصادی است که امکانات سانترال، روتر، Wi-Fi و VoIP را در یک دستگاه ارائه می‌دهد. این محصول برای دفاتر کوچک، فروشگاه‌ها و استارتاپ‌ها طراحی شده و راه‌اندازی بسیار ساده‌ای دارد.",
+          features: [
+            "پشتیبانی از SIP Trunk",
+            "Wi-Fi داخلی",
+            "روتر داخلی",
+            "صندوق صوتی",
+            "کنفرانس صوتی",
+            "راه‌اندازی آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "IP PBX" },
+            { label: "حداکثر کاربران", value: "32" },
+            { label: "Wi-Fi", value: "داخلی" },
+            { label: "Voicemail", value: "دارد" },
+            { label: "SIP Trunk", value: "دارد" },
+            { label: "کنفرانس صوتی", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         }

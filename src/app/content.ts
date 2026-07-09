@@ -52,7 +52,7 @@ export const CONTENT: Content = {
         {
           id: "97ca0282-454f-4b28-b8f7-4feb9f66289e",
           name: "ماکت برج ایفل طلایی",
-          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/optimized_by_opt.imum.ir__2026-07-06_22-55-01.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
           scale: "1:390",
           material: "ورق سفید گالوانیزه",
           useCase: "پروژه‌های مهندسی، آموزشی و نمایشگاهی",
@@ -81,7 +81,7 @@ export const CONTENT: Content = {
         {
           id: "292829cb-5e64-440b-8416-b9e593c4808a",
           name: "ماکت برج ایفل برنزی",
-          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/optimized_by_opt.imum.ir__2026-07-06_22-59-04.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
           scale: "1:340",
           material: "ورق سفید گالوانیزه",
           useCase: "دکوراسیون، نمایشگاهی و هدیه",
@@ -109,7 +109,7 @@ export const CONTENT: Content = {
         {
           id: "82095c1d-1ba0-4f3f-8112-90f94a1ef2ff",
           name: "ماکت دکل مخابراتی خودایستا سه‌وجهی",
-          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/optimized_by_opt.imum.ir__2026-07-06_23-02-53.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
           scale: "1:50",
           material: "فلز",
           useCase: "آموزشی، نمایشگاهی و کلکسیونی",
@@ -135,7 +135,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682998",
           name: "ماکت دکل خودایستا پایه چهارگوش",
-          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/optimized_by_opt.imum.ir__2026-07-06_23-04-50.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
@@ -161,7 +161,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682992",
           name: "دکل مخابراتی مهاربندی ویژه",
-          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/optimized_by_opt.imum.ir__2026-07-06_23-06-28.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
           scale: "1:50",
           material: "ورق گالوانیزه ضد زنگ",
           useCase: "آموزشی، نمایشگاهی و مهندسی",
@@ -186,7 +186,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682991",
           name: "ماکت خط انتقال دو دکله",
-          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/optimized_by_opt.imum.ir__2026-07-06_23-09-22.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه مقاوم",
           useCase: "آموزشی، صنعتی و دکوراتیو",
@@ -212,7 +212,7 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682941",
           name: "ماکت دکل انتقال برق فشار قوی",
-          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/optimized_by_opt.imum.ir__2026-07-06_23-13-26.webp`,
+          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
           scale: "1:330",
           material: "ورقه گالوانیزه",
           useCase: "دکور صنعتی، پروژه‌های آموزشی و کلکسیونی",
@@ -1079,8 +1079,8 @@ export const CONTENT: Content = {
           specifications: [
             { label: "نوع سیستم", value: "IP Hybrid PBX" },
             { label: "ظرفیت اولیه", value: "6 شهری / 18 داخلی" },
-            { label: "حداکثر خطوط شهری", value: "190" },
-            { label: "حداکثر خطوط داخلی", value: "288" },
+            { label: "حداکثر خطوط شهری", value: "48 " },
+            { label: "حداکثر خطوط داخلی", value: "128" },
             { label: "حداکثر تلفن SIP/IP", value: "128" },
             { label: "پشتیبانی SIP", value: "دارد" }
           ],
@@ -1159,6 +1159,289 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        }, {
+          id: "pan-027",
+          name: "یونیت توسعه پاناسونیک KX-NS520",
+          model: "KX-NS520",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS520/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "یونیت توسعه ظرفیت برای سانترال KX-NS500",
+          description: "پاناسونیک KX-NS520 یک یونیت توسعه برای سانترال KX-NS500 است که امکان افزایش ظرفیت خطوط شهری و داخلی را فراهم می‌کند و برای سازمان‌هایی که نیاز به توسعه سیستم مخابراتی خود دارند مناسب است.",
+          features: [
+            "افزایش ظرفیت داخلی",
+            "افزایش ظرفیت خطوط شهری",
+            "قابل اتصال به NS500",
+            "پشتیبانی از کارت‌های توسعه",
+            "نصب آسان",
+            "قابلیت توسعه مرحله‌ای"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Expansion Unit" },
+            { label: "سازگار با", value: "KX-NS500" },
+            { label: "حداکثر تعداد", value: "3 یونیت" },
+            { label: "افزایش ظرفیت داخلی", value: "تا 288 داخلی" },
+            { label: "افزایش خطوط شهری", value: "تا 190 خط" },
+            { label: "نصب رک", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-028",
+          name: "سانترال پاناسونیک KX-TDA620",
+          model: "KX-TDA620",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن دیجیتال سازمانی با ظرفیت بالا",
+          description: "پاناسونیک KX-TDA620 یک مرکز تلفن دیجیتال پیشرفته برای سازمان‌های متوسط و بزرگ است که قابلیت پشتیبانی از خطوط آنالوگ، دیجیتال و IP را فراهم می‌کند.",
+          features: [
+            "پشتیبانی از VoIP",
+            "قابلیت توسعه بالا",
+            "پشتیبانی از PRI",
+            "مدیریت تماس پیشرفته",
+            "صندوق صوتی",
+            "پشتیبانی از شبکه"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Hybrid IP PBX" },
+            { label: "ظرفیت", value: "تا 640 داخلی" },
+            { label: "پشتیبانی PRI", value: "دارد" },
+            { label: "VoIP", value: "دارد" },
+            { label: "شبکه‌سازی", value: "دارد" },
+            { label: "مدیریت تماس", value: "پیشرفته" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-029",
+          name: "سانترال پاناسونیک KX-T1232",
+          model: "KX-T1232",
+          cover: `${import.meta.env.BASE_URL}products/KX-T1232/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ کم‌ظرفیت برای دفاتر کوچک",
+          description: "KX-T1232 یک مرکز تلفن آنالوگ قدیمی پاناسونیک است که برای دفاتر کوچک طراحی شده و امکانات پایه مدیریت تماس را ارائه می‌دهد.",
+          features: [
+            "انتقال تماس",
+            "اپراتور خودکار",
+            "صف انتظار",
+            "داخلی‌سازی",
+            "موسیقی انتظار",
+            "نصب آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "ظرفیت خطوط شهری", value: "3" },
+            { label: "ظرفیت داخلی", value: "32" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" },
+            { label: "نمایشگر", value: "ندارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-030",
+          name: "سانترال پاناسونیک KX-T61610",
+          model: "KX-T61610",
+          cover: `${import.meta.env.BASE_URL}products/KX-T61610/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ برای کسب‌وکارهای کوچک",
+          description: "پاناسونیک KX-T61610 یک مرکز تلفن آنالوگ اقتصادی با قابلیت مدیریت تماس و داخلی‌سازی برای دفاتر کوچک است.",
+          features: [
+            "انتقال تماس",
+            "اپراتور خودکار",
+            "کنفرانس",
+            "صف انتظار",
+            "موسیقی انتظار",
+            "نصب آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "6" },
+            { label: "داخلی", value: "16" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-031",
+          name: "صندوق صوتی پاناسونیک KX-TVM50",
+          model: "KX-TVM50",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/cover.webp`,
+          category: "تجهیزات جانبی سانترال",
+          brand: "Panasonic",
+          shortDescription: "سیستم صندوق صوتی حرفه‌ای پاناسونیک",
+          description: "KX-TVM50 یک سیستم Voicemail مستقل برای سانترال‌های پاناسونیک است که امکانات صندوق صوتی، پاسخگویی خودکار و مدیریت پیام‌ها را ارائه می‌دهد.",
+          features: [
+            "صندوق صوتی",
+            "پاسخگوی خودکار",
+            "ذخیره پیام",
+            "اعلان پیام",
+            "مدیریت تماس",
+            "گزارش‌گیری"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Voicemail System" },
+            { label: "پورت پایه", value: "2" },
+            { label: "حداکثر پورت", value: "6" },
+            { label: "ذخیره پیام", value: "دارد" },
+            { label: "پاسخگوی خودکار", value: "دارد" },
+            { label: "سازگار با", value: "TDA/TDE/NCP" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-032",
+          name: "صندوق صوتی پاناسونیک KX-TVM200",
+          model: "KX-TVM200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/cover.webp`,
+          category: "تجهیزات جانبی سانترال",
+          brand: "Panasonic",
+          shortDescription: "سیستم صندوق صوتی سازمانی",
+          description: "KX-TVM200 یک سیستم حرفه‌ای Voicemail برای سازمان‌ها با ظرفیت بالا و امکانات پاسخگویی خودکار پیشرفته است.",
+          features: [
+            "پاسخگوی خودکار",
+            "صندوق صوتی",
+            "مدیریت کاربران",
+            "اعلان ایمیلی",
+            "گزارش‌گیری",
+            "پشتیبانی چندزبانه"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Voicemail System" },
+            { label: "حداکثر پورت", value: "24" },
+            { label: "ظرفیت ذخیره‌سازی", value: "بالا" },
+            { label: "اعلان پیام", value: "دارد" },
+            { label: "پشتیبانی شبکه", value: "دارد" },
+            { label: "چندزبانه", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-033",
+          name: "سانترال پاناسونیک KX-TA616",
+          model: "KX-TA616",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA616/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 6 شهری و 16 داخلی",
+          description: "پاناسونیک KX-TA616 یکی از محبوب‌ترین سانترال‌های کم‌ظرفیت پاناسونیک برای دفاتر و شرکت‌های کوچک است.",
+          features: [
+            "6 خط شهری",
+            "16 داخلی",
+            "انتقال تماس",
+            "کنفرانس",
+            "صف انتظار",
+            "موسیقی انتظار"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "6" },
+            { label: "داخلی", value: "16" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-034",
+          name: "سانترال پاناسونیک KX-T30810",
+          model: "KX-T30810",
+          cover: `${import.meta.env.BASE_URL}products/KX-T30810/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 3 شهری و 8 داخلی",
+          description: "مرکز تلفن آنالوگ پاناسونیک برای دفاتر کوچک با ظرفیت 3 خط شهری و 8 داخلی.",
+          features: [
+            "3 خط شهری",
+            "8 داخلی",
+            "انتقال تماس",
+            "کنفرانس",
+            "موسیقی انتظار",
+            "اپراتور"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "3" },
+            { label: "داخلی", value: "8" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-035",
+          name: "سانترال پاناسونیک KX-T206SBX",
+          model: "KX-T206SBX",
+          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/cover.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 2 شهری و 6 داخلی",
+          description: "مرکز تلفن آنالوگ اقتصادی پاناسونیک مناسب دفاتر کوچک و فروشگاه‌ها.",
+          features: [
+            "2 خط شهری",
+            "6 داخلی",
+            "انتقال تماس",
+            "اپراتور",
+            "موسیقی انتظار",
+            "راه‌اندازی آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "2" },
+            { label: "داخلی", value: "6" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [],
+          price: "تماس برای قیمت"
+        }, {
+          id: "pan-036",
+          name: "سانترال پاناسونیک KX-TA624",
+          model: "KX-TA624",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال هیبرید آنالوگ مناسب دفاتر و شرکت‌های کوچک",
+          description:
+            "پاناسونیک KX-TA624 یک سانترال هیبرید آنالوگ است که برای کسب‌وکارهای کوچک طراحی شده است. این دستگاه به صورت پایه از 3 خط شهری و 8 داخلی پشتیبانی می‌کند و با استفاده از کارت‌های توسعه تا 6 خط شهری و 24 داخلی قابل ارتقاء است. پشتیبانی از تلفن‌های اختصاصی پاناسونیک، فکس، مودم و تلفن‌های آنالوگ از ویژگی‌های مهم این سیستم محسوب می‌شود.",
+          features: [
+            "قابلیت توسعه از 3 به 6 خط شهری",
+            "قابلیت توسعه تا 24 داخلی",
+            "پشتیبانی از Caller ID",
+            "پشتیبانی از تلفن‌های اختصاصی پاناسونیک",
+            "امکان اتصال فکس و مودم",
+            "پشتیبانی از Door Phone و Door Opener"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Advanced Hybrid PBX" },
+            { label: "ظرفیت پایه", value: "3 خط شهری / 8 داخلی" },
+            { label: "حداکثر خطوط شهری", value: "6" },
+            { label: "حداکثر خطوط داخلی", value: "24" },
+            { label: "پشتیبانی Caller ID", value: "دارد" },
+            { label: "پشتیبانی Door Phone", value: "تا 4 عدد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624-2.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624-3.webp`
           ],
           price: "تماس برای قیمت"
         }

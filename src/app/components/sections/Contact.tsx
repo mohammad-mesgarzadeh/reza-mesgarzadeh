@@ -17,7 +17,7 @@ const socialLinks = {
   li: "https://www.linkedin.com/in/reza-mesgarzadeh-b875b2380/",
   yt: "https://youtube.com/@user-pn8vg8go9e?si=HwnfYvWSxKdt9lAI",
   ap: "https://www.aparat.com/reza_mesgarzdeh",
-  te: "t.me/Reza_mesgarzadeh",
+  te: "https://t.me/Reza_mesgarzadeh",
   wa: "https://wa.me/989123254266"
 };
 

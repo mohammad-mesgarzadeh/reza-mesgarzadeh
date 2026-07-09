@@ -497,7 +497,7 @@ function Breadcrumb({
         className="hover:text-accent transition-colors"
       >
         {isScaleModel
-          ? (isRtl ? "مدل‌های مقیاس" : "Scale Models")
+          ? (isRtl ? "ماکت‌ها" : "Scale Models")
           : (isRtl ? "محصولات" : "Products")}
       </button>
       <ChevronLeft className={`w-3.5 h-3.5 ${isRtl ? "rotate-180" : ""}`} />

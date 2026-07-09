@@ -95,7 +95,11 @@ function Lightbox({
       <button
         onClick={(e) => { e.stopPropagation(); onPrev(); }}
         className={cn(
-          "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110",
+          "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center",
+          "w-12 h-12 sm:w-14 sm:h-14 rounded-full",
+          "bg-black/50 hover:bg-black/70 backdrop-blur-md",
+          "border border-white/30 shadow-lg shadow-black/30",
+          "text-white transition-all hover:scale-110 active:scale-95",
           isRtl ? "right-4" : "left-4",
         )}
         aria-label="Previous image"
@@ -106,7 +110,11 @@ function Lightbox({
       <button
         onClick={(e) => { e.stopPropagation(); onNext(); }}
         className={cn(
-          "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110",
+          "absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center",
+          "w-12 h-12 sm:w-14 sm:h-14 rounded-full",
+          "bg-black/50 hover:bg-black/70 backdrop-blur-md",
+          "border border-white/30 shadow-lg shadow-black/30",
+          "text-white transition-all hover:scale-110 active:scale-95",
           isRtl ? "left-4" : "right-4",
         )}
         aria-label="Next image"

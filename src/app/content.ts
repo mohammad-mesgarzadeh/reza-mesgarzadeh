@@ -451,6 +451,8 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
 
           ],
           price: "تماس برای قیمت"
@@ -1054,37 +1056,6 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-02_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-03_4_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-
-        {
-          id: "pan-023",
-          name: "سانترال هایبرید پاناسونیک KX-TA824",
-          model: "KX-TA824",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA824/kxta824_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "مرکز تلفن هایبرید اقتصادی مناسب دفاتر کوچک و متوسط",
-          description: "پاناسونیک KX-TA824 یک مرکز تلفن هایبرید پرکاربرد برای شرکت‌ها، فروشگاه‌ها و دفاتر اداری است. این دستگاه به صورت پیش‌فرض از 3 خط شهری و 8 داخلی پشتیبانی می‌کند و قابلیت توسعه تا 8 خط شهری و 24 داخلی را دارد. امکاناتی مانند DISA، کالر آیدی و اپراتور خودکار از ویژگی‌های مهم آن محسوب می‌شوند.",
-          features: [
-            "پشتیبانی از Caller ID",
-            "قابلیت توسعه تا 8 خط شهری",
-            "پشتیبانی از 24 داخلی",
-            "دارای سیستم DISA",
-            "امکان اتصال تلفن‌های آنالوگ و هایبرید",
-            "مناسب دفاتر و شرکت‌های کوچک"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Hybrid PBX" },
-            { label: "خطوط شهری اولیه", value: "3" },
-            { label: "حداکثر خطوط شهری", value: "8" },
-            { label: "داخلی اولیه", value: "8" },
-            { label: "حداکثر داخلی", value: "24" },
-            { label: "Caller ID", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TA824/kxta824_1_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },

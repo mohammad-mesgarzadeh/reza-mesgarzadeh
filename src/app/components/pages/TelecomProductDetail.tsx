@@ -634,24 +634,45 @@ export default function TelecomProductDetail() {
         </button>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-          <div className="space-y-4">
+          <div className="space-y-4 min-w-0 w-full">
             <ImageZoom
               src={product.images[selectedThumb]}
               alt={product.name}
               onImageClick={() => setLightboxOpen(true)}
             />
 
-            <div className="w-full overflow-hidden">
-              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin flex-nowrap scroll-smooth">
+            <div className="w-full max-w-full">
+              <div
+                className="
+      flex
+      flex-nowrap
+      gap-3
+      overflow-x-auto
+      overflow-y-hidden
+      pb-2
+      touch-pan-x
+      scrollbar-thin
+      [-webkit-overflow-scrolling:touch]
+    "
+              >
                 {product.images.map((img, i) => (
                   <button
                     key={i}
                     onClick={() => setSelectedThumb(i)}
                     className={cn(
-                      "relative flex-none w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all duration-200",
+                      `
+          flex-shrink-0
+          w-16 h-16
+          sm:w-20 sm:h-20
+          rounded-lg
+          overflow-hidden
+          border-2
+          transition-all
+          duration-200
+          `,
                       selectedThumb === i
                         ? "border-accent ring-2 ring-accent/20 ring-offset-2 ring-offset-background"
-                        : "border-border/60 hover:border-accent/40 opacity-70 hover:opacity-100",
+                        : "border-border/60 hover:border-accent/40 opacity-70 hover:opacity-100"
                     )}
                   >
                     <img

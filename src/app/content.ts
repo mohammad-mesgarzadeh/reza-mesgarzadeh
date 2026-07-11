@@ -1165,7 +1165,7 @@ export const CONTENT: Content = {
           id: "pan-027",
           name: "یونیت توسعه پاناسونیک KX-NS520",
           model: "KX-NS520",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS520/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "یونیت توسعه ظرفیت برای سانترال KX-NS500",
@@ -1186,14 +1186,19 @@ export const CONTENT: Content = {
             { label: "افزایش خطوط شهری", value: "تا 190 خط" },
             { label: "نصب رک", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-028",
           name: "سانترال پاناسونیک KX-TDA620",
           model: "KX-TDA620",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "مرکز تلفن دیجیتال سازمانی با ظرفیت بالا",
@@ -1214,14 +1219,21 @@ export const CONTENT: Content = {
             { label: "شبکه‌سازی", value: "دارد" },
             { label: "مدیریت تماس", value: "پیشرفته" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-029",
           name: "سانترال پاناسونیک KX-T1232",
           model: "KX-T1232",
-          cover: `${import.meta.env.BASE_URL}products/KX-T1232/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-T1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال آنالوگ کم‌ظرفیت برای دفاتر کوچک",
@@ -1242,14 +1254,18 @@ export const CONTENT: Content = {
             { label: "موسیقی انتظار", value: "دارد" },
             { label: "نمایشگر", value: "ندارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-030",
           name: "سانترال پاناسونیک KX-T61610",
           model: "KX-T61610",
-          cover: `${import.meta.env.BASE_URL}products/KX-T61610/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال آنالوگ برای کسب‌وکارهای کوچک",
@@ -1270,15 +1286,17 @@ export const CONTENT: Content = {
             { label: "انتقال تماس", value: "دارد" },
             { label: "موسیقی انتظار", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-031",
           name: "صندوق صوتی پاناسونیک KX-TVM50",
           model: "KX-TVM50",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/cover.webp`,
-          category: "تجهیزات جانبی سانترال",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "سیستم صندوق صوتی حرفه‌ای پاناسونیک",
           description: "KX-TVM50 یک سیستم Voicemail مستقل برای سانترال‌های پاناسونیک است که امکانات صندوق صوتی، پاسخگویی خودکار و مدیریت پیام‌ها را ارائه می‌دهد.",
@@ -1298,15 +1316,17 @@ export const CONTENT: Content = {
             { label: "پاسخگوی خودکار", value: "دارد" },
             { label: "سازگار با", value: "TDA/TDE/NCP" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-032",
           name: "صندوق صوتی پاناسونیک KX-TVM200",
           model: "KX-TVM200",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/cover.webp`,
-          category: "تجهیزات جانبی سانترال",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          category: "کارت‌ها و تجهیزات جانبی",
           brand: "Panasonic",
           shortDescription: "سیستم صندوق صوتی سازمانی",
           description: "KX-TVM200 یک سیستم حرفه‌ای Voicemail برای سازمان‌ها با ظرفیت بالا و امکانات پاسخگویی خودکار پیشرفته است.",
@@ -1326,14 +1346,16 @@ export const CONTENT: Content = {
             { label: "پشتیبانی شبکه", value: "دارد" },
             { label: "چندزبانه", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-033",
           name: "سانترال پاناسونیک KX-TA616",
           model: "KX-TA616",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA616/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال آنالوگ 6 شهری و 16 داخلی",
@@ -1354,14 +1376,16 @@ export const CONTENT: Content = {
             { label: "اپراتور", value: "دارد" },
             { label: "موسیقی انتظار", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-034",
           name: "سانترال پاناسونیک KX-T30810",
           model: "KX-T30810",
-          cover: `${import.meta.env.BASE_URL}products/KX-T30810/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال آنالوگ 3 شهری و 8 داخلی",
@@ -1382,14 +1406,16 @@ export const CONTENT: Content = {
             { label: "انتقال تماس", value: "دارد" },
             { label: "اپراتور", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          ],
           price: "تماس برای قیمت"
         },
         {
           id: "pan-035",
           name: "سانترال پاناسونیک KX-T206SBX",
           model: "KX-T206SBX",
-          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/cover.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال آنالوگ 2 شهری و 6 داخلی",
@@ -1410,13 +1436,15 @@ export const CONTENT: Content = {
             { label: "اپراتور", value: "دارد" },
             { label: "موسیقی انتظار", value: "دارد" }
           ],
-          images: [],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          ],
           price: "تماس برای قیمت"
         }, {
           id: "pan-036",
           name: "سانترال پاناسونیک KX-TA624",
           model: "KX-TA624",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624.webp`,
+          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
           shortDescription: "سانترال هیبرید آنالوگ مناسب دفاتر و شرکت‌های کوچک",
@@ -1439,9 +1467,7 @@ export const CONTENT: Content = {
             { label: "پشتیبانی Door Phone", value: "تا 4 عدد" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624-2.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TA624/kx-ta624-3.webp`
+            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
           ],
           price: "تماس برای قیمت"
         }

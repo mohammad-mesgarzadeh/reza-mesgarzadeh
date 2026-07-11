@@ -19,7 +19,7 @@ export default function ProductCarousel({ products, lang, phoneNumber }: Product
   const [direction, setDirection] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const featured = products.slice(0, 5);
+  const featured = products.slice(10, 15);
 
   const goTo = useCallback((index: number) => {
     setDirection(index > current ? 1 : -1);

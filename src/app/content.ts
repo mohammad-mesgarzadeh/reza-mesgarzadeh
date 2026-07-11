@@ -390,7 +390,257 @@ export const CONTENT: Content = {
       ],
       products: [
         {
-          id: "pan-001",
+          id: "pan-035",
+          name: "سانترال پاناسونیک KX-T206SBX",
+          model: "KX-T206SBX",
+          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 2 شهری و 6 داخلی",
+          description: "مرکز تلفن آنالوگ اقتصادی پاناسونیک مناسب دفاتر کوچک و فروشگاه‌ها.",
+          features: [
+            "2 خط شهری",
+            "6 داخلی",
+            "انتقال تماس",
+            "اپراتور",
+            "موسیقی انتظار",
+            "راه‌اندازی آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "2" },
+            { label: "داخلی", value: "6" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-034",
+          name: "سانترال پاناسونیک KX-T30810",
+          model: "KX-T30810",
+          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 3 شهری و 8 داخلی",
+          description: "مرکز تلفن آنالوگ پاناسونیک برای دفاتر کوچک با ظرفیت 3 خط شهری و 8 داخلی.",
+          features: [
+            "3 خط شهری",
+            "8 داخلی",
+            "انتقال تماس",
+            "کنفرانس",
+            "موسیقی انتظار",
+            "اپراتور"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "3" },
+            { label: "داخلی", value: "8" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-030",
+          name: "سانترال پاناسونیک KX-T61610",
+          model: "KX-T61610",
+          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ برای کسب‌وکارهای کوچک",
+          description: "پاناسونیک KX-T61610 یک مرکز تلفن آنالوگ اقتصادی با قابلیت مدیریت تماس و داخلی‌سازی برای دفاتر کوچک است.",
+          features: [
+            "انتقال تماس",
+            "اپراتور خودکار",
+            "کنفرانس",
+            "صف انتظار",
+            "موسیقی انتظار",
+            "نصب آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "6" },
+            { label: "داخلی", value: "16" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "انتقال تماس", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          ],
+          price: "تماس برای قیمت"
+        }, {
+          id: "pan-037",
+          name: "باکس سانترال پاناسونیک KX-T123211D",
+          model: "KX-T123211D",
+          cover: `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "باکس سانترال دیجیتال پاناسونیک KX-T123211D مناسب کسب‌وکارهای کوچک و متوسط",
+          description: "پاناسونیک KX-T123211D یک سیستم سانترال دیجیتال از سری KX-TD است که برای مدیریت خطوط شهری و داخلی‌های سازمانی طراحی شده است. این دستگاه با ارائه امکانات مدیریت تماس، پشتیبانی از تلفن‌های دیجیتال و قابلیت توسعه، گزینه‌ای مناسب برای شرکت‌ها، دفاتر و مجموعه‌هایی است که به یک مرکز تلفن مطمئن و کاربردی نیاز دارند.",
+          features: [
+            "سیستم سانترال دیجیتال پاناسونیک",
+            "پشتیبانی از خطوط شهری و داخلی‌های متعدد",
+            "قابلیت اتصال تلفن‌های دیجیتال پاناسونیک",
+            "مدیریت و انتقال پیشرفته تماس‌ها",
+            "قابلیت توسعه با کارت‌های جانبی",
+            "مناسب برای شرکت‌ها و سازمان‌های کوچک و متوسط",
+            "کیفیت و پایداری بالای ارتباطات"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Digital Hybrid PBX" },
+            { label: "مدل دستگاه", value: "KX-T123211D" },
+            { label: "ظرفیت اولیه", value: "12 خط شهری / 32 داخلی" },
+            { label: "نوع خطوط شهری", value: "آنالوگ" },
+            { label: "نوع داخلی‌ها", value: "دیجیتال و آنالوگ" },
+            { label: "پشتیبانی تلفن دیجیتال", value: "دارد" },
+            { label: "قابلیت توسعه", value: "با کارت‌های جانبی" },
+            { label: "قابلیت مدیریت تماس", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-038",
+          name: "باکس سانترال پاناسونیک KX-TA308",
+          model: "KX-TA308",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA308/KX-TA308.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال هیبریدی آنالوگ پاناسونیک مناسب دفاتر و کسب‌وکارهای کوچک",
+          description: "پاناسونیک KX-TA308 یک سانترال هیبریدی آنالوگ با ظرفیت اولیه 3 خط شهری و 8 داخلی است که برای دفاتر کوچک، فروشگاه‌ها و کسب‌وکارهایی با نیاز ارتباطی محدود طراحی شده است. این دستگاه قابلیت توسعه تا 6 خط شهری و 24 داخلی را با استفاده از کارت‌های جانبی فراهم می‌کند و امکاناتی مانند اپراتور خودکار، موسیقی انتظار، مدیریت تماس و اتصال درب‌بازکن را در اختیار کاربران قرار می‌دهد. :contentReference[oaicite:0]{index=0}",
+          features: [
+            "سیستم سانترال هیبریدی آنالوگ",
+            "ظرفیت اولیه 3 خط شهری و 8 داخلی",
+            "قابلیت توسعه تا 6 خط شهری و 24 داخلی",
+            "پشتیبانی از تلفن‌های آنالوگ و هیبریدی",
+            "موسیقی انتظار داخلی و خارجی",
+            "پشتیبانی از اپراتور خودکار",
+            "قابلیت اتصال درب‌بازکن و آیفون",
+            "مدیریت و انتقال تماس‌ها"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Advanced Hybrid PBX" },
+            { label: "ظرفیت اولیه", value: "3 خط شهری / 8 داخلی" },
+            { label: "حداکثر خطوط شهری", value: "6" },
+            { label: "حداکثر خطوط داخلی", value: "24" },
+            { label: "نوع داخلی", value: "آنالوگ و هیبریدی" },
+            { label: "پشتیبانی از تلفن دیجیتال", value: "خیر" },
+            { label: "اپراتور خودکار", value: "قابل پشتیبانی با کارت جانبی" },
+            { label: "موسیقی انتظار", value: "دارد" },
+            { label: "اتصال درب‌بازکن", value: "تا 4 درب" },
+            { label: "پورت گزارش‌گیری", value: "RS-232C" },
+            { label: "ابعاد", value: "284 × 368 × 95 میلی‌متر" },
+            { label: "وزن", value: "2.9 کیلوگرم" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA308/KX-TA308.webp`,
+          ],
+          price: "تماس برای قیمت"
+        }, {
+          id: "pan-033",
+          name: "سانترال پاناسونیک KX-TA616",
+          model: "KX-TA616",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ 6 شهری و 16 داخلی",
+          description: "پاناسونیک KX-TA616 یکی از محبوب‌ترین سانترال‌های کم‌ظرفیت پاناسونیک برای دفاتر و شرکت‌های کوچک است.",
+          features: [
+            "6 خط شهری",
+            "16 داخلی",
+            "انتقال تماس",
+            "کنفرانس",
+            "صف انتظار",
+            "موسیقی انتظار"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "خطوط شهری", value: "6" },
+            { label: "داخلی", value: "16" },
+            { label: "کنفرانس", value: "دارد" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        }, {
+          id: "pan-036",
+          name: "سانترال پاناسونیک KX-TA624",
+          model: "KX-TA624",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال هیبرید آنالوگ مناسب دفاتر و شرکت‌های کوچک",
+          description:
+            "پاناسونیک KX-TA624 یک سانترال هیبرید آنالوگ است که برای کسب‌وکارهای کوچک طراحی شده است. این دستگاه به صورت پایه از 3 خط شهری و 8 داخلی پشتیبانی می‌کند و با استفاده از کارت‌های توسعه تا 6 خط شهری و 24 داخلی قابل ارتقاء است. پشتیبانی از تلفن‌های اختصاصی پاناسونیک، فکس، مودم و تلفن‌های آنالوگ از ویژگی‌های مهم این سیستم محسوب می‌شود.",
+          features: [
+            "قابلیت توسعه از 3 به 6 خط شهری",
+            "قابلیت توسعه تا 24 داخلی",
+            "پشتیبانی از Caller ID",
+            "پشتیبانی از تلفن‌های اختصاصی پاناسونیک",
+            "امکان اتصال فکس و مودم",
+            "پشتیبانی از Door Phone و Door Opener"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Advanced Hybrid PBX" },
+            { label: "ظرفیت پایه", value: "3 خط شهری / 8 داخلی" },
+            { label: "حداکثر خطوط شهری", value: "6" },
+            { label: "حداکثر خطوط داخلی", value: "24" },
+            { label: "پشتیبانی Caller ID", value: "دارد" },
+            { label: "پشتیبانی Door Phone", value: "تا 4 عدد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+
+        {
+          id: "pan-011",
+          name: "سانترال هایبرید پاناسونیک KX-TEM824",
+          model: "KX-TEM824",
+          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن هایبرید پیشرفته با ظرفیت پایه ۶ خط شهری و ۱۶ داخلی",
+          description: "دستگاه سانترال مدل KX-TEM824 برادر بزرگ‌تر مدل ۸۲۴ معمولی است که به صورت کارخانه‌ای با گنجایش اولیه بالاتر تولید شده است. این سیستم قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی را دارا بوده و برای دفاتر پرتردد عالی است.",
+          features: [
+            "ظرفیت اولیه فیزیکی ۶ خط شهری و ۱۶ داخلی",
+            "پشتیبانی کامل از تلفن‌های هایبرید سری ۷۷",
+            "دارای سیستم تلفن گویای هوشمند پیش‌فرض",
+            "امکان اتصال باطری پشتیبان برای زمان قطع برق"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Advanced Hybrid" },
+            { label: "ظرفیت پایه", value: "۶ شهری / ۱۶ داخلی" },
+            { label: "حداکثر توسعه", value: "۸ شهری / ۲۴ داخلی" },
+            { label: "پورت برنامه‌ریزی", value: "USB / RS-232C" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-002",
           name: "سانترال آنالوگ پاناسونیک KX-TES824",
           model: "KX-TES824",
           cover: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
@@ -422,7 +672,143 @@ export const CONTENT: Content = {
           price: "تماس برای استعلام قیمت"
         },
         {
-          id: "pan-002",
+          id: "pan-029",
+          name: "سانترال پاناسونیک KX-TD1232",
+          model: "KX-TD1232",
+          cover: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سانترال آنالوگ کم‌ظرفیت برای دفاتر کوچک",
+          description: "KX-TD1232 یک مرکز تلفن آنالوگ قدیمی پاناسونیک است که برای دفاتر کوچک طراحی شده و امکانات پایه مدیریت تماس را ارائه می‌دهد.",
+          features: [
+            "انتقال تماس",
+            "اپراتور خودکار",
+            "صف انتظار",
+            "داخلی‌سازی",
+            "موسیقی انتظار",
+            "نصب آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Analog PBX" },
+            { label: "ظرفیت خطوط شهری", value: "3" },
+            { label: "ظرفیت داخلی", value: "32" },
+            { label: "اپراتور", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد" },
+            { label: "نمایشگر", value: "ندارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-024",
+          name: "سانترال IP پاناسونیک KX-NS500",
+          model: "KX-NS500",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن IP و هایبرید نسل جدید برای سازمان‌ها",
+          description: "پاناسونیک KX-NS500 یک سانترال تحت شبکه برای شرکت‌های کوچک و متوسط است که قابلیت ترکیب خطوط سنتی و VoIP را فراهم می‌کند. این دستگاه از 6 خط شهری و 18 داخلی به صورت پایه شروع شده و تا 190 خط شهری و 288 داخلی قابل توسعه است. قابلیت پشتیبانی از SIP، صندوق صوتی و ارتباط چند شعبه‌ای را ارائه می‌دهد.",
+          features: [
+            "پشتیبانی از SIP Trunk",
+            "پشتیبانی از VoIP",
+            "قابلیت توسعه تا 288 داخلی",
+            "صندوق صوتی داخلی",
+            "امکان شبکه‌سازی شعب",
+            "پشتیبانی از تلفن‌های IP"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "IP Hybrid PBX" },
+            { label: "ظرفیت اولیه", value: "6 شهری / 18 داخلی" },
+            { label: "حداکثر خطوط شهری", value: "48 " },
+            { label: "حداکثر خطوط داخلی", value: "128" },
+            { label: "حداکثر تلفن SIP/IP", value: "128" },
+            { label: "پشتیبانی SIP", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-027",
+          name: "یونیت توسعه پاناسونیک KX-NS520",
+          model: "KX-NS520",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "یونیت توسعه ظرفیت برای سانترال KX-NS500",
+          description: "پاناسونیک KX-NS520 یک یونیت توسعه برای سانترال KX-NS500 است که امکان افزایش ظرفیت خطوط شهری و داخلی را فراهم می‌کند و برای سازمان‌هایی که نیاز به توسعه سیستم مخابراتی خود دارند مناسب است.",
+          features: [
+            "افزایش ظرفیت داخلی",
+            "افزایش ظرفیت خطوط شهری",
+            "قابل اتصال به NS500",
+            "پشتیبانی از کارت‌های توسعه",
+            "نصب آسان",
+            "قابلیت توسعه مرحله‌ای"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Expansion Unit" },
+            { label: "سازگار با", value: "KX-NS500" },
+            { label: "حداکثر تعداد", value: "3 یونیت" },
+            { label: "افزایش ظرفیت داخلی", value: "تا 288 داخلی" },
+            { label: "افزایش خطوط شهری", value: "تا 190 خط" },
+            { label: "نصب رک", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-025",
+          name: "سانترال IP پاناسونیک KX-NS1000",
+          model: "KX-NS1000",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "پلتفرم ارتباطی حرفه‌ای برای سازمان‌های بزرگ",
+          description: "پاناسونیک KX-NS1000 یک سیستم ارتباطی Enterprise مبتنی بر IP است که برای سازمان‌ها، بانک‌ها، مراکز تماس و شرکت‌های چند شعبه‌ای طراحی شده است. این مرکز تلفن از حداکثر 1000 داخلی و 600 کانال شهری در حالت شبکه پشتیبانی می‌کند و امکانات پیشرفته VoIP و Unified Communication را در اختیار سازمان‌ها قرار می‌دهد.",
+          features: [
+            "پشتیبانی کامل از VoIP",
+            "مناسب مراکز تماس",
+            "قابلیت اتصال چندین شعبه",
+            "پشتیبانی از SIP و IP Phone",
+            "امکان Redundancy",
+            "مدیریت متمرکز ارتباطات"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Enterprise IP PBX" },
+            { label: "حداکثر خطوط شهری", value: "600" },
+            { label: "حداکثر داخلی", value: "1000" },
+            { label: "حداکثر SIP Extension", value: "1000" },
+            { label: "پشتیبانی VoIP", value: "دارد" },
+            { label: "پشتیبانی چند شعبه", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-001",
           name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA100DBP",
           model: "KX-TDA100DBP",
           cover: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
@@ -454,6 +840,194 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
 
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-012",
+          name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA200",
+          model: "KX-TDA200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "باکس سانترال دیجیتال پرظرفیت مجهز به ۱۱ اسلات سخت‌افزاری",
+          description: "مرکز تلفن صنعتی و فوق‌العاده پایدار KX-TDA200 طراحی شده برای سازمان‌ها، نهادهای دولتی و کارخانجات بزرگ که دارای تعداد بالایی خطوط شهری و پرسنل داخلی هستند. ساختار کاملاً ماژولار آزادی عمل بی‌نظیری به بخش IT سازمان می‌دهد.",
+          features: [
+            "دارای ۱۱ اسلات ماژولار آزاد برای انواع کارت‌ها",
+            "پشتیبانی کامل از خطوط دیجیتال PRI و خطوط شهری آنالوگ",
+            "امکان لینک سازی و شبکه کردن چند باکس مجزا",
+            "سوییچینگ بدون وقفه خطوط و پایداری سخت‌افزاری"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Digital Modular" },
+            { label: "تعداد اسلات آزاد", value: "۱۱ اسلات" },
+            { label: "حداکثر خطوط داخلی", value: "Up to 256" },
+            { label: "پشتیبانی از DECT", value: "دارد (بی‌سیم سانترال)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-013",
+          name: "سانترال انترپرایز پاناسونیک KX-TDA600",
+          model: "KX-TDA600",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "بزرگ‌ترین و پرظرفیت‌ترین مرکز تلفن دیجیتال سنتی پاناسونیک",
+          description: "سیستم KX-TDA600 غول سخت‌افزاری پاناسونیک در بستر سیستم‌های مخابراتی سنتی و دیجیتال است. این باکس پایه به تنهایی ظرفیت بالایی دارد و با اضافه شدن باکس‌های شیلف ارتقایی (TDA620) توانایی پشتیبانی تا بیش از ۱۰۰۰ خط داخلی را فراهم می‌کند.",
+          features: [
+            "باکس پایه انترپرایز با ظرفیت فوق‌سنگین",
+            "قابلیت اتصال به ۳ باکس شیلف ارتقایی مجزا",
+            "پشتیبانی از حجم عظیمی از کارت‌های دیجیتال و آنالوگ",
+            "ایده‌آل برای هتل‌های بزرگ، بیمارستان‌ها و پتروشیمی‌ها"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Enterprise Digital PBX" },
+            { label: "حداکثر داخلی‌ها", value: "بیش از ۱۰۰۰ پورت" },
+            { label: "تعداد اسلات باکس پایه", value: "۱۰ اسلات بزرگ" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-028",
+          name: "سانترال پاناسونیک KX-TDA620",
+          model: "KX-TDA620",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "مرکز تلفن دیجیتال سازمانی با ظرفیت بالا",
+          description: "پاناسونیک KX-TDA620 یک مرکز تلفن دیجیتال پیشرفته برای سازمان‌های متوسط و بزرگ است که قابلیت پشتیبانی از خطوط آنالوگ، دیجیتال و IP را فراهم می‌کند.",
+          features: [
+            "پشتیبانی از VoIP",
+            "قابلیت توسعه بالا",
+            "پشتیبانی از PRI",
+            "مدیریت تماس پیشرفته",
+            "صندوق صوتی",
+            "پشتیبانی از شبکه"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "Hybrid IP PBX" },
+            { label: "ظرفیت", value: "تا 640 داخلی" },
+            { label: "پشتیبانی PRI", value: "دارد" },
+            { label: "VoIP", value: "دارد" },
+            { label: "شبکه‌سازی", value: "دارد" },
+            { label: "مدیریت تماس", value: "پیشرفته" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-031",
+          name: "صندوق صوتی پاناسونیک KX-TVM50",
+          model: "KX-TVM50",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سیستم صندوق صوتی حرفه‌ای پاناسونیک",
+          description: "KX-TVM50 یک سیستم Voicemail مستقل برای سانترال‌های پاناسونیک است که امکانات صندوق صوتی، پاسخگویی خودکار و مدیریت پیام‌ها را ارائه می‌دهد.",
+          features: [
+            "صندوق صوتی",
+            "پاسخگوی خودکار",
+            "ذخیره پیام",
+            "اعلان پیام",
+            "مدیریت تماس",
+            "گزارش‌گیری"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Voicemail System" },
+            { label: "پورت پایه", value: "2" },
+            { label: "حداکثر پورت", value: "6" },
+            { label: "ذخیره پیام", value: "دارد" },
+            { label: "پاسخگوی خودکار", value: "دارد" },
+            { label: "سازگار با", value: "TDA/TDE/NCP" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-032",
+          name: "صندوق صوتی پاناسونیک KX-TVM200",
+          model: "KX-TVM200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سیستم صندوق صوتی سازمانی",
+          description: "KX-TVM200 یک سیستم حرفه‌ای Voicemail برای سازمان‌ها با ظرفیت بالا و امکانات پاسخگویی خودکار پیشرفته است.",
+          features: [
+            "پاسخگوی خودکار",
+            "صندوق صوتی",
+            "مدیریت کاربران",
+            "اعلان ایمیلی",
+            "گزارش‌گیری",
+            "پشتیبانی چندزبانه"
+          ],
+          specifications: [
+            { label: "نوع دستگاه", value: "Voicemail System" },
+            { label: "حداکثر پورت", value: "24" },
+            { label: "ظرفیت ذخیره‌سازی", value: "بالا" },
+            { label: "اعلان پیام", value: "دارد" },
+            { label: "پشتیبانی شبکه", value: "دارد" },
+            { label: "چندزبانه", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          ],
+          price: "تماس برای قیمت"
+        },
+        {
+          id: "pan-026",
+          name: "سانترال IP پاناسونیک KX-HTS32",
+          model: "KX-HTS32",
+          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+          category: "سیستم‌های PBX",
+          brand: "Panasonic",
+          shortDescription: "سیستم ارتباطی یکپارچه برای دفاتر کوچک",
+          description: "پاناسونیک KX-HTS32 یک مرکز تلفن IP کوچک و اقتصادی است که امکانات سانترال، روتر، Wi-Fi و VoIP را در یک دستگاه ارائه می‌دهد. این محصول برای دفاتر کوچک، فروشگاه‌ها و استارتاپ‌ها طراحی شده و راه‌اندازی بسیار ساده‌ای دارد.",
+          features: [
+            "پشتیبانی از SIP Trunk",
+            "Wi-Fi داخلی",
+            "روتر داخلی",
+            "صندوق صوتی",
+            "کنفرانس صوتی",
+            "راه‌اندازی آسان"
+          ],
+          specifications: [
+            { label: "نوع سیستم", value: "IP PBX" },
+            { label: "حداکثر کاربران", value: "32" },
+            { label: "Wi-Fi", value: "داخلی" },
+            { label: "Voicemail", value: "دارد" },
+            { label: "SIP Trunk", value: "دارد" },
+            { label: "کنفرانس صوتی", value: "دارد" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
           ],
           price: "تماس برای قیمت"
         },
@@ -708,96 +1282,7 @@ export const CONTENT: Content = {
           ],
           price: "تماس برای قیمت"
         },
-        {
-          id: "pan-011",
-          name: "سانترال هایبرید پاناسونیک KX-TEM824",
-          model: "KX-TEM824",
-          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "مرکز تلفن هایبرید پیشرفته با ظرفیت پایه ۶ خط شهری و ۱۶ داخلی",
-          description: "دستگاه سانترال مدل KX-TEM824 برادر بزرگ‌تر مدل ۸۲۴ معمولی است که به صورت کارخانه‌ای با گنجایش اولیه بالاتر تولید شده است. این سیستم قابلیت ارتقا تا حداکثر ۸ خط شهری و ۲۴ خط داخلی را دارا بوده و برای دفاتر پرتردد عالی است.",
-          features: [
-            "ظرفیت اولیه فیزیکی ۶ خط شهری و ۱۶ داخلی",
-            "پشتیبانی کامل از تلفن‌های هایبرید سری ۷۷",
-            "دارای سیستم تلفن گویای هوشمند پیش‌فرض",
-            "امکان اتصال باطری پشتیبان برای زمان قطع برق"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Advanced Hybrid" },
-            { label: "ظرفیت پایه", value: "۶ شهری / ۱۶ داخلی" },
-            { label: "حداکثر توسعه", value: "۸ شهری / ۲۴ داخلی" },
-            { label: "پورت برنامه‌ریزی", value: "USB / RS-232C" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-012",
-          name: "سانترال دیجیتال ماژولار پاناسونیک KX-TDA200",
-          model: "KX-TDA200",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "باکس سانترال دیجیتال پرظرفیت مجهز به ۱۱ اسلات سخت‌افزاری",
-          description: "مرکز تلفن صنعتی و فوق‌العاده پایدار KX-TDA200 طراحی شده برای سازمان‌ها، نهادهای دولتی و کارخانجات بزرگ که دارای تعداد بالایی خطوط شهری و پرسنل داخلی هستند. ساختار کاملاً ماژولار آزادی عمل بی‌نظیری به بخش IT سازمان می‌دهد.",
-          features: [
-            "دارای ۱۱ اسلات ماژولار آزاد برای انواع کارت‌ها",
-            "پشتیبانی کامل از خطوط دیجیتال PRI و خطوط شهری آنالوگ",
-            "امکان لینک سازی و شبکه کردن چند باکس مجزا",
-            "سوییچینگ بدون وقفه خطوط و پایداری سخت‌افزاری"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Digital Modular" },
-            { label: "تعداد اسلات آزاد", value: "۱۱ اسلات" },
-            { label: "حداکثر خطوط داخلی", value: "Up to 256" },
-            { label: "پشتیبانی از DECT", value: "دارد (بی‌سیم سانترال)" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-013",
-          name: "سانترال انترپرایز پاناسونیک KX-TDA600",
-          model: "KX-TDA600",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "بزرگ‌ترین و پرظرفیت‌ترین مرکز تلفن دیجیتال سنتی پاناسونیک",
-          description: "سیستم KX-TDA600 غول سخت‌افزاری پاناسونیک در بستر سیستم‌های مخابراتی سنتی و دیجیتال است. این باکس پایه به تنهایی ظرفیت بالایی دارد و با اضافه شدن باکس‌های شیلف ارتقایی (TDA620) توانایی پشتیبانی تا بیش از ۱۰۰۰ خط داخلی را فراهم می‌کند.",
-          features: [
-            "باکس پایه انترپرایز با ظرفیت فوق‌سنگین",
-            "قابلیت اتصال به ۳ باکس شیلف ارتقایی مجزا",
-            "پشتیبانی از حجم عظیمی از کارت‌های دیجیتال و آنالوگ",
-            "ایده‌آل برای هتل‌های بزرگ، بیمارستان‌ها و پتروشیمی‌ها"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Enterprise Digital PBX" },
-            { label: "حداکثر داخلی‌ها", value: "بیش از ۱۰۰۰ پورت" },
-            { label: "تعداد اسلات باکس پایه", value: "۱۰ اسلات بزرگ" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
+
         {
           id: "pan-014",
           name: "تلفن دیجیتال کارمندی پاناسونیک KX-DT521",
@@ -1036,7 +1521,7 @@ export const CONTENT: Content = {
           name: "کنسول دکمه‌های اضافه پاناسونیک KX-DT590",
           model: "KX-DT590",
           cover: `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
-          category: "کارت‌ها و تجهیزات جانبی",
+          category: "تلفن‌های سانترال",
           brand: "Panasonic",
           shortDescription: "کنسول افزایشی DSS دارای ۴۸ کلید چراغ‌دار برای اپراتورهای مرکزی",
           description: "این قطعه جانبی لوکس به پهلوی تلفن‌های مدیریتی دیجیتال (مانند DT543 و DT546) متصل شده و ۴۸ دکمه جدید مجهز به چراغ‌های زنده سبز و قرمز را برای پایش و مانیتورینگ وضعیت کل خطوط سازمان در اختیار منشی قرار می‌دهد.",
@@ -1059,418 +1544,7 @@ export const CONTENT: Content = {
           ],
           price: "تماس برای قیمت"
         },
-        {
-          id: "pan-024",
-          name: "سانترال IP پاناسونیک KX-NS500",
-          model: "KX-NS500",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "مرکز تلفن IP و هایبرید نسل جدید برای سازمان‌ها",
-          description: "پاناسونیک KX-NS500 یک سانترال تحت شبکه برای شرکت‌های کوچک و متوسط است که قابلیت ترکیب خطوط سنتی و VoIP را فراهم می‌کند. این دستگاه از 6 خط شهری و 18 داخلی به صورت پایه شروع شده و تا 190 خط شهری و 288 داخلی قابل توسعه است. قابلیت پشتیبانی از SIP، صندوق صوتی و ارتباط چند شعبه‌ای را ارائه می‌دهد.",
-          features: [
-            "پشتیبانی از SIP Trunk",
-            "پشتیبانی از VoIP",
-            "قابلیت توسعه تا 288 داخلی",
-            "صندوق صوتی داخلی",
-            "امکان شبکه‌سازی شعب",
-            "پشتیبانی از تلفن‌های IP"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "IP Hybrid PBX" },
-            { label: "ظرفیت اولیه", value: "6 شهری / 18 داخلی" },
-            { label: "حداکثر خطوط شهری", value: "48 " },
-            { label: "حداکثر خطوط داخلی", value: "128" },
-            { label: "حداکثر تلفن SIP/IP", value: "128" },
-            { label: "پشتیبانی SIP", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-025",
-          name: "سانترال IP پاناسونیک KX-NS1000",
-          model: "KX-NS1000",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "پلتفرم ارتباطی حرفه‌ای برای سازمان‌های بزرگ",
-          description: "پاناسونیک KX-NS1000 یک سیستم ارتباطی Enterprise مبتنی بر IP است که برای سازمان‌ها، بانک‌ها، مراکز تماس و شرکت‌های چند شعبه‌ای طراحی شده است. این مرکز تلفن از حداکثر 1000 داخلی و 600 کانال شهری در حالت شبکه پشتیبانی می‌کند و امکانات پیشرفته VoIP و Unified Communication را در اختیار سازمان‌ها قرار می‌دهد.",
-          features: [
-            "پشتیبانی کامل از VoIP",
-            "مناسب مراکز تماس",
-            "قابلیت اتصال چندین شعبه",
-            "پشتیبانی از SIP و IP Phone",
-            "امکان Redundancy",
-            "مدیریت متمرکز ارتباطات"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Enterprise IP PBX" },
-            { label: "حداکثر خطوط شهری", value: "600" },
-            { label: "حداکثر داخلی", value: "1000" },
-            { label: "حداکثر SIP Extension", value: "1000" },
-            { label: "پشتیبانی VoIP", value: "دارد" },
-            { label: "پشتیبانی چند شعبه", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-026",
-          name: "سانترال IP پاناسونیک KX-HTS32",
-          model: "KX-HTS32",
-          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سیستم ارتباطی یکپارچه برای دفاتر کوچک",
-          description: "پاناسونیک KX-HTS32 یک مرکز تلفن IP کوچک و اقتصادی است که امکانات سانترال، روتر، Wi-Fi و VoIP را در یک دستگاه ارائه می‌دهد. این محصول برای دفاتر کوچک، فروشگاه‌ها و استارتاپ‌ها طراحی شده و راه‌اندازی بسیار ساده‌ای دارد.",
-          features: [
-            "پشتیبانی از SIP Trunk",
-            "Wi-Fi داخلی",
-            "روتر داخلی",
-            "صندوق صوتی",
-            "کنفرانس صوتی",
-            "راه‌اندازی آسان"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "IP PBX" },
-            { label: "حداکثر کاربران", value: "32" },
-            { label: "Wi-Fi", value: "داخلی" },
-            { label: "Voicemail", value: "دارد" },
-            { label: "SIP Trunk", value: "دارد" },
-            { label: "کنفرانس صوتی", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        }, {
-          id: "pan-027",
-          name: "یونیت توسعه پاناسونیک KX-NS520",
-          model: "KX-NS520",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "یونیت توسعه ظرفیت برای سانترال KX-NS500",
-          description: "پاناسونیک KX-NS520 یک یونیت توسعه برای سانترال KX-NS500 است که امکان افزایش ظرفیت خطوط شهری و داخلی را فراهم می‌کند و برای سازمان‌هایی که نیاز به توسعه سیستم مخابراتی خود دارند مناسب است.",
-          features: [
-            "افزایش ظرفیت داخلی",
-            "افزایش ظرفیت خطوط شهری",
-            "قابل اتصال به NS500",
-            "پشتیبانی از کارت‌های توسعه",
-            "نصب آسان",
-            "قابلیت توسعه مرحله‌ای"
-          ],
-          specifications: [
-            { label: "نوع دستگاه", value: "Expansion Unit" },
-            { label: "سازگار با", value: "KX-NS500" },
-            { label: "حداکثر تعداد", value: "3 یونیت" },
-            { label: "افزایش ظرفیت داخلی", value: "تا 288 داخلی" },
-            { label: "افزایش خطوط شهری", value: "تا 190 خط" },
-            { label: "نصب رک", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-028",
-          name: "سانترال پاناسونیک KX-TDA620",
-          model: "KX-TDA620",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "مرکز تلفن دیجیتال سازمانی با ظرفیت بالا",
-          description: "پاناسونیک KX-TDA620 یک مرکز تلفن دیجیتال پیشرفته برای سازمان‌های متوسط و بزرگ است که قابلیت پشتیبانی از خطوط آنالوگ، دیجیتال و IP را فراهم می‌کند.",
-          features: [
-            "پشتیبانی از VoIP",
-            "قابلیت توسعه بالا",
-            "پشتیبانی از PRI",
-            "مدیریت تماس پیشرفته",
-            "صندوق صوتی",
-            "پشتیبانی از شبکه"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Hybrid IP PBX" },
-            { label: "ظرفیت", value: "تا 640 داخلی" },
-            { label: "پشتیبانی PRI", value: "دارد" },
-            { label: "VoIP", value: "دارد" },
-            { label: "شبکه‌سازی", value: "دارد" },
-            { label: "مدیریت تماس", value: "پیشرفته" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-029",
-          name: "سانترال پاناسونیک KX-T1232",
-          model: "KX-T1232",
-          cover: `${import.meta.env.BASE_URL}products/KX-T1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ کم‌ظرفیت برای دفاتر کوچک",
-          description: "KX-T1232 یک مرکز تلفن آنالوگ قدیمی پاناسونیک است که برای دفاتر کوچک طراحی شده و امکانات پایه مدیریت تماس را ارائه می‌دهد.",
-          features: [
-            "انتقال تماس",
-            "اپراتور خودکار",
-            "صف انتظار",
-            "داخلی‌سازی",
-            "موسیقی انتظار",
-            "نصب آسان"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "ظرفیت خطوط شهری", value: "3" },
-            { label: "ظرفیت داخلی", value: "32" },
-            { label: "اپراتور", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" },
-            { label: "نمایشگر", value: "ندارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-T1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-T1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-030",
-          name: "سانترال پاناسونیک KX-T61610",
-          model: "KX-T61610",
-          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ برای کسب‌وکارهای کوچک",
-          description: "پاناسونیک KX-T61610 یک مرکز تلفن آنالوگ اقتصادی با قابلیت مدیریت تماس و داخلی‌سازی برای دفاتر کوچک است.",
-          features: [
-            "انتقال تماس",
-            "اپراتور خودکار",
-            "کنفرانس",
-            "صف انتظار",
-            "موسیقی انتظار",
-            "نصب آسان"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "خطوط شهری", value: "6" },
-            { label: "داخلی", value: "16" },
-            { label: "کنفرانس", value: "دارد" },
-            { label: "انتقال تماس", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-031",
-          name: "صندوق صوتی پاناسونیک KX-TVM50",
-          model: "KX-TVM50",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
-          category: "کارت‌ها و تجهیزات جانبی",
-          brand: "Panasonic",
-          shortDescription: "سیستم صندوق صوتی حرفه‌ای پاناسونیک",
-          description: "KX-TVM50 یک سیستم Voicemail مستقل برای سانترال‌های پاناسونیک است که امکانات صندوق صوتی، پاسخگویی خودکار و مدیریت پیام‌ها را ارائه می‌دهد.",
-          features: [
-            "صندوق صوتی",
-            "پاسخگوی خودکار",
-            "ذخیره پیام",
-            "اعلان پیام",
-            "مدیریت تماس",
-            "گزارش‌گیری"
-          ],
-          specifications: [
-            { label: "نوع دستگاه", value: "Voicemail System" },
-            { label: "پورت پایه", value: "2" },
-            { label: "حداکثر پورت", value: "6" },
-            { label: "ذخیره پیام", value: "دارد" },
-            { label: "پاسخگوی خودکار", value: "دارد" },
-            { label: "سازگار با", value: "TDA/TDE/NCP" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-032",
-          name: "صندوق صوتی پاناسونیک KX-TVM200",
-          model: "KX-TVM200",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
-          category: "کارت‌ها و تجهیزات جانبی",
-          brand: "Panasonic",
-          shortDescription: "سیستم صندوق صوتی سازمانی",
-          description: "KX-TVM200 یک سیستم حرفه‌ای Voicemail برای سازمان‌ها با ظرفیت بالا و امکانات پاسخگویی خودکار پیشرفته است.",
-          features: [
-            "پاسخگوی خودکار",
-            "صندوق صوتی",
-            "مدیریت کاربران",
-            "اعلان ایمیلی",
-            "گزارش‌گیری",
-            "پشتیبانی چندزبانه"
-          ],
-          specifications: [
-            { label: "نوع دستگاه", value: "Voicemail System" },
-            { label: "حداکثر پورت", value: "24" },
-            { label: "ظرفیت ذخیره‌سازی", value: "بالا" },
-            { label: "اعلان پیام", value: "دارد" },
-            { label: "پشتیبانی شبکه", value: "دارد" },
-            { label: "چندزبانه", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-033",
-          name: "سانترال پاناسونیک KX-TA616",
-          model: "KX-TA616",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ 6 شهری و 16 داخلی",
-          description: "پاناسونیک KX-TA616 یکی از محبوب‌ترین سانترال‌های کم‌ظرفیت پاناسونیک برای دفاتر و شرکت‌های کوچک است.",
-          features: [
-            "6 خط شهری",
-            "16 داخلی",
-            "انتقال تماس",
-            "کنفرانس",
-            "صف انتظار",
-            "موسیقی انتظار"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "خطوط شهری", value: "6" },
-            { label: "داخلی", value: "16" },
-            { label: "کنفرانس", value: "دارد" },
-            { label: "اپراتور", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-034",
-          name: "سانترال پاناسونیک KX-T30810",
-          model: "KX-T30810",
-          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ 3 شهری و 8 داخلی",
-          description: "مرکز تلفن آنالوگ پاناسونیک برای دفاتر کوچک با ظرفیت 3 خط شهری و 8 داخلی.",
-          features: [
-            "3 خط شهری",
-            "8 داخلی",
-            "انتقال تماس",
-            "کنفرانس",
-            "موسیقی انتظار",
-            "اپراتور"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "خطوط شهری", value: "3" },
-            { label: "داخلی", value: "8" },
-            { label: "کنفرانس", value: "دارد" },
-            { label: "انتقال تماس", value: "دارد" },
-            { label: "اپراتور", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
-          ],
-          price: "تماس برای قیمت"
-        },
-        {
-          id: "pan-035",
-          name: "سانترال پاناسونیک KX-T206SBX",
-          model: "KX-T206SBX",
-          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ 2 شهری و 6 داخلی",
-          description: "مرکز تلفن آنالوگ اقتصادی پاناسونیک مناسب دفاتر کوچک و فروشگاه‌ها.",
-          features: [
-            "2 خط شهری",
-            "6 داخلی",
-            "انتقال تماس",
-            "اپراتور",
-            "موسیقی انتظار",
-            "راه‌اندازی آسان"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "خطوط شهری", value: "2" },
-            { label: "داخلی", value: "6" },
-            { label: "انتقال تماس", value: "دارد" },
-            { label: "اپراتور", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
-          ],
-          price: "تماس برای قیمت"
-        }, {
-          id: "pan-036",
-          name: "سانترال پاناسونیک KX-TA624",
-          model: "KX-TA624",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
-          category: "سیستم‌های PBX",
-          brand: "Panasonic",
-          shortDescription: "سانترال هیبرید آنالوگ مناسب دفاتر و شرکت‌های کوچک",
-          description:
-            "پاناسونیک KX-TA624 یک سانترال هیبرید آنالوگ است که برای کسب‌وکارهای کوچک طراحی شده است. این دستگاه به صورت پایه از 3 خط شهری و 8 داخلی پشتیبانی می‌کند و با استفاده از کارت‌های توسعه تا 6 خط شهری و 24 داخلی قابل ارتقاء است. پشتیبانی از تلفن‌های اختصاصی پاناسونیک، فکس، مودم و تلفن‌های آنالوگ از ویژگی‌های مهم این سیستم محسوب می‌شود.",
-          features: [
-            "قابلیت توسعه از 3 به 6 خط شهری",
-            "قابلیت توسعه تا 24 داخلی",
-            "پشتیبانی از Caller ID",
-            "پشتیبانی از تلفن‌های اختصاصی پاناسونیک",
-            "امکان اتصال فکس و مودم",
-            "پشتیبانی از Door Phone و Door Opener"
-          ],
-          specifications: [
-            { label: "نوع سیستم", value: "Advanced Hybrid PBX" },
-            { label: "ظرفیت پایه", value: "3 خط شهری / 8 داخلی" },
-            { label: "حداکثر خطوط شهری", value: "6" },
-            { label: "حداکثر خطوط داخلی", value: "24" },
-            { label: "پشتیبانی Caller ID", value: "دارد" },
-            { label: "پشتیبانی Door Phone", value: "تا 4 عدد" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
-          ],
-          price: "تماس برای قیمت"
-        }
+
       ]
     },
   },
@@ -1539,16 +1613,16 @@ export const CONTENT: Content = {
         {
           id: "97ca0282-454f-4b28-b8f7-4feb9f66289e",
           name: "Golden Eiffel Tower Model",
-          cover: "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
           scale: "1:390",
           material: "White Galvanized Sheet",
           useCase: "Engineering, educational, and exhibition projects",
           category: "Architectural Models",
           price: "Call for price",
           images: [
-            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
-            "/scale-models/GoldenEiffelTower/IMG_20250507_145113_11zon.webp",
-            "/scale-models/GoldenEiffelTower/IMG_20250507_145313_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145113_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/GoldenEiffelTower/IMG_20250507_145313_11zon.webp`,
           ],
           description:
             "The Eiffel Tower model is built with high manufacturing accuracy and precise engineering design based on the real monument. Designed for use in student projects, engineering presentations, specialized exhibitions, and decorative applications, this model recreates all the details of the main structure of the Eiffel Tower on a small scale. High manufacturing quality, a large number of parts, and precise execution of details make this product a great choice for collectors, students, and engineering companies.",
@@ -1567,16 +1641,16 @@ export const CONTENT: Content = {
         {
           id: "292829cb-5e64-440b-8416-b9e593c4808a",
           name: "Bronze Eiffel Tower Model",
-          cover: "/scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
           scale: "1:340",
           material: "White Galvanized Sheet",
           useCase: "Decoration, exhibition, and gift",
           category: "Architectural Models",
           price: "Call for price",
           images: [
-            "/scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp",
-            "/scale-models/BronzeEiffelTower/IMG_20250508_174152_11zon.webp",
-            "/scale-models/BronzeEiffelTower/IMG_20250508_174517_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_173939_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_174152_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/BronzeEiffelTower/IMG_20250508_174517_11zon.webp`,
           ],
           description:
             "The metal model of the Eiffel Tower is designed and built with high accuracy in its details, inspired by the timeless symbol of Paris. This piece is the result of over 70 hours of precise and artistic work, delicately recreating all the components of the original Eiffel Tower structure. The combination of copper, silver, and turquoise colors gives a special and luxurious look to this model, making it an ideal choice for home decoration, galleries, shops, and also a valuable, lasting gift. This product is not just a model, but a recreation of a part of the identity and glory of Paris in the form of a metal artwork.",
@@ -1593,15 +1667,15 @@ export const CONTENT: Content = {
         {
           id: "82095c1d-1ba0-4f3f-8112-90f94a1ef2ff",
           name: "3-Legged Self-Supporting Telecommunication Tower Model",
-          cover: "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
           scale: "1:50",
           material: "Metal",
           useCase: "Educational, exhibition, and collectible",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp",
-            "/scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174707_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Triangular Self-Supporting Telecom Tower/IMG_20250507_174841_11zon.webp`,
           ],
           description:
             "The 3-legged self-supporting telecommunication tower model is built with precise engineering design and professional details. This product is completely handmade, and its construction took over 30 hours. The 3-legged truss structure, multiple levels, and precise execution of joints make this model a suitable choice for engineers, students, technical offices, specialized exhibitions, and collectors of industrial structures. Its high manufacturing quality and eye-catching appearance bring a professional look to any environment.",
@@ -1618,15 +1692,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682998",
           name: "4-Legged Self-Supporting Tower Model",
-          cover: "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
           scale: "1:50",
           material: "Rust-Proof Galvanized Sheet",
           useCase: "Educational, exhibition, and engineering",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp",
-            "/scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_183911_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Four-Leg Self-Supporting Tower Model/IMG_20250508_184020_11zon.webp`,
           ],
           description:
             "The lattice telecommunication tower model, featuring an engineered design and precise construction, is a professional replica of real telecommunication towers. Made of rust-proof galvanized sheet with 312 separate parts, it fully simulates all the structural details of a self-supporting tower. The high quality of construction, structural strength, and industrial appearance make it an ideal option for student projects, technical training, specialized exhibitions, and engineering structure collections.",
@@ -1642,15 +1716,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682992",
           name: "Special Guyed Telecommunication Tower",
-          cover: "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
           scale: "1:50",
           material: "Rust-Proof Galvanized Sheet",
           useCase: "Educational, exhibition, and engineering",
           category: "Telecommunication Tower Models",
           price: "Call for price",
           images: [
-            "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp",
-            "/scale-models/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185546_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Advanced Braced Telecom Tower/IMG_20250508_185555_11zon.webp`,
           ],
           description:
             "The lattice telecommunication tower model, featuring an engineered design and precise construction, is a professional replica of real telecommunication towers. Made of rust-proof galvanized sheet with 312 separate parts, it fully simulates all the structural details of a self-supporting tower. The high quality of construction, structural strength, and industrial appearance make it an ideal option for student projects, technical training, specialized exhibitions, and engineering structure collections.",
@@ -1666,15 +1740,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682991",
           name: "Double Tower Power Transmission Line Model",
-          cover: "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
           scale: "1:330",
           material: "Resistant Galvanized Sheet",
           useCase: "Educational, industrial, and decorative",
           category: "Power Tower Models",
           price: "Call for price",
           images: [
-            "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp",
-            "/scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130446_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/Double-Tower Power Transmission Line Model/IMG_20250509_130510_11zon.webp`,
           ],
           description:
             "The double-tower power transmission line model is designed and built with high accuracy and complete details based on real power transmission structures. Each tower is completely handmade from resistant galvanized sheet and simulates all main components including insulators, truss structures, and transmission lines. This product is a suitable option for educational projects, industrial exhibitions, specialized decoration, and engineering modeling, offering a realistic view of high-voltage power transmission lines through its high build quality and precise details.",
@@ -1691,15 +1765,15 @@ export const CONTENT: Content = {
         {
           id: "80ee0abc-1aa6-447b-86fc-bb2847682941",
           name: "High Voltage Power Transmission Tower Model",
-          cover: "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
+          cover: `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
           scale: "1:330",
           material: "Galvanized Sheet",
           useCase: "Industrial decor, educational projects, and collectibles",
           category: "Power Tower Models",
           price: "Call for price",
           images: [
-            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
-            "/scale-models/GoldenEiffelTower/IMG_20250507_145011_11zon.webp",
+            `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181109_11zon.webp`,
+            `${import.meta.env.BASE_URL}scale-models/HighVoltageTransmissionTowerModel/IMG_20250508_181336_11zon.webp`,
           ],
           description:
             "The high voltage power transmission tower model is designed and built with high accuracy and complete engineering details. Inspired by real power transmission towers, this product accurately simulates all main components of the structure including insulators, trusses, and joints. High manufacturing quality, a professional appearance, and the use of resistant galvanized sheet make this model a suitable option for industrial decor, university projects, specialized exhibitions, and collectible sets.",
@@ -1852,186 +1926,1104 @@ export const CONTENT: Content = {
       cta: "Register for Courses",
     },
     telecomProducts: {
-      title: "Telecom Equipment",
-      subtitle: "PBX Systems, IP Phones, and Professional Communication Equipment",
-      categories: ["PBX Systems", "IP Phones", "Gateway & Network Equipment"],
+      title: "Panasonic Telecom Equipment",
+      subtitle: "Analog and digital PBX systems, management phones, and Panasonic expansion cards",
+      categories: [
+        "PBX Systems",
+        "PBX Phones",
+        "Digital Phones",
+        "Cards & Accessories"
+      ],
       applications: [
-        { icon: "Building2", title: "Office", desc: "Professional internal and external communication for offices and organizations" },
-        { icon: "Headphones", title: "Call Centers", desc: "Inbound and outbound call management with advanced reporting" },
-        { icon: "Hotel", title: "Hotels", desc: "Integrated telephone systems for hotels with hospitality features" },
-        { icon: "Factory", title: "Factories", desc: "Durable and reliable industrial communication for production environments" },
-        { icon: "Store", title: "Commercial Buildings", desc: "Centralized telephone network for commercial complexes and towers" },
+        { icon: "Building2", title: "Small Offices", desc: "Stable and cost-effective internal communications for startups and small businesses" },
+        { icon: "Building", title: "Medium Organizations", desc: "High-capacity line management with 100% stability for external and internal lines" },
+        { icon: "Hotel", title: "Hotels & Hospitals", desc: "Room line connectivity to central operator with traditional hospitality features" },
+        { icon: "Factory", title: "Industrial Environments", desc: "Noise-resistant telecom communications with uninterrupted connectivity for factories" },
       ],
       products: [
         {
-          id: "tel-001",
-          name: "Panasonic KX-NS500 PBX System",
+          id: "pan-001",
+          name: "Panasonic KX-TES824 Analog PBX",
+          model: "KX-TES824",
+          cover: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "The most popular and reliable analog telephone exchange suitable for small and medium businesses",
+          description: "The Panasonic KX-TES824 PBX system is an ideal analog solution for small offices. This system comes with a default capacity of 3 outside lines and 8 extensions, and can be expanded up to a maximum of 8 outside lines and 24 analog extensions. Exceptional stability, affordable pricing, and easy setup are the standout features of this model.",
+          features: [
+            "Default capacity of 3 outside lines and 8 extensions",
+            "Expandable up to 8 outside lines and 24 extensions",
+            "Built-in DISA voicemail support",
+            "Uniform Call Distribution (UCD)",
+            "Easy programming via PC software or 7730 phone",
+            "Caller ID support (with expansion card)"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Default Capacity", value: "3 outside lines / 8 extensions" },
+            { label: "Maximum Capacity", value: "8 outside lines / 24 extensions" },
+            { label: "DISA Voicemail Card", value: "Yes (1 channel default)" },
+            { label: "Programming Method", value: "PC software / Operator phone" },
+            { label: "Power Supply", value: "220V AC" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-03_3_11zon.webp`
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-002",
+          name: "Panasonic KX-TDA100DBP Modular Digital PBX",
+          model: "KX-TDA100DBP",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Powerful modular digital telephone exchange for large organizations and factories",
+          description: "The Panasonic KX-TDA100DBP is a fully modular and intelligent PBX designed on digital technology. This system features 7 free slots for installing various outside line cards (analog and PRI) and extension cards (digital and analog). Due to its exceptional stability, this telephone exchange is the first choice for industrial environments and government offices.",
+          features: [
+            "Fully modular architecture with 7 free slots",
+            "Digital line support (PRI - E1)",
+            "DECT cordless phone connectivity",
+            "Caller ID support on all lines",
+            "Digital voice quality with zero noise",
+            "Voice processing system integration"
+          ],
+          specifications: [
+            { label: "System Type", value: "Digital PBX" },
+            { label: "Free Slots", value: "7 slots" },
+            { label: "Maximum Outside Lines", value: "Up to 120" },
+            { label: "Maximum Extensions", value: "Up to 176" },
+            { label: "PRI (E1) Support", value: "Yes" },
+            { label: "Dimensions", value: "334x390x270 mm" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
+
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-003",
+          name: "Panasonic KX-T7730 Analog PBX Phone",
+          model: "KX-T7730",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-02_10_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "Classic hybrid management and operator phone for the 824 PBX system",
+          description: "The KX-T7730 is the most well-known PBX phone in Iran. This hybrid phone features 12 programmable keys for defining outside lines or extensions (BLF). It is used for manually programming the KX-TES824 PBX system as well as a secretary/manager handset.",
+          features: [
+            "Single-line display with 16 character capacity",
+            "12 programmable memory keys with LED indicators",
+            "Powerful full-duplex speakerphone",
+            "Dedicated keys for call transfer, forwarding, and hold",
+            "Adjustable handset base angle",
+            "2.5mm headset jack"
+          ],
+          specifications: [
+            { label: "Phone Type", value: "Hybrid Proprietary Phone" },
+            { label: "Memory Keys", value: "12 keys" },
+            { label: "Display", value: "1-line LCD" },
+            { label: "Wall Mountable", value: "Yes" },
+            { label: "Color Options", value: "White / Black" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-02_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-03_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/kx-at7730-04_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-KX-AT7730_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-accessories_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-black_15_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-from-back_16_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-from-side_17_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-keys_18_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-socket-location_19_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7730/panasonic-kx-at7730-digital-hybrid-phone-white_20_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-004",
+          name: "Panasonic KX-DT543 Digital Phone",
+          model: "KX-DT543",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT543/9Uu6Hc04-usibXs6_1_11zon.webp`,
+          category: "Digital Phones",
+          brand: "Panasonic",
+          shortDescription: "Professional digital phone with 3-line display and 24 memory keys",
+          description: "The KX-DT543 management/professional phone is designed for connection to Panasonic digital PBX systems (such as the TDA and TDE series). With crystal-clear digital voice quality, a readable backlit display, and 24 programmable keys, this phone significantly boosts employee productivity.",
+          features: [
+            "3-line display with white backlight",
+            "24 programmable keys for lines and extensions",
+            "Full Duplex digital speakerphone",
+            "Key expansion console support (no additional card needed)",
+            "Exceptional build quality and ergonomic keys"
+          ],
+          specifications: [
+            { label: "Platform Type", value: "Digital (DLC Port)" },
+            { label: "Memory Keys", value: "24 keys" },
+            { label: "Display", value: "3-line with backlight" },
+            { label: "Headset Port", value: "Yes" },
+            { label: "Voice Technology", value: "Panasonic HD Voice" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-DT543/9Uu6Hc04-usibXs6_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/fXDdz_I6pTkWbJc-_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/I4nX3S53vTs0QZoK_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/OKNTxSkFczGtkB_x_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT543/qqXu34SGsTjWSdEl_5_11zon.webp`,
+
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-005",
+          name: "Panasonic KX-DT546 Digital Management Phone",
+          model: "KX-DT546",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-01_1_11zon.webp`,
+          category: "Digital Phones",
+          brand: "Panasonic",
+          shortDescription: "Premium digital management phone with large 6-line display",
+          description: "The KX-DT546 is the most luxurious and advanced wired digital phone from Panasonic. Featuring a very large 6-line backlit display that makes managing the phone directory and Caller ID extremely easy, this phone is the ultimate choice for senior executives.",
+          features: [
+            "Very large 6-line graphic display",
+            "24 smart programmable keys with dual-color LED",
+            "Clear digital speakerphone (Full Duplex)",
+            "Electronic Hook Switch (EHS) adapter support",
+            "Modern ergonomic competitive design"
+          ],
+          specifications: [
+            { label: "Platform Type", value: "Digital" },
+            { label: "Memory Keys", value: "24 keys" },
+            { label: "Display Specs", value: "6-line graphic with backlight" },
+            { label: "DXDP Support", value: "Yes (two phones per port)" },
+            { label: "Country of Origin", value: "Vietnam (Genuine)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT546/kx-dt546-03_3_11zon.webp`,
+
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-006",
+          name: "Panasonic KX-TS500 Analog Desk Phone",
+          model: "KX-TS500",
+          cover: `${import.meta.env.BASE_URL}products/KX-TS500/6tsnXn-tFTgNPtoa_1_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "Simple, affordable, and extremely durable analog desk phone for standard internal lines",
+          description: "The Panasonic KX-TS500 is an ideal and cost-effective option for standard analog internal lines in offices, hotel rooms, or hospitals. This phone lacks a display but works for years without any issues due to its extremely sturdy body and long lifespan.",
+          features: [
+            "Simple, compact, and space-saving design",
+            "6-level handset volume adjustment",
+            "Dedicated Redial button for quick redialing",
+            "Both Tone and Pulse dialing modes supported",
+            "Easy wall-mount installation"
+          ],
+          specifications: [
+            { label: "Phone Type", value: "Standard Analog (Single Line)" },
+            { label: "Display", value: "No" },
+            { label: "Battery/Power Required", value: "No (powered by phone line)" },
+            { label: "Color Options", value: "White, black, gray, navy, red" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TS500/6tsnXn-tFTgNPtoa_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/e5dmdukSlY9co9Bb_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/Nld9XbQSiiUXJEcf_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS500/YbG9xPONg71lVmiW_4_11zon.webp`,
+
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-007",
+          name: "Panasonic KX-TE82483 PBX Expansion Card",
+          model: "KX-TE82483",
+          cover: `${import.meta.env.BASE_URL}products/KX-TE82483/4XETRFPccs86AHZ_4_11zon.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "3 outside line and 8 analog extension expansion card for the 824 PBX",
+          description: "The KX-TE82483 expansion card is the best-selling accessory for the compact KX-TES824 tactics PBX. By placing this card on the main board, your PBX capacity upgrades from 3 to 6 outside lines and from 8 to 16 analog extensions.",
+          features: [
+            "Adds 3 new analog outside lines simultaneously",
+            "Adds 8 analog extension ports for standard or cordless phones",
+            "Plug & Play installation inside the PBX enclosure",
+            "Standard RJ11 sockets for outputs"
+          ],
+          specifications: [
+            { label: "Compatible Device", value: "KX-TES824 / KX-TEM824" },
+            { label: "Outside Line Ports", value: "3 ports" },
+            { label: "Extension Ports", value: "8 analog ports" },
+            { label: "Installation Type", value: "First expansion slot (Slot 1)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TE82483/4XETRFPccs86AHZ_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/kx-te82483_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/ycfWY0P2u8qeAvpq_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82483/zRpK24uIZz43xmio_7_11zon.webp`,
+
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-008",
+          name: "Panasonic KX-TE82494 Caller ID Card",
+          model: "KX-TE82494",
+          cover: `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-01_1_11zon.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "3-port Caller ID display card for the TE series PBX",
+          description: "To enable the outside lines connected to the 824 PBX to display caller phone numbers on PBX phones (such as the 7730), you need to install the KX-TE82494 Caller ID card. Each card supports Caller ID activation on 3 outside lines.",
+          features: [
+            "Caller ID display system support",
+            "Full compatibility with Iran Telecom FSK and DTMF signals",
+            "Supports 3 outside lines per card"
+          ],
+          specifications: [
+            { label: "Component Type", value: "Caller ID Card" },
+            { label: "Line Capacity", value: "3 outside lines" },
+            { label: "Compatible Box", value: "KX-TES824" },
+            { label: "Technology", value: "FSK / DTMF" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-03_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-04_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TE82494/kx-te82494-05_4_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-009",
+          name: "Panasonic KX-TDA1172 16-Port Digital Extension Card",
+          model: "KX-TDA1172",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-01_1_11zon.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "16-port digital extension card (DLC16) for TDA series PBX systems",
+          description: "The KX-TDA1172 telecom expansion card allows you to add 16 completely independent digital extensions to large Panasonic PBX systems. This card is used for deploying management and professional phones in the DT series (such as DT543 and DT333).",
+          features: [
+            "Provides 16 digital extension ports with high frequency stability",
+            "DXDP support (virtual port capacity upgrade to 32 extensions)",
+            "LED status indicators for quick port troubleshooting",
+            "Simultaneous voice and display data transmission over copper pair"
+          ],
+          specifications: [
+            { label: "Card Model Code", value: "DLC16" },
+            { label: "Port Count", value: "16 digital ports" },
+            { label: "Compatible PBX", value: "KX-TDA100 / TDA100D / TDA200" },
+            { label: "Output Cable Type", value: "1 Amphenol copper pair" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda0172-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1172/kx-tda172-06_5_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-010",
+          name: "Panasonic KX-TDA1180 8-Port Analog Outside Line Card",
+          model: "KX-TDA1180",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA1180/Vd64kdOk0bSAoQzj.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "8-port analog outside line expansion card with built-in Caller ID",
+          description: "The KX-TDA1180 expansion card increases analog outside line ports in TDA series PBX systems. Its major advantage is the built-in Caller ID processor on all 8 ports, eliminating the need for a separate ID card purchase.",
+          features: [
+            "Connects 8 new analog outside lines to the PBX",
+            "Built-in Caller ID on all ports",
+            "Voltage surge protection for telecom lines",
+            "Emergency output port during power outages (PFT)"
+          ],
+          specifications: [
+            { label: "Card Model Code", value: "LCOT8" },
+            { label: "Outside Line Ports", value: "8 analog ports" },
+            { label: "Caller ID System", value: "Yes (built-in on board)" },
+            { label: "System Compatibility", value: "KX-TDA100D / TDA100DBP" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/Vd64kdOk0bSAoQzj.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/WSA4xymV3cfqNdUN.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/x5o319bfRAdp9SF1.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA1180/xj1qx2avD_1j0EFS.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-011",
+          name: "Panasonic KX-TEM824 Hybrid PBX",
+          model: "KX-TEM824",
+          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Advanced hybrid telephone exchange with base capacity of 6 outside lines and 16 extensions",
+          description: "The KX-TEM824 PBX is the bigger brother of the standard 824 model, factory-produced with a higher initial capacity. This system supports expansion up to a maximum of 8 outside lines and 24 extensions, making it excellent for busy offices.",
+          features: [
+            "Physical default capacity of 6 outside lines and 16 extensions",
+            "Full support for 77-series hybrid phones",
+            "Built-in intelligent auto-attendant system",
+            "Backup battery connection for power outages"
+          ],
+          specifications: [
+            { label: "System Type", value: "Advanced Hybrid" },
+            { label: "Base Capacity", value: "6 outside / 16 extensions" },
+            { label: "Maximum Expansion", value: "8 outside / 24 extensions" },
+            { label: "Programming Port", value: "USB / RS-232C" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-012",
+          name: "Panasonic KX-TDA200 Modular Digital PBX",
+          model: "KX-TDA200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "High-capacity digital PBX box equipped with 11 hardware slots",
+          description: "The KX-TDA200 is an industrial-grade and extremely stable PBX designed for organizations, government institutions, and large factories with high volumes of outside lines and internal staff. Its fully modular structure gives the IT department unparalleled flexibility.",
+          features: [
+            "11 free modular slots for various cards",
+            "Full support for PRI digital lines and analog outside lines",
+            "Linking and networking multiple separate boxes",
+            "Seamless line switching and hardware stability"
+          ],
+          specifications: [
+            { label: "System Type", value: "Digital Modular" },
+            { label: "Free Slots", value: "11 slots" },
+            { label: "Maximum Extensions", value: "Up to 256" },
+            { label: "DECT Support", value: "Yes (wireless PBX)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-013",
+          name: "Panasonic KX-TDA600 Enterprise PBX",
+          model: "KX-TDA600",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Largest and highest-capacity traditional digital PBX from Panasonic",
+          description: "The KX-TDA600 system is Panasonic's hardware powerhouse in traditional and digital telecom systems. The base box alone has high capacity, and with the addition of expansion shelf boxes (TDA620), it can support over 1000 extensions.",
+          features: [
+            "Enterprise base box with ultra-high capacity",
+            "Ability to connect 3 separate expansion shelf boxes",
+            "Support for a massive volume of digital and analog cards",
+            "Ideal for large hotels, hospitals, and petrochemical plants"
+          ],
+          specifications: [
+            { label: "System Type", value: "Enterprise Digital PBX" },
+            { label: "Maximum Extensions", value: "Over 1000 ports" },
+            { label: "Base Box Slot Count", value: "10 large slots" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-014",
+          name: "Panasonic KX-DT521 Digital Staff Phone",
+          model: "KX-DT521",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT521/VrW7nkSlT9S4rwS_1_11zon.webp`,
+          category: "Digital Phones",
+          brand: "Panasonic",
+          shortDescription: "Economy digital staff phone with DXDP port and 8 memory keys",
+          description: "The KX-DT521 is an economy-class digital phone from Panasonic's 500 series that delivers outstanding HD voice quality over a completely digital, noise-free platform. This phone is an excellent and cost-effective choice for office staff.",
+          features: [
+            "1-line display with white backlight",
+            "8 programmable shortcut keys with lit indicators",
+            "Hardware DXDP expansion port support",
+            "Clear and loud digital speakerphone"
+          ],
+          specifications: [
+            { label: "Phone Type", value: "Standard Digital" },
+            { label: "Memory Keys", value: "8 keys" },
+            { label: "Connection Port Type", value: "DLC digital port" },
+            { label: "Display", value: "1-line LCD" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-DT521/VrW7nkSlT9S4rwS_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/5WN-7tTnW49lVMPr_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/FYrn9V7uhDb9_zEf_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/IQNPBtrbOOgP-OnR_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT521/PwOwPIKTRcfILZls_5_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-015",
+          name: "Panasonic KX-T7665 Digital Phone",
+          model: "KX-T7665",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-02_6_11zon.webp`,
+          category: "Digital Phones",
+          brand: "Panasonic",
+          shortDescription: "Best-selling digital professional phone with 8 memory shortcut keys",
+          description: "One of Panasonic's classic, nostalgic, and extremely durable digital models. Thanks to its sturdy body and ergonomic angled buttons, it is still in service at hundreds of office buildings.",
+          features: [
+            "Clear 1-line display with 16 character capacity",
+            "8 programmable line and extension status buttons",
+            "Large indicator light for new calls and voicemail messages",
+            "Adjustable desk standing angle"
+          ],
+          specifications: [
+            { label: "Platform Type", value: "Digital Proprietary" },
+            { label: "Memory Keys", value: "8 LED buttons" },
+            { label: "Speakerphone Quality", value: "Half Duplex" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-02_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-5_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-6_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-7_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-8_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/kx-t7665-10_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7665/panasonic-kx-t7665-digital-phone_13_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-016",
+          name: "Panasonic KX-DT333 Digital Professional Phone",
+          model: "KX-DT333",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-01_1_11zon.webp`,
+          category: "Digital Phones",
+          brand: "Panasonic",
+          shortDescription: "Professional digital phone with adjustable monitor and 24 memory keys",
+          description: "The KX-DT333 is from Panasonic's premium legacy series, featuring a matte anti-scratch body, an adjustable-angle monitor, and 24 full buttons for defining outside lines that simplify the workload for secretaries.",
+          features: [
+            "3-line display with backlight and adjustable angle",
+            "24 hardware memory keys with dual-color indicators",
+            "Digital voice quality and dedicated operator headset port",
+            "Additional button console connection for DT series"
+          ],
+          specifications: [
+            { label: "Connection Type", value: "2-wire digital" },
+            { label: "Memory Keys", value: "24 keys" },
+            { label: "LCD Adjustable", value: "Yes (manual)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT333/kx-dt333-10_6_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-017",
+          name: "Panasonic KX-TS880 Advanced Analog Phone",
+          model: "KX-TS880",
+          cover: `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-01_1_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "Most advanced analog desk phone with display and speed dial buttons",
+          description: "The most feature-rich and equipped single-line analog phone from Panasonic, featuring dedicated physical speed dial buttons. It is the ideal choice for manager offices or analog VIP extensions in a PBX system.",
+          features: [
+            "Very large and high-quality 3-line LCD display",
+            "10 dedicated one-touch speed dial buttons",
+            "Internal phone book with 50 contact storage capacity",
+            "Caller ID support and 2.5mm headset jack"
+          ],
+          specifications: [
+            { label: "Line Platform Type", value: "Analog" },
+            { label: "Display", value: "3-line graphic" },
+            { label: "Internal Caller ID", value: "Yes (no card needed)" },
+            { label: "Speed Dial Memory", value: "20 numbers" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-10_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-11_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS880/kx-ts880-12_8_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-018",
+          name: "Panasonic KX-TS580 Analog Desk Phone",
+          model: "KX-TS580",
+          cover: `${import.meta.env.BASE_URL}products/KX-TS580/Nrq_mHOcJ39lGw7W_1_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "Analog phone with Caller ID display and flashing LED ring indicator",
+          description: "The TS580 model features a readable line monitor with large font and a prominent red light on top of the body. In noisy environments, its intense flashing alerts the user to incoming calls.",
+          features: [
+            "Caller ID system with 50 last calls memory storage",
+            "Flashing call status and ring indicator light",
+            "Data Port output for sharing line with fax or modem",
+            "Phone book with 50 name and number storage capacity"
+          ],
+          specifications: [
+            { label: "Phone Type", value: "Analog with LCD" },
+            { label: "Display", value: "Yes (50 numbers)" },
+            { label: "Display Power Source", value: "3 AA batteries" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TS580/Nrq_mHOcJ39lGw7W_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS580/SbUW2pFv-GyYP6VR_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TS580/U2XMMC4L4ADaPF4o_3_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-019",
+          name: "Panasonic KX-T7703 Wall-Mount Analog Phone",
+          model: "KX-T7703",
+          cover: `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-01_1_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "Compact analog phone with display, no battery required whatsoever",
+          description: "The ultra-thin, lightweight, and durable T7703 model renders caller phone numbers directly on the LCD from the phone line voltage, without requiring any battery or power adapter.",
+          features: [
+            "Built-in support for Iran Telecom Caller ID system",
+            "30 last incoming calls data storage memory",
+            "Ultra-thin matte design resistant to smudges",
+            "Built-in clip for vertical wall mounting"
+          ],
+          specifications: [
+            { label: "System Type", value: "Slim Analog" },
+            { label: "Battery Required", value: "No (powered from line port)" },
+            { label: "Redial Memory", value: "5 last numbers" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-06_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-T7703/kx-t7703x-07_7_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-020",
+          name: "Panasonic KX-TDA0170 Hybrid Expansion Card",
+          model: "KX-TDA0170",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA0170/OsvjFiv0hhgFwgyO_11zon.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "8-port hybrid expansion card (DHLC8 series) for TDA boxes",
+          description: "This uniquely engineered telecom board provides the remarkable ability to simultaneously run analog desk phones, modern digital phones, and hybrid management phones (such as the 7730) on a single shared physical port.",
+          features: [
+            "Provides 8 fully hybrid and versatile extension ports",
+            "Support for buttoned attendant consoles and paging systems",
+            "2 physical power transfer circuits during system power outages",
+            "Occupies a single standard slot from digital PBX boxes"
+          ],
+          specifications: [
+            { label: "Component Model Code", value: "DHLC8" },
+            { label: "Extension Ports", value: "8 hybrid ports" },
+            { label: "Output Communication Cable", value: "25-pair Amphenol cable" },
+            { label: "Box Compatibility", value: "KX-TDA100 / TDA200" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA0170/OsvjFiv0hhgFwgyO_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-021",
+          name: "Panasonic KX-TDA0181 16-Port Outside Line Card",
+          model: "KX-TDA0181",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA0181/KX-TDA0181.webp`,
+          category: "Cards & Accessories",
+          brand: "Panasonic",
+          shortDescription: "16-channel analog outside line card (LCOT16) for large PBX systems",
+          description: "The most practical card for connecting and inputting 16 simultaneous analog telephone lines into your modular PBX. This card saves heavily on the precious slots of PBX boxes.",
+          features: [
+            "Accepts and terminates 16 pairs of incoming outside line wires",
+            "Equipped with strong protection layers against lightning and telecom power surges",
+            "Requires a separate expansion card for Caller ID activation"
+          ],
+          specifications: [
+            { label: "Component Model Code", value: "LCOT16" },
+            { label: "Outside Line Ports", value: "16 analog ports" },
+            { label: "Caller ID Expansion Card", value: "KX-TDA0193 (optional)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA0181/KX-TDA0181.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-022",
+          name: "Panasonic KX-DT590 DSS Button Console",
+          model: "KX-DT590",
+          cover: `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
+          category: "PBX Phones",
+          brand: "Panasonic",
+          shortDescription: "DSS expansion console with 48 lit keys for central operators",
+          description: "This premium accessory connects to the side of digital management phones (such as the DT543 and DT546) and provides 48 new buttons equipped with green and red lit indicators for monitoring and supervising the status of all organization lines.",
+          features: [
+            "48 fully programmable status shortcut keys (BLF)",
+            "Extremely bright dual-color LED indicators under each button",
+            "Quick connection and synchronization without separate cabling to PBX",
+            "Design matching the DT500 series phone base angles"
+          ],
+          specifications: [
+            { label: "Component Type", value: "DSS Console" },
+            { label: "Button Count", value: "48 keys" },
+            { label: "Compatible Phones", value: "KX-DT543 / KX-DT546" },
+            { label: "Connection Method", value: "Factory flat cable" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-02_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-03_4_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-024",
+          name: "Panasonic KX-NS500 IP PBX",
           model: "KX-NS500",
-          cover: telephoneImg,
+          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
           category: "PBX Systems",
           brand: "Panasonic",
-          shortDescription: "Advanced PBX system for small to medium businesses supporting up to 64 extensions",
-          description: "Advanced Panasonic KX-NS500 PBX system designed for small to medium businesses. Supports up to 64 extensions with hybrid analog, digital, and IP line capabilities. Features built-in SIP trunking, audio/video conferencing, and CRM integration.",
-          features: ["Up to 64 extensions", "Built-in SIP trunking", "Audio & video conferencing", "CRM integration", "Remote management", "Call recording"],
-          specifications: [
-            { label: "Capacity", value: "64 extensions" },
-            { label: "SIP Lines", value: "32 lines" },
-            { label: "Analog Ports", value: "8 ports" },
-            { label: "Digital Ports", value: "8 ports" },
-            { label: "Power", value: "100-240V" },
-            { label: "Type", value: "Hybrid (IP/Analog/Digital)" },
+          shortDescription: "Next-generation IP and hybrid telephone exchange for organizations",
+          description: "The Panasonic KX-NS500 is a network-based PBX for small and medium businesses that combines traditional and VoIP lines. Starting from 6 outside lines and 18 extensions as base, it is expandable up to 190 outside lines and 288 extensions. Supports SIP, voicemail, and multi-branch connectivity.",
+          features: [
+            "SIP Trunk support",
+            "VoIP support",
+            "Expandable up to 288 extensions",
+            "Built-in voicemail",
+            "Branch networking capability",
+            "IP phone support"
           ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "IP Hybrid PBX" },
+            { label: "Default Capacity", value: "6 outside / 18 extensions" },
+            { label: "Maximum Outside Lines", value: "48 " },
+            { label: "Maximum Extensions", value: "128" },
+            { label: "Maximum SIP/IP Phones", value: "128" },
+            { label: "SIP Support", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
+          ],
+          price: "Call for price"
         },
         {
-          id: "tel-002",
-          name: "Yeastar S20 VoIP PBX",
-          model: "S20",
-          cover: telephoneImg,
+          id: "pan-025",
+          name: "Panasonic KX-NS1000 IP PBX",
+          model: "KX-NS1000",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
           category: "PBX Systems",
-          brand: "Yeastar",
-          shortDescription: "IP-based telephone system with on-premise or cloud deployment supporting 50 concurrent users",
-          description: "Yeastar S20 VoIP PBX is an IP-based telephone system with on-premise or cloud deployment. Supports up to 50 concurrent users with advanced features including voicemail, IVR, call recording, and conferencing. Easy management via web interface.",
-          features: ["50 concurrent users", "On-premise or cloud", "Voicemail & IVR", "Call recording", "SIP trunk connectivity", "Web-based management"],
-          specifications: [
-            { label: "Capacity", value: "50 users" },
-            { label: "Concurrent Calls", value: "30 calls" },
-            { label: "FXS Ports", value: "4 ports" },
-            { label: "FXO Ports", value: "4 ports" },
-            { label: "Protocols", value: "SIP, IAX2" },
-            { label: "Power Supply", value: "12V DC" },
-          ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
-        },
-        {
-          id: "tel-003",
-          name: "Grandstream UCM6302 IP PBX",
-          model: "UCM6302",
-          cover: telephoneImg,
-          category: "PBX Systems",
-          brand: "Grandstream",
-          shortDescription: "Powerful IP PBX supporting 500 users and 60 concurrent calls with advanced UC features",
-          description: "Grandstream UCM6302 IP PBX supporting up to 500 users and 60 concurrent calls. Advanced Unified Communications features including video conferencing, Wave app integration, and HD voice quality.",
-          features: ["500 users", "60 concurrent calls", "Unified Communications", "Video Conferencing", "Wave App integration", "HD voice quality"],
-          specifications: [
-            { label: "Capacity", value: "500 users" },
-            { label: "Concurrent Calls", value: "60 calls" },
-            { label: "Ports", value: "4 FXS, 2 FXO" },
-            { label: "Network", value: "2 Gigabit ports" },
-            { label: "USB", value: "3x USB 3.0" },
-            { label: "Protocols", value: "SIP, RTP, RTCP" },
-          ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
-        },
-        {
-          id: "tel-004",
-          name: "Panasonic KX-TGP600 IP Phone",
-          model: "KX-TGP600",
-          cover: telephoneImg,
-          category: "IP Phones",
           brand: "Panasonic",
-          shortDescription: "Cordless IP phone supporting up to 6 handsets simultaneously with HD voice quality",
-          description: "Panasonic KX-TGP600 cordless IP phone with support for up to 6 handsets simultaneously. 2 concurrent SIP lines with HD voice quality. Extended range charger base with wall-mountable design. Phone book capacity of 2000 entries.",
-          features: ["6 simultaneous handsets", "2 SIP lines", "HD voice quality", "2000-entry phonebook", "Extended range", "Wall-mountable"],
-          specifications: [
-            { label: "SIP Lines", value: "2 lines" },
-            { label: "Simultaneous Handsets", value: "6 units" },
-            { label: "Standard", value: "DECT 6.0" },
-            { label: "Phonebook", value: "2000 entries" },
-            { label: "Display", value: "1.8\" color" },
-            { label: "PoE", value: "Supported" },
+          shortDescription: "Professional IP-based communications platform for large organizations",
+          description: "The Panasonic KX-NS1000 is an IP-based enterprise communications system designed for organizations, banks, call centers, and multi-branch companies. This PBX supports up to 1000 extensions and 600 outside channels in network mode, providing advanced VoIP and Unified Communication capabilities.",
+          features: [
+            "Full VoIP support",
+            "Suitable for call centers",
+            "Multi-branch connectivity",
+            "SIP and IP Phone support",
+            "Redundancy capability",
+            "Centralized communications management"
           ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "Enterprise IP PBX" },
+            { label: "Maximum Outside Lines", value: "600" },
+            { label: "Maximum Extensions", value: "1000" },
+            { label: "Maximum SIP Extensions", value: "1000" },
+            { label: "VoIP Support", value: "Yes" },
+            { label: "Multi-Branch Support", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
+          ],
+          price: "Call for price"
         },
         {
-          id: "tel-005",
-          name: "Yeastar W53P IP Phone",
-          model: "W53P",
-          cover: telephoneImg,
-          category: "IP Phones",
-          brand: "Yeastar",
-          shortDescription: "Professional desktop IP phone with 2.8-inch color display and 4 SIP lines",
-          description: "Yeastar W53P professional desktop IP phone with 2.8-inch color display. Supports 4 SIP lines simultaneously with HD voice quality. Features 24 programmable keys, powerful speakerphone, and PoE support.",
-          features: ["4 SIP lines", "2.8\" color display", "24 programmable keys", "HD voice quality", "PoE support", "Bluetooth"],
-          specifications: [
-            { label: "SIP Lines", value: "4 lines" },
-            { label: "Display", value: "2.8\" color" },
-            { label: "Programmable Keys", value: "24 keys" },
-            { label: "Audio", value: "HD with Noise Cancellation" },
-            { label: "Network", value: "Gigabit" },
-            { label: "PoE", value: "Supported" },
+          id: "pan-026",
+          name: "Panasonic KX-HTS32 IP PBX",
+          model: "KX-HTS32",
+          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Integrated communications system for small offices",
+          description: "The Panasonic KX-HTS32 is a compact and affordable IP telephone exchange that provides PBX, router, Wi-Fi, and VoIP features in a single device. Designed for small offices, shops, and startups, it offers very easy setup.",
+          features: [
+            "SIP Trunk support",
+            "Built-in Wi-Fi",
+            "Built-in router",
+            "Voicemail",
+            "Audio conferencing",
+            "Easy setup"
           ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "IP PBX" },
+            { label: "Maximum Users", value: "32" },
+            { label: "Wi-Fi", value: "Built-in" },
+            { label: "Voicemail", value: "Yes" },
+            { label: "SIP Trunk", value: "Yes" },
+            { label: "Audio Conferencing", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
+          ],
+          price: "Call for price"
+        }, {
+          id: "pan-027",
+          name: "Panasonic KX-NS520 Expansion Unit",
+          model: "KX-NS520",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Capacity expansion unit for the KX-NS500 PBX",
+          description: "The Panasonic KX-NS520 is an expansion unit for the KX-NS500 PBX that provides increased outside line and extension capacity, suitable for organizations that need to expand their telecom system.",
+          features: [
+            "Extension capacity increase",
+            "Outside line capacity increase",
+            "Connectable to NS500",
+            "Expansion card support",
+            "Easy installation",
+            "Phased expansion capability"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Expansion Unit" },
+            { label: "Compatible With", value: "KX-NS500" },
+            { label: "Maximum Units", value: "3 units" },
+            { label: "Extension Capacity Increase", value: "Up to 288 extensions" },
+            { label: "Outside Line Increase", value: "Up to 190 lines" },
+            { label: "Rack Mount", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
+          ],
+          price: "Call for price"
         },
         {
-          id: "tel-006",
-          name: "Grandstream GXP2170 IP Phone",
-          model: "GXP2170",
-          cover: telephoneImg,
-          category: "IP Phones",
-          brand: "Grandstream",
-          shortDescription: "Professional IP phone with 12 SIP lines, 4.3-inch color display, and 48 BLF keys",
-          description: "Grandstream GXP2170 professional IP phone with 12 SIP lines and 4.3-inch color display. Features 48 programmable BLF keys. Supports 5-way conferencing and HD voice quality. Ideal for call centers and large offices.",
-          features: ["12 SIP lines", "4.3\" color display", "48 BLF keys", "5-way conferencing", "HD voice quality", "PoE support"],
-          specifications: [
-            { label: "SIP Lines", value: "12 lines" },
-            { label: "Display", value: "4.3\" color" },
-            { label: "BLF Keys", value: "48 keys" },
-            { label: "Conferencing", value: "5-way concurrent" },
-            { label: "Audio", value: "HD with Opus Codec" },
-            { label: "Network", value: "2x Gigabit" },
+          id: "pan-028",
+          name: "Panasonic KX-TDA620 Digital PBX",
+          model: "KX-TDA620",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "High-capacity organizational digital telephone exchange",
+          description: "The Panasonic KX-TDA620 is an advanced digital telephone exchange for medium and large organizations that supports analog, digital, and IP lines.",
+          features: [
+            "VoIP support",
+            "High expandability",
+            "PRI support",
+            "Advanced call management",
+            "Voicemail",
+            "Network support"
           ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "Hybrid IP PBX" },
+            { label: "Capacity", value: "Up to 640 extensions" },
+            { label: "PRI Support", value: "Yes" },
+            { label: "VoIP", value: "Yes" },
+            { label: "Networking", value: "Yes" },
+            { label: "Call Management", value: "Advanced" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
+          ],
+          price: "Call for price"
         },
         {
-          id: "tel-007",
-          name: "Yeastar TA1600 VoIP Gateway",
-          model: "TA1600",
-          cover: telephoneImg,
-          category: "Gateway & Network Equipment",
-          brand: "Yeastar",
-          shortDescription: "VoIP gateway with 16 analog ports for connecting traditional phone lines to IP networks",
-          description: "Yeastar TA1600 VoIP Gateway with 16 analog ports for connecting traditional phone lines to IP networks. Supports SIP and IAX2 protocols. Converts 16 analog lines to VoIP. Ideal for organizations migrating to IP telephony.",
-          features: ["16 analog ports", "SIP/IAX2 support", "HD voice quality", "Web-based management", "PBX compatibility", "Rack-mountable"],
-          specifications: [
-            { label: "Analog Ports", value: "16 ports" },
-            { label: "Protocols", value: "SIP, IAX2" },
-            { label: "Audio", value: "HD Codec G.722" },
-            { label: "Network", value: "Gigabit" },
-            { label: "Form Factor", value: "1U Rackmount" },
-            { label: "Power", value: "100-240V" },
+          id: "pan-029",
+          name: "Panasonic KX-TD1232 Analog PBX",
+          model: "KX-TD1232",
+          cover: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Low-capacity analog PBX for small offices",
+          description: "The KX-TD1232 is an older Panasonic analog telephone exchange designed for small offices, offering basic call management features.",
+          features: [
+            "Call transfer",
+            "Auto-attendant",
+            "Hold queue",
+            "Extension system",
+            "Hold music",
+            "Easy setup"
           ],
-          images: [telephoneImg, heroBg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Line Capacity", value: "3" },
+            { label: "Extension Capacity", value: "32" },
+            { label: "Auto-Attendant", value: "Yes" },
+            { label: "Hold Music", value: "Yes" },
+            { label: "Display", value: "No" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
+          ],
+          price: "Call for price"
         },
         {
-          id: "tel-008",
-          name: "CAT6 Network Cable & Accessory Kit",
-          model: "CAT6",
-          cover: heroBg,
-          category: "Gateway & Network Equipment",
-          brand: "Generic",
-          shortDescription: "High-quality CAT6 network cable and accessory kit for IP-based telephone networks",
-          description: "High-quality CAT6 network cable and accessory kit including patch cords, RJ45 connectors, keystone jacks, and patch panels. Perfect for setting up IP-based telephone networks with 1 Gbps speed capability.",
-          features: ["CAT6 standard", "1 Gbps speed", "High-quality cables", "Gold-plated connectors", "Keystone jacks", "19-inch patch panel"],
-          specifications: [
-            { label: "Standard", value: "CAT6" },
-            { label: "Speed", value: "1 Gbps" },
-            { label: "Frequency", value: "250 MHz" },
-            { label: "Cable Type", value: "UTP" },
-            { label: "Cable Length", value: "1m & 3m" },
-            { label: "Connector", value: "RJ45 gold-plated" },
+          id: "pan-030",
+          name: "Panasonic KX-T61610 Analog PBX",
+          model: "KX-T61610",
+          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Analog PBX for small businesses",
+          description: "The Panasonic KX-T61610 is an affordable analog telephone exchange with call management and extension capabilities for small offices.",
+          features: [
+            "Call transfer",
+            "Auto-attendant",
+            "Conferencing",
+            "Hold queue",
+            "Hold music",
+            "Easy setup"
           ],
-          images: [heroBg, telephoneImg],
-          price: "Call for price",
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Lines", value: "6" },
+            { label: "Extensions", value: "16" },
+            { label: "Conferencing", value: "Yes" },
+            { label: "Call Transfer", value: "Yes" },
+            { label: "Hold Music", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          ],
+          price: "Call for price"
         },
-      ],
+        {
+          id: "pan-031",
+          name: "Panasonic KX-TVM50 Voicemail System",
+          model: "KX-TVM50",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Professional Panasonic voicemail system",
+          description: "The KX-TVM50 is a standalone Voicemail system for Panasonic PBX systems that provides voicemail, auto-attendant, and message management features.",
+          features: [
+            "Voicemail",
+            "Auto-attendant",
+            "Message storage",
+            "Message notification",
+            "Call management",
+            "Reporting"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Voicemail System" },
+            { label: "Base Ports", value: "2" },
+            { label: "Maximum Ports", value: "6" },
+            { label: "Message Storage", value: "Yes" },
+            { label: "Auto-Attendant", value: "Yes" },
+            { label: "Compatible With", value: "TDA/TDE/NCP" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-032",
+          name: "Panasonic KX-TVM200 Voicemail System",
+          model: "KX-TVM200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Enterprise voicemail system",
+          description: "The KX-TVM200 is a professional Voicemail system for organizations with high capacity and advanced auto-attendant features.",
+          features: [
+            "Auto-attendant",
+            "Voicemail",
+            "User management",
+            "Email notification",
+            "Reporting",
+            "Multi-language support"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Voicemail System" },
+            { label: "Maximum Ports", value: "24" },
+            { label: "Storage Capacity", value: "High" },
+            { label: "Message Notification", value: "Yes" },
+            { label: "Network Support", value: "Yes" },
+            { label: "Multi-Language", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-033",
+          name: "Panasonic KX-TA616 Analog PBX",
+          model: "KX-TA616",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "6 outside line and 16 extension analog PBX",
+          description: "The Panasonic KX-TA616 is one of the most popular low-capacity analog PBX systems from Panasonic for small offices and companies.",
+          features: [
+            "6 outside lines",
+            "16 extensions",
+            "Call transfer",
+            "Conferencing",
+            "Hold queue",
+            "Hold music"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Lines", value: "6" },
+            { label: "Extensions", value: "16" },
+            { label: "Conferencing", value: "Yes" },
+            { label: "Auto-Attendant", value: "Yes" },
+            { label: "Hold Music", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-034",
+          name: "Panasonic KX-T30810 Analog PBX",
+          model: "KX-T30810",
+          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "3 outside line and 8 extension analog PBX",
+          description: "Panasonic analog telephone exchange for small offices with capacity of 3 outside lines and 8 extensions.",
+          features: [
+            "3 outside lines",
+            "8 extensions",
+            "Call transfer",
+            "Conferencing",
+            "Hold music",
+            "Auto-attendant"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Lines", value: "3" },
+            { label: "Extensions", value: "8" },
+            { label: "Conferencing", value: "Yes" },
+            { label: "Call Transfer", value: "Yes" },
+            { label: "Auto-Attendant", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-035",
+          name: "Panasonic KX-T206SBX Analog PBX",
+          model: "KX-T206SBX",
+          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "2 outside line and 6 extension analog PBX",
+          description: "An affordable Panasonic analog telephone exchange suitable for small offices and shops.",
+          features: [
+            "2 outside lines",
+            "6 extensions",
+            "Call transfer",
+            "Auto-attendant",
+            "Hold music",
+            "Easy setup"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Lines", value: "2" },
+            { label: "Extensions", value: "6" },
+            { label: "Call Transfer", value: "Yes" },
+            { label: "Auto-Attendant", value: "Yes" },
+            { label: "Hold Music", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          ],
+          price: "Call for price"
+        }, {
+          id: "pan-036",
+          name: "Panasonic KX-TA624 Hybrid PBX",
+          model: "KX-TA624",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Analog hybrid PBX suitable for small offices and companies",
+          description:
+            "The Panasonic KX-TA624 is an analog hybrid PBX designed for small businesses. This system supports 3 outside lines and 8 extensions as base, and can be expanded to 6 outside lines and 24 extensions using expansion cards. Support for Panasonic proprietary phones, fax, modems, and analog phones is a key feature of this system.",
+          features: [
+            "Expandable from 3 to 6 outside lines",
+            "Expandable up to 24 extensions",
+            "Caller ID support",
+            "Panasonic proprietary phone support",
+            "Fax and modem connectivity",
+            "Door Phone and Door Opener support"
+          ],
+          specifications: [
+            { label: "System Type", value: "Advanced Hybrid PBX" },
+            { label: "Base Capacity", value: "3 outside lines / 8 extensions" },
+            { label: "Maximum Outside Lines", value: "6" },
+            { label: "Maximum Extensions", value: "24" },
+            { label: "Caller ID Support", value: "Yes" },
+            { label: "Door Phone Support", value: "Up to 4 units" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          ],
+          price: "Call for price"
+        }
+      ]
     },
   },
 };

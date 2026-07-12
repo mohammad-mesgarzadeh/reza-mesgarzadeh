@@ -55,7 +55,8 @@ const ProductCard = memo(function ProductCard({
         </div>
         <div className="flex flex-wrap gap-1.5 pt-2 border-t border-border/40">
           {product.features.slice(0, 2).map((f, i) => (
-            <span key={i} className="text-[10px] px-2 py-0.5 bg-accent/5 text-accent/80 border border-accent/10 rounded-full">
+            <span key={i} className={`text-[10px] px-2 py-0.5 bg-accent/5 text-accent/80 border ${isRtl ? "text-right" : "text-left"
+              } border-accent/10 rounded-full`}>
               {f}
             </span>
           ))}

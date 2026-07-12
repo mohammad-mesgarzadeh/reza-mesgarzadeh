@@ -70,7 +70,7 @@ export default function Training() {
               </div>
 
               <a
-                href={`tel:${phoneNumber}`}
+                href="tel:09123254266"
                 className="inline-flex items-center gap-2.5 px-8 py-4 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg active:scale-[0.97]"
               >
                 <Phone className="w-4 h-4" />
@@ -160,7 +160,7 @@ export default function Training() {
         </div>
       </section>
 
-     
+
 
       <Footer
         brand={c.brand}
@@ -227,18 +227,16 @@ function ModuleCard({
 
               <div className="min-w-0 flex-1">
                 <h3
-                  className={`text-lg sm:text-xl font-bold text-foreground mb-1 ${
-                    isRtl ? "text-right" : "text-left"
-                  }`}
+                  className={`text-lg sm:text-xl font-bold text-foreground mb-1 ${isRtl ? "text-right" : "text-left"
+                    }`}
                   style={{ fontFamily: headingFont }}
                 >
                   {mod.title}
                 </h3>
 
                 <p
-                  className={`text-sm text-muted-foreground leading-relaxed ${
-                    isRtl ? "text-right" : "text-left"
-                  }`}
+                  className={`text-sm text-muted-foreground leading-relaxed ${isRtl ? "text-right" : "text-left"
+                    }`}
                 >
                   {mod.description}
                 </p>
@@ -253,9 +251,8 @@ function ModuleCard({
             </div>
 
             <div
-              className={`shrink-0 w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center transition-transform duration-300 ${
-                isOpen ? "rotate-180" : ""
-              }`}
+              className={`shrink-0 w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                }`}
             >
               <ChevronDown className="w-4 h-4 text-muted-foreground" />
             </div>
@@ -264,11 +261,10 @@ function ModuleCard({
 
         {/* Lessons list */}
         <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen
+          className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen
               ? "max-h-[500px] opacity-100 mt-3"
               : "max-h-0 opacity-0"
-          }`}
+            }`}
         >
           <div
             className={`${isRtl ? "mr-6 sm:mr-7" : "ml-6 sm:ml-7"} space-y-2`}
@@ -284,17 +280,15 @@ function ModuleCard({
 
                 <div className="min-w-0 flex-1">
                   <h4
-                    className={`font-semibold text-foreground text-sm mb-0.5 ${
-                      isRtl ? "text-right" : "text-left"
-                    }`}
+                    className={`font-semibold text-foreground text-sm mb-0.5 ${isRtl ? "text-right" : "text-left"
+                      }`}
                   >
                     {lesson.title}
                   </h4>
 
                   <p
-                    className={`text-xs text-muted-foreground leading-relaxed ${
-                      isRtl ? "text-right" : "text-left"
-                    }`}
+                    className={`text-xs text-muted-foreground leading-relaxed ${isRtl ? "text-right" : "text-left"
+                      }`}
                   >
                     {lesson.description}
                   </p>

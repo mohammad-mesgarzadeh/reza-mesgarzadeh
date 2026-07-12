@@ -188,18 +188,26 @@ export interface ImContent {
   contactText: string;
 }
 
-export interface TrainingCourse {
+export interface Lesson {
+  id: string;
   title: string;
-  desc: string;
-  duration: string;
-  audience: string;
+  description: string;
 }
 
-export interface TrainingCategory {
-  name: string;
-  desc: string;
+export interface TrainingModule {
+  id: string;
+  number: number;
+  title: string;
+  description: string;
   icon: string;
-  courses: TrainingCourse[];
+  lessons: Lesson[];
+}
+
+export interface TrainingVideo {
+  id: string;
+  title: string;
+  description: string;
+  embedUrl: string;
 }
 
 export interface TrainingBenefit {
@@ -211,7 +219,10 @@ export interface TrainingBenefit {
 export interface TrainingContent {
   title: string;
   subtitle: string;
-  categories: TrainingCategory[];
+  courseTitle: string;
+  courseDescription: string;
+  modules: TrainingModule[];
+  videos: TrainingVideo[];
   benefits: TrainingBenefit[];
   cta: string;
 }

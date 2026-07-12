@@ -48,7 +48,7 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
         >
           <SectionLabel
             icon={
-              <span className="w-1.5 h-1.5 rounded-full bg-telecom-green animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse" />
             }
             label={content.badge}
             className="mb-6"

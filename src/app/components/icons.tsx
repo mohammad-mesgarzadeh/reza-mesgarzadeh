@@ -12,6 +12,16 @@ import {
   Monitor,
   BookOpen,
   Award,
+  Phone,
+  Users,
+  ChevronDown,
+  ChevronRight,
+  Play,
+  Clock,
+  CheckCircle,
+  GraduationCap,
+  Video,
+  Sparkles,
 } from "lucide-react";
 
 export const iconMap: Record<string, React.FC<{ className?: string }>> = {
@@ -28,4 +38,14 @@ export const iconMap: Record<string, React.FC<{ className?: string }>> = {
   Monitor: ({ className }) => <Monitor className={className} />,
   BookOpen: ({ className }) => <BookOpen className={className} />,
   Award: ({ className }) => <Award className={className} />,
+  Phone: ({ className }) => <Phone className={className} />,
+  Users: ({ className }) => <Users className={className} />,
+  ChevronDown: ({ className }) => <ChevronDown className={className} />,
+  ChevronRight: ({ className }) => <ChevronRight className={className} />,
+  Play: ({ className }) => <Play className={className} />,
+  Clock: ({ className }) => <Clock className={className} />,
+  CheckCircle: ({ className }) => <CheckCircle className={className} />,
+  GraduationCap: ({ className }) => <GraduationCap className={className} />,
+  Video: ({ className }) => <Video className={className} />,
+  Sparkles: ({ className }) => <Sparkles className={className} />,
 };

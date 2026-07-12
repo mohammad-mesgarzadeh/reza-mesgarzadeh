@@ -1,6 +1,4 @@
 import { Content } from "./types";
-import telephoneImg from "./assets/telephone_11zon.webp";
-import heroBg from "./assets/hero.webp";
 
 export const CONTENT: Content = {
   fa: {
@@ -336,39 +334,112 @@ export const CONTENT: Content = {
     training: {
       title: "آموزش تخصصی",
       subtitle: "دوره‌های جامع مخابرات و مهندسی با رویکرد عملی",
-      categories: [
+      courseTitle: "آموزش سانترال پاناسونیک",
+      courseDescription: "دوره جامع آموزش نصب، برنامه‌ریزی، پیکربندی، عیب‌یابی و نگهداری سانترال‌های پاناسونیک، شامل مفاهیم پایه و پیشرفته",
+      modules: [
         {
-          name: "سیستم‌های PBX",
-          desc: "آموزش عملی نصب، پیکربندی و نگهداری سیستم‌های PBX",
+          id: "mod-1",
+          number: 1,
+          title: "مبانی PBX",
+          description: "آشنایی کامل با مفاهیم، معماری و نحوه عملکرد سیستم‌های PBX",
           icon: "Radio",
-          courses: [
-            { title: "مبانی PBX", desc: "آشنایی با مفاهیم پایه، انواع سیستم‌های PBX و معماری آن‌ها", duration: "۲ روز", audience: "تکنسین‌ها" },
-            { title: "پیکربندی پیشرفته PBX", desc: "تنظیمات پیشرفته، شبکه‌سازی و یکپارچه‌سازی با سیستم‌های دیگر", duration: "۳ روز", audience: "مهندسان" },
+          lessons: [
+            { id: "les-1-1", title: "معرفی مفاهیم PBX", description: "آشنایی با تاریخچه، تعاریف و اهمیت سیستم‌های PBX در ارتباطات سازمانی" },
+            { id: "les-1-2", title: "معماری سیستم PBX", description: "بررسی اجزای سخت‌افزاری و نرم‌افزاری مرکز تلفن و نحوه اتصال آن‌ها" },
+            { id: "les-1-3", title: "نحوه عملکرد سیستم‌های PBX", description: "بررسی فرآیند برقراری تماس، سوئیچینگ و مدیریت خطوط در سیستم" },
           ],
         },
         {
-          name: "مهندسی دکل",
-          desc: "آموزش تخصصی سازه‌های دکل و مدل‌سازی",
-          icon: "TowerControl",
-          courses: [
-            { title: "اصول طراحی دکل", desc: "مبانی طراحی سازه‌های دکل مخابراتی، تحلیل بار و استانداردها", duration: "۲ روز", audience: "مهندسان" },
-            { title: "ساخت ماکت مقیاس", desc: "آموزش گام‌به‌گام ساخت ماکت‌های مهندسی با جزئیات دقیق", duration: "۵ روز", audience: "مدل‌سازان" },
-          ],
-        },
-        {
-          name: "مخابرات",
-          desc: "دانش فنی هسته مخابرات و مهارت‌های عملی",
+          id: "mod-2",
+          number: 2,
+          title: "خطوط Trunk",
+          description: "شناخت انواع خطوط شهری و نحوه اتصال آن‌ها به سیستم PBX",
           icon: "Globe",
-          courses: [
-            { title: "زیرساخت مخابراتی", desc: "آشنایی با تجهیزات، استانداردها و روش‌های پیاده‌سازی شبکه‌های مخابراتی", duration: "۳ روز", audience: "تکنسین‌ها" },
-            { title: "برنامه‌ریزی شبکه", desc: "مبانی برنامه‌ریزی و بهینه‌سازی شبکه‌های مخابراتی", duration: "۲ روز", audience: "مهندسان" },
+          lessons: [
+            { id: "les-2-1", title: "خطوط آنالوگ Trunk", description: "بررسی خطوط شهری آنالوگ، نحوه اتصال و پیکربندی آن‌ها در سانترال" },
+            { id: "les-2-2", title: "خطوط دیجیتال Trunk", description: "آشنایی با خطوط دیجیتال PRI/E1 و مزایای آن‌ها نسبت به آنالوگ" },
+            { id: "les-2-3", title: "SIP Trunks", description: "پیکربندی خطوط SIP و VoIP برای ارتباطات اینترنتی مقرون‌به‌صرفه" },
           ],
+        },
+        {
+          id: "mod-3",
+          number: 3,
+          title: "داخلی‌ها (Extensions)",
+          description: "شناخت انواع داخلی‌ها و نحوه راه‌اندازی و مدیریت آن‌ها",
+          icon: "Phone",
+          lessons: [
+            { id: "les-3-1", title: "داخلی‌های آنالوگ", description: "اتصال و پیکربندی تلفن‌های آنالوگ روی پورت‌های داخلی سانترال" },
+            { id: "les-3-2", title: "داخلی‌های دیجیتال", description: "راه‌اندازی تلفن‌های دیجیتال پاناسونیک و بهره‌مندی از امکانات پیشرفته" },
+            { id: "les-3-3", title: "داخلی‌های IP", description: "پیکربندی تلفن‌های IP و اتصال آن‌ها از طریق شبکه به سانترال" },
+          ],
+        },
+        {
+          id: "mod-4",
+          number: 4,
+          title: "کالر آی‌دی (Caller ID)",
+          description: "فعال‌سازی و پیکربندی سیستم نمایش شماره تماس‌گیرنده",
+          icon: "Monitor",
+          lessons: [
+            { id: "les-4-1", title: "مبانی کالر آی‌دی", description: "آشنایی با نحوه عملکرد سیستم نمایش شماره و انواع سیگنال‌ها" },
+            { id: "les-4-2", title: "پیکربندی Caller ID", description: "نصب کارت کالر آی‌دی و تنظیمات نرم‌افزاری نمایش شماره" },
+            { id: "les-4-3", title: "کاربردهای عملی", description: "استفاده از کالر آی‌دی در سناریوهای واقعی و مدیریت تماس‌ها" },
+          ],
+        },
+        {
+          id: "mod-5",
+          number: 5,
+          title: "سیستم DISA",
+          description: "راه‌اندازی سیستم پاسخگویی خودکار و پیام‌گیر صوتی",
+          icon: "Headphones",
+          lessons: [
+            { id: "les-5-1", title: "معرفی DISA", description: "آشنایی با مفهوم DISA و نقش آن در ارتباطات خودکار سازمان" },
+            { id: "les-5-2", title: "پیکربندی DISA", description: "تنظیم منوی صوتی، ضبط پیام‌ها و مسیردهی تماس‌ها" },
+            { id: "les-5-3", title: "کاربردهای واقعی", description: "پیاده‌سازی DISA در سناریوهای واقعی شرکت‌ها و سازمان‌ها" },
+          ],
+        },
+        {
+          id: "mod-6",
+          number: 6,
+          title: "گروه‌های زنگ (Ring Groups)",
+          description: "ایجاد و مدیریت گروه‌های زنگ برای مسیردهی هوشمند تماس‌ها",
+          icon: "Users",
+          lessons: [
+            { id: "les-6-1", title: "ایجاد گروه زنگ", description: "آموزش ساخت گروه‌های زنگ و تعریف اعضای هر گروه" },
+            { id: "les-6-2", title: "مسیردهی تماس‌های ورودی", description: "تنظیم استراتژی‌های مختلف زنگ و توزیع تماس‌ها بین اپراتورها" },
+            { id: "les-6-3", title: "سناریوهای عملی", description: "پیاده‌سازی گروه‌های زنگ در بخش‌های مختلف سازمان" },
+          ],
+        },
+      ],
+      videos: [
+        {
+          id: "vid-1",
+          title: "آشنایی با ساختار و اجزای اصلی باکس 824 سانترال.",
+          description: "معرفی کامل سیستم‌های PBX پاناسونیک و اجزای اصلی آن‌ها",
+          embedUrl: "https://www.youtube.com/embed/U797tl8Jp0o?si=OvhgKkKR6Ku2ME0u",
+        },
+        {
+          id: "vid-2",
+          title: "آموزش سانترال (آشنایی با باکس 824) (2)",
+          description: "بررسی تنظیمات و امکانات کاربردی باکس 824 سانترال.",
+          embedUrl: "https://www.youtube.com/embed/89Tusw5XjVc?si=X0IefEsdpZay28Pi",
+        },
+        {
+          id: "vid-3",
+          title: "آشنایی با باکس tda",
+          description: "معرفی ساختار و قابلیت‌های باکس TDA سانترال.",
+          embedUrl: "https://www.youtube.com/embed/Z61r53nNgMM?si=POe-wp1pL_hbMGuc",
+        },
+        {
+          id: "vid-4",
+          title: "تنظیم مدل خط شهری 824",
+          description: "آموزش تنظیم و پیکربندی خطوط شهری در سانترال 824.",
+          embedUrl: "https://www.youtube.com/embed/bItqH97Jkqg?si=bSJiF_v8zFST3s4E",
         },
       ],
       benefits: [
         { title: "مربیان متخصص", desc: "یادگیری از متخصصان صنعت با سال‌ها تجربه عملی", icon: "Award" },
-        { title: "آموزش عملی", desc: "تمرین‌های عملی با تجهیزات و مواد واقعی", icon: "Wrench" },
-        { title: "گواهینامه رسمی", desc: "دریافت گواهینامه رسمی پس از اتمام دوره", icon: "BookOpen" },
+        { title: "آموزش عملی", desc: "تمرین‌های عملی با تجهیزات واقعی سانترال‌های پاناسونیک", icon: "Wrench" },
+        { title: "گواهینامه رسمی", desc: "دریافت گواهینامه رسمی پس از اتمام دوره آموزشی", icon: "BookOpen" },
         { title: "زمان‌بندی انعطاف‌پذیر", desc: "امکان انتخاب جلسات در روزهای هفته یا آخر هفته", icon: "Zap" },
       ],
       cta: "ثبت‌نام در دوره‌ها",
@@ -485,27 +556,25 @@ export const CONTENT: Content = {
           cover: `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
-          shortDescription: "باکس سانترال دیجیتال پاناسونیک KX-T123211D مناسب کسب‌وکارهای کوچک و متوسط",
-          description: "پاناسونیک KX-T123211D یک سیستم سانترال دیجیتال از سری KX-TD است که برای مدیریت خطوط شهری و داخلی‌های سازمانی طراحی شده است. این دستگاه با ارائه امکانات مدیریت تماس، پشتیبانی از تلفن‌های دیجیتال و قابلیت توسعه، گزینه‌ای مناسب برای شرکت‌ها، دفاتر و مجموعه‌هایی است که به یک مرکز تلفن مطمئن و کاربردی نیاز دارند.",
+          shortDescription: "مرکز تلفن آنالوگ قدیمی با ظرفیت ثابت ۱۲ خط شهری و ۳۲ داخلی",
+          description: "پاناسونیک KX-T123211D یک سیستم سانترال آنالوگ و الکترونیک از نسل‌های اولیه و کلاسیک مراکز تلفن پاناسونیک است. این دستگاه با ظرفیت ثابت ۱۲ خط شهری و ۳۲ خط داخلی آنالوگ/هایبرید طراحی شده و فاقد ساختار ماژولار مدرن یا پشتیبانی از پورت‌های دیجیتال سری TD است. این باکس برای مجموعه‌هایی که همچنان از تلفن‌های رومیزی آنالوگ و تلفن‌های مدیریتی قدیمی پاناسونیک (مانند سری KX-T7030) استفاده می‌کنند، یک هسته ارتباطی پایدار و نوستالژیک به شمار می‌رود.",
           features: [
-            "سیستم سانترال دیجیتال پاناسونیک",
-            "پشتیبانی از خطوط شهری و داخلی‌های متعدد",
-            "قابلیت اتصال تلفن‌های دیجیتال پاناسونیک",
-            "مدیریت و انتقال پیشرفته تماس‌ها",
-            "قابلیت توسعه با کارت‌های جانبی",
-            "مناسب برای شرکت‌ها و سازمان‌های کوچک و متوسط",
-            "کیفیت و پایداری بالای ارتباطات"
+            "ظرفیت ثابت ۱۲ خط شهری و ۳۲ خط داخلی",
+            "سیستم ارتباطی کاملاً آنالوگ / الکترونیک (غیر دیجیتال)",
+            "پشتیبانی از تلفن‌های هایبرید قدیمی پاناسونیک (مانند KX-T7030 و KX-T7330)",
+            "پشتیبانی از تلفن‌های آنالوگ معمولی (تک خطه)",
+            "پایداری و طول عمر سخت‌افزاری بسیار بالا",
+            "امکانات پایه مدیریت تماس و هدایت خطوط شهری"
           ],
           specifications: [
-            { label: "نوع سیستم", value: "Digital Hybrid PBX" },
+            { label: "نوع سیستم", value: "Analog / Electronic PBX" },
             { label: "مدل دستگاه", value: "KX-T123211D" },
-            { label: "ظرفیت اولیه", value: "12 خط شهری / 32 داخلی" },
-            { label: "نوع خطوط شهری", value: "آنالوگ" },
-            { label: "نوع داخلی‌ها", value: "دیجیتال و آنالوگ" },
-            { label: "پشتیبانی تلفن دیجیتال", value: "دارد" },
-            { label: "قابلیت توسعه", value: "با کارت‌های جانبی" },
-            { label: "قابلیت مدیریت تماس", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" }
+            { label: "ظرفیت خطوط شهری", value: "۱۲ خط (ثابت)" },
+            { label: "ظرفیت خطوط داخلی", value: "۳۲ داخلی (ثابت)" },
+            { label: "نوع خطوط شهری", value: "آنالوگ معمولی" },
+            { label: "پشتیبانی تلفن دیجیتال", value: "ندارد (فقط آنالوگ و هایبرید قدیمی)" },
+            { label: "قابلیت توسعه فیزیکی", value: "ندارد (ظرفیت ثابت است)" },
+            { label: "موسیقی انتظار", value: "دارد (از طریق جک پورت خارجی)" }
           ],
           images: [
             `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
@@ -556,23 +625,25 @@ export const CONTENT: Content = {
           cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ 6 شهری و 16 داخلی",
-          description: "پاناسونیک KX-TA616 یکی از محبوب‌ترین سانترال‌های کم‌ظرفیت پاناسونیک برای دفاتر و شرکت‌های کوچک است.",
+          shortDescription: "مرکز تلفن پیشرفته هایبرید با ظرفیت اولیه ۶ خط شهری و ۱۶ داخلی",
+          description: "پاناسونیک KX-TA616 یک سیستم سانترال پیشرفته هایبرید (Advanced Hybrid) ایده‌آل برای دفاتر، شرکت‌ها و کسب‌وکارهای کوچک و متوسط است. این دستگاه به طور پیش‌فرض با ظرفیت ۶ خط شهری و ۱۶ خط داخلی آنالوگ/هایبرید عرضه می‌شود و هماهنگی کاملی با تلفن‌های مدیریتی محبوب پاناسونیک (مانند سری KX-T7730) دارد. قابلیت ارتقای ماژولار، پشتیبانی از Caller ID و تلفن‌گویای سه مرحله‌ای (DISA) از ویژگی‌های بارز این باکس پرفروش است.",
           features: [
-            "6 خط شهری",
-            "16 داخلی",
-            "انتقال تماس",
-            "کنفرانس",
-            "صف انتظار",
-            "موسیقی انتظار"
+            "ظرفیت اولیه فیزیکی ۶ خط شهری و ۱۶ داخلی",
+            "سیستم ارتباطی پیشرفته هایبرید (Advanced Hybrid)",
+            "پشتیبانی کامل از تلفن‌های مدیریتی ۷۷۳۰ و آنالوگ معمولی",
+            "امکان نصب کارت Caller ID (نمایشگر شماره) برای خطوط شهری",
+            "پشتیبانی از کارت اپراتور خودکار و دیزا (DISA) جهت راهنمای صوتی",
+            "قابلیت ارتقای ظرفیت با اضافه کردن کارت‌های توسعه جانبی"
           ],
           specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "خطوط شهری", value: "6" },
-            { label: "داخلی", value: "16" },
-            { label: "کنفرانس", value: "دارد" },
-            { label: "اپراتور", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" }
+            { label: "نوع سیستم", value: "Advanced Hybrid PBX" },
+            { label: "ظرفیت خطوط شهری پایه", value: "۶ خط" },
+            { label: "ظرفیت خطوط داخلی پایه", value: "۱۶ داخلی" },
+            { label: "حداکثر ظرفیت خطوط شهری", value: "۶ خط" },
+            { label: "حداکثر ظرفیت خطوط داخلی", value: "۲۴ داخلی" },
+            { label: "پشتیبانی از تلفن هایبرید (KX-T7730)", value: "دارد" },
+            { label: "موسیقی انتظار", value: "دارد (داخلی و جک خارجی)" },
+            { label: "قابلیت درب‌بازکن (Doorphone)", value: "دارد (اختیاری با کارت)" }
           ],
           images: [
             `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
@@ -678,28 +749,29 @@ export const CONTENT: Content = {
           cover: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
-          shortDescription: "سانترال آنالوگ کم‌ظرفیت برای دفاتر کوچک",
-          description: "KX-TD1232 یک مرکز تلفن آنالوگ قدیمی پاناسونیک است که برای دفاتر کوچک طراحی شده و امکانات پایه مدیریت تماس را ارائه می‌دهد.",
+          shortDescription: "مرکز تلفن دیجیتال سوپر هایبرید با پایداری فوق‌العاده بالا برای مجموعه‌های متوسط",
+          description: "پاناسونیک KX-TD1232 یکی از محکم‌ترین و بااصالت‌ترین سانترال‌های دیجیتال سری TD است. این دستگاه به صورت پایه‌ای از ۸ خط شهری و ۱۶ داخلی دیجیتال پشتیبانی می‌کند که با بهره‌گیری از قابلیت منحصربه‌فرد XDP (بدون هزینه اضافی) به ۳۲ داخلی تبدیل می‌شود. همچنین قابلیت لینک شدن (Dual System) با یک باکس هم‌نام دیگر جهت دو برابر کردن ظرفیت کلی را دارا است.",
           features: [
-            "انتقال تماس",
-            "اپراتور خودکار",
-            "صف انتظار",
-            "داخلی‌سازی",
-            "موسیقی انتظار",
-            "نصب آسان"
+            "ظرفیت اولیه فیزیکی ۸ خط شهری و ۱۶ داخلی",
+            "پشتیبانی از پورت جادویی XDP (ارتقای داخلی‌ها به ۳۲ پورت)",
+            "قابلیت اتصال و لینک دو باکس (Master/Slave) برای ظرفیت مضاعف",
+            "پشتیبانی کامل از تلفن‌های دیجیتال (سری ۷۲۰۰ و ۷۴۰۰)",
+            "امکان نصب کارت Caller ID و اپراتور خودکار (DISA)",
+            "پایداری سخت‌افزاری بی‌نظیر در شرایط کاری سنگین"
           ],
           specifications: [
-            { label: "نوع سیستم", value: "Analog PBX" },
-            { label: "ظرفیت خطوط شهری", value: "3" },
-            { label: "ظرفیت داخلی", value: "32" },
-            { label: "اپراتور", value: "دارد" },
-            { label: "موسیقی انتظار", value: "دارد" },
-            { label: "نمایشگر", value: "ندارد" }
+            { label: "نوع سیستم", value: "Digital Super Hybrid PBX" },
+            { label: "ظرفیت خطوط شهری پایه", value: "۸ خط" },
+            { label: "ظرفیت داخلی پایه", value: "۱۶ داخلی (قابل تبدیل به ۳۲ با XDP)" },
+            { label: "حداکثر خطوط شهری (تک باکس)", value: "۱۲ خط" },
+            { label: "حداکثر داخلی با کارت توسعه", value: "۶۴ داخلی" },
+            { label: "قابلیت لینک با باکس دوم", value: "دارد (سیستم دوگانه)" },
+            { label: "پشتیبانی از تلفن دیجیتال", value: "دارد" }
           ],
           images: [
             `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TD1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`
           ],
           price: "تماس برای قیمت"
         },
@@ -906,28 +978,28 @@ export const CONTENT: Content = {
         },
         {
           id: "pan-028",
-          name: "سانترال پاناسونیک KX-TDA620",
+          name: "کابین توسعه سانترال پاناسونیک KX-TDA620",
           model: "KX-TDA620",
           cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
           category: "سیستم‌های PBX",
           brand: "Panasonic",
-          shortDescription: "مرکز تلفن دیجیتال سازمانی با ظرفیت بالا",
-          description: "پاناسونیک KX-TDA620 یک مرکز تلفن دیجیتال پیشرفته برای سازمان‌های متوسط و بزرگ است که قابلیت پشتیبانی از خطوط آنالوگ، دیجیتال و IP را فراهم می‌کند.",
+          shortDescription: "کابین یا شیلف توسعه ظرفیت، مخصوص دستگاه سانترال KX-TDA600",
+          description: "باکس پاناسونیک KX-TDA620 به عنوان کابین ارتقا و توسعه (Expansion Shelf) برای سانترال پرظرفیت KX-TDA600 طراحی شده است. این شیلف با اضافه کردن ۱۱ اسلات آزاد جدید به سیستم پایه، امکان افزایش چشمگیر خطوط شهری، داخلی‌های آنالوگ، دیجیتال و کارت‌های جانبی را برای سازمان‌های بزرگ فراهم می‌کند.",
           features: [
-            "پشتیبانی از VoIP",
-            "قابلیت توسعه بالا",
-            "پشتیبانی از PRI",
-            "مدیریت تماس پیشرفته",
-            "صندوق صوتی",
-            "پشتیبانی از شبکه"
+            "افزایش ظرفیت سخت‌افزاری سانترال TDA600",
+            "دارای ۱۱ اسلات ماژولار آزاد جهت نصب انواع کارت",
+            "اتصال به باکس پایه از طریق کارت و کابل اتصال BUS",
+            "تامین برق مستقل با منبع تغذیه سری KX-TDA5105",
+            "پشتیبانی از انواع کارت‌های شهری، داخلی و PRI (E1)",
+            "امکان اتصال حداکثر ۳ کابین توسعه به یک باکس پایه"
           ],
           specifications: [
-            { label: "نوع سیستم", value: "Hybrid IP PBX" },
-            { label: "ظرفیت", value: "تا 640 داخلی" },
-            { label: "پشتیبانی PRI", value: "دارد" },
-            { label: "VoIP", value: "دارد" },
-            { label: "شبکه‌سازی", value: "دارد" },
-            { label: "مدیریت تماس", value: "پیشرفته" }
+            { label: "نوع دستگاه", value: "Expansion Shelf (کابین توسعه)" },
+            { label: "دستگاه پیش‌نیاز", value: "Panasonic KX-TDA600" },
+            { label: "تعداد اسلات آزاد", value: "۱۱ اسلات ماژولار" },
+            { label: "حداکثر تعداد قابل اتصال", value: "۳ کابین برای یک باکس پایه" },
+            { label: "کارت اتصال پیش‌نیاز", value: "KX-TDA6110 / KX-TDA6111" },
+            { label: "منبع تغذیه مورد نیاز", value: "KX-TDA6101 (PSU-L)" }
           ],
           images: [
             `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
@@ -935,7 +1007,7 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`
           ],
           price: "تماس برای قیمت"
         },
@@ -1888,38 +1960,111 @@ export const CONTENT: Content = {
     training: {
       title: "Professional Training",
       subtitle: "Comprehensive telecom and engineering courses with practical approach",
-      categories: [
+      courseTitle: "Panasonic PBX Training",
+      courseDescription: "Comprehensive training covering Panasonic PBX installation, programming, configuration, troubleshooting, and maintenance, with both fundamental and advanced concepts",
+      modules: [
         {
-          name: "PBX Systems",
-          desc: "Hands-on training for PBX installation, configuration, and maintenance",
+          id: "mod-1",
+          number: 1,
+          title: "PBX Fundamentals",
+          description: "Complete understanding of PBX concepts, architecture, and how systems work",
           icon: "Radio",
-          courses: [
-            { title: "PBX Fundamentals", desc: "Core concepts, system types, and architecture of PBX systems", duration: "2 days", audience: "Technicians" },
-            { title: "Advanced PBX Configuration", desc: "Advanced setup, networking, and integration with other systems", duration: "3 days", audience: "Engineers" },
+          lessons: [
+            { id: "les-1-1", title: "Introduction to PBX Concepts", description: "Overview of PBX history, definitions, and importance in organizational communications" },
+            { id: "les-1-2", title: "PBX Architecture", description: "Detailed exploration of hardware and software components and their interconnections" },
+            { id: "les-1-3", title: "How PBX Systems Work", description: "Step-by-step breakdown of call processing, switching, and line management" },
           ],
         },
         {
-          name: "Tower Engineering",
-          desc: "Technical training on tower structures and modeling",
-          icon: "TowerControl",
-          courses: [
-            { title: "Tower Design Principles", desc: "Fundamentals of telecom tower structure design and standards", duration: "2 days", audience: "Engineers" },
-            { title: "Scale Model Fabrication", desc: "Step-by-step guide to crafting precision engineering scale models", duration: "5 days", audience: "Modelers" },
-          ],
-        },
-        {
-          name: "Telecommunications",
-          desc: "Core telecom knowledge and practical skills",
+          id: "mod-2",
+          number: 2,
+          title: "Trunk Lines",
+          description: "Understanding different trunk line types and connecting them to PBX",
           icon: "Globe",
-          courses: [
-            { title: "Telecom Infrastructure", desc: "Equipment, standards, and deployment methods for telecom networks", duration: "3 days", audience: "Technicians" },
-            { title: "Network Planning", desc: "Fundamentals of telecom network planning and optimization", duration: "2 days", audience: "Engineers" },
+          lessons: [
+            { id: "les-2-1", title: "Analog Trunk Lines", description: "Configuration and connection of analog trunk lines to PBX systems" },
+            { id: "les-2-2", title: "Digital Trunk Lines", description: "Digital PRI/E1 lines and their advantages over analog connections" },
+            { id: "les-2-3", title: "SIP Trunks", description: "SIP trunk and VoIP configuration for cost-effective internet communications" },
           ],
+        },
+        {
+          id: "mod-3",
+          number: 3,
+          title: "Extensions",
+          description: "Setting up and managing different types of extension lines",
+          icon: "Phone",
+          lessons: [
+            { id: "les-3-1", title: "Analog Extensions", description: "Connecting and configuring analog phones on PBX extension ports" },
+            { id: "les-3-2", title: "Digital Extensions", description: "Setting up Panasonic digital phones with advanced features" },
+            { id: "les-3-3", title: "IP Extensions", description: "Configuring IP phones and connecting them via network to PBX" },
+          ],
+        },
+        {
+          id: "mod-4",
+          number: 4,
+          title: "Caller ID",
+          description: "Activating and configuring caller identification systems",
+          icon: "Monitor",
+          lessons: [
+            { id: "les-4-1", title: "Caller ID Basics", description: "Understanding caller ID technology and signal types" },
+            { id: "les-4-2", title: "Caller ID Configuration", description: "Installing caller ID cards and configuring caller number display" },
+            { id: "les-4-3", title: "Practical Use Cases", description: "Real-world applications of Caller ID in call management scenarios" },
+          ],
+        },
+        {
+          id: "mod-5",
+          number: 5,
+          title: "DISA System",
+          description: "Setting up automated attendant and voice messaging systems",
+          icon: "Headphones",
+          lessons: [
+            { id: "les-5-1", title: "Introduction to DISA", description: "Overview of DISA concept and its role in automated organizational communications" },
+            { id: "les-5-2", title: "DISA Configuration", description: "Setting up voice menus, recording messages, and call routing rules" },
+            { id: "les-5-3", title: "Real-World Applications", description: "Implementing DISA in practical business and organizational scenarios" },
+          ],
+        },
+        {
+          id: "mod-6",
+          number: 6,
+          title: "Ring Groups",
+          description: "Creating and managing ring groups for intelligent call distribution",
+          icon: "Users",
+          lessons: [
+            { id: "les-6-1", title: "Ring Group Creation", description: "Building ring groups and defining member extensions for each group" },
+            { id: "les-6-2", title: "Incoming Call Routing", description: "Configuring different ring strategies and distributing calls among operators" },
+            { id: "les-6-3", title: "Practical Scenarios", description: "Deploying ring groups across different organizational departments" },
+          ],
+        },
+      ],
+      videos: [
+        {
+          id: "vid-1",
+          title: "Panasonic PBX Fundamentals",
+          description: "Complete introduction to Panasonic PBX systems and their core components",
+          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        },
+        {
+          id: "vid-2",
+          title: "Trunk Line Configuration",
+          description: "Step-by-step guide to connecting and configuring trunk and SIP lines",
+          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        },
+        {
+          id: "vid-3",
+          title: "Setting Up Extensions",
+          description: "How to add and configure analog, digital, and IP extensions",
+          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        },
+        {
+          id: "vid-4",
+          title: "Caller ID & DISA Setup",
+          description: "Activating Caller ID and configuring automated attendant systems",
+          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         },
       ],
       benefits: [
         { title: "Expert Instructors", desc: "Learn from industry professionals with years of field experience", icon: "Award" },
-        { title: "Hands-on Training", desc: "Practical exercises with real equipment and materials", icon: "Wrench" },
+        { title: "Hands-on Training", desc: "Practical exercises with real Panasonic PBX equipment", icon: "Wrench" },
         { title: "Official Certification", desc: "Receive official certificates upon course completion", icon: "BookOpen" },
         { title: "Flexible Scheduling", desc: "Choose from weekday or weekend sessions to fit your schedule", icon: "Zap" },
       ],

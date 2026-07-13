@@ -963,7 +963,7 @@ export const CONTENT: Content = {
             { label: "نوع سیستم", value: "Digital Super Hybrid PBX" },
             { label: "ظرفیت اولیه", value: "8 خط شهری / 16 داخلی" },
             { label: "با کارت توسعه اول", value: "12 خط شهری / 32 داخلی" },
-            { label: "با کارت توسعه دوم", value: "24 خط شهری / 196 داخلی (FULL)" },
+            { label: "با باکس اضافه دوم", value: "24 خط شهری / 196 داخلی (FULL)" },
             { label: "پشتیبانی از تلفن دیجیتال", value: "دارد" },
             { label: "قابلیت لینک با باکس دوم", value: "دارد (Dual System)" },
             { label: "قابلیت XDP", value: "دارد" }

@@ -46,17 +46,24 @@ export default function InstallationMaintenance() {
             {im.subtitle}
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16 items-stretch">
             {im.services.map((service, i) => {
               const ServiceIcon = iconMap[service.icon] || iconMap["Wrench"];
+
               return (
-                <ScrollReveal key={i} delay={i * 0.05}>
-                  <div className="bg-card border border-border/60 rounded-xl p-6 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300">
-                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-5">
+                <ScrollReveal key={i} delay={i * 0.05} className="h-full">
+                  <div className="h-full flex flex-col bg-card border border-border/60 rounded-xl p-6 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-5 shrink-0">
                       <ServiceIcon className="w-6 h-6" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+
+                    <h3 className="text-lg font-bold text-foreground mb-2 ">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                      {service.desc}
+                    </p>
                   </div>
                 </ScrollReveal>
               );

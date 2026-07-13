@@ -56,15 +56,23 @@ export default function Training() {
                 {t.courseDescription}
               </p>
 
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-10">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-10 max-w-md mx-auto">
                 {[
                   { value: t.modules.length, label: lang === "fa" ? " ماژول آموزشی" : " Modules" },
                   { value: totalLessons, label: lang === "fa" ? " درس" : " Lessons" },
                   { value: t.videos.length, label: lang === "fa" ? " ویدیو" : " Videos" },
                 ].map((stat, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl px-5 py-3">
-                    <span className="text-2xl font-bold text-accent">{stat.value}</span>
-                    <span className="text-sm text-muted-foreground">{stat.label}</span>
+                  <div
+                    key={i}
+                    className="flex flex-col items-center justify-center bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl px-2 sm:px-5 py-3 text-center"
+                  >
+                    <span className="text-xl sm:text-2xl font-bold text-accent">
+                      {stat.value}
+                    </span>
+
+                    <span className="text-[10px] sm:text-sm text-muted-foreground whitespace-nowrap">
+                      {stat.label}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -262,8 +270,8 @@ function ModuleCard({
         {/* Lessons list */}
         <div
           className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen
-              ? "max-h-[500px] opacity-100 mt-3"
-              : "max-h-0 opacity-0"
+            ? "max-h-[1000px] opacity-100 mt-3"
+            : "max-h-0 opacity-0"
             }`}
         >
           <div

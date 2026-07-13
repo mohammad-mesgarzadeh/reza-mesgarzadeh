@@ -39,6 +39,8 @@ import {
 } from "../ui/carousel";
 import type { TowerModelProduct, TelecomProduct } from "../../types";
 import NotFound from "./NotFound";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 
 type AnyProduct = (TowerModelProduct & { brand?: string; features?: string[] }) | (TelecomProduct & { scale?: string; material?: string; useCase?: string });
 
@@ -517,6 +519,8 @@ function Breadcrumb({
 }
 
 export default function ProductDetail() {
+  const { setLang, dark, setDark, phoneNumber } = useSite();
+
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const location = useLocation();
@@ -582,6 +586,17 @@ export default function ProductDetail() {
       style={{ fontFamily: c.font }}
       className="min-h-screen bg-background text-foreground"
     >
+      <Navbar
+        lang={lang}
+        setLang={setLang}
+        dark={dark}
+        setDark={setDark}
+        brand={c.brand}
+        nav={c.nav}
+        callNow={c.callNow}
+        phoneNumber={phoneNumber}
+        dir={c.dir}
+      />
       {lightboxOpen && (
         <Lightbox
           images={product.images}
@@ -750,6 +765,15 @@ export default function ProductDetail() {
           <RelatedProducts products={related} lang={lang} isRtl={isRtl} isScaleModel={isScaleModel} />
         </ScrollReveal>
       </div>
+      <Footer
+        brand={c.brand}
+        nav={c.nav}
+        footer={c.footer}
+        pbxServices={c.pbxSection}
+        lang={lang}
+        setLang={setLang}
+        phoneNumber={phoneNumber}
+      />
     </div>
   );
 }

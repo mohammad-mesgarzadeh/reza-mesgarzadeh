@@ -34,7 +34,7 @@ export default function App() {
   }, [location.state]);
 
   return (
-    <div dir={c.dir} style={{ fontFamily: c.font }} className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div dir={c.dir} style={{ fontFamily: c.font }} className="min-h-screen bg-background text-foreground">
       <Navbar
         lang={lang}
         setLang={setLang}

@@ -1,4 +1,4 @@
-import { Content } from "./types";
+﻿import { Content } from "./types";
 
 export const CONTENT: Content = {
   fa: {
@@ -317,7 +317,7 @@ export const CONTENT: Content = {
       title: "نصب و نگهداری",
       subtitle: "خدمات حرفه‌ای نصب، نگهداری و تعمیرات زیرساخت مخابراتی",
       services: [
-        { title: "خدمات نصب", desc: "نصب کامل سیستم‌های PBX، دکل‌های مخابراتی و زیرساخت‌های ارتباطی با دقت و ایمنی کامل", icon: "Wrench" },
+        { title: "خدمات نصب", desc: "نصب و راه‌اندازی تخصصی انواع سانترال و تجهیزات مخابراتی", icon: "Wrench" },
         { title: "نگهداری پیشگیرانه", desc: "نگهداری دوره‌ای و بهینه‌سازی سیستم برای اطمینان از عملکرد اوج تجهیزات", icon: "Shield" },
         { title: "خدمات تعمیرات", desc: "تشخیص و تعمیر سریع تجهیزات مخابراتی با استفاده از قطعات اصلی", icon: "Headphones" },
         { title: "پشتیبانی فنی", desc: "پشتیبانی فنی ۲۴/۷ با زمان پاسخگویی تضمینی و کارشناسی حرفه‌ای", icon: "Radio" },
@@ -2101,19 +2101,19 @@ export const CONTENT: Content = {
       title: "Installation & Maintenance",
       subtitle: "Professional installation, maintenance, and repair services for telecom infrastructure",
       services: [
-        { title: "Installation Services", desc: "End-to-end installation of PBX systems, telecom towers, and communication infrastructure with precision and safety", icon: "Wrench" },
-        { title: "Preventive Maintenance", desc: "Regular preventive maintenance and system optimization to ensure peak performance", icon: "Shield" },
-        { title: "Repair Services", desc: "Rapid diagnosis and repair of telecom equipment using genuine parts", icon: "Headphones" },
+        { title: "Installation Services", desc: "Specialized installation and setup of PBX systems and telecom equipment", icon: "Wrench" },
+        { title: "Preventive Maintenance", desc: "Periodic maintenance and system optimization to ensure peak equipment performance", icon: "Shield" },
+        { title: "Repair Services", desc: "Fast diagnosis and repair of telecom equipment using genuine parts", icon: "Headphones" },
         { title: "Technical Support", desc: "24/7 technical support with guaranteed response times and professional expertise", icon: "Radio" },
       ],
       process: [
-        { step: "01", title: "Initial Assessment", desc: "On-site survey and detailed analysis of technical requirements and project scope" },
-        { step: "02", title: "Project Planning", desc: "Detailed project plan including timeline, resource allocation, and technical documentation" },
-        { step: "03", title: "Implementation", desc: "Professional installation and deployment by certified, experienced technicians" },
-        { step: "04", title: "Testing & QA", desc: "Comprehensive system testing and quality assurance following international standards" },
-        { step: "05", title: "Handover & Training", desc: "Complete project handover with documentation and system operation training" },
+        { step: "01", title: "Initial Assessment", desc: "On-site inspection and detailed analysis of project requirements and technical specifications" },
+        { step: "02", title: "Planning", desc: "Development of a detailed execution plan including timeline, resource allocation, and technical documentation" },
+        { step: "03", title: "Implementation", desc: "Professional installation and setup by certified and experienced technicians" },
+        { step: "04", title: "Testing & Quality Assurance", desc: "Comprehensive system testing and quality assurance in compliance with international standards" },
+        { step: "05", title: "Delivery & Training", desc: "Complete project handover with technical documentation and system operation training for the client" },
       ],
-      contactText: "Contact us for a free consultation or to request our services",
+      contactText: "Contact us for a free consultation or to submit a service request",
     },
     training: {
       title: "Professional Training",
@@ -2164,21 +2164,60 @@ export const CONTENT: Content = {
           description: "Activating and configuring caller identification systems",
           icon: "Monitor",
           lessons: [
-            { id: "les-4-1", title: "Caller ID Basics", description: "Understanding caller ID technology and signal types" },
-            { id: "les-4-2", title: "Caller ID Configuration", description: "Installing caller ID cards and configuring caller number display" },
-            { id: "les-4-3", title: "Practical Use Cases", description: "Real-world applications of Caller ID in call management scenarios" },
+            {
+              id: "les-4-1",
+              title: "Caller ID Memory",
+              description: "Reviewing the capacity and access methods for incoming call history on management phones"
+            },
+            {
+              id: "les-4-2",
+              title: "Area Code",
+              description: "Configuring area codes and regional codes (Area Code) to automatically remove or modify prefixes during call playback"
+            },
+            {
+              id: "les-4-3",
+              title: "Direct Ring",
+              description: "Configuring and directing incoming calls directly to a specific extension based on the caller's Caller ID number"
+            },
+            {
+              id: "les-4-4",
+              title: "Missed Call",
+              description: "Managing and logging missed calls, reviewing the alert indicator, and following up on unanswered numbers"
+            },
+            {
+              id: "les-4-5",
+              title: "In-Call Display",
+              description: "Reviewing Caller ID behavior during an active call and how the second waiting caller's number is displayed"
+            },
           ],
         },
         {
           id: "mod-5",
           number: 5,
-          title: "DISA System",
-          description: "Setting up automated attendant and voice messaging systems",
+          title: "Automated Attendant",
+          description: "Setting up automated attendant and voicemail systems",
           icon: "Headphones",
           lessons: [
-            { id: "les-5-1", title: "Introduction to DISA", description: "Overview of DISA concept and its role in automated organizational communications" },
-            { id: "les-5-2", title: "DISA Configuration", description: "Setting up voice menus, recording messages, and call routing rules" },
-            { id: "les-5-3", title: "Real-World Applications", description: "Implementing DISA in practical business and organizational scenarios" },
+            {
+              id: "les-5-1",
+              title: "DISA",
+              description: "Setting up and programming the Interactive Voice Menu (DISA) on outside lines for direct extension dialing"
+            },
+            {
+              id: "les-5-2",
+              title: "SVM",
+              description: "Configuring modular voicemail and auto-attendant cards (commonly known as SVM) in digital and high-capacity PBX systems"
+            },
+            {
+              id: "les-5-3",
+              title: "TVM",
+              description: "Connecting, synchronizing, and programming Panasonic's advanced standalone voice processing systems, KX-TVM series"
+            },
+            {
+              id: "les-5-4",
+              title: "BV",
+              description: "Activating and managing the built-in voicemail system (Built-in Voice Message) without the need for additional hardware"
+            },
           ],
         },
         {
@@ -2197,27 +2236,27 @@ export const CONTENT: Content = {
       videos: [
         {
           id: "vid-1",
-          title: "Panasonic PBX Fundamentals",
-          description: "Complete introduction to Panasonic PBX systems and their core components",
-          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          title: "Introduction to the 824 PBX Box Structure and Main Components",
+          description: "Complete overview of Panasonic PBX systems and their core components",
+          embedUrl: "https://www.youtube.com/embed/U797tl8Jp0o?si=OvhgKkKR6Ku2ME0u",
         },
         {
           id: "vid-2",
-          title: "Trunk Line Configuration",
-          description: "Step-by-step guide to connecting and configuring trunk and SIP lines",
-          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          title: "PBX Training (Introduction to the 824 Box) (2)",
+          description: "Review of settings and practical features of the 824 PBX box",
+          embedUrl: "https://www.youtube.com/embed/89Tusw5XjVc?si=X0IefEsdpZay28Pi",
         },
         {
           id: "vid-3",
-          title: "Setting Up Extensions",
-          description: "How to add and configure analog, digital, and IP extensions",
-          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          title: "Introduction to the TDA Box",
+          description: "Overview of the TDA PBX box structure and capabilities",
+          embedUrl: "https://www.youtube.com/embed/Z61r53nNgMM?si=POe-wp1pL_hbMGuc",
         },
         {
           id: "vid-4",
-          title: "Caller ID & DISA Setup",
-          description: "Activating Caller ID and configuring automated attendant systems",
-          embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          title: "Setting Up the 824 Outside Line Model",
+          description: "Training on configuring and setting up outside lines on the 824 PBX",
+          embedUrl: "https://www.youtube.com/embed/bItqH97Jkqg?si=bSJiF_v8zFST3s4E",
         },
       ],
       benefits: [
@@ -2226,14 +2265,14 @@ export const CONTENT: Content = {
         { title: "Official Certification", desc: "Receive official certificates upon course completion", icon: "BookOpen" },
         { title: "Flexible Scheduling", desc: "Choose from weekday or weekend sessions to fit your schedule", icon: "Zap" },
       ],
-      cta: "Register for Courses",
+      cta: "Request Consultation",
     },
     telecomProducts: {
       title: "Panasonic Telecom Equipment",
       subtitle: "Analog and digital PBX systems, management phones, and Panasonic expansion cards",
       categories: [
-        "PBX Systems",
         "PBX Phones",
+        "PBX Systems",
         "Digital Phones",
         "Cards & Accessories"
       ],
@@ -2245,29 +2284,508 @@ export const CONTENT: Content = {
       ],
       products: [
         {
+          id: "pan-026",
+          name: "Panasonic KX-HTS32 IP PBX",
+          model: "KX-HTS32",
+          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Integrated communications system for small offices",
+          description: "The Panasonic KX-HTS32 is a compact and affordable IP telephone exchange that provides PBX, router, Wi-Fi, and VoIP features in a single device. Designed for small offices, shops, and startups, it offers very easy setup.",
+          features: [
+            "SIP Trunk support",
+            "Built-in Wi-Fi",
+            "Built-in router",
+            "Voicemail",
+            "Audio conferencing",
+            "Easy setup"
+          ],
+          specifications: [
+            { label: "System Type", value: "IP PBX" },
+            { label: "Maximum Users", value: "32" },
+            { label: "Wi-Fi", value: "Built-in" },
+            { label: "Voicemail", value: "Yes" },
+            { label: "SIP Trunk", value: "Yes" },
+            { label: "Audio Conferencing", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-032",
+          name: "Panasonic KX-TVM200 Voicemail System",
+          model: "KX-TVM200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "High-capacity enterprise voice processing system and voicemail with support for 24 simultaneous ports",
+          description: "The Panasonic KX-TVM200 is the most powerful and highest-tier model in Panasonic's standalone Voice Processing System lineup, designed for large organizations, hotels, and call centers. This unit features a built-in LAN port and massive 1000-hour voice storage capacity. Key capabilities include complex multi-level DISA auto-attendant menus, full digital integration with high-capacity PBX systems, and email notification of voicemail messages as audio file attachments.",
+          features: [
+            "Supports up to 24 simultaneous ports/channels (with KX-TVM204 expansion cards)",
+            "Built-in hard disk with over 1000 hours of voice storage capacity",
+            "Up to 1024 separate voicemail mailboxes for staff and departments",
+            "Built-in LAN port on the main board for management and email notification",
+            "Highly advanced and intelligent multi-language automated attendant",
+            "Full digital integration with Panasonic high-capacity PBX systems"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Voice Processing System (Enterprise Voicemail)" },
+            { label: "Base Ports", value: "0 ports (requires KX-TVM204 port card installation)" },
+            { label: "Maximum Ports", value: "24 simultaneous ports" },
+            { label: "Voice Storage Capacity", value: "Over 1000 hours (fixed)" },
+            { label: "Voicemail Mailboxes", value: "Up to 1024 separate mailboxes" },
+            { label: "LAN Port", value: "Yes (built-in on the device)" },
+            { label: "System Compatibility", value: "TDA / TDE / NCP / NS series (especially TDA600 and NS1000)" },
+            { label: "Email Voicemail Notification", value: "Yes (as VM4 or WAV audio file)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-031",
+          name: "Panasonic KX-TVM50 Voicemail System",
+          model: "KX-TVM50",
+          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Professional voice processing system and voicemail with 2 to 6 simultaneous ports",
+          description: "The Panasonic KX-TVM50 is an advanced standalone Voice Processing System and voicemail unit. It ships with a base configuration of 2 simultaneous channel ports and 4 hours of voice storage, fully integrating with all Panasonic analog, hybrid, and digital/IP PBX systems. Key features include intelligent auto-attendant, voicemail-to-email forwarding, and separate mailbox assignment for each extension.",
+          features: [
+            "Base capacity of 2 simultaneous ports (expandable up to 6 physical ports)",
+            "Built-in memory for 4 hours of voice storage (expandable to 8 hours)",
+            "Supports up to 64 separate voicemail mailboxes for users",
+            "Advanced multi-level automated attendant (Automated Attendant)",
+            "Full digital/analog integration with PBX systems",
+            "New message notification via phone, pager, or email (with network card)"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Voice Processing System (Voicemail)" },
+            { label: "Base Ports", value: "2 simultaneous ports" },
+            { label: "Maximum Ports", value: "6 simultaneous ports" },
+            { label: "Base Storage Capacity", value: "4 hours of voice" },
+            { label: "Maximum Storage Capacity", value: "8 hours of voice (with expansion card)" },
+            { label: "Voicemail Mailboxes", value: "Up to 64 separate mailboxes" },
+            { label: "System Compatibility", value: "TES824 / TDA / TDE / NCP / NS series" },
+            { label: "LAN Port", value: "Optional (with KX-TVM594 network card)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-028",
+          name: "Panasonic KX-TDA620 Expansion Shelf",
+          model: "KX-TDA620",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Expansion shelf for increasing the capacity of the KX-TDA600 PBX",
+          description: "The Panasonic KX-TDA620 is designed as an expansion shelf for the high-capacity KX-TDA600 PBX system. By adding 11 new free modular slots to the base system, it enables significant expansion of outside lines, analog/digital extensions, and accessory cards for large organizations.",
+          features: [
+            "Increases the hardware capacity of the TDA600 PBX",
+            "11 free modular slots for installing various cards",
+            "Connects to the base unit via BUS connection card and cable",
+            "Independent power supply using KX-TDA5105 series PSU",
+            "Supports all types of outside line, extension, and PRI (E1) cards",
+            "Up to 3 expansion shelves can connect to a single base unit"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Expansion Shelf" },
+            { label: "Required Device", value: "Panasonic KX-TDA600" },
+            { label: "Free Slots", value: "11 modular slots" },
+            { label: "Maximum Connectable Units", value: "3 shelves per base unit" },
+            { label: "Required Connection Card", value: "KX-TDA6110 / KX-TDA6111" },
+            { label: "Required Power Supply", value: "KX-TDA6101 (PSU-L)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-013",
+          name: "Panasonic KX-TDA600 Enterprise PBX",
+          model: "KX-TDA600",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Enterprise-grade digital PBX with expansion capability up to 4 shelves and up to 960 extensions",
+          description: "The Panasonic KX-TDA600 is the largest, highest-capacity, and most powerful traditional TDM-based digital telephone exchange from Panasonic. The base box features 10 large slots. The unique TDA600 engineering allows connecting up to 3 expansion shelves (model KX-TDA620) to upgrade the total capacity to 40 physical slots. This telecom powerhouse is the unrivaled choice for petrochemical plants, large hospitals, and five-star hotels.",
+          features: [
+            "Enterprise-grade base box with 10 free physical slots",
+            "Connect up to 3 KX-TDA620 expansion shelves to upgrade slots to 40",
+            "Supports high-capacity 24-port analog extension cards (TDA6178)",
+            "Intelligent incoming call distribution in Call Center configuration",
+            "Exceptional stability with modular and separable architecture for IT departments",
+            "Comprehensive support for multi-channel DISA auto-attendant and E1 digital links"
+          ],
+          specifications: [
+            { label: "System Type", value: "Large-Scale Enterprise Digital PBX" },
+            { label: "Base Box Slots", value: "10 free slots" },
+            { label: "Maximum Physical Slots Total", value: "40 slots (with 3 expansion shelves)" },
+            { label: "Maximum Extensions (with expansion shelves and DXDP)", value: "Up to 960 extension ports" },
+            { label: "Maximum Outside Lines (PRI and Analog)", value: "Up to 640 outside lines" },
+            { label: "Required Power Supply", value: "KX-TDA6101 (PSU-L for 600 series)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-012",
+          name: "Panasonic KX-TDA200 Modular Digital PBX",
+          model: "KX-TDA200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Modular digital PBX box equipped with 11 free hardware slots",
+          description: "The Panasonic KX-TDA200 is the bigger brother of the TDA100 model with an expanded chassis, providing 11 completely free physical slots. This unit ships with no pre-installed extension lines, and its configuration is built entirely from scratch using selectable cards. Thanks to its non-blocking digital switching and excellent efficiency under high call traffic, the TDA200 is the standard choice for mid-size hotels, factories, and corporate headquarters.",
+          features: [
+            "11 free physical modular slots for complete card layout flexibility",
+            "Support for enterprise DECT wireless antenna connections for staff mobility",
+            "QSIG private telecom networking capability to connect multiple boxes",
+            "Full support for advanced DT and T76 digital phones as well as standard analog phones",
+            "Exceptional hardware stability with uninterrupted operation in various conditions",
+            "Optional MEC memory card support for system memory upgrades"
+          ],
+          specifications: [
+            { label: "System Type", value: "Digital Modular PBX (Industrial)" },
+            { label: "Free Physical Slots", value: "11 slots" },
+            { label: "Maximum Extensions (with 16-port cards and DXDP)", value: "Up to 256 extensions" },
+            { label: "Maximum Physical Outside Lines", value: "Up to 128 lines" },
+            { label: "Compatible Power Supply", value: "KX-TDA0103 (PSU-L) or KX-TDA0104 (PSU-M)" },
+            { label: "E1 / PRI Link Support", value: "Yes (up to 4 cards)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
           id: "pan-001",
+          name: "Panasonic KX-TDA100DBP Modular Digital PBX",
+          model: "KX-TDA100DBP",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Enhanced modular digital PBX with built-in 24-port analog extension card on the motherboard",
+          description: "The Panasonic KX-TDA100DBP is the optimized and more affordable version of the standard TDA100. Its distinguishing feature is a built-in 24-port analog extension card with Caller ID on the main board (processor) that does not occupy any physical slots. This PBX has 7 free physical slots and, thanks to its modular design, robust metal body, and exceptional power fluctuation resistance, is the first choice for workshops, institutions, and office environments.",
+          features: [
+            "Built-in 24-port analog extension card with Caller ID that does not occupy slots",
+            "7 free physical slots for installing various outside line and extension cards",
+            "Support for high-capacity PRI (E1) digital trunk lines and analog telecom lines",
+            "DXDP capability to double digital management phone capacity",
+            "Full compatibility with TVM series voice processing and voicemail systems",
+            "Upgraded internal power supply compatible with industrial environment power fluctuations"
+          ],
+          specifications: [
+            { label: "System Type", value: "Digital Modular PBX" },
+            { label: "Free Physical Slots", value: "7 slots" },
+            { label: "Maximum Analog/Digital Outside Lines", value: "Up to 120 channels" },
+            { label: "Maximum Extensions (including on-board card)", value: "Up to 176 extension ports" },
+            { label: "5-digit PRI (E1) Support", value: "Yes (TDA0290 card)" },
+            { label: "Built-in Caller ID", value: "Yes (on motherboard extension lines)" },
+            { label: "Device Dimensions", value: "334x390x270 mm" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-041",
+          name: "Panasonic KX-TDE600 IP PBX",
+          model: "KX-TDE600",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Large-scale network-based PBX with expansion shelf capability for enterprise deployments",
+          description: "The Panasonic KX-TDE600 is the unrivaled flagship of the TDE series and the largest IP-based telephone exchange in this family. The base box provides 11 free slots, and with the connection of 3 expansion shelves (model KX-TDE620), it offers a total of 40 physical slots for very large organizations, factories, and hotels. The TDE600 delivers the highest hardware stability alongside massive capacity for IP phones, SIP trunks, and digital lines.",
+          features: [
+            "Ultra-high capacity designed for large-scale enterprise and hotel projects",
+            "11 free physical slots on the base box, expandable with 620 series shelves",
+            "Simultaneous support for up to 640 outside lines and 1152 extensions (physical and virtual combined)",
+            "Full integration with SIP Trunk lines and high-capacity E1 (PRI) lines",
+            "Central server capability to connect multiple organization branches together",
+            "Support for advanced call distribution scenarios and Call Center functionality"
+          ],
+          specifications: [
+            { label: "System Type", value: "Large-Scale Pure IP PBX (Enterprise)" },
+            { label: "Base Box Free Slots", value: "11 slots" },
+            { label: "Maximum Physical Slots (with 3 expansion shelves)", value: "40 physical slots" },
+            { label: "Maximum IP Extensions (SIP and NT)", value: "Up to 704 IP extensions" },
+            { label: "Maximum Traditional Extensions", value: "Up to 432 extensions per box (expandable to 960)" },
+            { label: "Required Network Cards", value: "TDE0110 or TDE0111 series DSP cards" },
+            { label: "Compatible Power Supply", value: "KX-TDA6101 series (PSU-L for 600 series)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-03.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE600/panasonic-kx-tde600-ip-pbx.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-040",
+          name: "Panasonic KX-TDE200 IP PBX",
+          model: "KX-TDE200",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDE200/panasonic-KX-TDE200.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Modular IP-based telephone exchange with 11 free slots for medium organizations",
+          description: "The Panasonic KX-TDE200 is an upgraded version of the TDE100 in terms of physical capacity, offering 11 free physical slots for maximum hardware flexibility. Its IP-based processor enables combining legacy telecom lines (analog and PRI) with modern SIP Trunk and VoIP extensions, making it an exceptionally stable choice for growing companies.",
+          features: [
+            "11 free physical slots for outside line, extension, or auto-attendant cards",
+            "Native VoIP support and 5-digit trunk line infrastructure",
+            "Support for DT and T76 series digital phones as well as standard analog phones",
+            "Easy network-based management via KX-TE Maintenance Console software",
+            "IP Extension capability for remote workers without on-site hardware",
+            "Built-in LAN port on the main board for programming and network connectivity"
+          ],
+          specifications: [
+            { label: "System Type", value: "Pure IP PBX (Network-Based Modular)" },
+            { label: "Free Physical Slots", value: "11 slots" },
+            { label: "Maximum Traditional Extensions (DXDP)", value: "Up to 256 analog/digital extensions" },
+            { label: "Maximum IP Extension Ports", value: "Up to 128 IP extensions" },
+            { label: "Maximum Analog and Digital Outside Lines", value: "Up to 128 physical lines" },
+            { label: "Main Processor Card", value: "IPCMPR" },
+            { label: "Compatible Power Supply", value: "KX-TDA0103 (PSU-L) or KX-TDA0104 (PSU-M) series" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDE200/panasonic-KX-TDE200.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-039",
+          name: "Panasonic KX-TDE100 IP PBX",
+          model: "KX-TDE100",
+          cover: `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-01.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Modular IP-based telephone exchange (Pure IP PBX) with 6 free slots",
+          description: "The Panasonic KX-TDE100 is a network-based modular PBX that entered the market as the evolutionary successor to the TDA series. Built on the IPCMPR main board, it natively supports IP protocols and SIP licenses. The TDE100 features 6 free physical slots for installing various analog/digital outside line and extension cards, striking an unparalleled balance between traditional communications and VoIP systems.",
+          features: [
+            "Equipped with IPCMPR network processor with native IP support",
+            "6 free physical slots for installing various trunk line cards",
+            "Support for Panasonic IP phones (NT) and standard SIP phones",
+            "5-digit SIP Trunk line capability",
+            "Multi-box networking via H.323 or SIP protocols",
+            "Full compatibility with TDA100 series cards and accessories"
+          ],
+          specifications: [
+            { label: "System Type", value: "Pure IP PBX (Network-Based)" },
+            { label: "Free Physical Slots", value: "6 slots" },
+            { label: "Maximum IP Extensions (SIP and NT)", value: "Up to 128 IP extensions" },
+            { label: "Maximum Traditional Extensions (DXDP)", value: "Up to 160 analog/digital extensions" },
+            { label: "Maximum SIP Trunk Channels", value: "64 IP outside channels" },
+            { label: "VoIP Gateway Support", value: "Yes (with DSP card installation)" },
+            { label: "Compatible Power Supply", value: "KX-TDA0104 (PSU-M) or KX-TDA0104 (PSU-S) series" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-01.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-02.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-03.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-04.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-05.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TDE100/kx-tde100-06.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-025",
+          name: "Panasonic KX-NS1000 IP PBX",
+          model: "KX-NS1000",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Professional IP-based communications platform for large organizations",
+          description: "The Panasonic KX-NS1000 is an IP-based enterprise communications system designed for organizations, banks, call centers, and multi-branch companies. This PBX supports up to 1000 extensions and 600 outside channels in network mode, providing advanced VoIP and Unified Communication capabilities.",
+          features: [
+            "Full VoIP support",
+            "Suitable for call centers",
+            "Multi-branch connectivity",
+            "SIP and IP Phone support",
+            "Redundancy capability",
+            "Centralized communications management"
+          ],
+          specifications: [
+            { label: "System Type", value: "Enterprise IP PBX" },
+            { label: "Maximum Outside Lines", value: "600" },
+            { label: "Maximum Extensions", value: "1000" },
+            { label: "Maximum SIP Extensions", value: "1000" },
+            { label: "VoIP Support", value: "Yes" },
+            { label: "Multi-Branch Support", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-027",
+          name: "Panasonic KX-NS520 Expansion Unit",
+          model: "KX-NS520",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Capacity expansion unit for the KX-NS500 PBX",
+          description: "The Panasonic KX-NS520 is an expansion unit for the KX-NS500 PBX that provides increased outside line and extension capacity, suitable for organizations that need to expand their telecom system.",
+          features: [
+            "Extension capacity increase",
+            "Outside line capacity increase",
+            "Connectable to NS500",
+            "Expansion card support",
+            "Easy installation",
+            "Phased expansion capability"
+          ],
+          specifications: [
+            { label: "Device Type", value: "Expansion Unit" },
+            { label: "Compatible With", value: "KX-NS500" },
+            { label: "Default Base Capacity", value: "16 analog lines" },
+            { label: "Maximum Units", value: "3 units" },
+            { label: "Extension Capacity Increase", value: "Up to 288 extensions" },
+            { label: "Outside Line Increase", value: "Up to 190 lines" },
+            { label: "Rack Mount", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-024",
+          name: "Panasonic KX-NS500 IP PBX",
+          model: "KX-NS500",
+          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Next-generation IP and hybrid telephone exchange for organizations",
+          description: "The Panasonic KX-NS500 is a network-based PBX for small and medium businesses that combines traditional and VoIP lines. Starting from 6 outside lines and 18 extensions as base, it is expandable up to 190 outside lines and 288 extensions. Supports SIP, voicemail, and multi-branch connectivity.",
+          features: [
+            "SIP Trunk and SIP Extension support",
+            "VoIP support",
+            "Expandable up to 288 extensions",
+            "Built-in voicemail",
+            "Branch networking capability",
+            "IP phone support"
+          ],
+          specifications: [
+            { label: "System Type", value: "IP Hybrid PBX" },
+            { label: "Default Capacity", value: "6 outside / 18 extensions" },
+            { label: "Maximum Outside Lines", value: "48 " },
+            { label: "Maximum Extensions", value: "128" },
+            { label: "Maximum SIP/IP Phones", value: "128" },
+            { label: "SIP Support", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-029",
+          name: "Panasonic KX-TD1232 Digital Super Hybrid PBX",
+          model: "KX-TD1232",
+          cover: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Digital super hybrid PBX with exceptional stability for medium-sized organizations",
+          description: "The Panasonic KX-TD1232 is one of the most robust and authentic digital PBXs in the TD series. It supports a base capacity of 8 outside lines and 16 digital extensions, which expands to 32 extensions using the unique XDP capability (at no extra cost). It also supports linking with a second identical box (Dual System) to double the overall capacity.",
+          features: [
+            "Base physical capacity of 8 outside lines and 16 extensions",
+            "Magical XDP port support (upgrading extensions to 32 ports)",
+            "Dual box linking capability (Master/Slave) for doubled capacity",
+            "Full support for digital phones (7200 and 7400 series)",
+            "Caller ID card and DISA auto-attendant installation capability",
+            "Exceptional hardware stability under heavy working conditions"
+          ],
+          specifications: [
+            { label: "System Type", value: "Digital Super Hybrid PBX" },
+            { label: "Base Capacity", value: "8 outside lines / 16 extensions" },
+            { label: "With First Expansion Card", value: "12 outside lines / 32 extensions" },
+            { label: "With Second Expansion Card", value: "24 outside lines / 196 extensions (Full)" },
+            { label: "Maximum Extensions with Expansion", value: "64 extensions" },
+            { label: "Second Box Link Capability", value: "Yes (Dual System)" },
+            { label: "Digital Phone Support", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-002",
           name: "Panasonic KX-TES824 Analog PBX",
           model: "KX-TES824",
           cover: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
           category: "PBX Systems",
           brand: "Panasonic",
-          shortDescription: "The most popular and reliable analog telephone exchange suitable for small and medium businesses",
-          description: "The Panasonic KX-TES824 PBX system is an ideal analog solution for small offices. This system comes with a default capacity of 3 outside lines and 8 extensions, and can be expanded up to a maximum of 8 outside lines and 24 analog extensions. Exceptional stability, affordable pricing, and easy setup are the standout features of this model.",
+          shortDescription: "The most popular and reliable analog telephone exchange for small and growing businesses",
+          description: "The Panasonic KX-TES824 PBX is the best-selling and most nostalgic analog telephone exchange for small and growing businesses. This box ships with a base capacity of 3 outside lines and 8 analog/hybrid extensions, expandable up to 8 outside lines and 24 extensions through modular expansion cards (82483 and 82481 cards). Featuring 1 built-in DISA auto-attendant channel, quick programming via USB cable and KX-T7730 management phone, and long component lifespan, this model offers outstanding competitive advantages.",
           features: [
-            "Default capacity of 3 outside lines and 8 extensions",
-            "Expandable up to 8 outside lines and 24 extensions",
-            "Built-in DISA voicemail support",
-            "Uniform Call Distribution (UCD)",
-            "Easy programming via PC software or 7730 phone",
-            "Caller ID support (with expansion card)"
+            "Base physical capacity includes 3 outside lines and 8 hybrid/analog extensions",
+            "Modular expansion in two stages up to final capacity of 8 outside lines and 24 extensions",
+            "1 built-in auto-attendant (DISA) channel (expandable to 2 channels with TE82491 card)",
+            "Easy and quick programming via USB/serial cable or KX-T7730 operator phone",
+            "Door phone and intercom support (with KX-TE82461 accessory card)",
+            "Caller ID activation on outside lines with KX-TE82494 three-port cards"
           ],
           specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Default Capacity", value: "3 outside lines / 8 extensions" },
-            { label: "Maximum Capacity", value: "8 outside lines / 24 extensions" },
-            { label: "DISA Voicemail Card", value: "Yes (1 channel default)" },
-            { label: "Programming Method", value: "PC software / Operator phone" },
-            { label: "Power Supply", value: "220V AC" }
+            { label: "System Type", value: "Analog Hybrid PBX (Analog and Hybrid Phones)" },
+            { label: "Base Capacity", value: "3 outside lines / 8 extensions" },
+            { label: "Maximum Final Capacity", value: "8 outside lines / 24 extensions" },
+            { label: "DISA Channels", value: "1 channel default (expandable to 2 channels)" },
+            { label: "Built-in Voicemail (BV)", value: "Yes (on main board, no card needed)" },
+            { label: "First Expansion Card (3 to 8 outside / 8 to 16 extensions)", value: "KX-TE82483" },
+            { label: "Second Expansion Card (2 to 8 outside / 16 to 24 extensions)", value: "KX-TE82481" },
+            { label: "Operator Phone Support", value: "Yes (KX-T7730 series)" },
+            { label: "Caller ID Display", value: "Requires KX-TE82494 Caller ID card installation" },
+            { label: "BV", value: "With one card purchase" }
           ],
           images: [
             `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`,
@@ -2277,38 +2795,254 @@ export const CONTENT: Content = {
           price: "Call for price"
         },
         {
-          id: "pan-002",
-          name: "Panasonic KX-TDA100DBP Modular Digital PBX",
-          model: "KX-TDA100DBP",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
+          id: "pan-011",
+          name: "Panasonic KX-TEM824 Hybrid PBX",
+          model: "KX-TEM824",
+          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
           category: "PBX Systems",
           brand: "Panasonic",
-          shortDescription: "Powerful modular digital telephone exchange for large organizations and factories",
-          description: "The Panasonic KX-TDA100DBP is a fully modular and intelligent PBX designed on digital technology. This system features 7 free slots for installing various outside line cards (analog and PRI) and extension cards (digital and analog). Due to its exceptional stability, this telephone exchange is the first choice for industrial environments and government offices.",
+          shortDescription: "Advanced hybrid telephone exchange with base capacity of 6 outside lines and 16 extensions",
+          description: "The KX-TEM824 PBX is the bigger brother of the standard 824 model, factory-produced with a higher initial capacity. This system supports expansion up to a maximum of 8 outside lines and 24 extensions, making it excellent for busy offices.",
           features: [
-            "Fully modular architecture with 7 free slots",
-            "Digital line support (PRI - E1)",
-            "DECT cordless phone connectivity",
-            "Caller ID support on all lines",
-            "Digital voice quality with zero noise",
-            "Voice processing system integration"
+            "Physical default capacity of 6 outside lines and 16 extensions",
+            "Full support for 77-series hybrid phones",
+            "Built-in intelligent auto-attendant system",
+            "Backup battery connection for power outages"
           ],
           specifications: [
-            { label: "System Type", value: "Digital PBX" },
-            { label: "Free Slots", value: "7 slots" },
-            { label: "Maximum Outside Lines", value: "Up to 120" },
-            { label: "Maximum Extensions", value: "Up to 176" },
-            { label: "PRI (E1) Support", value: "Yes" },
-            { label: "Dimensions", value: "334x390x270 mm" }
+            { label: "System Type", value: "Advanced Hybrid" },
+            { label: "Base Capacity", value: "6 outside / 16 extensions" },
+            { label: "Maximum Expansion", value: "8 outside / 24 extensions" },
+            { label: "Programming Port", value: "USB / RS-232C" }
           ],
           images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-02_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-03_6_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-04_7_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-05_8_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-06_9_11zon.webp`,
-
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
+            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-036",
+          name: "Panasonic KX-TA624 Hybrid PBX",
+          model: "KX-TA624",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Analog hybrid PBX suitable for small offices and companies",
+          description:
+            "The Panasonic KX-TA624 is an analog hybrid PBX designed for small businesses. This system supports 3 outside lines and 8 extensions as base, and can be expanded to 6 outside lines and 24 extensions using expansion cards. Support for Panasonic proprietary phones, fax, modems, and analog phones is a key feature of this system.",
+          features: [
+            "Expandable from 3 to 6 outside lines",
+            "Expandable up to 24 extensions",
+            "Caller ID support",
+            "Panasonic proprietary phone support",
+            "Fax and modem connectivity",
+            "Door Phone and Door Opener support"
+          ],
+          specifications: [
+            { label: "System Type", value: "Advanced Hybrid PBX" },
+            { label: "Base Capacity", value: "3 outside lines / 8 extensions" },
+            { label: "Maximum Outside Lines", value: "6" },
+            { label: "Maximum Extensions", value: "24" },
+            { label: "Caller ID Support", value: "Yes" },
+            { label: "Door Phone Support", value: "Up to 4 units" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-033",
+          name: "Panasonic KX-TA616 Advanced Hybrid PBX",
+          model: "KX-TA616",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Advanced hybrid PBX with base capacity of 6 outside lines and 16 extensions",
+          description: "The Panasonic KX-TA616 is an advanced hybrid telephone exchange ideal for small to medium offices, companies, and businesses. This unit ships with a base capacity of 6 outside lines and 16 analog/hybrid extensions, with full compatibility with popular Panasonic management phones (such as the KX-T7730 series). Modular expansion capability, Caller ID support, and three-level auto-attendant (DISA) are the standout features of this best-selling box.",
+          features: [
+            "Base physical capacity of 6 outside lines and 16 extensions",
+            "Advanced Hybrid communication system",
+            "Full support for 7730 management phones and standard analog phones",
+            "Caller ID card installation for outside lines",
+            "DISA auto-attendant card support for voice guidance",
+            "Capacity expansion through additional expansion cards"
+          ],
+          specifications: [
+            { label: "System Type", value: "Advanced Hybrid PBX" },
+            { label: "Base Outside Line Capacity", value: "6 lines" },
+            { label: "Base Extension Capacity", value: "16 extensions" },
+            { label: "Maximum Outside Line Capacity", value: "6 lines" },
+            { label: "Maximum Extension Capacity", value: "24 extensions" },
+            { label: "Hybrid Phone Support (KX-T7730)", value: "Yes" },
+            { label: "Hold Music", value: "Yes (built-in and external jack)" },
+            { label: "Door Phone Capability", value: "Yes (optional with card)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-038",
+          name: "Panasonic KX-TA308 Analog Hybrid PBX",
+          model: "KX-TA308",
+          cover: `${import.meta.env.BASE_URL}products/KX-TA308/KX-TA308.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Analog hybrid PBX for small offices and businesses",
+          description: "The Panasonic KX-TA308 is an analog hybrid PBX with a base capacity of 3 outside lines and 8 extensions, designed for small offices, shops, and businesses with limited communication needs. This unit supports expansion up to 6 outside lines and 24 extensions using accessory cards, and provides features such as auto-attendant, hold music, call management, and door phone connectivity.",
+          features: [
+            "Analog hybrid PBX system",
+            "Base capacity of 3 outside lines and 8 extensions",
+            "Expandable up to 6 outside lines and 24 extensions",
+            "Analog and hybrid phone support",
+            "Built-in and external hold music",
+            "Auto-attendant support",
+            "Door phone and intercom connectivity",
+            "Call management and transfer"
+          ],
+          specifications: [
+            { label: "System Type", value: "Advanced Hybrid PBX" },
+            { label: "Base Capacity", value: "3 outside lines / 8 extensions" },
+            { label: "Maximum Outside Lines", value: "6" },
+            { label: "Maximum Extensions", value: "24" },
+            { label: "Extension Type", value: "Analog and Hybrid" },
+            { label: "Digital Phone Support", value: "No" },
+            { label: "Auto-Attendant", value: "Supported with expansion card" },
+            { label: "Hold Music", value: "Yes" },
+            { label: "Door Phone Connection", value: "Up to 4 doors" },
+            { label: "Reporting Port", value: "RS-232C" },
+            { label: "Dimensions", value: "284 x 368 x 95 mm" },
+            { label: "Weight", value: "2.9 kg" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-TA308/KX-TA308.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-037",
+          name: "Panasonic KX-T123211D Analog PBX",
+          model: "KX-T123211D",
+          cover: `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Classic analog telephone exchange with fixed capacity of 12 outside lines and 32 extensions",
+          description: "The Panasonic KX-T123211D is an analog and electronic PBX system from the early classic generations of Panasonic telephone exchanges. Designed with a fixed capacity of 12 outside lines and 32 analog/hybrid extensions, it lacks modern modular structure or digital port support from the TD series. For organizations still using classic Panasonic desktop analog phones and management phones (such as the KX-T7030 series), this box serves as a stable and nostalgic communications core.",
+          features: [
+            "Fixed capacity of 12 outside lines and 32 extensions",
+            "Fully analog/electronic communications system (non-digital)",
+            "Support for classic Panasonic hybrid phones (such as KX-T7030 and KX-T7330)",
+            "Standard analog phone support (single-line)",
+            "Exceptional hardware stability and long lifespan",
+            "Basic call management and outside line routing features"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog / Electronic PBX" },
+            { label: "Device Model", value: "KX-T123211D" },
+            { label: "Outside Line Capacity", value: "12 lines (fixed)" },
+            { label: "Extension Capacity", value: "32 extensions (fixed)" },
+            { label: "Outside Line Type", value: "Standard analog" },
+            { label: "Digital Phone Support", value: "No (analog and classic hybrid only)" },
+            { label: "Physical Expansion Capability", value: "No (fixed capacity)" },
+            { label: "Hold Music", value: "Yes (via external jack port)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T123211D/KX-T123211D.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-030",
+          name: "Panasonic KX-T61610 Analog PBX",
+          model: "KX-T61610",
+          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Analog PBX for small businesses",
+          description: "The Panasonic KX-T61610 is an affordable analog telephone exchange with call management and extension capabilities for small offices.",
+          features: [
+            "Call transfer",
+            "Auto-attendant",
+            "Conferencing",
+            "Hold queue",
+            "Hold music",
+            "Easy setup"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog PBX" },
+            { label: "Outside Lines", value: "6" },
+            { label: "Extensions", value: "16" },
+            { label: "Conferencing", value: "Yes" },
+            { label: "Call Transfer", value: "Yes" },
+            { label: "Hold Music", value: "Yes" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-034",
+          name: "Panasonic KX-T30810 Analog PBX",
+          model: "KX-T30810",
+          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Classic analog PBX with fixed capacity of 3 outside lines and 8 hybrid extensions",
+          description: "The Panasonic KX-T30810 is one of the oldest and most popular analog PBXs in the Panasonic family, famous for its endless hardware durability. This box has a fixed capacity of 3 outside lines and 8 extensions. An important feature of the T30810 is its support for classic management and hybrid phones (such as the KX-T7030 or KX-T7330 series), enabling programming and easier line management for the operator.",
+          features: [
+            "Fixed capacity of 3 analog outside lines and 8 extensions",
+            "Support for classic Panasonic hybrid PBX phones for system programming",
+            "3-way phone conferencing capability (outside lines and extensions)",
+            "Intercom support (free extension-to-extension communication)",
+            "Dedicated port for external hold music connection",
+            "Programmable via internal hardware switches or operator phone codes"
+          ],
+          specifications: [
+            { label: "System Type", value: "Analog Hybrid PBX (Fixed Capacity)" },
+            { label: "Outside Lines", value: "3 analog lines" },
+            { label: "Extensions", value: "8 lines (hybrid / analog)" },
+            { label: "Capacity Expansion", value: "No (closed box with fixed capacity)" },
+            { label: "Conferencing Capability", value: "Yes (3-way)" },
+            { label: "Compatible Management Phones", value: "KX-T7030 / KX-T7130 / KX-T7330 series" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
+          ],
+          price: "Call for price"
+        },
+        {
+          id: "pan-035",
+          name: "Panasonic KX-T206SBX Fixed Analog PBX",
+          model: "KX-T206SBX",
+          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
+          category: "PBX Systems",
+          brand: "Panasonic",
+          shortDescription: "Compact fixed-capacity analog desk PBX with 2 outside lines and 6 extensions",
+          description: "The Panasonic KX-T206SBX is one of the smallest and most affordable analog telephone exchanges designed for very small offices, shops, and large homes. This unit has no modular structure, with its capacity fixed at 2 outside lines and 6 analog extensions. Quick setup without complex knowledge, compact size, and full compatibility with standard analog phones (corded and cordless) are the key features of this model.",
+          features: [
+            "Fixed capacity with no upgrade option (2 outside lines and 6 analog extensions)",
+            "3.5mm jack support for external hold music (Audio) connection",
+            "Day/Night Mode for call routing",
+            "Outside line sharing and dialing restriction configuration (first and second zero restrictions)",
+            "Easy call transfer and incoming call playback",
+            "Compact plastic body with easy wall or desk mounting"
+          ],
+          specifications: [
+            { label: "System Type", value: "Fixed Analog PBX (Fixed Capacity)" },
+            { label: "Outside Lines", value: "2 analog lines" },
+            { label: "Extensions", value: "6 standard analog lines" },
+            { label: "Line Expansion", value: "No (non-changeable capacity)" },
+            { label: "External Hold Music", value: "Yes (with AUX audio input port)" },
+            { label: "Hybrid PBX Phone Support", value: "No (standard analog phones only)" }
+          ],
+          images: [
+            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
           ],
           price: "Call for price"
         },
@@ -2560,96 +3294,6 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-TDA1180/WSA4xymV3cfqNdUN.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA1180/x5o319bfRAdp9SF1.webp`,
             `${import.meta.env.BASE_URL}products/KX-TDA1180/xj1qx2avD_1j0EFS.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-011",
-          name: "Panasonic KX-TEM824 Hybrid PBX",
-          model: "KX-TEM824",
-          cover: `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Advanced hybrid telephone exchange with base capacity of 6 outside lines and 16 extensions",
-          description: "The KX-TEM824 PBX is the bigger brother of the standard 824 model, factory-produced with a higher initial capacity. This system supports expansion up to a maximum of 8 outside lines and 24 extensions, making it excellent for busy offices.",
-          features: [
-            "Physical default capacity of 6 outside lines and 16 extensions",
-            "Full support for 77-series hybrid phones",
-            "Built-in intelligent auto-attendant system",
-            "Backup battery connection for power outages"
-          ],
-          specifications: [
-            { label: "System Type", value: "Advanced Hybrid" },
-            { label: "Base Capacity", value: "6 outside / 16 extensions" },
-            { label: "Maximum Expansion", value: "8 outside / 24 extensions" },
-            { label: "Programming Port", value: "USB / RS-232C" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TEM824/kx-tem824-04_4_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-012",
-          name: "Panasonic KX-TDA200 Modular Digital PBX",
-          model: "KX-TDA200",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "High-capacity digital PBX box equipped with 11 hardware slots",
-          description: "The KX-TDA200 is an industrial-grade and extremely stable PBX designed for organizations, government institutions, and large factories with high volumes of outside lines and internal staff. Its fully modular structure gives the IT department unparalleled flexibility.",
-          features: [
-            "11 free modular slots for various cards",
-            "Full support for PRI digital lines and analog outside lines",
-            "Linking and networking multiple separate boxes",
-            "Seamless line switching and hardware stability"
-          ],
-          specifications: [
-            { label: "System Type", value: "Digital Modular" },
-            { label: "Free Slots", value: "11 slots" },
-            { label: "Maximum Extensions", value: "Up to 256" },
-            { label: "DECT Support", value: "Yes (wireless PBX)" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA200/kx-tda200-06_6_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-013",
-          name: "Panasonic KX-TDA600 Enterprise PBX",
-          model: "KX-TDA600",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Largest and highest-capacity traditional digital PBX from Panasonic",
-          description: "The KX-TDA600 system is Panasonic's hardware powerhouse in traditional and digital telecom systems. The base box alone has high capacity, and with the addition of expansion shelf boxes (TDA620), it can support over 1000 extensions.",
-          features: [
-            "Enterprise base box with ultra-high capacity",
-            "Ability to connect 3 separate expansion shelf boxes",
-            "Support for a massive volume of digital and analog cards",
-            "Ideal for large hotels, hospitals, and petrochemical plants"
-          ],
-          specifications: [
-            { label: "System Type", value: "Enterprise Digital PBX" },
-            { label: "Maximum Extensions", value: "Over 1000 ports" },
-            { label: "Base Box Slot Count", value: "10 large slots" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-06_6_11zon.webp`,
           ],
           price: "Call for price"
         },
@@ -2911,418 +3555,6 @@ export const CONTENT: Content = {
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-01_2_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-02_3_11zon.webp`,
             `${import.meta.env.BASE_URL}products/KX-DT590/kx-dt590-03_4_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-024",
-          name: "Panasonic KX-NS500 IP PBX",
-          model: "KX-NS500",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Next-generation IP and hybrid telephone exchange for organizations",
-          description: "The Panasonic KX-NS500 is a network-based PBX for small and medium businesses that combines traditional and VoIP lines. Starting from 6 outside lines and 18 extensions as base, it is expandable up to 190 outside lines and 288 extensions. Supports SIP, voicemail, and multi-branch connectivity.",
-          features: [
-            "SIP Trunk support",
-            "VoIP support",
-            "Expandable up to 288 extensions",
-            "Built-in voicemail",
-            "Branch networking capability",
-            "IP phone support"
-          ],
-          specifications: [
-            { label: "System Type", value: "IP Hybrid PBX" },
-            { label: "Default Capacity", value: "6 outside / 18 extensions" },
-            { label: "Maximum Outside Lines", value: "48 " },
-            { label: "Maximum Extensions", value: "128" },
-            { label: "Maximum SIP/IP Phones", value: "128" },
-            { label: "SIP Support", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS500/panasonic-kx-ns500-systems_7_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-033_6_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-09_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-08_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-07_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS500/kx-ns500-05_2_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-025",
-          name: "Panasonic KX-NS1000 IP PBX",
-          model: "KX-NS1000",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Professional IP-based communications platform for large organizations",
-          description: "The Panasonic KX-NS1000 is an IP-based enterprise communications system designed for organizations, banks, call centers, and multi-branch companies. This PBX supports up to 1000 extensions and 600 outside channels in network mode, providing advanced VoIP and Unified Communication capabilities.",
-          features: [
-            "Full VoIP support",
-            "Suitable for call centers",
-            "Multi-branch connectivity",
-            "SIP and IP Phone support",
-            "Redundancy capability",
-            "Centralized communications management"
-          ],
-          specifications: [
-            { label: "System Type", value: "Enterprise IP PBX" },
-            { label: "Maximum Outside Lines", value: "600" },
-            { label: "Maximum Extensions", value: "1000" },
-            { label: "Maximum SIP Extensions", value: "1000" },
-            { label: "VoIP Support", value: "Yes" },
-            { label: "Multi-Branch Support", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-06_13_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-05_12_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-04_11_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-03_10_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-02_9_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-00_8_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-026",
-          name: "Panasonic KX-HTS32 IP PBX",
-          model: "KX-HTS32",
-          cover: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Integrated communications system for small offices",
-          description: "The Panasonic KX-HTS32 is a compact and affordable IP telephone exchange that provides PBX, router, Wi-Fi, and VoIP features in a single device. Designed for small offices, shops, and startups, it offers very easy setup.",
-          features: [
-            "SIP Trunk support",
-            "Built-in Wi-Fi",
-            "Built-in router",
-            "Voicemail",
-            "Audio conferencing",
-            "Easy setup"
-          ],
-          specifications: [
-            { label: "System Type", value: "IP PBX" },
-            { label: "Maximum Users", value: "32" },
-            { label: "Wi-Fi", value: "Built-in" },
-            { label: "Voicemail", value: "Yes" },
-            { label: "SIP Trunk", value: "Yes" },
-            { label: "Audio Conferencing", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-HTS32/uYYjeCHcNnmT-PR4_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-HTS32/W217dhN3sJUOrfq2_3_11zon.webp`,
-          ],
-          price: "Call for price"
-        }, {
-          id: "pan-027",
-          name: "Panasonic KX-NS520 Expansion Unit",
-          model: "KX-NS520",
-          cover: `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Capacity expansion unit for the KX-NS500 PBX",
-          description: "The Panasonic KX-NS520 is an expansion unit for the KX-NS500 PBX that provides increased outside line and extension capacity, suitable for organizations that need to expand their telecom system.",
-          features: [
-            "Extension capacity increase",
-            "Outside line capacity increase",
-            "Connectable to NS500",
-            "Expansion card support",
-            "Easy installation",
-            "Phased expansion capability"
-          ],
-          specifications: [
-            { label: "Device Type", value: "Expansion Unit" },
-            { label: "Compatible With", value: "KX-NS500" },
-            { label: "Maximum Units", value: "3 units" },
-            { label: "Extension Capacity Increase", value: "Up to 288 extensions" },
-            { label: "Outside Line Increase", value: "Up to 190 lines" },
-            { label: "Rack Mount", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-NS520/panasonic-kx-ns520-expansion-shelf_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-NS520/kx-ns520-01_1_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-028",
-          name: "Panasonic KX-TDA620 Digital PBX",
-          model: "KX-TDA620",
-          cover: `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "High-capacity organizational digital telephone exchange",
-          description: "The Panasonic KX-TDA620 is an advanced digital telephone exchange for medium and large organizations that supports analog, digital, and IP lines.",
-          features: [
-            "VoIP support",
-            "High expandability",
-            "PRI support",
-            "Advanced call management",
-            "Voicemail",
-            "Network support"
-          ],
-          specifications: [
-            { label: "System Type", value: "Hybrid IP PBX" },
-            { label: "Capacity", value: "Up to 640 extensions" },
-            { label: "PRI Support", value: "Yes" },
-            { label: "VoIP", value: "Yes" },
-            { label: "Networking", value: "Yes" },
-            { label: "Call Management", value: "Advanced" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-01_1_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-02_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-03_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-04_4_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-05_5_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TDA620/kx-tda620-06_6_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-029",
-          name: "Panasonic KX-TD1232 Analog PBX",
-          model: "KX-TD1232",
-          cover: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Low-capacity analog PBX for small offices",
-          description: "The KX-TD1232 is an older Panasonic analog telephone exchange designed for small offices, offering basic call management features.",
-          features: [
-            "Call transfer",
-            "Auto-attendant",
-            "Hold queue",
-            "Extension system",
-            "Hold music",
-            "Easy setup"
-          ],
-          specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Outside Line Capacity", value: "3" },
-            { label: "Extension Capacity", value: "32" },
-            { label: "Auto-Attendant", value: "Yes" },
-            { label: "Hold Music", value: "Yes" },
-            { label: "Display", value: "No" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TD1232/OwGiPCJwFAYuogMp_2_11zon.webp`,
-            `${import.meta.env.BASE_URL}products/KX-TD1232/gOK98R2Nv5FqlNkJ_1_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-030",
-          name: "Panasonic KX-T61610 Analog PBX",
-          model: "KX-T61610",
-          cover: `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Analog PBX for small businesses",
-          description: "The Panasonic KX-T61610 is an affordable analog telephone exchange with call management and extension capabilities for small offices.",
-          features: [
-            "Call transfer",
-            "Auto-attendant",
-            "Conferencing",
-            "Hold queue",
-            "Hold music",
-            "Easy setup"
-          ],
-          specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Outside Lines", value: "6" },
-            { label: "Extensions", value: "16" },
-            { label: "Conferencing", value: "Yes" },
-            { label: "Call Transfer", value: "Yes" },
-            { label: "Hold Music", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T61610/optimized_by_opt.imum.ir__2026-07-11_14-22-30.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-031",
-          name: "Panasonic KX-TVM50 Voicemail System",
-          model: "KX-TVM50",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Professional Panasonic voicemail system",
-          description: "The KX-TVM50 is a standalone Voicemail system for Panasonic PBX systems that provides voicemail, auto-attendant, and message management features.",
-          features: [
-            "Voicemail",
-            "Auto-attendant",
-            "Message storage",
-            "Message notification",
-            "Call management",
-            "Reporting"
-          ],
-          specifications: [
-            { label: "Device Type", value: "Voicemail System" },
-            { label: "Base Ports", value: "2" },
-            { label: "Maximum Ports", value: "6" },
-            { label: "Message Storage", value: "Yes" },
-            { label: "Auto-Attendant", value: "Yes" },
-            { label: "Compatible With", value: "TDA/TDE/NCP" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TVM50/tvm50.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-032",
-          name: "Panasonic KX-TVM200 Voicemail System",
-          model: "KX-TVM200",
-          cover: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Enterprise voicemail system",
-          description: "The KX-TVM200 is a professional Voicemail system for organizations with high capacity and advanced auto-attendant features.",
-          features: [
-            "Auto-attendant",
-            "Voicemail",
-            "User management",
-            "Email notification",
-            "Reporting",
-            "Multi-language support"
-          ],
-          specifications: [
-            { label: "Device Type", value: "Voicemail System" },
-            { label: "Maximum Ports", value: "24" },
-            { label: "Storage Capacity", value: "High" },
-            { label: "Message Notification", value: "Yes" },
-            { label: "Network Support", value: "Yes" },
-            { label: "Multi-Language", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-033",
-          name: "Panasonic KX-TA616 Analog PBX",
-          model: "KX-TA616",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "6 outside line and 16 extension analog PBX",
-          description: "The Panasonic KX-TA616 is one of the most popular low-capacity analog PBX systems from Panasonic for small offices and companies.",
-          features: [
-            "6 outside lines",
-            "16 extensions",
-            "Call transfer",
-            "Conferencing",
-            "Hold queue",
-            "Hold music"
-          ],
-          specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Outside Lines", value: "6" },
-            { label: "Extensions", value: "16" },
-            { label: "Conferencing", value: "Yes" },
-            { label: "Auto-Attendant", value: "Yes" },
-            { label: "Hold Music", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TA616/ARMIl52Sg3jOo7dQ_11zon.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-034",
-          name: "Panasonic KX-T30810 Analog PBX",
-          model: "KX-T30810",
-          cover: `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "3 outside line and 8 extension analog PBX",
-          description: "Panasonic analog telephone exchange for small offices with capacity of 3 outside lines and 8 extensions.",
-          features: [
-            "3 outside lines",
-            "8 extensions",
-            "Call transfer",
-            "Conferencing",
-            "Hold music",
-            "Auto-attendant"
-          ],
-          specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Outside Lines", value: "3" },
-            { label: "Extensions", value: "8" },
-            { label: "Conferencing", value: "Yes" },
-            { label: "Call Transfer", value: "Yes" },
-            { label: "Auto-Attendant", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T30810/optimized_by_opt.imum.ir__2026-07-11_14-26-55.webp`,
-          ],
-          price: "Call for price"
-        },
-        {
-          id: "pan-035",
-          name: "Panasonic KX-T206SBX Analog PBX",
-          model: "KX-T206SBX",
-          cover: `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "2 outside line and 6 extension analog PBX",
-          description: "An affordable Panasonic analog telephone exchange suitable for small offices and shops.",
-          features: [
-            "2 outside lines",
-            "6 extensions",
-            "Call transfer",
-            "Auto-attendant",
-            "Hold music",
-            "Easy setup"
-          ],
-          specifications: [
-            { label: "System Type", value: "Analog PBX" },
-            { label: "Outside Lines", value: "2" },
-            { label: "Extensions", value: "6" },
-            { label: "Call Transfer", value: "Yes" },
-            { label: "Auto-Attendant", value: "Yes" },
-            { label: "Hold Music", value: "Yes" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-T206SBX/optimized_by_opt.imum.ir__2026-07-11_14-30-18.webp`,
-          ],
-          price: "Call for price"
-        }, {
-          id: "pan-036",
-          name: "Panasonic KX-TA624 Hybrid PBX",
-          model: "KX-TA624",
-          cover: `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
-          category: "PBX Systems",
-          brand: "Panasonic",
-          shortDescription: "Analog hybrid PBX suitable for small offices and companies",
-          description:
-            "The Panasonic KX-TA624 is an analog hybrid PBX designed for small businesses. This system supports 3 outside lines and 8 extensions as base, and can be expanded to 6 outside lines and 24 extensions using expansion cards. Support for Panasonic proprietary phones, fax, modems, and analog phones is a key feature of this system.",
-          features: [
-            "Expandable from 3 to 6 outside lines",
-            "Expandable up to 24 extensions",
-            "Caller ID support",
-            "Panasonic proprietary phone support",
-            "Fax and modem connectivity",
-            "Door Phone and Door Opener support"
-          ],
-          specifications: [
-            { label: "System Type", value: "Advanced Hybrid PBX" },
-            { label: "Base Capacity", value: "3 outside lines / 8 extensions" },
-            { label: "Maximum Outside Lines", value: "6" },
-            { label: "Maximum Extensions", value: "24" },
-            { label: "Caller ID Support", value: "Yes" },
-            { label: "Door Phone Support", value: "Up to 4 units" }
-          ],
-          images: [
-            `${import.meta.env.BASE_URL}products/KX-TA624/optimized_by_opt.imum.ir__2026-07-11_14-34-21.webp`,
           ],
           price: "Call for price"
         }

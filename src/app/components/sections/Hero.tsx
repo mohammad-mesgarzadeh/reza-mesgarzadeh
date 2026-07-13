@@ -78,9 +78,9 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
             {content.subheadline}
           </h2>
 
-        <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mb-10 max-w-xl">
-  {content.desc}
-</p>
+          <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mb-10 max-w-xl">
+            {content.desc}
+          </p>
 
           <div
             className={cn(
@@ -110,11 +110,10 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
               {content.cta2}
             </a>
           </div>
-
           <div
             className={cn(
-              "mt-16 flex flex-wrap gap-6 lg:gap-10",
-              isRtl && "justify-start"
+              "mt-16 grid grid-cols-3 gap-3 lg:gap-6 max-w-md",
+              isRtl && "mr-auto"
             )}
           >
             {[
@@ -143,15 +142,15 @@ export default function Hero({ content, lang, scrollTo, phoneNumber }: HeroProps
               <div
                 key={s.val}
                 className={cn(
-                  "flex flex-col px-5 py-3 rounded-xl",
+                  "flex flex-col items-center text-center px-2 sm:px-5 py-3 rounded-xl",
                   statBgClass
                 )}
               >
-                <span className="text-3xl lg:text-4xl font-bold text-accent font-mono tracking-tight">
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent font-mono tracking-tight">
                   {s.val}
                 </span>
 
-                <span className="text-xs text-muted-foreground tracking-wide uppercase font-semibold mt-1">
+                <span className="text-[10px] sm:text-xs text-muted-foreground tracking-wide uppercase font-semibold mt-1">
                   {s.label}
                 </span>
               </div>

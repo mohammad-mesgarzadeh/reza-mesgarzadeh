@@ -7,6 +7,7 @@ import { ScrollReveal } from "../ui/ScrollReveal";
 import { iconMap } from "../icons";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import PortfolioGallery from "../sections/PortfolioGallery";
 
 export default function InstallationMaintenance() {
   const { lang, setLang, dark, setDark, phoneNumber } = useSite();
@@ -95,6 +96,15 @@ export default function InstallationMaintenance() {
               </div>
             </div>
           </ScrollReveal>
+
+          <div className="mt-16 mb-16">
+            <PortfolioGallery
+              lang={lang}
+              data={im.portfolio}
+              dir={c.dir}
+              font={c.font}
+            />
+          </div>
 
           <ScrollReveal>
             <div className="bg-card border border-border/60 rounded-2xl p-8 lg:p-12 text-center max-w-3xl mx-auto shadow-sm">

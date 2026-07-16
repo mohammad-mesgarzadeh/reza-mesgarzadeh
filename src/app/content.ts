@@ -329,6 +329,21 @@ export const CONTENT: Content = {
         { step: "۰۴", title: "تست و تضمین کیفیت", desc: "آزمایش جامع سیستم و تضمین کیفیت مطابق با استانداردهای بین‌المللی" },
         { step: "۰۵", title: "تحویل و آموزش", desc: "تحویل کامل پروژه با مستندات فنی و آموزش کار با سیستم به کارفرما" },
       ],
+      portfolio: {
+        badge: "نمونه کارها",
+        title: "پروژه‌های اخیر ما",
+        description: "مجموعه‌ای از پروژه‌های نصب، نگهداری، عیب‌یابی و زیرساخت مخابراتی انجام‌شده برای مشتریان ما را مشاهده کنید.",
+        items: [
+          { id: "project-01", image: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`, title: { fa: "نصب سانترال پاناسونیک TDA600", en: "Panasonic TDA600 Installation" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-02", image: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`, title: { fa: "راه‌اندازی سانترال TES824", en: "TES824 Setup & Configuration" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-03", image: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`, title: { fa: "نگهداری صندوق صوتی TVM200", en: "TVM200 Voicemail Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+          { id: "project-04", image: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`, title: { fa: "نصب سانترال IP-HTS32", en: "IP PBX HTS32 Installation" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-05", image: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`, title: { fa: "تعمیرات سانترال TDA100", en: "TDA100 Repair Services" }, category: { fa: "تعمیرات", en: "Repair" } },
+          { id: "project-06", image: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`, title: { fa: "عیب‌یابی سانترال TD1232", en: "TD1232 Troubleshooting" }, category: { fa: "عیب‌یابی", en: "Troubleshooting" } },
+          { id: "project-07", image: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`, title: { fa: "استقرار سیستم NS1000", en: "NS1000 Enterprise Deployment" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-08", image: `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`, title: { fa: "نگهداری دوره‌ای TDE600", en: "TDE600 Preventive Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+        ],
+      },
       contactText: "برای دریافت مشاوره رایگان یا ثبت درخواست خدمات با ما تماس بگیرید",
     },
     training: {
@@ -2115,6 +2130,21 @@ export const CONTENT: Content = {
         { step: "04", title: "Testing & Quality Assurance", desc: "Comprehensive system testing and quality assurance in compliance with international standards" },
         { step: "05", title: "Delivery & Training", desc: "Complete project handover with technical documentation and system operation training for the client" },
       ],
+      portfolio: {
+        badge: "Portfolio",
+        title: "Our Recent Projects",
+        description: "Explore a selection of installation, maintenance, troubleshooting, and telecommunications infrastructure projects completed for our clients.",
+        items: [
+          { id: "project-01", image: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`, title: { fa: "نصب سانترال پاناسونیک TDA600", en: "Panasonic TDA600 Installation" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-02", image: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`, title: { fa: "راه‌اندازی سانترال TES824", en: "TES824 Setup & Configuration" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-03", image: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`, title: { fa: "نگهداری صندوق صوتی TVM200", en: "TVM200 Voicemail Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+          { id: "project-04", image: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`, title: { fa: "نصب سانترال IP-HTS32", en: "IP PBX HTS32 Installation" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-05", image: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`, title: { fa: "تعمیرات سانترال TDA100", en: "TDA100 Repair Services" }, category: { fa: "تعمیرات", en: "Repair" } },
+          { id: "project-06", image: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`, title: { fa: "عیب‌یابی سانترال TD1232", en: "TD1232 Troubleshooting" }, category: { fa: "عیب‌یابی", en: "Troubleshooting" } },
+          { id: "project-07", image: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`, title: { fa: "استقرار سیستم NS1000", en: "NS1000 Enterprise Deployment" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-08", image: `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`, title: { fa: "نگهداری دوره‌ای TDE600", en: "TDE600 Preventive Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+        ],
+      },
       contactText: "Contact us for a free consultation or to submit a service request",
     },
     training: {

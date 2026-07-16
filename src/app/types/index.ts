@@ -185,7 +185,22 @@ export interface ImContent {
   subtitle: string;
   services: ImServiceItem[];
   process: ImProcessStep[];
+  portfolio: PortfolioContent;
   contactText: string;
+}
+
+export interface PortfolioItem {
+  id: string;
+  image: string;
+  title: { fa: string; en: string };
+  category: { fa: string; en: string };
+}
+
+export interface PortfolioContent {
+  badge: string;
+  title: string;
+  description: string;
+  items: PortfolioItem[];
 }
 
 export interface Lesson {

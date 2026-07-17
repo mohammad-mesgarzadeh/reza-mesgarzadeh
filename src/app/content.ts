@@ -334,14 +334,9 @@ export const CONTENT: Content = {
         title: "پروژه‌های اخیر ما",
         description: "مجموعه‌ای از پروژه‌های نصب، نگهداری، عیب‌یابی و زیرساخت مخابراتی انجام‌شده برای مشتریان ما را مشاهده کنید.",
         items: [
-          { id: "project-01", image: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`, title: { fa: "نصب سانترال پاناسونیک TDA600", en: "Panasonic TDA600 Installation" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-02", image: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`, title: { fa: "راه‌اندازی سانترال TES824", en: "TES824 Setup & Configuration" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-03", image: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`, title: { fa: "نگهداری صندوق صوتی TVM200", en: "TVM200 Voicemail Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
-          { id: "project-04", image: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`, title: { fa: "نصب سانترال IP-HTS32", en: "IP PBX HTS32 Installation" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-05", image: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`, title: { fa: "تعمیرات سانترال TDA100", en: "TDA100 Repair Services" }, category: { fa: "تعمیرات", en: "Repair" } },
-          { id: "project-06", image: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`, title: { fa: "عیب‌یابی سانترال TD1232", en: "TD1232 Troubleshooting" }, category: { fa: "عیب‌یابی", en: "Troubleshooting" } },
-          { id: "project-07", image: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`, title: { fa: "استقرار سیستم NS1000", en: "NS1000 Enterprise Deployment" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-08", image: `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`, title: { fa: "نگهداری دوره‌ای TDE600", en: "TDE600 Preventive Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+          { id: "project-01", image: `${import.meta.env.BASE_URL}Portfolio/resized-image (1).webp`, title: { fa: "نصب ns500 در کرمان خوردو", en: "NS500 Installation at Kerman Khodro" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-02", image: `${import.meta.env.BASE_URL}Portfolio/resized-image.webp`, title: { fa: "نصب ns500، در دفتر باشگاه تکنیک برتر", en: "NS500 Installation at Teknik Bartar Club Office" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-03", image: `${import.meta.env.BASE_URL}Portfolio/resized-image (2).webp`, title: { fa: "تعمیر، هلال احمر، میدان ونک ", en: "Maintenance & Repair Services at the Red Crescent, Vanak Square" }, category: { fa: "تعمیر", en: "Maintenance" } },
         ],
       },
       contactText: "برای دریافت مشاوره رایگان یا ثبت درخواست خدمات با ما تماس بگیرید",
@@ -2133,16 +2128,45 @@ export const CONTENT: Content = {
       portfolio: {
         badge: "Portfolio",
         title: "Our Recent Projects",
-        description: "Explore a selection of installation, maintenance, troubleshooting, and telecommunications infrastructure projects completed for our clients.",
+        description:
+          "Explore a selection of installation, maintenance, troubleshooting, and telecommunications infrastructure projects completed for our clients.",
         items: [
-          { id: "project-01", image: `${import.meta.env.BASE_URL}products/KX-TDA600/kx-tda600-01_1_11zon.webp`, title: { fa: "نصب سانترال پاناسونیک TDA600", en: "Panasonic TDA600 Installation" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-02", image: `${import.meta.env.BASE_URL}products/KX-TES824/kx-tes824-01_1_11zon.webp`, title: { fa: "راه‌اندازی سانترال TES824", en: "TES824 Setup & Configuration" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-03", image: `${import.meta.env.BASE_URL}products/KX-TVM200/KX-TVM200.webp`, title: { fa: "نگهداری صندوق صوتی TVM200", en: "TVM200 Voicemail Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
-          { id: "project-04", image: `${import.meta.env.BASE_URL}products/KX-HTS32/UpSD38PlgRCXPh58_1_11zon.webp`, title: { fa: "نصب سانترال IP-HTS32", en: "IP PBX HTS32 Installation" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-05", image: `${import.meta.env.BASE_URL}products/KX-TDA100DBP/kx-tda100dbp-01_4_11zon.webp`, title: { fa: "تعمیرات سانترال TDA100", en: "TDA100 Repair Services" }, category: { fa: "تعمیرات", en: "Repair" } },
-          { id: "project-06", image: `${import.meta.env.BASE_URL}products/KX-TD1232/pQ10BJ6pujqX2Dl2_3_11zon.webp`, title: { fa: "عیب‌یابی سانترال TD1232", en: "TD1232 Troubleshooting" }, category: { fa: "عیب‌یابی", en: "Troubleshooting" } },
-          { id: "project-07", image: `${import.meta.env.BASE_URL}products/KX-NS1000/kx-ns1000-07_14_11zon.webp`, title: { fa: "استقرار سیستم NS1000", en: "NS1000 Enterprise Deployment" }, category: { fa: "نصب", en: "Installation" } },
-          { id: "project-08", image: `${import.meta.env.BASE_URL}products/KX-TDE600/kx-tde600-02.webp`, title: { fa: "نگهداری دوره‌ای TDE600", en: "TDE600 Preventive Maintenance" }, category: { fa: "نگهداری", en: "Maintenance" } },
+          {
+            id: "project-01",
+            image: `${import.meta.env.BASE_URL}Portfolio/resized-image (1).webp`,
+            title: {
+              fa: "نصب ns500 در کرمان خوردو",
+              en: "NS500 Installation at Kerman Khodro",
+            },
+            category: {
+              fa: "نصب",
+              en: "Installation",
+            },
+          },
+          {
+            id: "project-02",
+            image: `${import.meta.env.BASE_URL}Portfolio/resized-image.webp`,
+            title: {
+              fa: "نصب ns500، در دفتر باشگاه تکنیک برتر",
+              en: "NS500 Installation at Teknik Bartar Club Office",
+            },
+            category: {
+              fa: "نصب",
+              en: "Installation",
+            },
+          },
+          {
+            id: "project-03",
+            image: `${import.meta.env.BASE_URL}Portfolio/resized-image (2).webp`,
+            title: {
+              fa: "تعمیر، هلال احمر، میدان ونک",
+              en: "Maintenance & Repair Services at the Red Crescent, Vanak Square",
+            },
+            category: {
+              fa: "تعمیر",
+              en: "Maintenance",
+            },
+          },
         ],
       },
       contactText: "Contact us for a free consultation or to submit a service request",

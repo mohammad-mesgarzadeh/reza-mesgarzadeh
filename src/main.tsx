@@ -2,6 +2,7 @@ import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { SiteProvider } from "./app/lib/site-context";
+import ScrollToTop from "./app/components/ScrollToTop";
 import App from "./app/App.tsx";
 import NotFound from "./app/components/pages/NotFound.tsx";
 import "./styles/index.css";
@@ -22,6 +23,7 @@ const fallback = (
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename="/reza-mesgarzadeh">
+      <ScrollToTop />
       <SiteProvider>
         <Routes>
           <Route path="/" element={<App />} />

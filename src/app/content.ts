@@ -334,7 +334,7 @@ export const CONTENT: Content = {
         title: "پروژه‌های اخیر ما",
         description: "مجموعه‌ای از پروژه‌های نصب، نگهداری، عیب‌یابی و زیرساخت مخابراتی انجام‌شده برای مشتریان ما را مشاهده کنید.",
         items: [
-          { id: "project-01", image: `${import.meta.env.BASE_URL}Portfolio/resized-image (1).webp`, title: { fa: "نصب ns500 در کرمان خوردو", en: "NS500 Installation at Kerman Khodro" }, category: { fa: "نصب", en: "Installation" } },
+          { id: "project-01", image: `${import.meta.env.BASE_URL}Portfolio/resized-image (1).webp`, title: { fa: "نصب ns500 در کرمان خودرو", en: "NS500 Installation at Kerman Khodro" }, category: { fa: "نصب", en: "Installation" } },
           { id: "project-02", image: `${import.meta.env.BASE_URL}Portfolio/resized-image.webp`, title: { fa: "نصب ns500، در دفتر باشگاه تکنیک برتر", en: "NS500 Installation at Teknik Bartar Club Office" }, category: { fa: "نصب", en: "Installation" } },
           { id: "project-03", image: `${import.meta.env.BASE_URL}Portfolio/resized-image (2).webp`, title: { fa: "تعمیر، هلال احمر، میدان ونک ", en: "Maintenance & Repair Services at the Red Crescent, Vanak Square" }, category: { fa: "تعمیر", en: "Maintenance" } },
         ],
